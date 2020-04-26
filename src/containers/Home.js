@@ -12,11 +12,11 @@ class Home extends Component{
     render(){
         return(
             <div>
-                <h1 className = 'home'>This is the home</h1>
-                <Button className ='button'>hi</Button>
 
                 <Container>
                     <Row>
+                <h1 className = 'home'>This is the home</h1>
+                <Button className ='button'>hi</Button>
                         <Col>1 of 1</Col>
                     </Row>
                 </Container>
