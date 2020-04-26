@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import { Button, Container, Row, Col } from 'react-bootstrap';
+import { Button, Container, Row, Col} from 'react-bootstrap';
 
 
 
@@ -16,8 +16,11 @@ class Home extends Component{
                 <Container fliuid>
                     <Row>
                 
-                        <Col><h1 className='home'>Everything you need, <span>delivered within minutes</span></h1>
-                            <Button className='button'>hi</Button></Col>
+                        <Col><h1 className='home'>Everything you need, <span>delivered within minutes</span></h1></Col>
+
+                        <Col>
+                            delivering to
+                        </Col>
                     </Row>
                 </Container>
             </div>
