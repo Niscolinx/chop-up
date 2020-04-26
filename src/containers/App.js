@@ -15,6 +15,10 @@ import { Route, Switch } from 'react-router-dom'
 const asyncOrders = asyncComponent(() => {
   return import('./Orders')
 })
+
+const asyncBurgerBuilder = asyncComponent(() => {
+  return import('./BurgerBuilder')
+})
 const asyncCheckout = asyncComponent(() => {
   return import('../containers/Checkout')
 })
