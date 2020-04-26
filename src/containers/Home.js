@@ -15,9 +15,9 @@ class Home extends Component{
 
                 <Container fliuid>
                     <Row>
-                <h1 className = 'home'>This is the home</h1>
-                <Button className ='button'>hi</Button>
-                        <Col>1 of 1</Col>
+                
+                        <Col><h1 className='home'>Everything you need, <span>delivered within minutes</span></h1>
+                            <Button className='button'>hi</Button></Col>
                     </Row>
                 </Container>
             </div>
