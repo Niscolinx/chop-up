@@ -4,7 +4,6 @@ import { withRouter, Redirect } from 'react-router-dom';
 import * as actions from '../store/actions/burgerIndex'
 import asyncComponent from '../components/hoc/asyncComponent'
 
-import '../App.scss'
 import Layout from "../components/Layout/Layout"
 import Aux from "../components/hoc/HigherOrder"
 import Home from './Home'
