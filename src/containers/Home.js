@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import { Button } from 'react-bootstrap';
+import { Button, Container, Row, Col } from 'react-bootstrap';
 
 
 
@@ -14,6 +14,12 @@ class Home extends Component{
             <div>
                 <h1 className = 'home'>This is the home</h1>
                 <Button className ='button'>hi</Button>
+
+                <Container>
+                    <Row>
+                        <Col>1 of 1</Col>
+                    </Row>
+                </Container>
             </div>
         )
     }
