@@ -13,7 +13,7 @@ class Home extends Component{
         return(
             <div>
 
-                <Container>
+                <Container fliuid>
                     <Row>
                 <h1 className = 'home'>This is the home</h1>
                 <Button className ='button'>hi</Button>
