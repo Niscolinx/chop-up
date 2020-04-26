@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './sass/main.scss';
+import '../src/assets/fonts/Montserrat/Montserrat-Black.ttf'
+
 import App from './containers/App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from 'react-router-dom'
