@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import { Button } from 'react-bootstrap';
 
 
 
@@ -12,6 +13,7 @@ class Home extends Component{
         return(
             <div>
                 <h1>This is the home</h1>
+                <Button/>
             </div>
         )
     }
