@@ -7,6 +7,7 @@ import asyncComponent from '../components/hoc/asyncComponent'
 import '../App.scss'
 import Layout from "../components/Layout/Layout"
 import Aux from "../components/hoc/HigherOrder"
+import Home from './Home'
 import BurgerBuilder from './BurgerBuilder'
 import { Route, Switch } from 'react-router-dom'
 
@@ -39,7 +40,7 @@ class App extends Component {
 
     let AuthGuard = (
       <Switch>
-        <Route path='/' exact component={BurgerBuilder} />
+        <Route path='/' exact component={Home} />
         <Route path='/Auth/login' component={asyncAuth} />
         <Route path='/Auth/register' component={asyncAuth} />
         <Redirect to='/'/>
