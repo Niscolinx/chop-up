@@ -1,0 +1,13 @@
+.CheckoutSummary {
+  text-align: center;
+  height: 40%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  .CheckoutSummary {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=CheckoutSummary.css.map */
