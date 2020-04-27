@@ -23,7 +23,7 @@ class Home extends Component{
                             delivering to
                         </Col>
                         <>
-                            <Form>
+                            <Form className = 'delivering-form'>
                                 <Form.Group controlId="exampleForm.SelectCustomSizeSm">
                                     <Form.Label>Custom select Small</Form.Label>
                                     <Form.Control as="select" size="sm" custom>
