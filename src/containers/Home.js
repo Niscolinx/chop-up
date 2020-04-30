@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import { Button, Container, Row, Col} from 'react-bootstrap';
 import Form from 'react-bootstrap/Form'
+import car from './'
 
 
 
@@ -12,7 +13,7 @@ class Home extends Component{
 
     render(){
         return(
-            <div className = 'home'>
+            <div className='home' styles={{ backgroundImage: `url(${car})` }}>
                 hellg
 
                 <Container fliuid>
