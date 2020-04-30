@@ -20,11 +20,11 @@ class Home extends Component{
                         <Col><h1 className='home'>Everything you need, <span>delivered within minutes</span></h1></Col>
 
                         <Col>
-                            delivering to
                         </Col>
                         <>
                         </>
                     </Row>
+                            delivering to
                             <Form className = 'delivering-form'>
                                 <Form.Group controlId="exampleForm.SelectCustomSizeSm">
                                     <Form.Label>Custom select Small</Form.Label>
