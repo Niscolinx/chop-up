@@ -15,7 +15,7 @@ class Home extends Component{
             <div className = 'home'>
                 hellg
 
-                <Container fliuid className = 'home'>
+                <Container fliuid>
                     <Row>
                 
                         <Col><h1>Everything you need, <span>delivered within minutes</span></h1></Col>
