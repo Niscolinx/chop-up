@@ -19,7 +19,7 @@ class Home extends Component{
                 <Container fliuid>
                     <Row>
                 
-                        <Col><h1>Everything you need, <span>delivered within minutes</span></h1></Col>
+                        <Col><h1 styles={{ backgroundImage: `url(${car})` }}>Everything you need, <span>delivered within minutes</span></h1></Col>
 
                         <Col>
                         </Col>
