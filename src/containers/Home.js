@@ -12,9 +12,9 @@ class Home extends Component{
     }
 
     render(){
+        let image = <img alt = '' src = {require('../assets/images/background_home.jpg')} width = '200px'/>
         return(
-            <div className='home'>
-                <img alt = '' src = {require('../assets/images/background_home.jpg')} width = '200px'/>
+            <div className='home' {image}>
                 hellg
 
                 <Container fliuid>
