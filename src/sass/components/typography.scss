@@ -528,8 +528,8 @@
 
 .home{
     color: red;
-    background-image: url('../../assets/images/background_home.jpg');
-    background-size: contain;
+    background-image: url('/src/assets/images/background_home.jpg');
+    background-size: cover;
 }
 
 .button:hover{
