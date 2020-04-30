@@ -13,7 +13,8 @@ class Home extends Component{
 
     render(){
         return(
-            <div className='home' styles={{ backgroundImage: `url(${car})` }}>
+            <div className='home'>
+                
                 hellg
 
                 <Container fliuid>
