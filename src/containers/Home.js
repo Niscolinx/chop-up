@@ -17,7 +17,7 @@ class Home extends Component{
                 <Container fliuid>
                     <Row>
                 
-                        <Col><h1 className='home'>Everything you need, <span>delivered within minutes</span></h1></Col>
+                        <Col><h1>Everything you need, <span>delivered within minutes</span></h1></Col>
 
                         <Col>
                         </Col>
