@@ -17,7 +17,7 @@ class Home extends Component{
         const divStyle = {
             backgroundImage: 'url(' + image + ')',
             width: '100%',
-            height: '100%',
+            height: '100vh',
             backgroundSize: 'cover'
         };
         return(
@@ -27,7 +27,7 @@ class Home extends Component{
                 <Container fliuid>
                     <Row>
                 
-                        <Col><h1 style={{ backgroundImage: {image} }}>Everything you need, <span>delivered within minutes</span></h1></Col>
+                        <Col><h1>Everything you need, <span>delivered within minutes</span></h1></Col>
 
                         <Col>
                         </Col>
