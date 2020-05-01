@@ -3,6 +3,8 @@ import { Button, Container, Row, Col} from 'react-bootstrap';
 import Form from 'react-bootstrap/Form'
 import imgUrl from '../assets/images/background_home.jpg'
 
+const image = require('../assets/images/background_home.jpg')
+
 
 
 class Home extends Component{
@@ -12,8 +14,8 @@ class Home extends Component{
     }
 
     render(){
-        let image = <img alt = '' src = {require('../assets/images/background_home.jpg')} width = '200px'/>
         const divStyle = {
+            width: '100',
             backgroundImage: 'url(' + image + ')',
         };
         return(
