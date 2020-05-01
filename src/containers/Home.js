@@ -14,16 +14,16 @@ class Home extends Component{
     render(){
         let image = <img alt = '' src = {require('../assets/images/background_home.jpg')} width = '200px'/>
         const divStyle = {
-            backgroundImage: 'url(' + imgUrl + ')',
+            backgroundImage: 'url(' + image + ')',
         };
         return(
-            <div sty = 'home'>
+            <div style = {divStyle}>
                 hellg
 
                 <Container fliuid>
                     <Row>
                 
-                        <Col><h1 styles={{ backgroundImage: {image} }}>Everything you need, <span>delivered within minutes</span></h1></Col>
+                        <Col><h1 style={{ backgroundImage: {image} }}>Everything you need, <span>delivered within minutes</span></h1></Col>
 
                         <Col>
                         </Col>
