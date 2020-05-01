@@ -15,7 +15,7 @@ class Home extends Component{
 
     render(){
         const divStyle = {
-            backgroundImage: 'url(' + image + ')',
+            backgroundImage: 'url(' + imgUrl + ')',
             width: '100%',
             height: '95vh',
             backgroundSize: 'cover'
