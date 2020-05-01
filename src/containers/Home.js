@@ -28,16 +28,7 @@ class Home extends Component{
                     <Row>
                 
                         <Col><h1>Everything you need, <span>delivered within minutes</span></h1></Col>
-                        <Col><h1>Everything you need, <span>delivered within minutes</span></h1></Col>
-                        <Col><h1>Everything you need, <span>delivered within minutes</span></h1></Col>
-                        <Col><h1>Everything you need, <span>delivered within minutes</span></h1></Col>
-                        <Col><h1>Everything you need, <span>delivered within minutes</span></h1></Col>
-                        <Col><h1>Everything you need, <span>delivered within minutes</span></h1></Col>
-                        <Col><h1>Everything you need, <span>delivered within minutes</span></h1></Col>
-                        <Col><h1>Everything you need, <span>delivered within minutes</span></h1></Col>
-                        <Col><h1>Everything you need, <span>delivered within minutes</span></h1></Col>
-                        <Col><h1>Everything you need, <span>delivered within minutes</span></h1></Col>
-                        <Col><h1>Everything you need, <span>delivered within minutes</span></h1></Col>
+                
 
                         <Col>
                         </Col>
