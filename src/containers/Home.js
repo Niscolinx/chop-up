@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import { Button, Container, Row, Col} from 'react-bootstrap';
 import Form from 'react-bootstrap/Form'
-import car from '../assets/images/background_home.jpg'
+import imgUrl from '../assets/images/background_home.jpg'
 
 
 
@@ -13,14 +13,17 @@ class Home extends Component{
 
     render(){
         let image = <img alt = '' src = {require('../assets/images/background_home.jpg')} width = '200px'/>
+        const divStyle = {
+            backgroundImage: 'url(' + imgUrl + ')',
+        };
         return(
-            <div className = 'home'>
+            <div sty = 'home'>
                 hellg
 
                 <Container fliuid>
                     <Row>
                 
-                        <Col><h1 styles={{ backgroundImage: `url(${car})` }}>Everything you need, <span>delivered within minutes</span></h1></Col>
+                        <Col><h1 styles={{ backgroundImage: {image} }}>Everything you need, <span>delivered within minutes</span></h1></Col>
 
                         <Col>
                         </Col>
