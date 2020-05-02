@@ -5,7 +5,6 @@ import SideDrawerToggle from './Navigation/SideDrawerToggle';
 
 const toolbar = (props)=>(
     <div className = 'toolbar-space'>
-        jsfgit 
     <div className = 'toolbar'>
         <SideDrawerToggle clicked = {props.openSideDrawer}/>
         <Logo/>
