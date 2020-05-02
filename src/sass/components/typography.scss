@@ -538,10 +538,12 @@
         color: $primary-color;
 
         &--main {
-            font-weight: 900;
+            font-weight: 700;
         }
 
-        &--span {}
+        &--span {
+            font-weight: 900;
+}
     }
 }
 
