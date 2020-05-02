@@ -532,6 +532,10 @@
   align-items: center;
   flex-direction: column;
   padding: 2rem 1rem;
+
+  &_heading{
+      font-weight: 900;
+  }
 }
 
 .button:hover{
