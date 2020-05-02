@@ -535,10 +535,11 @@
     padding: 2rem 1rem;
 
     &_heading {
-        font-weight: 700;
         color: $primary-color;
 
-        &--main {}
+        &--main {
+            font-weight: 900;
+        }
 
         &--span {}
     }
