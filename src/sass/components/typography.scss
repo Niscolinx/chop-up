@@ -526,9 +526,10 @@
     }
 }
 
-.home{
-    width: 100%;
-    background-size: cover;
+.main-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button:hover{
