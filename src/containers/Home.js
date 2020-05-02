@@ -17,7 +17,10 @@ class Home extends Component{
             width: '100%',
             height: '95vh',
             backgroundSize: 'cover',
-            marginTop: '-5vh'
+            marginTop: '-5vh',
+            display: 'flex',
+            justifyContent: 'center',
+            alignContent: 'center'
         };
         return(
             <div style = {divStyle}>
