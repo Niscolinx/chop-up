@@ -20,10 +20,10 @@ class Home extends Component{
         };
         return(
             <div style = {divStyle}>
-                <Container fliuid className = 'main-content'>
+                <Container fliuid className = 'hero'>
                     <Row>
                 
-                        <Col><h1>Everything you need, <span>delivered within minutes</span></h1></Col>
+                        <Col><h1 className = 'main-content'>Everything you need, <span>delivered within minutes</span></h1></Col>
                 
                         <>
                         </>
