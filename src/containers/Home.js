@@ -18,13 +18,13 @@ class Home extends Component{
             height: '95vh',
             backgroundSize: 'cover',
             marginTop: '-5vh',
-            display: 'flex',
-            justifyContent: 'center',
-            alignContent: 'center'
+            display: 'Flex',
+            justifyContent: 'centre',
+            alignContent: 'centre'
         };
         return(
             <div style = {divStyle}>
-                <Container fliuid>
+                <Container fliuid className = 'main-content'>
                     <Row>
                 
                         <Col><h1>Everything you need, <span>delivered within minutes</span></h1></Col>
