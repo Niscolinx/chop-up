@@ -21,8 +21,6 @@ class Home extends Component{
         };
         return(
             <div style = {divStyle}>
-                hellg
-
                 <Container fliuid>
                     <Row>
                 
