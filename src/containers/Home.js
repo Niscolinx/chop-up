@@ -26,9 +26,6 @@ class Home extends Component{
                 
                         <Col><h1>Everything you need, <span>delivered within minutes</span></h1></Col>
                 
-
-                        <Col>
-                        </Col>
                         <>
                         </>
                     </Row>
