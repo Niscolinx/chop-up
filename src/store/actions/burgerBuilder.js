@@ -30,7 +30,7 @@ export const loadIngFailed = (error) => {
 export const setIngredients = () => {
     return dispatch => {
         axios
-            .get("https://my-react-burger-1ce01.firebaseio.com/ingredients.json")
+            .get(".json")
             .then(res => {
                 dispatch(initIngredients(res.data))
             })
