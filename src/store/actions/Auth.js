@@ -20,6 +20,7 @@ export const authSuccessCheck = (auth) => {
             dispatch(fire.analytics())
 
             console.log('This is the firebase analytics', fire.analytics())
+            console.log('The auth was successful')
 
             setTimeout(() => {
                 dispatch(logOut())
