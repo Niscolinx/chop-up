@@ -32,7 +32,7 @@ class Home extends Component {
                         </>
                     </Row>
                             <h3>Delivering to</h3>
-                            <Form className='delivering-form'>
+                            <Form className='hero_form'>
                         <Form.Group controlId="exampleForm.SelectCustomSizeSm">
                             <Form.Label>Custom select Small</Form.Label>
                             <Form.Control as="select" size="sm" custom>
