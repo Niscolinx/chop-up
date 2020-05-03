@@ -26,8 +26,9 @@ export const authSuccessCheck = (auth) => {
             localStorage.setItem('userId', auth)
             localStorage.setItem('token', res)
             dispatch(authSuccess(auth, res))
-            dispatch(fire.analytics()
-            )
+            dispatch(fire.analytics())
+
+            console.log('This is the firebase analytics', fire.analytics())
 
             setTimeout(() => {
                 dispatch(logOut())
