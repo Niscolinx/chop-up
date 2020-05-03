@@ -35,7 +35,7 @@ class Home extends Component {
                             <Form className='hero_form'>
                         <Form.Group controlId="exampleForm.SelectCustomSizeSm">
                             <Form.Label>Custom select Small</Form.Label>
-                            <Form.Control as="select" size="lg" custom>
+                            <Form.Control as="select" size="lg" custom width='100%'>
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
