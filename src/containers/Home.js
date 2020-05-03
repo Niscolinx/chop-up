@@ -43,7 +43,7 @@ class Home extends Component {
                                 <option>5</option>
                             </Form.Control>
                         </Form.Group>
-                        <Form.Group controlId="exampleForm.SelectCustomSizeLg">
+                        <Form.Group>
                             <Form.Label>Custom select Large</Form.Label>
                             <Form.Control as="select" size="lg" custom>
                                 <option>1</option>
