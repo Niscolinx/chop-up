@@ -42,7 +42,6 @@ export class BurgerBuilder extends Component {
   }
   componentDidMount() {
 
-    fire.analytics();
     console.log('This is from firebase',)
 
     if(this.props.authErr){
