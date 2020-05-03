@@ -1,6 +1,7 @@
 import * as actions from './actionTypes'
 import fire from '../../firebase/firebase'
 
+fire.analytics();
 
 export const authStart = () => {
     return {
