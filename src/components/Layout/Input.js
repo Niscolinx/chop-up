@@ -13,6 +13,7 @@ const input = (props) => {
                 className={validateClass}
                 value={props.value}
                 onChange={props.changed}
+                autoComplete
             />
             break;
         case 'textarea':
