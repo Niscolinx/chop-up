@@ -562,4 +562,12 @@
     display: flex;
     justify-content: space-around;
     width: 100%;
+
+    &--control{
+        width: 100%;
+
+        &:active{
+            box-shadow: ;
+        }
+    }
 }
