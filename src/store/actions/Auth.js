@@ -8,36 +8,38 @@ export const authStart = () => {
     }
 }
 
-export const authSuccessCheck = (auth) => {    
+export const authSuccessCheck = (auth) => {
     return dispatch => {
 
-       // let database = fire.database('https://my-react-burger-1ce01.firebaseio.com');
+        // let database = fire.database('https://my-react-burger-1ce01.firebaseio.com');
         //console.log(database)
-    // var userId = fire.auth().currentUser.uid;
-   
-    // return fire.database().ref('orders/-LzxnBJVUgxe9OV9wlXL').once('value').then(function (snapshot) {
-    //     var username = (snapshot.val().contactform.name) || 'Anonymous';
-    //         console.log(username)
-            
-    //   });
+        // var userId = fire.auth().currentUser.uid;
+
+        // return fire.database().ref('orders/-LzxnBJVUgxe9OV9wlXL').once('value').then(function (snapshot) {
+        //     var username = (snapshot.val().contactform.name) || 'Anonymous';
+        //         console.log(username)
+
+        //   });
         let user = fire.auth().currentUser;
         let token = user.getIdToken()
         token.then((res) => {
-             localStorage.setItem('userId', auth)
-             localStorage.setItem('token', res)
-               dispatch(authSuccess(auth, res))
+            localStorage.setItem('userId', auth)
+            localStorage.setItem('token', res)
+            dispatch(authSuccess(auth, res))
+            dispatch(fire.analytics()
+            )
 
-               setTimeout(() => {
-                   dispatch(logOut())
-               }, 3600 * 1000);
-            })
+            setTimeout(() => {
+                dispatch(logOut())
+            }, 3600 * 1000);
+        })
             .catch((err) => {
                 dispatch(authFailed(err))
             })
-   }
+    }
 }
 
-export const authSuccess = (auth,res) => {
+export const authSuccess = (auth, res) => {
     return {
         type: actions.AUTH_SUCCESS,
         userId: auth,
@@ -64,7 +66,7 @@ export const logOut = () => {
 
 export const clearError = () => {
 
-    return{
+    return {
         type: actions.AUTH_CLEAR_ERROR
     }
 }
@@ -81,8 +83,8 @@ export const initAuth = (email, password, isLogin) => {
         url.then(res => {
             dispatch(authSuccessCheck(res.user.uid))
         })
-        .catch(err => {
-            dispatch(authFailed(err.message))
-        })
+            .catch(err => {
+                dispatch(authFailed(err.message))
+            })
     }
 }
