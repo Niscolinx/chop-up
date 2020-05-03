@@ -10,6 +10,7 @@ import axios from "../axios"
 import Spinner from "../components/Layout/spinner"
 import OrderSummary from "../components/Modal/OrderSummary"
 import * as actions from '../store/actions/burgerIndex'
+import fire from '../firebase/firebase'
 
 
 export class BurgerBuilder extends Component {
@@ -40,6 +41,10 @@ export class BurgerBuilder extends Component {
     this.props.history.push('/Checkout');
   }
   componentDidMount() {
+
+    fire.analytics();
+    console.log('This is from firebase',)
+
     if(this.props.authErr){
       this.props.onClearErr()
     }
