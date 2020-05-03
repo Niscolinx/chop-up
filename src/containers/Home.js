@@ -31,7 +31,7 @@ class Home extends Component {
                         <>
                         </>
                     </Row>
-                            delivering to
+                            <h3>Delivering to</h3>
                             <Form className='delivering-form'>
                         <Form.Group controlId="exampleForm.SelectCustomSizeSm">
                             <Form.Label>Custom select Small</Form.Label>
