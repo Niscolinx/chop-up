@@ -48,7 +48,7 @@ class Home extends Component {
                                 <option value="" disabled selected hidden>Select your area</option>
 
                                 <option value='upgate'>Upgate</option>
-                                <option value='stuadent-affairs'>Student Affairs</option>
+                                <option value='student-affairs'>Student Affairs</option>
                      
                             </Form.Control>
                         </Form.Group>
