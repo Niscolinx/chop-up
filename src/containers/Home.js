@@ -30,7 +30,7 @@ class Home extends Component {
 
                     </Row>
 
-                        <Row className= 'delivering' xl='7'>
+                        <Row className= 'delivering'>
                             <h3 className='delivering_text'>Delivering to</h3>
                             <Form className='delivering_form'>
                         <Form.Group>
