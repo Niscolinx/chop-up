@@ -557,10 +557,14 @@
             display: flex;
             justify-content: space-between;
 
+            &--box{
+
+                padding: 1rem 3rem;
+            }
+
             &--control {
                 font-size: 1rem;
                 width: 25rem;
-                padding: 1rem 3rem;
 
                 &-placeholder {}
             }
