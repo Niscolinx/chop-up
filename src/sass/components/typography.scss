@@ -532,6 +532,7 @@
     flex-direction: column;
     padding: 2rem 1rem;
  
+
     &_heading {
         color: $primary-color;
 
@@ -544,6 +545,10 @@
             font-weight: 700;
             margin-left: 7rem;
         }
+    }
+
+    &_form--control{
+        font-size: 14px;
     }
 }
 
