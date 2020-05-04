@@ -18,6 +18,13 @@ class Home extends Component {
             height: '95vh',
             backgroundSize: 'cover',
         };
+
+
+        let formItems = ['okigwe','uture','owerri','Enugu']
+
+        formItems.map(item => {
+            
+        })
         return (
             <div style={divStyle}>
                 <Container fliuid className='hero'>
