@@ -56,8 +56,8 @@ class Home extends Component {
 
                         <Form.Group as={Col} controlId="formGridState">
                             <Form.Label>State</Form.Label>
-                            <Form.Control as="select" value="Choose...">
-                                <option>Choose...</option>
+                            <Form.Control as="select" value="Choo...">
+                                <option>Cho...</option>
                                 <option>...</option>
                             </Form.Control>
                         </Form.Group>
