@@ -24,7 +24,7 @@ class Home extends Component {
 
         let formInput = formItems.map(item => {
             let lower = item.toLowerCase()
-            let upper = item.toUpperCase()
+            let upper = item.Capitalize()
             return <option value={lower}>{upper}</option>
         })
         return (
