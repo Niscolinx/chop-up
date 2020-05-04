@@ -564,9 +564,9 @@
                 height: 3.7rem;
                 cursor: pointer;
                 
-                &-placeholder {
-                    font-weight: 700;
-                }
+              &:first-child{
+                  font-weight: 700;
+              }
             }
         }
     }

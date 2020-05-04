@@ -35,7 +35,7 @@ class Home extends Component {
                         <Form className='delivering_form'>
                             <Form.Group>
                                 <Form.Control as="select" size="lg" custom className='delivering_form--control'>
-                                    <option value="" disabled selected hidden custom className='delivering_form--control-placeholder'>Choose your city</option>
+                                    <option value="" disabled selected hidden className='delivering_form--control-placeholder'>Choose your city</option>
 
                                     <option value='okigwe'>Okigwe</option>
                                     <option vallue='umuahia'>Umuahia</option>
