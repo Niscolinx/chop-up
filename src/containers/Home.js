@@ -29,7 +29,7 @@ class Home extends Component {
                         </Col>
 
                     </Row>
-                    <Row>
+                    <Container fluid>
 
                         <div className= 'delivering'>
                             <h3 className='delivering_text'>Delivering to</h3>
@@ -64,7 +64,7 @@ class Home extends Component {
                     <h1>Groceries</h1>
                     <h1>Restaurants</h1> 
                     </>*/}
-                    </Row>
+                    </Container>
                 </Container>
             </div>
         )
