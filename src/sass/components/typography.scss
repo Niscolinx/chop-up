@@ -550,12 +550,11 @@
     .delivering {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
+        width: 70%;
 
         &_form{
             display: flex;
+            justify-content: space-between;
         }
     
         &_form--control {
