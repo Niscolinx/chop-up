@@ -551,20 +551,18 @@
         display: flex;
         color: $primary-color;
         flex-direction: column;
-        width: 100%;
+        width: 80%;
 
-        &_form{
+        &_form {
             display: flex;
             justify-content: space-between;
-        }
-    
-        &_form--control {
-            font-size: 1rem;
-           // width: 120%;
-            max-width: 100%;
-    
-            &-placeholder {
-           
+
+            &--control {
+                font-size: 1rem;
+                width: 170%;
+                max-width: 100%;
+
+                &-placeholder {}
             }
         }
     }
@@ -577,4 +575,3 @@
     font-weight: 900;
     background-color: rgb(223, 15, 50);
 }
-
