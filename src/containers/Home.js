@@ -20,9 +20,10 @@ class Home extends Component {
         };
 
 
-        let formItems = ['okigwe', 'uture', 'owerri', 'Enugu']
+        let cities = ['okigwe', 'uture', 'Absu', 'Enugu']
+        let areas = ['Upgate', 'Owerri-road', 'student affairs', 'School cafe']
 
-        let formInput = formItems.map(item => {
+        let formInput = cities.map(item => {
             let lower = item.toLowerCase()
             let upper = item.charAt(0).toUpperCase() + item.slice(1)
             return <option value={lower}>{upper}</option>
