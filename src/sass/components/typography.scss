@@ -547,22 +547,22 @@
         }
     }
 
-}
-
-.delivering {
-    display: flex;
-    width: 100%;
-
-    &_form--control {
-        font-size: 1rem;
-
-        &-placeholder {
-            font-weight: bold;
-            font-size: 1.5rem;
-            color: red;
+    .delivering {
+        display: flex;
+        width: 100%;
+    
+        &_form--control {
+            font-size: 1rem;
+    
+            &-placeholder {
+                font-weight: bold;
+                font-size: 1.5rem;
+                color: red;
+            }
         }
     }
 }
+
 
 .button:hover {
     box-shadow: none;
