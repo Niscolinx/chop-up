@@ -36,6 +36,8 @@ class Home extends Component {
                         <Form.Group>
                             <Form.Label>Custom select Small</Form.Label>
                             <Form.Control as="select" size="lg" custom className='hero_form--control'>
+                                <option value="" disabled selected hidden>Choose your framework</option>
+
                                 <option>1</option>
                                 <option>2</option>
                    
@@ -44,6 +46,8 @@ class Home extends Component {
                         <Form.Group>
                             <Form.Label>Custom select Large</Form.Label>
                             <Form.Control as="select" size="lg" custom className='hero_form--control'>
+                                <option value="" disabled selected hidden>Choose your framework</option>
+
                                 <option>1</option>
                                 <option>2</option>
                      
