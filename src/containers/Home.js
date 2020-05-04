@@ -30,31 +30,31 @@ class Home extends Component {
 
                     </Row>
 
-                        <Row className= 'delivering'>
-                            <h3 className='delivering_text'>Delivering to</h3>
-                            <Form className='delivering_form'>
-                        <Form.Group>
-                            <Form.Control as="select" size="lg" custom className='delivering_form--control'>
-                                <option value="" disabled selected hidden className='delivering_form--control-placeholder'>Choose your city</option>
+                    <Row className='delivering'>
+                        <h3 className='delivering_text'>Delivering to</h3>
+                        <Form className='delivering_form'>
+                            <Form.Group>
+                                <Form.Control as="select" size="lg" custom className='delivering_form--control'>
+                                    <option value="" disabled selected hidden className='delivering_form--control-placeholder'>Choose your city</option>
 
-                                <option value='okigwe'>Okigwe</option>
-                                <option vallue='umuahia'>Umuahia</option>
-                                <option vallue='absu'>Absu</option>
-                   
-                            </Form.Control>
-                        </Form.Group>
-                        <Form.Group>
-                            <Form.Control as="select" size="lg" custom className='delivering_form--control'>
-                                <option value="" disabled selected hidden className='delivering_form--control-placeholder'>Select your area</option>
+                                    <option value='okigwe'>Okigwe</option>
+                                    <option vallue='umuahia'>Umuahia</option>
+                                    <option vallue='absu'>Absu</option>
 
-                                <option value='upgate'>Upgate</option>
-                                <option value='student-affairs'>Student Affairs</option>
-                     
-                            </Form.Control>
-                        </Form.Group>
+                                </Form.Control>
+                            </Form.Group>
+                            <Form.Group>
+                                <Form.Control as="select" size="lg" custom className='delivering_form--control'>
+                                    <option value="" disabled selected hidden className='delivering_form--control-placeholder'>Select your area</option>
 
-                    
-                    </Form>
+                                    <option value='upgate'>Upgate</option>
+                                    <option value='student-affairs'>Student Affairs</option>
+
+                                </Form.Control>
+                            </Form.Group>
+
+
+                        </Form>
                     </Row>
 
                     {/* <>
