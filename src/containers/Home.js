@@ -39,6 +39,7 @@ class Home extends Component {
 
                                 <option value='okigwe'>Okigwe</option>
                                 <option vallue='umuahia'>Umuahia</option>
+                                <option vallue='absu'>Absu</option>
                    
                             </Form.Control>
                         </Form.Group>
@@ -46,8 +47,7 @@ class Home extends Component {
                             <Form.Control as="select" size="lg" custom className='hero_form--control'>
                                 <option value="" disabled selected hidden>Select your area</option>
 
-                                <option>1</option>
-                                <option>2</option>
+                                <option value='upgate'>Upgate</option>
                      
                             </Form.Control>
                         </Form.Group>
