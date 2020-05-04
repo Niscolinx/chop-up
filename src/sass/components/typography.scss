@@ -531,7 +531,7 @@
     align-items: center;
     flex-direction: column;
     padding: 2rem 1rem;
-
+ 
     &_heading {
         color: $primary-color;
 
@@ -543,7 +543,7 @@
         &--span {
             font-weight: 700;
             margin-left: 7rem;
-}
+        }
     }
 }
 
@@ -554,19 +554,19 @@
     background-color: rgb(223, 15, 50);
 }
 
-.hero_form{
+.hero_form {
     color: $primary-color;
     display: flex;
     justify-content: space-around;
     width: 100%;
 
-    &--control{
+    &--control {
         width: 130%;
         box-shadow: none;
 
-        &:active{
+        &:active {
             box-shadow: none;
-          
+
         }
     }
 }
