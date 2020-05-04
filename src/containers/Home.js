@@ -29,6 +29,8 @@ class Home extends Component {
                         </Col>
 
                     </Row>
+                    <Row>
+
                         <div className= 'delivering'>
                             <h3 className='delivering_text'>Delivering to</h3>
                             <Form className='delivering_form'>
@@ -62,6 +64,8 @@ class Home extends Component {
                     <h1>Groceries</h1>
                     <h1>Restaurants</h1>
                     </>
+                    </Row>
+
                 </Container>
             </div>
         )
