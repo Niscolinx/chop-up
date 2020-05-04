@@ -549,6 +549,7 @@
 
     .delivering {
         display: flex;
+        col;
         flex-direction: column;
         width: 70%;
 
@@ -559,11 +560,10 @@
     
         &_form--control {
             font-size: 1rem;
+            width: 100%;
     
             &-placeholder {
-                font-weight: bold;
-                font-size: 1.5rem;
-                color: red;
+           
             }
         }
     }
@@ -577,19 +577,3 @@
     background-color: rgb(223, 15, 50);
 }
 
-.hero_form {
-    color: $primary-color;
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-
-    &--control {
-        width: 130%;
-        box-shadow: none;
-
-        &:active {
-            box-shadow: none;
-
-        }
-    }
-}
