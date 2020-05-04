@@ -37,8 +37,8 @@ class Home extends Component {
                             <Form.Control as="select" size="lg" custom className='hero_form--control'>
                                 <option value="" disabled selected hidden>Choose City</option>
 
-                                <option value='Okigwe'>Okigwe</option>
-                                <option  val>2</option>
+                                <option value='okigwe'>Okigwe</option>
+                                <option vallue=''>2</option>
                    
                             </Form.Control>
                         </Form.Group>
