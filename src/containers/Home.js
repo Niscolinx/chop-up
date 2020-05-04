@@ -44,10 +44,10 @@ class Home extends Component {
                             </Form.Control>
                         </Form.Group>
                         <Form.Group>
-                            <Form.Control as="search" size="lg" custom className='hero_form--control'>
+                            <Form.Control as="select" size="lg" custom className='hero_form--control'>
                                 <option value="" disabled selected hidden className='hero_form--control-placeholder'>Select your area</option>
 
-                                <option value='upgate' >Upgate</option>
+                                <option value='upgate'>Upgate</option>
                                 <option value='student-affairs'>Student Affairs</option>
                      
                             </Form.Control>
