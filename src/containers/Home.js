@@ -30,7 +30,7 @@ class Home extends Component {
 
                     </Row>
 
-                        <div className= 'delivering'>
+                        <Row className= 'delivering' xl='7'>
                             <h3 className='delivering_text'>Delivering to</h3>
                             <Form className='delivering_form'>
                         <Form.Group>
@@ -55,7 +55,7 @@ class Home extends Component {
 
                     
                     </Form>
-                    </div>
+                    </Row>
 
                     {/* <>
                     <h1>Restaurant</h1>
