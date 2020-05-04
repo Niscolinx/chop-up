@@ -29,8 +29,8 @@ class Home extends Component {
                         </Col>
 
                     </Row>
-                        <div className= 'section-delivering'>
-                            <h3 className='hero_delivering'>Delivering to</h3>
+                        <div className= 'delivering'>
+                            <h3 className='delivering'>Delivering to</h3>
                             <Form className='hero_form'>
                         <Form.Group>
                             <Form.Control as="select" size="lg" custom className='hero_form--control'>
