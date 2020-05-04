@@ -23,7 +23,9 @@ class Home extends Component {
         let formItems = ['okigwe','uture','owerri','Enugu']
 
         formItems.map(item => {
-            
+            let lower = item.toLowerCase()
+            let upper = item.toUpperCase()
+            return <option value = {lower}>{upper}</option>
         })
         return (
             <div style={divStyle}>
