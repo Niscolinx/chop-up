@@ -548,7 +548,10 @@
     }
 
     &_delivering{
-        
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
     }
     &_form--control{
         font-size: 1rem;
