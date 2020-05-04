@@ -30,11 +30,11 @@ class Home extends Component {
 
                     </Row>
                         <div className= 'delivering'>
-                            <h3 className='delivering'>Delivering to</h3>
-                            <Form className='hero_form'>
+                            <h3 className='delivering_text'>Delivering to</h3>
+                            <Form className='delivering_form'>
                         <Form.Group>
-                            <Form.Control as="select" size="lg" custom className='hero_form--control'>
-                                <option value="" disabled selected hidden className='hero_form--control-placeholder'>Choose your city</option>
+                            <Form.Control as="select" size="lg" custom className='delivering_form--control'>
+                                <option value="" disabled selected hidden className='delivering_form--control-placeholder'>Choose your city</option>
 
                                 <option value='okigwe'>Okigwe</option>
                                 <option vallue='umuahia'>Umuahia</option>
