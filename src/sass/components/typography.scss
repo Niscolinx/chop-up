@@ -550,6 +550,10 @@
     .delivering {
         display: flex;
         width: 100%;
+
+        &_form{
+            display: flex;
+        }
     
         &_form--control {
             font-size: 1rem;
