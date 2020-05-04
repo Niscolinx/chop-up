@@ -28,9 +28,8 @@ class Home extends Component {
                             <h1 className='hero_heading--span'>delivered within minutes</h1>
                         </Col>
 
-                        <>
-                        </>
                     </Row>
+                        <div className= 'section-delivering'>
                             <h3 className='hero_delivering'>Delivering to</h3>
                             <Form className='hero_form'>
                         <Form.Group>
@@ -55,6 +54,8 @@ class Home extends Component {
 
                     
                     </Form>
+                    </div>
+
                     <>
                     <h1>Restaurant</h1>
                     <h1>Restaurant</h1>
