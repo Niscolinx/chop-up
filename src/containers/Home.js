@@ -34,7 +34,6 @@ class Home extends Component {
                             <h3>Delivering to</h3>
                             <Form className='hero_form'>
                         <Form.Group>
-                            <Form.Label>Custom select Small</Form.Label>
                             <Form.Control as="select" size="lg" custom className='hero_form--control'>
                                 <option value="" disabled selected hidden>Choose City</option>
 
