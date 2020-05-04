@@ -38,7 +38,7 @@ class Home extends Component {
                                 <option value="" disabled selected hidden>Choose City</option>
 
                                 <option value='okigwe'>Okigwe</option>
-                                <option vallue=''>2</option>
+                                <option vallue='umuahia'>Umuahia</option>
                    
                             </Form.Control>
                         </Form.Group>
