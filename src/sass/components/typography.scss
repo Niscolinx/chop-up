@@ -547,23 +547,23 @@
         }
     }
 
-    &_delivering{
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        width: 100%;
-    }
-    &_form--control{
-        font-size: 1rem;
-
-        &-placeholder{
-            font-weight: bold;
-            font-size: 1.5rem;
-            color: red;
-        }
-    }
 }
 
+.delivering{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+&_form--control{
+    font-size: 1rem;
+
+    &-placeholder{
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: red;
+    }
+}
 .button:hover {
     box-shadow: none;
     padding: 1rem 3rem;
