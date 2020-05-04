@@ -58,14 +58,13 @@ class Home extends Component {
                     </Form>
                     </div>
 
-                    <>
+                    {/* <>
                     <h1>Restaurant</h1>
                     <h1>Restaurant</h1>
                     <h1>Groceries</h1>
-                    <h1>Restaurants</h1>
-                    </>
+                    <h1>Restaurants</h1> 
+                    </>*/}
                     </Row>
-
                 </Container>
             </div>
         )
