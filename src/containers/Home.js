@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import Form from 'react-bootstrap/Form'
 import imgUrl from '../assets/images/background_home.jpg'
-import formInput from '../components/Layout/FormInput'
+import FormInput from '../components/Layout/FormInput'
 
 
 class Home extends Component {
@@ -39,16 +39,14 @@ class Home extends Component {
                             <Form.Group>
                                 <Form.Control as="select" size="lg" custom className='delivering_form--control'>
                                     <option value="" disabled selected hidden className='delivering_form--control-placeholder'>Choose your city</option>
-
-                                    {formInput}
+                                    <FormInput city/>
 
                                 </Form.Control>
                             </Form.Group>
                             <Form.Group>
                                 <Form.Control as="select" size="lg" custom className='delivering_form--control'>
                                     <option value="" disabled selected hidden className='delivering_form--control-placeholder'>Select your area</option>
-
-
+                                    <FormInput area/>
 
                                 </Form.Control>
                             </Form.Group>
