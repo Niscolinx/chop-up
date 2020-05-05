@@ -26,14 +26,14 @@ class Home extends Component {
         const selectCity = locations.cities.map((item, i) => {
             let lower = item.toLowerCase()
             let upper = item.charAt(0).toUpperCase() + item.slice(1)
-            return <option value={lower} key={lower+i}>{upper}</option>
+            return <option value={lower} key={item+i}>{upper}</option>
 
         })
-        const selectArea = locations.areas.map(item => {
+        const selectArea = locations.areas.map((item, i) => {
             let lower = item.toLowerCase()
             let upper = item.charAt(0).toUpperCase() + item.slice(1)
             
-            return <option value={lower}>{upper}</option>
+            return <option value={lower} key={item+i}>{upper}</option>
 
         })
 
