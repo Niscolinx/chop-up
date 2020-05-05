@@ -40,14 +40,14 @@ class Home extends Component {
                             <Form.Group>
                                 <Form.Control as="select" size="lg" custom className='delivering_form--control'>
                                     <option value="" disabled selected hidden className='delivering_form--control-placeholder'>Choose your city</option>
-                                    <FormInput city = {}/>
+                                    <FormInput city={locations.areas}/>
 
                                 </Form.Control>
                             </Form.Group>
                             <Form.Group>
                                 <Form.Control as="select" size="lg" custom className='delivering_form--control'>
                                     <option value="" disabled selected hidden className='delivering_form--control-placeholder'>Select your area</option>
-                                    <FormInput area/>
+                                    <FormInput area={locations.areas}/>
 
                                 </Form.Control>
                             </Form.Group>
