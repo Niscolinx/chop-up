@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import Form from 'react-bootstrap/Form'
 import imgUrl from '../assets/images/background_home.jpg'
-import FormInput from '../components/Layout/FormInput'
+import FormInput from '../components/Layout/DeliveringForm/FormInput'
 
 
 class Home extends Component {
