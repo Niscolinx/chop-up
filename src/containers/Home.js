@@ -22,7 +22,7 @@ class Home extends Component {
 
 
 
-        const FormInput = locations.area.map(item => {
+        const FormInput = locations.areas.map(item => {
             let lower = item.toLowerCase()
             let upper = item.charAt(0).toUpperCase() + item.slice(1)
             return <option value={lower}>{upper}</option>
