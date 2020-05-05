@@ -22,7 +22,13 @@ class Home extends Component {
 
 
 
-        const FormInput = locations.areas.map(item => {
+        const selectCity = locations.cities.map(item => {
+            let lower = item.toLowerCase()
+            let upper = item.charAt(0).toUpperCase() + item.slice(1)
+            return <option value={lower}>{upper}</option>
+
+        })
+        const selectArea = locations.areas.map(item => {
             let lower = item.toLowerCase()
             let upper = item.charAt(0).toUpperCase() + item.slice(1)
             return <option value={lower}>{upper}</option>
@@ -49,14 +55,14 @@ class Home extends Component {
                                 <Form.Control as="select" size="lg" custom className='delivering_form--control'>
                                     <option value="" disabled selected hidden className='delivering_form--control-placeholder'>Choose your city</option>
 
-                                    {FormInput}
+                                    {selectCity}
                                 </Form.Control>
                             </Form.Group>
                             <Form.Group>
                                 <Form.Control as="select" size="lg" custom className='delivering_form--control'>
                                     <option value="" disabled selected hidden className='delivering_form--control-placeholder'>Select your area</option>
 
-                                    {FormInput}
+                                    {selectArea}
                                 </Form.Control>
                             </Form.Group>
 
