@@ -49,7 +49,7 @@ class Home extends Component {
                                 <Form.Control as="select" size="lg" custom className='delivering_form--control'>
                                     <option value="" disabled selected hidden className='delivering_form--control-placeholder'>Choose your city</option>
 
-                                    {formInput}
+                                    {FormInput}
                                 </Form.Control>
                             </Form.Group>
                             <Form.Group>
