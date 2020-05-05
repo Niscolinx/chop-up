@@ -1,3 +1,5 @@
 
-let cities = ['okigwe', 'uture', 'Absu', 'Enugu']
-let areas = ['Upgate', 'Owerri-road', 'student affairs', 'School cafe']
+
+export const cities = ['okigwe', 'uture', 'Absu', 'Enugu']
+
+export const areas = ['Upgate', 'Owerri-road', 'student affairs', 'School cafe']
