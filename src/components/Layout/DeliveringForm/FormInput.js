@@ -1,6 +1,7 @@
 import React from 'react'
 
 const formInput = (props) => {
+    console.log(props)
     props.map(item => {
         let lower = item.toLowerCase()
         let upper = item.charAt(0).toUpperCase() + item.slice(1)
