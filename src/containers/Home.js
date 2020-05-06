@@ -72,8 +72,6 @@ class Home extends Component {
                             <h1 className='hero_heading--span'>delivered within minutes</h1>
                         </Col>
 
-                    </Row>
-
                     <div>
                         <button {...valueProps}>{snapshot.displayValue}</button>
                         {snapshot.focus && (
@@ -86,6 +84,8 @@ class Home extends Component {
                             </ul>
                         )}
                     </div>
+                    </Row>
+
 
                     <Row className='delivering'>
                         <h3 className='delivering_text'>Delivering to</h3>
