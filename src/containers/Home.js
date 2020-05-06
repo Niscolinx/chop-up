@@ -148,6 +148,7 @@ class Home extends Component {
     </Dropdown.Menu>
   </Dropdown >,
 );
+    }
 
 
 export default Home
