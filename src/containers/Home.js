@@ -110,19 +110,19 @@ const options = [
 ];
 
 /* Simple example */
-<SelectSearch options={options} defaultValue="sv" name="language" placeholder="Choose your language" />
 
 
-const CustomSelect = ({ options, value, multiple, disabled }) => {
+const Home = ({ options, value, multiple, disabled }) => {
     const [snapshot, valueProps, optionProps] = useSelect({
         options,
         value,
         multiple,
         disabled,
     });
-
+    
     return (
         <div>
+        <SelectSearch options={options} defaultValue="sv" name="language" placeholder="Choose your language" />
             <button {...valueProps}>{snapshot.displayValue}</button>
             {snapshot.focus && (
                 <ul>
@@ -136,3 +136,5 @@ const CustomSelect = ({ options, value, multiple, disabled }) => {
         </div>
     );
 };
+
+export default Home
