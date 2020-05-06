@@ -3,10 +3,6 @@ import { Container, Row, Col } from 'react-bootstrap'
 import Form from 'react-bootstrap/Form'
 import imgUrl from '../assets/images/background_home.jpg'
 import * as locations from '../components/Layout/DeliveringForm/Locations'
-import SelectSearch from 'react-select-search';
-import { useSelect } from 'react-select-search';
-
-
 
 
 class Home extends Component {
@@ -24,28 +20,6 @@ class Home extends Component {
         };
 
 
-        const options = [
-            { name: 'Swedish', value: 'sv' },
-            { name: 'English', value: 'en' },
-            {
-                type: 'group',
-                name: 'Group name',
-                items: [
-                    { name: 'Spanish', value: 'es' },
-                ]
-            },
-        ];
-
-        /* Simple example */
-
-        const CustomSelect = ({ options, value, multiple, disabled }) => {
-            const [snapshot, valueProps, optionProps] = useSelect({
-                options,
-                value,
-                multiple,
-                disabled,
-            });
-        
 
 
         const selectCity = locations.cities.map((item, i) => {
@@ -57,7 +31,7 @@ class Home extends Component {
         const selectArea = locations.areas.map((item, i) => {
             let lower = item.toLowerCase()
             let upper = item.charAt(0).toUpperCase() + item.slice(1)
-
+            
             return <option value={lower} key={item + i} className='delivering_form--locations_item'>{upper}</option>
 
         })
@@ -73,20 +47,7 @@ class Home extends Component {
                             <h1 className='hero_heading--span'>delivered within minutes</h1>
                         </Col>
 
-                        <div>
-                            <button {...valueProps}>{snapshot.displayValue}</button>
-                            {snapshot.focus && (
-                                <ul>
-                                    {snapshot.options.map((option) => (
-                                        <li key={option.value}>
-                                            <button {...optionProps} value={option.value}>{option.name}</button>
-                                        </li>
-                                    ))}
-                                </ul>
-                            )}
-                        </div>
                     </Row>
-
 
                     <Row className='delivering'>
                         <h3 className='delivering_text'>Delivering to</h3>
@@ -105,12 +66,11 @@ class Home extends Component {
                                     {selectArea}
                                 </Form.Control>
 
-
+                                
 
                             </Form.Group>
 
 
-                            <SelectSearch options={options} defaultValue="sv" name="language" placeholder="Choose your language" />
                         </Form>
                     </Row>
 
