@@ -45,7 +45,7 @@ class Home extends Component {
                 multiple,
                 disabled,
             });
-        }
+        
 
 
         const selectCity = locations.cities.map((item, i) => {
