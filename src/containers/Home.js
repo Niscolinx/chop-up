@@ -3,6 +3,8 @@ import { Container, Row, Col } from 'react-bootstrap'
 import Form from 'react-bootstrap/Form'
 import imgUrl from '../assets/images/background_home.jpg'
 import * as locations from '../components/Layout/DeliveringForm/Locations'
+import SelectSearch from 'react-select-search';
+
 
 
 class Home extends Component {
@@ -20,13 +22,25 @@ class Home extends Component {
         };
 
 
+        const options = [
+            { name: 'Swedish', value: 'sv' },
+            { name: 'English', value: 'en' },
+            {
+                type: 'group',
+                name: 'Group name',
+                items: [
+                    { name: 'Spanish', value: 'es' },
+                ]
+            },
+        ];
 
-
+        /* Simple example */
+        
         const selectCity = locations.cities.map((item, i) => {
             let lower = item.toLowerCase()
             let upper = item.charAt(0).toUpperCase() + item.slice(1)
             return <option value={lower} key={item + i} className='delivering_form--locations_item'>{upper}</option>
-
+            
         })
         const selectArea = locations.areas.map((item, i) => {
             let lower = item.toLowerCase()
@@ -71,6 +85,7 @@ class Home extends Component {
                             </Form.Group>
 
 
+            <SelectSearch options={options} defaultValue="sv" name="language" placeholder="Choose your language" />
                         </Form>
                     </Row>
 
