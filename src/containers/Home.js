@@ -4,6 +4,8 @@ import Form from 'react-bootstrap/Form'
 import imgUrl from '../assets/images/background_home.jpg'
 import * as locations from '../components/Layout/DeliveringForm/Locations'
 import SelectSearch from 'react-select-search';
+import { useSelect } from 'react-select-search';
+
 
 
 
@@ -35,6 +37,15 @@ class Home extends Component {
         ];
 
         /* Simple example */
+
+        const CustomSelect = ({ options, value, multiple, disabled }) => {
+            const [snapshot, valueProps, optionProps] = useSelect({
+                options,
+                value,
+                multiple,
+                disabled,
+            });
+
         
         const selectCity = locations.cities.map((item, i) => {
             let lower = item.toLowerCase()
@@ -62,6 +73,19 @@ class Home extends Component {
                         </Col>
 
                     </Row>
+
+                    <div>
+                        <button {...valueProps}>{snapshot.displayValue}</button>
+                        {snapshot.focus && (
+                            <ul>
+                                {snapshot.options.map((option) => (
+                                    <li key={option.value}>
+                                        <button {...optionProps} value={option.value}>{option.name}</button>
+                                    </li>
+                                ))}
+                            </ul>
+                        )}
+                    </div>
 
                     <Row className='delivering'>
                         <h3 className='delivering_text'>Delivering to</h3>
