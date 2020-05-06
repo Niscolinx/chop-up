@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import Form from 'react-bootstrap/Form'
 import imgUrl from '../assets/images/background_home.jpg'
-//import FormInput from '../components/Layout/DeliveringForm/FormInput'
 import * as locations from '../components/Layout/DeliveringForm/Locations'
 
 
@@ -26,14 +25,14 @@ class Home extends Component {
         const selectCity = locations.cities.map((item, i) => {
             let lower = item.toLowerCase()
             let upper = item.charAt(0).toUpperCase() + item.slice(1)
-            return <option value={lower} key={item+i}>{upper}</option>
+            return <option value={lower} key={item+i} className='locations_items'>{upper}</option>
 
         })
         const selectArea = locations.areas.map((item, i) => {
             let lower = item.toLowerCase()
             let upper = item.charAt(0).toUpperCase() + item.slice(1)
             
-            return <option value={lower} key={item+i}>{upper}</option>
+            return <option value={lower} key={item+i} className='loc'>{upper}</option>
 
         })
 
