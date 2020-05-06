@@ -66,12 +66,12 @@ class Home extends Component {
                                     {selectArea}
                                 </Form.Control>
 
-                                <select class="selectpicker" multiple data-selected-text-format="count > 3">
+                                <select class="selectpicker" multiple title="Choose one of the following...">
                                     <option>Mustard</option>
                                     <option>Ketchup</option>
                                     <option>Relish</option>
-                                    <option>Onions</option>
                                 </select>
+
 
                             </Form.Group>
 
