@@ -45,18 +45,19 @@ class Home extends Component {
                 multiple,
                 disabled,
             });
+        }
 
-        
+
         const selectCity = locations.cities.map((item, i) => {
             let lower = item.toLowerCase()
             let upper = item.charAt(0).toUpperCase() + item.slice(1)
             return <option value={lower} key={item + i} className='delivering_form--locations_item'>{upper}</option>
-            
+
         })
         const selectArea = locations.areas.map((item, i) => {
             let lower = item.toLowerCase()
             let upper = item.charAt(0).toUpperCase() + item.slice(1)
-            
+
             return <option value={lower} key={item + i} className='delivering_form--locations_item'>{upper}</option>
 
         })
@@ -72,18 +73,18 @@ class Home extends Component {
                             <h1 className='hero_heading--span'>delivered within minutes</h1>
                         </Col>
 
-                    <div>
-                        <button {...valueProps}>{snapshot.displayValue}</button>
-                        {snapshot.focus && (
-                            <ul>
-                                {snapshot.options.map((option) => (
-                                    <li key={option.value}>
-                                        <button {...optionProps} value={option.value}>{option.name}</button>
-                                    </li>
-                                ))}
-                            </ul>
-                        )}
-                    </div>
+                        <div>
+                            <button {...valueProps}>{snapshot.displayValue}</button>
+                            {snapshot.focus && (
+                                <ul>
+                                    {snapshot.options.map((option) => (
+                                        <li key={option.value}>
+                                            <button {...optionProps} value={option.value}>{option.name}</button>
+                                        </li>
+                                    ))}
+                                </ul>
+                            )}
+                        </div>
                     </Row>
 
 
@@ -104,12 +105,12 @@ class Home extends Component {
                                     {selectArea}
                                 </Form.Control>
 
-                                
+
 
                             </Form.Group>
 
 
-            <SelectSearch options={options} defaultValue="sv" name="language" placeholder="Choose your language" />
+                            <SelectSearch options={options} defaultValue="sv" name="language" placeholder="Choose your language" />
                         </Form>
                     </Row>
 
