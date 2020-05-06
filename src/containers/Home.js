@@ -120,6 +120,7 @@ class Home extends Component {
 
         // forwardRef again here!
         // Dropdown needs access to the DOM of the Menu to measure it
+        return (
         const CustomMenu = React.forwardRef(
             ({ children, style, className, 'aria-labelledby': labeledBy }, ref) => {
                 const [value, setValue] = useState('');
@@ -145,12 +146,12 @@ class Home extends Component {
                             )}
                         </ul>
                     </div>
-                );
-            },
-        }
-        );
+                )
+            }
+        )
+        )
     }
-    }
+}
 
 
 
