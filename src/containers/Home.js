@@ -60,21 +60,15 @@ class Home extends Component {
                                 </Form.Control>
                             </Form.Group>
                             <Form.Group>
-                                <Form.Control as="select" size="lg" custom className='delivering_form--control' title="Choose one of the following...">
-                                    {/* <option value="" disabled selected hidden className='delivering_form--control-placeholder'>Select your area</option> */}
+                                <Form.Control as="select" size="lg" custom className='delivering_form--control'>
+                                    <option value="" disabled selected hidden className='delivering_form--control-placeholder'>Select your area</option>
 
                                     {selectArea}
                                 </Form.Control>
 
-                                <select class="selectpicker" multiple title="Choose one of the following...">
-                                    <option>Mustard</option>
-                                    <option>Ketchup</option>
-                                    <option>Relish</option>
-                                </select>
 
 
                             </Form.Group>
-
 
                         </Form>
                     </Row>
