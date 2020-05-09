@@ -40,7 +40,8 @@ class App extends Component {
 
     let AuthGuard = (
       <Switch>
-        <Route path='/' exact component={select} />
+        <Route path='/' exact component={Home} />
+        <Route path='/select' component={select}
         <Route path='/Auth/login' component={asyncAuth} />
         <Route path='/Auth/register' component={asyncAuth} />
         <Redirect to='/'/>
