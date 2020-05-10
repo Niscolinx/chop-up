@@ -99,7 +99,7 @@ class Home extends Component {
                     </Row>
                     <Row>
 
-                        <h3 className='delivering_title'>Delivering to</h3>
+                        <h5 className='delivering_title'>Delivering to</h5>
                     </Row>
                     <Row>
 
