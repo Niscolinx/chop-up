@@ -578,6 +578,14 @@
 
 .simple-steps{
 
+    &_heading{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        align-content: center;
+    }
+
       &_title {
           font-weight: 700;
       }
