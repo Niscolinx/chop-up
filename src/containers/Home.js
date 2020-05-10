@@ -193,8 +193,13 @@ class Home extends Component {
                     </Container>
                 </div>
 
-                <div className=''>
+                <div className='newsletter'>
 
+                <Container>
+                    <div>
+                        <h1>20% Off on your first order</h1>
+                    </div>
+                </Container>
                 </div>
             </div>
         )
