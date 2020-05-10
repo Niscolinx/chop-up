@@ -136,7 +136,7 @@ class Home extends Component {
 
                             <Row>
 
-                                <h5 className='services-heading'>Select Service</h5>
+                                <h5 className='services_heading'>Select Service</h5>
                             </Row>
                             <Row>
 
