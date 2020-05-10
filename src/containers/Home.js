@@ -69,12 +69,15 @@ class Home extends Component {
                     <Row className='delivering'>
                         <h3 className='delivering_text'>Delivering to</h3>
 
-                        <CreatableSelect
-                            isClearable
-                            onChange={this.handleChange}
-                            onInputChange={this.handleInputChange}
-                            options={colourOptions}
-                        />
+                        <Col>
+                            <CreatableSelect
+                                isClearable
+                                onChange={this.handleChange}
+                                onInputChange={this.handleInputChange}
+                                options={colourOptions}
+                            />
+                        </Col>
+                       
                       
                         {/* <Form className='delivering_form'>
                             <Form.Group>
