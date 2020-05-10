@@ -4,6 +4,9 @@ import Form from 'react-bootstrap/Form'
 import imgUrl from '../assets/images/background_home.jpg'
 import * as locations from '../components/Layout/DeliveringForm/Locations'
 
+import CreatableSelect from 'react-select/creatable';
+import { colourOptions } from '../docs/data';
+
 
 class Home extends Component {
 
