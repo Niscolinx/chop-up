@@ -173,6 +173,23 @@ class Home extends Component {
                     <Row>
                         <h1>Simple Steps</h1>
                     </Row>
+
+                        <Row>
+
+                            <Col>
+                                <h5 className='services-select_title'>Pharmacies</h5>
+                                <p className='services-select_description'>Food you love, from restaurants near you</p>
+                            </Col>
+                            <Col>
+                                <h5 className='services-select_title'>Shopping</h5>
+                                <p className='services-select_description'>Food you love, from restaurants near you</p>
+                            </Col>
+                            <Col>
+                                <h5 className='services-select_title'>Shopping</h5>
+                                <p className='services-select_description'>Food you love, from restaurants near you</p>
+                            </Col>
+
+                        </Row>
                 </Container>
                 </div>
             </div>
