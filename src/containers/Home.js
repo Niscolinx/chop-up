@@ -65,10 +65,7 @@ class Home extends Component {
                 ...styles,
                 cursor: 'pointer',
             }),
-            // control: (_, { selectProps: { width }}) => ({
-            //     width: width
-            // }),
-
+         
             singleValue: (provided, state) => {
                 const opacity = state.isDisabled ? 0.5 : 1;
                 const transition = 'opacity 300ms';
@@ -77,6 +74,8 @@ class Home extends Component {
                 return { ...provided, opacity, transition, cursor };
             }
         }
+
+        
         const selectArea = locations.areas.map((item, i) => {
             let lower = item.toLowerCase()
             let upper = item.charAt(0).toUpperCase() + item.slice(1)
