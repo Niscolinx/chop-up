@@ -51,7 +51,7 @@ class Home extends Component {
 
                     <Row className='delivering'>
                         <h3 className='delivering_text'>Delivering to</h3>
-                        <Form className='delivering_form'>
+                        {/* <Form className='delivering_form'>
                             <Form.Group>
                                 <Form.Control as="select" size="lg" custom className='delivering_form--control'>
                                     <option value="" disabled selected hidden className='delivering_form--control-placeholder'>Choose your city</option>
@@ -71,7 +71,7 @@ class Home extends Component {
                             </Form.Group>
 
 
-                        </Form>
+                        </Form> */}
                     </Row>
 
                     {/* <>
