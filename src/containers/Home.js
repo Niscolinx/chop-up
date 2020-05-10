@@ -136,29 +136,29 @@ class Home extends Component {
 
                             <Row>
 
-                                <h5 className='services-select'>Select Service</h5>
+                                <h5 className='services-heading'>Select Service</h5>
                             </Row>
                             <Row>
 
                                 <Col>
-                                    <h5 className='services-select_title'>Restaurants</h5>
-                                    <p className='services-select_description'>Food you love, from restaurants near you</p>
+                                    <h5 className='services_title'>Restaurants</h5>
+                                    <p className='services_description'>Food you love, from restaurants near you</p>
                                 </Col>
                                 <Col>
-                                    <h5 className='services-select_title'>SuperMarkets</h5>
-                                    <p className='services-select_description'>Food you love, from restaurants near you</p>
+                                    <h5 className='services_title'>SuperMarkets</h5>
+                                    <p className='services_description'>Food you love, from restaurants near you</p>
                                 </Col>
 
                             </Row>
                             <Row>
 
                                 <Col>
-                                    <h5 className='services-select_title'>Pharmacies</h5>
-                                    <p className='services-select_description'>Food you love, from restaurants near you</p>
+                                    <h5 className='services_title'>Pharmacies</h5>
+                                    <p className='services_description'>Food you love, from restaurants near you</p>
                                 </Col>
                                 <Col>
-                                    <h5 className='services-select_title'>Shopping</h5>
-                                    <p className='services-select_description'>Food you love, from restaurants near you</p>
+                                    <h5 className='services_title'>Shopping</h5>
+                                    <p className='services_description'>Food you love, from restaurants near you</p>
                                 </Col>
 
                             </Row>
@@ -171,7 +171,7 @@ class Home extends Component {
                 <div className='simple-steps'>
                     <Container>
                         <Row>
-                            <h1>Simple Steps</h1>
+                            <h2 className='simple-steps_heading'>Simple Steps</h2>
                         </Row>
 
                         <Row>
