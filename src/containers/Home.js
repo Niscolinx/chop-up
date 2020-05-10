@@ -51,7 +51,7 @@ class Home extends Component {
                 ...provided,
                 //width: state.selectProps.width,
                 borderBottom: '1px dotted pink',
-               color: state.selectProps.menuColor,
+                color: state.selectProps.menuColor,
                 padding: 10,
 
             }),
@@ -65,8 +65,8 @@ class Home extends Component {
                 ...styles,
                 cursor: 'pointer',
             }),
-         
-            
+
+
             singleValue: (provided, state) => {
                 const opacity = state.isDisabled ? 0.5 : 1;
                 const transition = 'opacity 300ms';
@@ -91,81 +91,81 @@ class Home extends Component {
             <div style={divStyle}>
                 <Container fliuid className='hero'>
                     <div className='delivering'>
-                        
+
+                        <Row className="justify-content-md-center">
+
+                            <Col md="auto" className='hero_heading'>
+                                <h1 className='hero_heading--main'>Everything you need,</h1>
+                                <h1 className='hero_heading--span'>delivered within minutes</h1>
+                            </Col>
+
+                        </Row>
+                        <Row>
+
+                            <h5 className='delivering_title'>Delivering to</h5>
+                        </Row>
+                        <Row>
+
+                            <Col>
+                                <CreatableSelect
+                                    styles={customStyles}
+                                    placeholder={placeholder}
+                                    isClearable
+                                    onChange={this.handleChange}
+                                    onInputChange={this.handleInputChange}
+                                    options={colourOptions}
+                                />
+                            </Col>
+                            <Col>
+                                <CreatableSelect
+                                    isMulti
+                                    isClearable
+                                    onChange={this.handleChange}
+                                    onInputChange={this.handleInputChange}
+                                    options={colourOptions}
+                                />
+                            </Col>
+
+
+                        </Row>
                     </div>
-                    <Row className="justify-content-md-center">
 
-                        <Col md="auto" className='hero_heading'>
-                            <h1 className='hero_heading--main'>Everything you need,</h1>
-                            <h1 className='hero_heading--span'>delivered within minutes</h1>
-                        </Col>
+                    <div className='services'>
 
-                    </Row>
-                    <Row>
-
-                        <h5 className='delivering_title'>Delivering to</h5>
-                    </Row>
-                    <Row>
-
-                        <Col>
-                            <CreatableSelect
-                                styles={customStyles}
-                                placeholder={placeholder}
-                                isClearable
-                                onChange={this.handleChange}
-                                onInputChange={this.handleInputChange}
-                                options={colourOptions}
-                            />
-                        </Col>
-                        <Col>
-                            <CreatableSelect
-                                isMulti
-                                isClearable
-                                onChange={this.handleChange}
-                                onInputChange={this.handleInputChange}
-                                options={colourOptions}
-                            />
-                        </Col>
-
-
-                    </Row>
-
-                <div className='services'>
-                    
                         <Row>
 
                             <h5 className='services_title'>Select Service</h5>
                         </Row>
-                    <Row>
+                        <Row>
 
-                        <Col>
-                            Restaurants
+                            <Col>
+                                Restaurants
 
-                            Food you love, from restaurants near you
+                                Food you love, from restaurants near you
                         </Col>
-                        <Col>
-                            Restaurants
+                            <Col>
+                                Restaurants
 
-                            Food you love, from restaurants near you
+                                Food you love, from restaurants near you
                         </Col>
-                        <Col>
-                            Restaurants
+                            <Col>
+                                Restaurants
 
-                            Food you love, from restaurants near you
+                                Food you love, from restaurants near you
                         </Col>
-                        <Col>
-                            Restaurants
+                            <Col>
+                                Restaurants
 
-                            Food you love, from restaurants near you
+                                Food you love, from restaurants near you
                         </Col>
-                        <Col>
-                            Restaurants
+                            <Col>
+                                Restaurants
 
-                            Food you love, from restaurants near you
+                                Food you love, from restaurants near you
                         </Col>
-                    </Row>
+                        </Row>
 
-                </div>
+                    </div>
                 </Container>
             </div>
         )
