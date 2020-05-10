@@ -208,16 +208,22 @@ class Home extends Component {
 
                         <Form>
                             <Form.Row>
+
+                                <Form.Group as={Col} controlId="formGridPassword">
+                                    <Form.Label>Password</Form.Label>
+                                    <Form.Control as="select">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </Form.Control>
+                                </Form.Group>
+
                                 <Form.Group as={Col} controlId="formGridEmail">
                                     <Form.Label>Email</Form.Label>
                                     <Form.Control type="email" placeholder="Enter email" />
                                 </Form.Group>
-
-                                <Form.Group as={Col} controlId="formGridPassword">
-                                    <Form.Label>Password</Form.Label>
-                                    <Form.Control type="password" placeholder="Password" />
-                                </Form.Group>
-
                                 <Button type="submit" className='newsletter_form-button'>
                                     <p>subscribe to Newsletter</p>
                                 </Button>
