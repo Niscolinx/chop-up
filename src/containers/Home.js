@@ -127,6 +127,39 @@ class Home extends Component {
 
                     </Row>
 
+                    <Row>
+                        <Row>
+
+                            <h5 className='delivering_title'>Select Service</h5>
+                        </Row>
+
+                        <Col>
+                            Restaurants
+
+                            Food you love, from restaurants near you
+                        </Col>
+                        <Col>
+                            Restaurants
+
+                            Food you love, from restaurants near you
+                        </Col>
+                        <Col>
+                            Restaurants
+
+                            Food you love, from restaurants near you
+                        </Col>
+                        <Col>
+                            Restaurants
+
+                            Food you love, from restaurants near you
+                        </Col>
+                        <Col>
+                            Restaurants
+
+                            Food you love, from restaurants near you
+                        </Col>
+                    </Row>
+
                 </Container>
             </div>
         )
