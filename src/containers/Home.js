@@ -224,12 +224,12 @@ class Home extends Component {
                                     <Form.Label>Email</Form.Label>
                                     <Form.Control type="email" placeholder="Enter email" />
                                 </Form.Group>
-                                <Button type="submit">
+                                <Button type="submit" className='newsletter_submitBtn'>
                                     subscribe to Newsletter
                                 </Button>
 
                             </Form.Row>
-                            <Form.Group controlId="formBasicCheckbox">
+                            <Form.Group controlId="formBasicCheckbox" className='newsletter_description'>
                                 <Form.Check type="checkbox" label="I have read and accepted the terms and conditions and privacy policy" />
                             </Form.Group>
                         </Form>
