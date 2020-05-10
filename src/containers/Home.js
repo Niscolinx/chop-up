@@ -196,7 +196,7 @@ class Home extends Component {
                 <div className='newsletter'>
 
                 <Container>
-                    <div>
+                    <div className='newsletter_heading'>
                         <h1>20% Off on your first order</h1>
                         <h1>by subscribing to our newsletter!</h1>
                     </div>
