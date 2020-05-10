@@ -52,7 +52,7 @@ class Home extends Component {
                 //width: state.selectProps.width,
                 borderBottom: '1px dotted pink',
                 color: state.selectProps.menuColor,
-                padding: 20,
+                padding: 5,
 
             }),
 
