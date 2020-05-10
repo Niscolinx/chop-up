@@ -178,15 +178,15 @@ class Home extends Component {
 
                             <Col>
                                 <h5 className='services-select_title'>Set delivering location</h5>
-                                <p className='services-select_description'>Food you love, from restaurants near you</p>
+                                <p className='services-select_description'>Browse shops that deliver near you</p>
                             </Col>
                             <Col>
                                 <h5 className='services-select_title'>Choose the product</h5>
-                                <p className='services-select_description'>Food you love, from restaurants near you</p>
+                                <p className='services-select_description'>Browse shops that deliver near you</p>
                             </Col>
                             <Col>
-                                <h5 className='services-select_title'>Shopping</h5>
-                                <p className='services-select_description'>Food you love, from restaurants near you</p>
+                                <h5 className='services-select_title'>Receive it at your doorstep</h5>
+                                <p className='services-select_description'>Browse shops that deliver near you</p>
                             </Col>
 
                         </Row>
