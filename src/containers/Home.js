@@ -84,6 +84,7 @@ class Home extends Component {
                         </Col>
                         <Col>
                             <CreatableSelect
+                                isMulti
                                 isClearable
                                 onChange={this.handleChange}
                                 onInputChange={this.handleInputChange}
