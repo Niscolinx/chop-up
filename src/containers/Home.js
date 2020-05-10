@@ -59,7 +59,7 @@ class Home extends Component {
             option: (styles, state) => ({
                 ...styles,
                 cursor: 'pointer',
-                height: 20,
+                padding: '2rem'
             }),
             control: (styles) => ({
                 ...styles,
@@ -105,7 +105,6 @@ class Home extends Component {
                         <Col>
                             <CreatableSelect
                                 styles={customStyles}
-
                                 isClearable
                                 onChange={this.handleChange}
                                 onInputChange={this.handleInputChange}
