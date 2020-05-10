@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container, Row, Col, Button } from 'react-bootstrap'
 import Form from 'react-bootstrap/Form'
 import imgUrl from '../assets/images/bg_home.jpg'
 import * as locations from '../components/Layout/DeliveringForm/Locations'
@@ -217,9 +217,15 @@ class Home extends Component {
                                     <Form.Label>Password</Form.Label>
                                     <Form.Control type="password" placeholder="Password" />
                                 </Form.Group>
+                                
                                 <Form.Group as={Col} controlId="formGridPassword">
                                     <p className='newsletter_form-button'>subscribe to Newsletter</p>
                                 </Form.Group>
+
+                                <Button variant="primary" type="submit">
+                                    Submit
+  </Button>
+                                
                             </Form.Row>
                             </Form>
                     </Container>
