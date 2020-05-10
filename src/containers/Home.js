@@ -56,8 +56,8 @@ class Home extends Component {
 
         return (
             <div style={divStyle}>
-                <Container fliuid className='hero'>
-                    <Row justify-content-md-center>
+                <Container fliuid justify-content-md-center className='hero'>
+                    <Row >
 
                         <Col className='hero_heading'>
                             <h1 className='hero_heading--main'>Everything you need,</h1>
@@ -68,7 +68,7 @@ class Home extends Component {
 
                     {/* <Row className='delivering'> */}
                         {/* <h3 className='delivering_text'>Delivering to</h3> */}
-                    <Row>
+                    <Row-8>
                         <h3>Delivering to</h3>
 
                         <Col>
@@ -110,7 +110,7 @@ class Home extends Component {
 
 
                         </Form> */}
-                    </Row>
+                    </Row-8>
                    
 
                     {/* <>
