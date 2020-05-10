@@ -88,90 +88,94 @@ class Home extends Component {
 
 
         return (
-            <div style={divStyle}>
-                <Container fliuid className='hero'>
-                    <div className='delivering'>
+            <div>
 
-                        <Row className="justify-content-md-center">
+                <div style={divStyle}>
+                    <Container fliuid className='hero'>
+                        <div className='delivering'>
 
-                            <Col md="auto" className='hero_heading'>
-                                <h1 className='hero_heading--main'>Everything you need,</h1>
-                                <h1 className='hero_heading--span'>delivered within minutes</h1>
-                            </Col>
+                            <Row className="justify-content-md-center">
 
-                        </Row>
-                        <Row>
+                                <Col md="auto" className='hero_heading'>
+                                    <h1 className='hero_heading--main'>Everything you need,</h1>
+                                    <h1 className='hero_heading--span'>delivered within minutes</h1>
+                                </Col>
 
-                            <h5 className='delivering_title'>Delivering to</h5>
-                        </Row>
-                        <Row>
+                            </Row>
+                            <Row>
 
-                            <Col>
-                                <CreatableSelect
-                                    styles={customStyles}
-                                    placeholder={placeholder}
-                                    isClearable
-                                    onChange={this.handleChange}
-                                    onInputChange={this.handleInputChange}
-                                    options={colourOptions}
-                                />
-                            </Col>
-                            <Col>
-                                <CreatableSelect
-                                    isMulti
-                                    isClearable
-                                    onChange={this.handleChange}
-                                    onInputChange={this.handleInputChange}
-                                    options={colourOptions}
-                                />
-                            </Col>
+                                <h5 className='delivering_title'>Delivering to</h5>
+                            </Row>
+                            <Row>
+
+                                <Col>
+                                    <CreatableSelect
+                                        styles={customStyles}
+                                        placeholder={placeholder}
+                                        isClearable
+                                        onChange={this.handleChange}
+                                        onInputChange={this.handleInputChange}
+                                        options={colourOptions}
+                                    />
+                                </Col>
+                                <Col>
+                                    <CreatableSelect
+                                        isMulti
+                                        isClearable
+                                        onChange={this.handleChange}
+                                        onInputChange={this.handleInputChange}
+                                        options={colourOptions}
+                                    />
+                                </Col>
 
 
-                        </Row>
-                    </div>
+                            </Row>
+                        </div>
 
-                    <div className='services'>
+                        <div className='services'>
 
-                        <Row>
+                            <Row>
 
-                            <h5 className='services-select'>Select Service</h5>
-                        </Row>
-                        <Row>
+                                <h5 className='services-select'>Select Service</h5>
+                            </Row>
+                            <Row>
 
-                            <Col>
-                                <h5 className='services-select_title'>Restaurants</h5>
-                                <p className='services-select_description'>Food you love, from restaurants near you</p>
-                            </Col>
-                            <Col>
-                                <h5 className='services-select_title'>SuperMarkets</h5>
-                                <p className='services-select_description'>Food you love, from restaurants near you</p>
-                            </Col>
-                            
-                        </Row>
-                        <Row>
+                                <Col>
+                                    <h5 className='services-select_title'>Restaurants</h5>
+                                    <p className='services-select_description'>Food you love, from restaurants near you</p>
+                                </Col>
+                                <Col>
+                                    <h5 className='services-select_title'>SuperMarkets</h5>
+                                    <p className='services-select_description'>Food you love, from restaurants near you</p>
+                                </Col>
 
-                            <Col>
-                                <h5 className='services-select_title'>Pharmacies</h5>
-                                <p className='services-select_description'>Food you love, from restaurants near you</p>
-                            </Col>
-                            <Col>
-                                <h5 className='services-select_title'>Shopping</h5>
-                                <p className='services-select_description'>Food you love, from restaurants near you</p>
-                            </Col>
-                            
-                        </Row>
-                       
+                            </Row>
+                            <Row>
 
-                    </div>
+                                <Col>
+                                    <h5 className='services-select_title'>Pharmacies</h5>
+                                    <p className='services-select_description'>Food you love, from restaurants near you</p>
+                                </Col>
+                                <Col>
+                                    <h5 className='services-select_title'>Shopping</h5>
+                                    <p className='services-select_description'>Food you love, from restaurants near you</p>
+                                </Col>
+
+                            </Row>
+
+
+                        </div>
+                    </Container>
+                </div>
+
+                <div>
+                <Container>
+                    <Row>
+                        <h1>Simple Steps</h1>
+                    </Row>
                 </Container>
+                </div>
             </div>
-
-<div>
-    
-</div>
-            <Container>
-                <Row></Row>
-            </Container>
         )
     }
 }
