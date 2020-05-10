@@ -66,7 +66,7 @@ class Home extends Component {
             const cursor = 'pointer'
 
             return { ...provided, opacity, transition, cursor};
-        }
+            }
         }
         const selectArea = locations.areas.map((item, i) => {
             let lower = item.toLowerCase()
