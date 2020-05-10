@@ -549,23 +549,7 @@
         flex-direction: column;
         width: 80%;
 
-        &_form {
-            display: flex;
-            justify-content: space-between;
-
-
-            &--control {
-                font-size: 1rem;
-                width: 25rem;
-                height: 3.7rem;
-                cursor: pointer;
-                
-              &:first-child{
-                  font-weight: 700;
-              }
-            }
-
-        }
+        &_
     }
 }
 
