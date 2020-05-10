@@ -5,7 +5,7 @@ import imgUrl from '../assets/images/background_home.jpg'
 import * as locations from '../components/Layout/DeliveringForm/Locations'
 
 import CreatableSelect from 'react-select/creatable';
-import { colourOptions } from '../docs/data';
+import { colourOptions } from '../doc/data';
 
 
 class Home extends Component {
@@ -68,6 +68,13 @@ class Home extends Component {
 
                     <Row className='delivering'>
                         <h3 className='delivering_text'>Delivering to</h3>
+
+                        <CreatableSelect
+                            isClearable
+                            onChange={this.handleChange}
+                            onInputChange={this.handleInputChange}
+                            options={colourOptions}
+                        />
                         {/* <Form className='delivering_form'>
                             <Form.Group>
                                 <Form.Control as="select" size="lg" custom className='delivering_form--control'>
