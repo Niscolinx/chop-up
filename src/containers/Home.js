@@ -142,26 +142,6 @@ class Home extends Component {
                                 <h5>Restaurants</h5>
                                 <p>Food you love, from restaurants near you</p>
                         </Col>
-                            <Col>
-                                Restaurants
-
-                                Food you love, from restaurants near you
-                        </Col>
-                            <Col>
-                                Restaurants
-
-                                Food you love, from restaurants near you
-                        </Col>
-                            <Col>
-                                Restaurants
-
-                                Food you love, from restaurants near you
-                        </Col>
-                            <Col>
-                                Restaurants
-
-                                Food you love, from restaurants near you
-                        </Col>
                         </Row>
 
                     </div>
