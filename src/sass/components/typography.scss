@@ -606,7 +606,14 @@
 .newsletter{
 
     background-color: $primary-color;
-    color: $secondary-color
+    color: $secondary-color;
+
+    &_heading{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
 }
 
 
