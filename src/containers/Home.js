@@ -37,7 +37,7 @@ class Home extends Component {
         };
 
 
-
+        const image = 'url(' + imgUrl + ')'
 
 
         const selectCity = locations.cities.map((item, i) => {
@@ -223,8 +223,8 @@ class Home extends Component {
                                     <Form.Control type="email" placeholder="Enter email" />
                                 </Form.Group>
                                 <Form.Group as={Col} controlId="formGridEmail">
-                                <Button type="submit" className='newsletter_form-submitBtn'>
-                                    subscribe to Newsletter
+                                    <Button type="submit" className='newsletter_form-submitBtn'>
+                                        subscribe to Newsletter
                                 </Button>
                                 </Form.Group>
 
@@ -241,25 +241,11 @@ class Home extends Component {
                     <Container>
                         <CardGroup>
                             <Card>
-                                <Card.Img variant="top" src="../assets/images/PoundedYam.jpg" />
+                                <Card.Img variant="top" src={require('../assets/images/PoundedYam.jpg')} />
                                 <Card.Body>
-                                    <Card.Title>Card title</Card.Title>
+                                    <Card.Title>Smart Bite - Upgate</Card.Title>
                                     <Card.Text>
-                                        This is a wider card with supporting text below as a natural lead-in to
-                                        additional content. This content is a little bit longer.
-      </Card.Text>
-                                </Card.Body>
-                                <Card.Footer>
-                                    <small className="text-muted">Last updated 3 mins ago</small>
-                                </Card.Footer>
-                            </Card>
-                            <Card>
-                                <Card.Img variant="top" src="../assets/images/jellofRice.jpg" />
-                                <Card.Body>
-                                    <Card.Title>Card title</Card.Title>
-                                    <Card.Text>
-                                        This card has supporting text below as a natural lead-in to additional
-        content.{' '}
+                                        Min Order N0. Delivering fee N200
                                     </Card.Text>
                                 </Card.Body>
                                 <Card.Footer>
@@ -267,19 +253,31 @@ class Home extends Component {
                                 </Card.Footer>
                             </Card>
                             <Card>
-                                <Card.Img variant="top" src="../assets/images/PoundedYam.jpg" />
+                                <Card.Img variant="top" src={require('../assets/images/PoundedYam.jpg')} />
                                 <Card.Body>
-                                    <Card.Title>Card title</Card.Title>
+                                    <Card.Title>Smart Bite - Upgate</Card.Title>
                                     <Card.Text>
-                                        This is a wider card with supporting text below as a natural lead-in to
-                                        additional content. This card has even longer content than the first to
-                                        show that equal height action.
-      </Card.Text>
+                                        Min Order N0. Delivering fee N200
+                                    </Card.Text>
                                 </Card.Body>
                                 <Card.Footer>
                                     <small className="text-muted">Last updated 3 mins ago</small>
                                 </Card.Footer>
                             </Card>
+                            <Card>
+                                <Card.Img variant="top" src={require('../assets/images/PoundedYam.jpg')} />
+                                <Card.Body>
+                                    <Card.Title>Smart Bite - Upgate</Card.Title>
+                                    <Card.Text>
+                                        Min Order N0. Delivering fee N200
+                                    </Card.Text>
+                                </Card.Body>
+                                <Card.Footer>
+                                    <small className="text-muted">Last updated 3 mins ago</small>
+                                </Card.Footer>
+                            </Card>
+
+
                         </CardGroup>
                     </Container>
 
