@@ -168,7 +168,7 @@ class Home extends Component {
                     </Container>
                 </div>
 
-                <div>
+                <div className='simple-steps'>
                     <Container>
                         <Row>
                             <h1>Simple Steps</h1>
@@ -177,16 +177,16 @@ class Home extends Component {
                         <Row>
 
                             <Col>
-                                <h5 className='services-select_title'>Set delivering location</h5>
-                                <p className='services-select_description'>Browse shops that deliver near you</p>
+                                <h5 className='simple-steps_title'>Set delivering location</h5>
+                                <p className='simple-steps_description'>Browse shops that deliver near you</p>
                             </Col>
                             <Col>
-                                <h5 className='services-select_title'>Choose the product</h5>
-                                <p className='services-select_description'>Browse shops that deliver near you</p>
+                                <h5 className='simple-steps_title'>Choose the product</h5>
+                                <p className='simple-steps_description'>Browse shops that deliver near you</p>
                             </Col>
                             <Col>
-                                <h5 className='services-select_title'>Receive it at your doorstep</h5>
-                                <p className='services-select_description'>Browse shops that deliver near you</p>
+                                <h5 className='simple-steps_title'>Receive it at your doorstep</h5>
+                                <p className='simple-steps_description'>Browse shops that deliver near you</p>
                             </Col>
 
                         </Row>
