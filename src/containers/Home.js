@@ -218,7 +218,7 @@ class Home extends Component {
                                     <Form.Control type="password" placeholder="Password" />
                                 </Form.Group>
                                 <Form.Group as={Col} controlId="formGridPassword">
-                                    <p>subscribe to Newsletter</p>
+                                    <p className='newsletter_form-button'>subscribe to Newsletter</p>
                                 </Form.Group>
                             </Form.Row>
                             </Form>
