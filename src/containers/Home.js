@@ -72,7 +72,7 @@ class Home extends Component {
     </Col>
                     </Row>
                 </Container>
-                <Container fliuid justify-content-md-center className='hero'>
+                <Container fliuid className='hero'>
                     <Row className="justify-content-md-center">
 
                         <Col md="auto" className='hero_heading'>
