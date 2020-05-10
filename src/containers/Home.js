@@ -65,9 +65,6 @@ class Home extends Component {
                         </Col>
 
                     </Row>
-
-                    {/* <Row className='delivering'> */}
-                    {/* <h3 className='delivering_text'>Delivering to</h3> */}
                     <Row>
 
                         <h3>Delivering to</h3>
