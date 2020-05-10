@@ -5,7 +5,7 @@ const navigation = (props) => (
     
     <ul className='navigationItems'>
 
-        <NavigationItem link="/" exact>Burger Builder</NavigationItem>
+        <NavigationItem link="/" exact>Home</NavigationItem>
         <NavigationItem link="/Orders">{props.auth ? 'Orders' : null}</NavigationItem>
         <NavigationItem
         auth = {props.auth}
