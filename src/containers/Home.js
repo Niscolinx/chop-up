@@ -47,25 +47,33 @@ class Home extends Component {
 
         })
         const customStyles = {
-        menu: (provided, state) => ({
-            ...provided,
-            //width: state.selectProps.width,
-            borderBottom: '1px dotted pink',
-            color: state.selectProps.menuColor,
-            padding: 20,
-        
-        }),
+            menu: (provided, state) => ({
+                ...provided,
+                //width: state.selectProps.width,
+                borderBottom: '1px dotted pink',
+                color: state.selectProps.menuColor,
+                padding: 20,
 
-        // control: (_, { selectProps: { width }}) => ({
-        //     width: width
-        // }),
+            }),
 
-        singleValue: (provided, state) => {
-            const opacity = state.isDisabled ? 0.5 : 1;
-            const transition = 'opacity 300ms';
-            const cursor = 'pointer'
+            option: (styles, state) => ({
+                ...styles,
+                cursor: 'pointer',
+            }),
+            control: (styles) => ({
+                ...styles,
+                cursor: 'pointer',
+            }),
+            // control: (_, { selectProps: { width }}) => ({
+            //     width: width
+            // }),
 
-            return { ...provided, opacity, transition, cursor};
+            singleValue: (provided, state) => {
+                const opacity = state.isDisabled ? 0.5 : 1;
+                const transition = 'opacity 300ms';
+                const cursor = 'pointer'
+
+                return { ...provided, opacity, transition, cursor };
             }
         }
         const selectArea = locations.areas.map((item, i) => {
@@ -96,7 +104,7 @@ class Home extends Component {
 
                         <Col>
                             <CreatableSelect
-                                  styles={customStyles}
+                                styles={customStyles}
 
                                 isClearable
                                 onChange={this.handleChange}
