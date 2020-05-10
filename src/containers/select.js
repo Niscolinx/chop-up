@@ -10,6 +10,7 @@ const options = [
 const MyComponent = () => (
     <Select 
     options={options}
+    isMulti
     />
 )
 
