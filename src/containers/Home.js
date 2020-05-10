@@ -75,6 +75,12 @@ class Home extends Component {
                             onInputChange={this.handleInputChange}
                             options={colourOptions}
                         />
+                        <CreatableSelect
+                            isClearable
+                            onChange={this.handleChange}
+                            onInputChange={this.handleInputChange}
+                            options={colourOptions}
+                        />
                         {/* <Form className='delivering_form'>
                             <Form.Group>
                                 <Form.Control as="select" size="lg" custom className='delivering_form--control'>
