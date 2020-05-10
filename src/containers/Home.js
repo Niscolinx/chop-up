@@ -139,9 +139,8 @@ class Home extends Component {
                         <Row>
 
                             <Col>
-                                Restaurants
-
-                                Food you love, from restaurants near you
+                                <h3>Restaurants</h3>
+                                <p>Food you love, from restaurants near you</p>
                         </Col>
                             <Col>
                                 Restaurants
