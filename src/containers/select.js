@@ -8,7 +8,10 @@ const options = [
 ]
 
 const MyComponent = () => (
-    <Select options={options} />
+    <Select 
+    options={options}
+    defaultValue={'choose your option'}
+    />
 )
 
 export default MyComponent
