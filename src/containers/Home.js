@@ -88,7 +88,7 @@ class Home extends Component {
 
         return (
             <div style={divStyle}>
-                <Container fliuid ='md'className='hero'>
+                <Container fliuid className='hero'>
                     <Row className="justify-content-md-center">
 
                         <Col md="auto" className='hero_heading'>
