@@ -46,26 +46,26 @@ class Home extends Component {
             return <option value={lower} key={item + i} className='delivering_form--locations_item'>{upper}</option>
 
         })
-customStyles = {
-  menu: (provided, state) => ({
-    ...provided,
-    width: state.selectProps.width,
-    borderBottom: '1px dotted pink',
-    color: state.selectProps.menuColor,
-    padding: 20,
-  }),
+        const customStyles = {
+        menu: (provided, state) => ({
+            ...provided,
+            width: state.selectProps.width,
+            borderBottom: '1px dotted pink',
+            color: state.selectProps.menuColor,
+            padding: 20,
+        }),
 
-  control: (_, { selectProps: { width }}) => ({
-    width: width
-  }),
+        control: (_, { selectProps: { width }}) => ({
+            width: width
+        }),
 
-  singleValue: (provided, state) => {
-    const opacity = state.isDisabled ? 0.5 : 1;
-    const transition = 'opacity 300ms';
+        singleValue: (provided, state) => {
+            const opacity = state.isDisabled ? 0.5 : 1;
+            const transition = 'opacity 300ms';
 
-    return { ...provided, opacity, transition };
-  }
-}
+            return { ...provided, opacity, transition };
+        }
+        }
         const selectArea = locations.areas.map((item, i) => {
             let lower = item.toLowerCase()
             let upper = item.charAt(0).toUpperCase() + item.slice(1)
