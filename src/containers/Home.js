@@ -143,7 +143,7 @@ class Home extends Component {
                                 <p className='services-select_description'>Food you love, from restaurants near you</p>
                             </Col>
                             <Col>
-                                <h5 className='services-select_title'>Super Market</h5>
+                                <h5 className='services-select_title'>SuperMarkets</h5>
                                 <p className='services-select_description'>Food you love, from restaurants near you</p>
                             </Col>
                             
@@ -151,7 +151,7 @@ class Home extends Component {
                         <Row>
 
                             <Col>
-                                <h5 className='services-select_title'>Pharmacy</h5>
+                                <h5 className='services-select_title'>Pharmacies</h5>
                                 <p className='services-select_description'>Food you love, from restaurants near you</p>
                             </Col>
                             <Col>
@@ -165,6 +165,13 @@ class Home extends Component {
                     </div>
                 </Container>
             </div>
+
+<div>
+    
+</div>
+            <Container>
+                <Row></Row>
+            </Container>
         )
     }
 }
