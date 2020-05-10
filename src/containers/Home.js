@@ -223,11 +223,10 @@ class Home extends Component {
                                     <Form.Control type="email" placeholder="Enter email" />
                                 </Form.Group>
                                 <Form.Group as={Col} controlId="formGridEmail">
-                                <Form.Control type="text" placeholder="Small text" />
-                                </Form.Group>
-                                <Button type="submit" className='newsletter_submitBtn'>
+                                <Button type="submit" className='newsletter_form-submitBtn'>
                                     subscribe to Newsletter
                                 </Button>
+                                </Form.Group>
 
 
                             </Form.Row>
