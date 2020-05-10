@@ -59,7 +59,7 @@ class Home extends Component {
             option: (styles, state) => ({
                 ...styles,
                 cursor: 'pointer',
-                height: '2'
+                height: 2,
             }),
             control: (styles) => ({
                 ...styles,
@@ -75,7 +75,7 @@ class Home extends Component {
             }
         }
 
-        
+
         const selectArea = locations.areas.map((item, i) => {
             let lower = item.toLowerCase()
             let upper = item.charAt(0).toUpperCase() + item.slice(1)
