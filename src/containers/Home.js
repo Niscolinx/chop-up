@@ -169,19 +169,19 @@ class Home extends Component {
                 </div>
 
                 <div>
-                <Container>
-                    <Row>
-                        <h1>Simple Steps</h1>
-                    </Row>
+                    <Container>
+                        <Row>
+                            <h1>Simple Steps</h1>
+                        </Row>
 
                         <Row>
 
                             <Col>
-                                <h5 className='services-select_title'>Pharmacies</h5>
+                                <h5 className='services-select_title'>Set delivering location</h5>
                                 <p className='services-select_description'>Food you love, from restaurants near you</p>
                             </Col>
                             <Col>
-                                <h5 className='services-select_title'>Shopping</h5>
+                                <h5 className='services-select_title'>Choose the product</h5>
                                 <p className='services-select_description'>Food you love, from restaurants near you</p>
                             </Col>
                             <Col>
@@ -190,7 +190,7 @@ class Home extends Component {
                             </Col>
 
                         </Row>
-                </Container>
+                    </Container>
                 </div>
             </div>
         )
