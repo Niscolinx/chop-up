@@ -93,27 +93,6 @@ class Home extends Component {
                         </Col>
 
 
-                        {/* <Form className='delivering_form'>
-                            <Form.Group>
-                                <Form.Control as="select" size="lg" custom className='delivering_form--control'>
-                                    <option value="" disabled selected hidden className='delivering_form--control-placeholder'>Choose your city</option>
-
-                                    {selectCity}
-                                </Form.Control>
-                            </Form.Group>
-                            <Form.Group>
-                                <Form.Control as="select" size="lg" custom className='delivering_form--control'>
-                                    <option value="" disabled selected hidden className='delivering_form--control-placeholder'>Select your area</option>
-
-                                    {selectArea}
-                                </Form.Control>
-
-                                
-
-                            </Form.Group>
-
-
-                        </Form> */}
                     </Row>
 
                 </Container>
