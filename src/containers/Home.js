@@ -59,6 +59,7 @@ class Home extends Component {
             option: (styles, state) => ({
                 ...styles,
                 cursor: 'pointer',
+                height: '2'
             }),
             control: (styles) => ({
                 ...styles,
