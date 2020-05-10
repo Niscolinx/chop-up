@@ -218,12 +218,8 @@ class Home extends Component {
                                     <Form.Control type="password" placeholder="Password" />
                                 </Form.Group>
 
-                                <Form.Group as={Col} controlId="formGridPassword">
-                                    <p className='newsletter_form-button' type='submit'>subscribe to Newsletter</p>
-                                </Form.Group>
-
-                                <Button variant="primary" type="submit">
-                                    Submit
+                                <Button type="submit" className='newsletter_form-button'>
+                                    <p>subscribe to Newsletter</p>
                                 </Button>
 
                             </Form.Row>
