@@ -35,7 +35,7 @@ class Home extends Component {
             backgroundSize: 'cover',
         };
 
-        
+
 
 
 
@@ -56,6 +56,25 @@ class Home extends Component {
 
         return (
             <div style={divStyle}>
+
+                <Container>
+                    <Row className="justify-content-md-center">
+                        <Col xs lg="2">
+                            1 of 3
+    </Col>
+                        <Col md="auto">Variable width content</Col>
+                        <Col xs lg="2">
+                            3 of 3
+    </Col>
+                    </Row>
+                    <Row>
+                        <Col>1 of 3</Col>
+                        <Col md="auto">Variable width content</Col>
+                        <Col xs lg="2">
+                            3 of 3
+    </Col>
+                    </Row>
+                </Container>
                 <Container fliuid justify-content-md-center className='hero'>
                     <Row className="justify-content-md-center">
 
@@ -67,11 +86,11 @@ class Home extends Component {
                     </Row>
 
                     {/* <Row className='delivering'> */}
-                        {/* <h3 className='delivering_text'>Delivering to</h3> */}
-                        <Row>
+                    {/* <h3 className='delivering_text'>Delivering to</h3> */}
+                    <Row>
 
                         <h3>Delivering to</h3>
-                        </Row>
+                    </Row>
                     <Row>
 
                         <Col>
@@ -90,8 +109,8 @@ class Home extends Component {
                                 options={colourOptions}
                             />
                         </Col>
-                       
-                      
+
+
                         {/* <Form className='delivering_form'>
                             <Form.Group>
                                 <Form.Control as="select" size="lg" custom className='delivering_form--control'>
@@ -114,7 +133,7 @@ class Home extends Component {
 
                         </Form> */}
                     </Row>
-                   
+
 
                     {/* <>
                     <h1>Restaurant</h1>
