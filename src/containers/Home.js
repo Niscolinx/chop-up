@@ -49,16 +49,15 @@ class Home extends Component {
         const customStyles = {
         menu: (provided, state) => ({
             ...provided,
-            width: state.selectProps.width,
+            //width: state.selectProps.width,
             borderBottom: '1px dotted pink',
             color: state.selectProps.menuColor,
-            color: 'red'
             padding: 20,
         }),
 
-        control: (_, { selectProps: { width }}) => ({
-            width: width
-        }),
+        // control: (_, { selectProps: { width }}) => ({
+        //     width: width
+        // }),
 
         singleValue: (provided, state) => {
             const opacity = state.isDisabled ? 0.5 : 1;
