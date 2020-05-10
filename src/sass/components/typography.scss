@@ -565,8 +565,13 @@
             color: $primary-color;
             margin-bottom: 1rem;
 
+            &_title{
+                font-weight: 700;
+                font-size: 14px;
+            }
+
             &_description{
-                
+                font-weight: 400;
             }
         }
     }
