@@ -56,7 +56,7 @@ class Home extends Component {
 
         return (
             <div style={divStyle}>
-                <Container fluid>
+                <Container fliuid className='hero'>
                     <Row>
 
                         <Col className='hero_heading'>
