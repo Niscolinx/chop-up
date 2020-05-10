@@ -22,6 +22,13 @@ class Home extends Component {
             backgroundSize: 'cover',
         };
 
+        handleChange = (newValue: any, actionMeta: any) => {
+            console.group('Value Changed');
+            console.log(newValue);
+            console.log(`action: ${actionMeta.action}`);
+            console.groupEnd();
+        };
+        
 
 
 
