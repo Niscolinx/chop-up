@@ -633,6 +633,15 @@
 
         }
     }
+
+    &_submitBtn{
+        height: 100%;
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        justify-content: center;
+        align-content: center;
+    }
 }
 
 
