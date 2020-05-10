@@ -68,8 +68,10 @@ class Home extends Component {
 
                     {/* <Row className='delivering'> */}
                         {/* <h3 className='delivering_text'>Delivering to</h3> */}
-                        <
+                        <Row>
+
                         <h3>Delivering to</h3>
+                        </Row>
                     <Row>
 
                         <Col>
