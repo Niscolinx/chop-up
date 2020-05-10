@@ -53,6 +53,7 @@ class Home extends Component {
             borderBottom: '1px dotted pink',
             color: state.selectProps.menuColor,
             padding: 20,
+            cursor: 'pointer'
         }),
 
         // control: (_, { selectProps: { width }}) => ({
