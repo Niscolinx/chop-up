@@ -127,11 +127,11 @@ class Home extends Component {
 
                     </Row>
 
-                    <Row>
                         <Row>
 
                             <h5 className='delivering_title'>Select Service</h5>
                         </Row>
+                    <Row>
 
                         <Col>
                             Restaurants
