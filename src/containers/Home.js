@@ -210,9 +210,9 @@ class Home extends Component {
                             <Form.Row>
 
                                 <Form.Group as={Col} controlId="formGridPassword">
-                                    <Form.Label>Password</Form.Label>
+                                    <Form.Label>Select your area</Form.Label>
                                     <Form.Control as="select">
-                                        <option>1</option>
+                                        <option>Absu</option>
                                         <option>2</option>
                                         <option>3</option>
                                         <option>4</option>
@@ -224,8 +224,8 @@ class Home extends Component {
                                     <Form.Label>Email</Form.Label>
                                     <Form.Control type="email" placeholder="Enter email" />
                                 </Form.Group>
-                                <Button type="submit" className='newsletter_form-button'>
-                                    <p>subscribe to Newsletter</p>
+                                <Button type="submit">
+                                    subscribe to Newsletter
                                 </Button>
 
                             </Form.Row>
