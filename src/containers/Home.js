@@ -170,8 +170,8 @@ class Home extends Component {
 
                 <div className='simple-steps'>
                     <Container>
-                        <Row className='simple-steps_heading'>
-                            <h2 >Simple Steps</h2>
+                        <Row className='simple-steps_header'>
+                            <h2 className='simple-steps_header--title'>Simple Steps</h2>
                         </Row>
 
                         <Row>
