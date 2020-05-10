@@ -200,6 +200,11 @@ class Home extends Component {
                         <h1>20% Off on your first order</h1>
                         <h1>by subscribing to our newsletter!</h1>
                     </div>
+                    <Row>
+                        <Col>
+                        <p>Don't miss out on your great offers and Receive deals from out top vendors via e-mail</p>
+                        </Col>
+                    </Row>
                 </Container>
                 </div>
             </div>
