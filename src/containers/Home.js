@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import Form from 'react-bootstrap/Form'
-import imgUrl from '../assets/images/bg_home'
+import imgUrl from '../assets/images/bg_home.jpg'
 import * as locations from '../components/Layout/DeliveringForm/Locations'
 
 import CreatableSelect from 'react-select/creatable';
