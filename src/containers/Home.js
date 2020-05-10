@@ -143,21 +143,12 @@ class Home extends Component {
                                 <p className='services-select_description'>Food you love, from restaurants near you</p>
                             </Col>
                             <Col>
-                                <h5>Restaurants</h5>
-                                <p>Food you love, from restaurants near you</p>
+                                <h5 className='services-select_title'>Restaurants</h5>
+                                <p className='services-select_description'>Food you love, from restaurants near you</p>
                             </Col>
+                            
                         </Row>
-                        <Row>
-
-                            <Col>
-                                <h5>Restaurants</h5>
-                                <p>Food you love, from restaurants near you</p>
-                            </Col>
-                            <Col>
-                                <h5>Restaurants</h5>
-                                <p>Food you love, from restaurants near you</p>
-                            </Col>
-                        </Row>
+                       
 
                     </div>
                 </Container>
