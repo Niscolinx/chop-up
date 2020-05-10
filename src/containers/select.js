@@ -11,4 +11,5 @@ const MyComponent = () => (
     <Select options={options} />
 )
 
+export default MyComponent
 
