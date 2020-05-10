@@ -134,13 +134,13 @@ class Home extends Component {
 
                         <Row>
 
-                            <h5 className='services_title'>Select Service</h5>
+                            <h5 className='services-select'>Select Service</h5>
                         </Row>
                         <Row>
 
                             <Col>
-                                <h5>Restaurants</h5>
-                                <p>Food you love, from restaurants near you</p>
+                                <h5 className='services-select_title'>Restaurants</h5>
+                                <p className='services-select_description'>Food you love, from restaurants near you</p>
                             </Col>
                             <Col>
                                 <h5>Restaurants</h5>
