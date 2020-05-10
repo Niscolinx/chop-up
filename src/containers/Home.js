@@ -14,6 +14,19 @@ class Home extends Component {
 
     }
 
+    handleInputChange = (inputValue: any, actionMeta: any) => {
+        console.group('Input Changed');
+        console.log(inputValue);
+        console.log(`action: ${actionMeta.action}`);
+        console.groupEnd();
+    };
+
+    handleChange = (newValue: any, actionMeta: any) => {
+        console.group('Value Changed');
+        console.log(newValue);
+        console.log(`action: ${actionMeta.action}`);
+        console.groupEnd();
+    };
     render() {
         const divStyle = {
             backgroundImage: 'url(' + imgUrl + ')',
@@ -22,12 +35,6 @@ class Home extends Component {
             backgroundSize: 'cover',
         };
 
-        handleChange = (newValue: any, actionMeta: any) => {
-            console.group('Value Changed');
-            console.log(newValue);
-            console.log(`action: ${actionMeta.action}`);
-            console.groupEnd();
-        };
         
 
 
