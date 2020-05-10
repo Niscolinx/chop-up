@@ -217,17 +217,17 @@ class Home extends Component {
                                     <Form.Label>Password</Form.Label>
                                     <Form.Control type="password" placeholder="Password" />
                                 </Form.Group>
-                                
+
                                 <Form.Group as={Col} controlId="formGridPassword">
-                                    <p className='newsletter_form-button'>subscribe to Newsletter</p>
+                                    <p className='newsletter_form-button' type='submit'>subscribe to Newsletter</p>
                                 </Form.Group>
 
                                 <Button variant="primary" type="submit">
                                     Submit
-  </Button>
-                                
+                                </Button>
+
                             </Form.Row>
-                            </Form>
+                        </Form>
                     </Container>
                 </div>
             </div>
