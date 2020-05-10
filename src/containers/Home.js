@@ -229,6 +229,9 @@ class Home extends Component {
                                 </Button>
 
                             </Form.Row>
+                            <Form.Group controlId="formBasicCheckbox">
+                                <Form.Check type="checkbox" label="I have read and accepted the terms and conditions and privacy policy" />
+                            </Form.Group>
                         </Form>
                     </Container>
                 </div>
