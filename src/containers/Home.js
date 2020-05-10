@@ -241,7 +241,7 @@ class Home extends Component {
                     <Container>
                         <CardGroup>
                             <Card>
-                                <Card.Img variant="top" src="holder.js/100px160" />
+                                <Card.Img variant="top" src="../assets/images/PoundedYam.jpg" />
                                 <Card.Body>
                                     <Card.Title>Card title</Card.Title>
                                     <Card.Text>
