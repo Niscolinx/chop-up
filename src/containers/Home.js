@@ -59,6 +59,7 @@ class Home extends Component {
             option: (styles, state) => ({
                 ...styles,
                 cursor: 'pointer',
+                placeholder: 'choose your location',
                 padding: '1rem'
             }),
             control: (styles) => ({
@@ -66,6 +67,7 @@ class Home extends Component {
                 cursor: 'pointer',
             }),
          
+
             singleValue: (provided, state) => {
                 const opacity = state.isDisabled ? 0.5 : 1;
                 const transition = 'opacity 300ms';
@@ -83,7 +85,7 @@ class Home extends Component {
 
         })
 
-        const placeholder = 'choose your location'
+       // const placeholder = 'choose your location'
 
 
         return (
@@ -106,7 +108,7 @@ class Home extends Component {
                         <Col>
                             <CreatableSelect
                                 styles={customStyles}
-                                placeholder={placeholder}
+                                //placeholder={placeholder}
                                 isClearable
                                 onChange={this.handleChange}
                                 onInputChange={this.handleInputChange}
