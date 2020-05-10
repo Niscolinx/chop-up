@@ -84,6 +84,8 @@ class Home extends Component {
 
         })
 
+        const placeholder = 'choose your location'
+
 
         return (
             <div style={divStyle}>
@@ -105,6 +107,7 @@ class Home extends Component {
                         <Col>
                             <CreatableSelect
                                 styles={customStyles}
+                                placeholder={placeholder}
                                 isClearable
                                 onChange={this.handleChange}
                                 onInputChange={this.handleInputChange}
