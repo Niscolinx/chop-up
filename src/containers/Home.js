@@ -139,7 +139,7 @@ class Home extends Component {
                         <Row>
 
                             <Col>
-                                <h3>Restaurants</h3>
+                                <h5>Restaurants</h5>
                                 <p>Food you love, from restaurants near you</p>
                         </Col>
                             <Col>
