@@ -10,7 +10,6 @@ const options = [
 const MyComponent = () => (
     <Select 
     options={options}
-    defaultValue={'choose your option'}
     />
 )
 
