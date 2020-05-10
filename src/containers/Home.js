@@ -62,7 +62,8 @@ class Home extends Component {
                         <Col xs lg="2">
                             1 of 3
     </Col>
-                        <Col md="auto">Variable width content</Col>
+                        <Col md="auto">                            <h1 className='hero_heading--main'>Everything you need,</h1>
+                            <h1 className='hero_heading--span'>delivered within minutes</h1></Col>
                         <Col xs lg="2">
                             3 of 3
     </Col>
