@@ -77,6 +77,14 @@ class Home extends Component {
                                 options={colourOptions}
                             />
                         </Col>
+                        <Col>
+                            <CreatableSelect
+                                isClearable
+                                onChange={this.handleChange}
+                                onInputChange={this.handleInputChange}
+                                options={colourOptions}
+                            />
+                        </Col>
                        
                       
                         {/* <Form className='delivering_form'>
