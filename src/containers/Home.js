@@ -51,7 +51,7 @@ class Home extends Component {
                 ...provided,
                 //width: state.selectProps.width,
                 borderBottom: '1px dotted pink',
-               color: 'orange',
+               color: state.selectProps.menuColor,
                 padding: 10,
 
             }),
