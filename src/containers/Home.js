@@ -57,7 +57,7 @@ class Home extends Component {
         return (
             <div style={divStyle}>
                 <Container fliuid justify-content-md-center className='hero'>
-                    <Row >
+                    <Row className="justify-content-md-center">
 
                         <Col className='hero_heading'>
                             <h1 className='hero_heading--main'>Everything you need,</h1>
