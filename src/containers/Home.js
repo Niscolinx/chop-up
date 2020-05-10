@@ -201,7 +201,7 @@ class Home extends Component {
                         <h1>by subscribing to our newsletter!</h1>
                     </div>
                     <Row>
-                        <Col>
+                        <Col className="newsletter_description">
                         <p>Don't miss out on your great offers and Receive deals from out top vendors via e-mail</p>
                         </Col>
                     </Row>
