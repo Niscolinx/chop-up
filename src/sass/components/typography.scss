@@ -544,12 +544,12 @@
     }
 
     .delivering {
-        display: flex;
-        color: $primary-color;
-        flex-direction: column;
-        width: 80%;
+       
 
-        &_
+        &_title{
+            font-weight: 700;
+            margin-left: 2rem;
+        }
     }
 }
 
