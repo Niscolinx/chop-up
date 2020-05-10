@@ -63,8 +63,9 @@ class Home extends Component {
         singleValue: (provided, state) => {
             const opacity = state.isDisabled ? 0.5 : 1;
             const transition = 'opacity 300ms';
+            const color: 'red'
 
-            return { ...provided, opacity, transition };
+            return { ...provided, opacity, transition, color};
         }
         }
         const selectArea = locations.areas.map((item, i) => {
