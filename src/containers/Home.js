@@ -51,15 +51,15 @@ class Home extends Component {
                 ...provided,
                 //width: state.selectProps.width,
                 borderBottom: '1px dotted pink',
-                color: state.selectProps.menuColor,
-                padding: 5,
+              //  color: state.selectProps.menuColor,
+                padding: 10,
 
             }),
 
             option: (styles, state) => ({
                 ...styles,
                 cursor: 'pointer',
-                padding: '2rem'
+                padding: '1rem'
             }),
             control: (styles) => ({
                 ...styles,
