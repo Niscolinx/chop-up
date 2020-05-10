@@ -127,9 +127,11 @@ class Home extends Component {
 
                     </Row>
 
+                <div className='services'>
+                    
                         <Row>
 
-                            <h5 className='delivering_title'>Select Service</h5>
+                            <h5 className='services_title'>Select Service</h5>
                         </Row>
                     <Row>
 
@@ -160,6 +162,7 @@ class Home extends Component {
                         </Col>
                     </Row>
 
+                </div>
                 </Container>
             </div>
         )
