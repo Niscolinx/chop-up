@@ -75,7 +75,7 @@ class Home extends Component {
                 <Container fliuid justify-content-md-center className='hero'>
                     <Row className="justify-content-md-center">
 
-                        <Col className='hero_heading'>
+                        <Col md="auto" className='hero_heading'>
                             <h1 className='hero_heading--main'>Everything you need,</h1>
                             <h1 className='hero_heading--span'>delivered within minutes</h1>
                         </Col>
