@@ -323,11 +323,16 @@ class Home extends Component {
 
                 </div>
 
+                < dclassName='footer'>
                 <div>
-                    
+                </div>
+                <div>
+
                 </div>
 
             </div>
+
+            </div >
         )
     }
 }
