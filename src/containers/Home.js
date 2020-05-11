@@ -25,6 +25,7 @@ class Home extends Component {
         console.group('Value Changed');
         console.log(newValue);
         console.log(`action: ${actionMeta.action}`);
+        console.log(`action: ${actionMeta.action}`);
         console.groupEnd();
     };
 
