@@ -1,0 +1,1 @@
+code --install-extension ]0;firejail /usr/bin/code --list-extensions ]0;firejail /usr/bin/code --list-extensions 
