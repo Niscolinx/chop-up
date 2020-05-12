@@ -367,7 +367,7 @@ class Home extends Component {
 
                             </div>
 
-                            <hr class="clearfix w-100 d-md-none"><hr/>
+                            <hr class="clearfix w-100 d-md-none"></hr>
 
                                 <div class="col-md-3 mx-auto">
 
