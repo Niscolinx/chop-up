@@ -327,7 +327,7 @@ class Home extends Component {
                 <div className='footer'>
                     <div className='footer_1'>
                     </div>
-                    <div>
+                    <div className='footer_2'>
 
                     </div>
 
