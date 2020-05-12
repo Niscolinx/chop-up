@@ -371,7 +371,7 @@ class Home extends Component {
 
                             <div class="col-md-3 mx-auto">
 
-                                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+                                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Stores</h5>
 
                                 <ul class="list-unstyled">
                                     <li>
