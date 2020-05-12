@@ -327,7 +327,8 @@ class Home extends Component {
                     <Container>
                         <Row className='footer_1'>
 
-                            <Col className='footer_1--city'>City</Col>
+                            <Col className='footer_1--city'>
+                                City</Col>
                             <Col className='footer_1--Stores'>Stores</Col>
                             <Col className='footer_1--popular_vendors'>Popular Vendors</Col>
                             <Col className='footer_1--chop_up_delivery'>ChopUp Delivery</Col>
@@ -339,6 +340,8 @@ class Home extends Component {
 
                     </Container>
                 </div>
+
+                
 
             </div >
         )
