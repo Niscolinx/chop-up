@@ -324,6 +324,7 @@ class Home extends Component {
                 </div>
 
                 <div className='footer'>
+                    <Container>
                     <div className='footer_1'>
 
                         <div className='footer_1--city'>City</div>
@@ -334,6 +335,8 @@ class Home extends Component {
                     <div className='footer_2'>
 
                     </div>
+
+                    </Container>
 
                 </div>
 
