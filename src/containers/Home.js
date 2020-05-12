@@ -38,7 +38,6 @@ class Home extends Component {
         };
 
 
-        const image = 'url(' + imgUrl + ')'
 
 
         const selectCity = locations.cities.map((item, i) => {
