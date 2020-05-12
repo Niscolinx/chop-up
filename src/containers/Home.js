@@ -323,17 +323,17 @@ class Home extends Component {
 
                 </div>
 
-                <footer class="page-footer font-small indigo footer">
+                <footer className="page-footer font-small indigo footer">
 
-                    <div class="container text-center text-md-left">
+                    <div className="container text-center text-md-left">
 
-                        <div class="row">
+                        <div className="row">
 
-                            <div class="col-md-3 mx-auto">
+                            <div className="col-md-3 mx-auto">
 
-                                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">City</h5>
+                                <h5 className="font-weight-bold text-uppercase mt-3 mb-4 footer_title">City</h5>
 
-                                <ul class="list-unstyled">
+                                <ul className="list-unstyled">
                                     <li>
                                         <a href="#!">Very long link 1</a>
                                     </li>
@@ -350,13 +350,13 @@ class Home extends Component {
 
                             </div>
 
-                            <hr class="clearfix w-100 d-md-none"></hr>
+                            <hr className="clearfix w-100 d-md-none"></hr>
 
-                            <div class="col-md-3 mx-auto">
+                            <div className="col-md-3 mx-auto">
 
-                                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Stores</h5>
+                                <h5 className="font-weight-bold text-uppercase mt-3 mb-4 footer_title">Stores</h5>
 
-                                <ul class="list-unstyled">
+                                <ul className="list-unstyled">
                                     <li>
                                         <a href="#!">Link 1</a>
                                     </li>
@@ -373,13 +373,13 @@ class Home extends Component {
 
                             </div>
 
-                            <hr class="clearfix w-100 d-md-none"></hr>
+                            <hr className="clearfix w-100 d-md-none"></hr>
 
-                            <div class="col-md-3 mx-auto">
+                            <div className="col-md-3 mx-auto">
 
-                                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Popular Vendors</h5>
+                                <h5 className="font-weight-bold text-uppercase mt-3 mb-4 footer_title">Popular Vendors</h5>
 
-                                <ul class="list-unstyled">
+                                <ul className="list-unstyled">
                                     <li>
                                         <a href="#!">Link 1</a>
                                     </li>
@@ -396,13 +396,13 @@ class Home extends Component {
 
                             </div>
 
-                            <hr class="clearfix w-100 d-md-none"></hr>
+                            <hr className="clearfix w-100 d-md-none"></hr>
 
-                            <div class="col-md-3 mx-auto">
+                            <div className="col-md-3 mx-auto">
 
-                                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">ChopUp Delivery</h5>
+                                <h5 className="font-weight-bold text-uppercase mt-3 mb-4 footer_title">ChopUp Delivery</h5>
 
-                                <ul class="list-unstyled">
+                                <ul className="list-unstyled">
                                     <li>
                                         <a href="#!">Link 1</a>
                                     </li>
@@ -423,7 +423,7 @@ class Home extends Component {
 
                     </div>
 
-                    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                    <div className="footer-copyright text-center py-3">© 2020 Copyright:
                                       Chop Up
                     </div>
 
