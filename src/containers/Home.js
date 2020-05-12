@@ -326,6 +326,11 @@ class Home extends Component {
 
                 <div className='footer'>
                     <div className='footer_1'>
+
+                        <div className='footer_1--Cities'></div>
+                        <div className='footer_1--Cities'></div>
+                        <div className='footer_1--popular_vendors'>Popular Vendors</div>
+                        <div className='footer_1--chop_up_delivery'>Chop Up delivery</div>
                     </div>
                     <div className='footer_2'>
 
