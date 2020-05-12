@@ -323,22 +323,22 @@ class Home extends Component {
 
                 </div>
 
-                <div className='footer'>
-                    <Container>
-                    <div className='footer_1'>
+                <Container>
+                    <div className='footer'>
+                        <div className='footer_1'>
 
-                        <div className='footer_1--city'>City</div>
-                        <div className='footer_1--Stores'>Stores</div>
-                        <div className='footer_1--popular_vendors'>Popular Vendors</div>
-                        <div className='footer_1--chop_up_delivery'>ChopUp Delivery</div>
+                            <div className='footer_1--city'>City</div>
+                            <div className='footer_1--Stores'>Stores</div>
+                            <div className='footer_1--popular_vendors'>Popular Vendors</div>
+                            <div className='footer_1--chop_up_delivery'>ChopUp Delivery</div>
+                        </div>
+                        <div className='footer_2'>
+
+                        </div>
+
+
                     </div>
-                    <div className='footer_2'>
-
-                    </div>
-
-                    </Container>
-
-                </div>
+                </Container>
 
             </div >
         )
