@@ -340,7 +340,7 @@ class Home extends Component {
 
                     </Container>
                 </div>
-                <footer class="page-footer font-small indigo">
+                <footer class="page-footer font-small indigo" className='footer_1'>
 
                     <div class="container text-center text-md-left">
 
@@ -348,7 +348,7 @@ class Home extends Component {
 
                             <div class="col-md-3 mx-auto">
 
-                                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+                                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">City</h5>
 
                                 <ul class="list-unstyled">
                                     <li>
