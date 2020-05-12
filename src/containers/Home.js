@@ -342,13 +342,13 @@ class Home extends Component {
                 </div>
                 <footer class="page-footer font-small indigo">
 
-  <div class="container text-center text-md-left">
+                    <div class="container text-center text-md-left">
 
-    <div class="row">
+                        <div class="row">
 
-      <div class="col-md-3 mx-auto">
+                            <div class="col-md-3 mx-auto">
 
-        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+                                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
 
                                 <ul class="list-unstyled">
                                     <li>
@@ -367,11 +367,11 @@ class Home extends Component {
 
                             </div>
 
-      <hr class="clearfix w-100 d-md-none">
+                            <hr class="clearfix w-100 d-md-none"><hr/>
 
-      <div class="col-md-3 mx-auto">
+                                <div class="col-md-3 mx-auto">
 
-        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+                                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
 
                                     <ul class="list-unstyled">
                                         <li>
@@ -390,11 +390,11 @@ class Home extends Component {
 
                                 </div>
 
-      <hr class="clearfix w-100 d-md-none">
+                                <hr class="clearfix w-100 d-md-none"><hr/>
 
-      <div class="col-md-3 mx-auto">
+                                    <div class="col-md-3 mx-auto">
 
-        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+                                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
 
                                         <ul class="list-unstyled">
                                             <li>
@@ -413,11 +413,11 @@ class Home extends Component {
 
                                     </div>
 
-      <hr class="clearfix w-100 d-md-none">
+                                    <hr class="clearfix w-100 d-md-none">
 
-      <div class="col-md-3 mx-auto">
+                                        <div class="col-md-3 mx-auto">
 
-        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+                                            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
 
                                             <ul class="list-unstyled">
                                                 <li>
@@ -436,19 +436,19 @@ class Home extends Component {
 
                                         </div>
 
-    </div>
+                                     </div>
 
-  </div>
+                                 </div>
 
-  <div class="footer-copyright text-center py-3">© 2020 Copyright:
-    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+                                <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                                      <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
                                 </div>
 
-</footer>
+                            </footer>
 
 
 
-            </div >
+                        </div >
         )
     }
 }
