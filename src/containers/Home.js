@@ -374,10 +374,8 @@ class Home extends Component {
 
       <hr class="clearfix w-100 d-md-none">
 
-                                <!-- Grid column -->
       <div class="col-md-3 mx-auto">
 
-                                    <!-- Links -->
         <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
 
                                     <ul class="list-unstyled">
@@ -396,7 +394,6 @@ class Home extends Component {
                                     </ul>
 
                                 </div>
-                                <!-- Grid column -->
 
       <hr class="clearfix w-100 d-md-none">
 
