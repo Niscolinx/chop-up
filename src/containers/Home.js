@@ -369,86 +369,86 @@ class Home extends Component {
 
                             <hr class="clearfix w-100 d-md-none"></hr>
 
-                                <div class="col-md-3 mx-auto">
+                            <div class="col-md-3 mx-auto">
 
-                                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+                                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
 
-                                    <ul class="list-unstyled">
-                                        <li>
-                                            <a href="#!">Link 1</a>
-                                        </li>
-                                        <li>
-                                            <a href="#!">Link 2</a>
-                                        </li>
-                                        <li>
-                                            <a href="#!">Link 3</a>
-                                        </li>
-                                        <li>
-                                            <a href="#!">Link 4</a>
-                                        </li>
-                                    </ul>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#!">Link 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Link 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Link 3</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Link 4</a>
+                                    </li>
+                                </ul>
 
-                                </div>
+                            </div>
 
-                                <hr class="clearfix w-100 d-md-none"><hr/>
+                            <hr class="clearfix w-100 d-md-none"></hr>
 
-                                    <div class="col-md-3 mx-auto">
+                            <div class="col-md-3 mx-auto">
 
-                                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+                                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
 
-                                        <ul class="list-unstyled">
-                                            <li>
-                                                <a href="#!">Link 1</a>
-                                            </li>
-                                            <li>
-                                                <a href="#!">Link 2</a>
-                                            </li>
-                                            <li>
-                                                <a href="#!">Link 3</a>
-                                            </li>
-                                            <li>
-                                                <a href="#!">Link 4</a>
-                                            </li>
-                                        </ul>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#!">Link 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Link 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Link 3</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Link 4</a>
+                                    </li>
+                                </ul>
 
-                                    </div>
+                            </div>
 
-                                    <hr class="clearfix w-100 d-md-none">
+                            <hr class="clearfix w-100 d-md-none"></hr>
 
-                                        <div class="col-md-3 mx-auto">
+                            <div class="col-md-3 mx-auto">
 
-                                            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+                                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
 
-                                            <ul class="list-unstyled">
-                                                <li>
-                                                    <a href="#!">Link 1</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#!">Link 2</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#!">Link 3</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#!">Link 4</a>
-                                                </li>
-                                            </ul>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#!">Link 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Link 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Link 3</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Link 4</a>
+                                    </li>
+                                </ul>
 
-                                        </div>
+                            </div>
 
-                                     </div>
+                        </div>
 
-                                 </div>
+                    </div>
 
-                                <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                    <div class="footer-copyright text-center py-3">© 2020 Copyright:
                                       <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
-                                </div>
+                    </div>
 
-                            </footer>
+                </footer>
 
 
 
-                        </div >
+            </div >
         )
     }
 }
