@@ -340,7 +340,7 @@ class Home extends Component {
 
                     </Container>
                 </div>
-                <footer class="page-footer font-small indigo" className='footer_1'>
+                <footer class="page-footer font-small indigo">
 
                     <div class="container text-center text-md-left">
 
