@@ -404,7 +404,7 @@ class Home extends Component {
 
                                 <ul class="list-unstyled">
                                     <li>
-                                        <a href="#!" class='footer'>Link 1</a>
+                                        <a href="#!">Link 1</a>
                                     </li>
                                     <li>
                                         <a href="#!">Link 2</a>
