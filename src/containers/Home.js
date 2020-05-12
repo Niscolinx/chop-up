@@ -323,24 +323,7 @@ class Home extends Component {
 
                 </div>
 
-                <div className='footer'>
-                    <Container>
-                        <Row className='footer_1'>
-
-                            <Col className='footer_1--city'>
-                                City</Col>
-                            <Col className='footer_1--Stores'>Stores</Col>
-                            <Col className='footer_1--popular_vendors'>Popular Vendors</Col>
-                            <Col className='footer_1--chop_up_delivery'>ChopUp Delivery</Col>
-                        </Row>
-                        <Row className='footer_2'>
-
-                        </Row>
-
-
-                    </Container>
-                </div>
-                <footer class="page-footer font-small indigo">
+                <footer class="page-footer font-small indigo footer">
 
                     <div class="container text-center text-md-left">
 
