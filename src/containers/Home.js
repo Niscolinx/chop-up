@@ -325,13 +325,13 @@ class Home extends Component {
 
                 <div className='footer'>
                     <Container>
-                        <div className='footer_1'>
+                        <Row className='footer_1'>
 
-                            <div className='footer_1--city'>City</div>
-                            <div className='footer_1--Stores'>Stores</div>
-                            <div className='footer_1--popular_vendors'>Popular Vendors</div>
-                            <div className='footer_1--chop_up_delivery'>ChopUp Delivery</div>
-                        </div>
+                            <Col className='footer_1--city'>City</Col>
+                            <Col className='footer_1--Stores'>Stores</Col>
+                            <Col className='footer_1--popular_vendors'>Popular Vendors</Col>
+                            <Col className='footer_1--chop_up_delivery'>ChopUp Delivery</Col>
+                        </Row>
                         <div className='footer_2'>
 
                         </div>
