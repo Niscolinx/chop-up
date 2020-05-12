@@ -332,9 +332,9 @@ class Home extends Component {
                             <Col className='footer_1--popular_vendors'>Popular Vendors</Col>
                             <Col className='footer_1--chop_up_delivery'>ChopUp Delivery</Col>
                         </Row>
-                        <div className='footer_2'>
+                        <Row className='footer_2'>
 
-                        </div>
+                        </Row>
 
 
                     </Container>
