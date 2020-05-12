@@ -394,7 +394,7 @@ class Home extends Component {
 
                             <div class="col-md-3 mx-auto">
 
-                                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+                                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Popular Vendors</h5>
 
                                 <ul class="list-unstyled">
                                     <li>
@@ -417,7 +417,7 @@ class Home extends Component {
 
                             <div class="col-md-3 mx-auto">
 
-                                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+                                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">ChopUp Delivery</h5>
 
                                 <ul class="list-unstyled">
                                     <li>
