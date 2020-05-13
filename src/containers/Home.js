@@ -88,7 +88,7 @@ class Home extends Component {
 
 
         return (
-            <div>
+            <div style={{background: 'red'}}>
 
                 <div style={divStyle}>
                     <Container fliuid = 'true'className='hero'>
