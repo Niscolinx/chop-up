@@ -431,8 +431,6 @@ class Home extends Component {
                 </footer>
 
 
-
-<div>hello</div>
             </div >
         )
     }
