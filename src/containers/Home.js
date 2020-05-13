@@ -5,7 +5,7 @@ import imgUrl from '../assets/images/bg_home.jpg'
 import * as locations from '../components/Layout/DeliveringForm/Locations'
 
 import CreatableSelect from 'react-select/creatable';
-import { colourOptions } from '../doc/data';
+import { colourOptions, flavourOptions } from '../doc/data';
 
 
 class Home extends Component {
