@@ -108,7 +108,8 @@ class Home extends Component {
 
         })
 
-        const placeholder = 'choose your location'
+        const cityPlaceholder = 'Choose City'
+        const areaPlaceholder = 'Select your area'
 
 
         return (
