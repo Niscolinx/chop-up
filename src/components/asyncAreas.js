@@ -4,7 +4,9 @@ import PropTypes from 'prop-types';
 class BurgerIngredient extends Component {
 
     render() {
-        let okigwe = ['Ike road', 'Umuchima', 'Owerri road', '']
+        let okigwe = ['Ike road', 'Umuchima', 'Owerri road', 'Ogbonna St']
+        let Umuahia = ['umuahia1', 'umauhia2', 'umuahia3']
+        
 
         let ingredient = null;
 
