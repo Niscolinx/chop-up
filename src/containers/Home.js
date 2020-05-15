@@ -64,6 +64,7 @@ class Home extends Component {
             control: (styles) => ({
                 ...styles,
                 cursor: 'pointer',
+                borderColor: 'red',
                 borderWidth: 0,
                 minHeight: 'fit-content',
                 height: 'fit-content'
