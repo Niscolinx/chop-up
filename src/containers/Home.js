@@ -116,7 +116,10 @@ class Home extends Component {
                                         onChange={this.handleChange}
                                         onInputChange={this.handleInputChange}
                                         options={colourOptions}
-                                        minMenuHeight={70}
+                                        className="single-select"
+                                        classNamePrefix="react-select"
+                                        menuPlacement="auto"
+                                        maxMenuHeight={30}
                                     />
                                 </Col>
                                 <Col>
