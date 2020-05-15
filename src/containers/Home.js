@@ -68,13 +68,13 @@ class Home extends Component {
                     cursor: 'pointer',
                     background: '#fff',
                     borderColor: '#9e9e9e',
-                    minHeight: '50px',
-                    height: '50px',
+                    minHeight: height,
+                    height: height,
                     boxShadow: state.isFocused ? null : null,
                 }),
                 valueContainer: (provided, state) => ({
                     ...provided,
-                    height: '50px',
+                    height: height,
                     padding: '0 6px'
                 }),
     
@@ -87,7 +87,7 @@ class Home extends Component {
                 }),
                 indicatorsContainer: (provided, state) => ({
                     ...provided,
-                    height: '50px',
+                    height: height,
                 }),
               
     
