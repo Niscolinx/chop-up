@@ -5,6 +5,8 @@ import imgUrl from '../assets/images/bg_home.jpg'
 import * as locations from '../components/Layout/DeliveringForm/Locations'
 
 import CreatableSelect from 'react-select/creatable';
+import AsyncSelect from 'react-select/async';
+
 import { colourOptions, flavourOptions } from '../doc/data';
 
 
@@ -145,7 +147,7 @@ class Home extends Component {
                                       
                                 </Col>
                                 <Col>
-                                    <CreatableSelect
+                                    <AsyncSelect
                                         styles={customStyles()}
                                         placeholder={areaPlaceholder}
                                         isMulti
