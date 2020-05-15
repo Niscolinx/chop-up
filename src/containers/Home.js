@@ -66,7 +66,7 @@ class Home extends Component {
                     ...provided,
                     cursor: 'pointer',
                     background: '#fff',
-                    borderColor: 'red',
+                    borderColor: 'white',
                     minHeight: height,
                     height: height,
                     boxShadow: state.isFocused ? null : null,
@@ -146,6 +146,7 @@ class Home extends Component {
                                 </Col>
                                 <Col>
                                     <CreatableSelect
+                                        styles={customStyles()}
                                         isMulti
                                         isClearable
                                         onChange={this.handleChange}
