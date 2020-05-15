@@ -79,7 +79,7 @@ class Home extends Component {
             
             indicatorsContainer: (provided, state) => ({
                 ...provided,
-                height: '20px'
+                height: '70px'
             }),
             input: (provided, state) => ({
                 ...provided,
