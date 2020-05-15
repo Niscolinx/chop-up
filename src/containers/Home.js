@@ -52,7 +52,6 @@ class Home extends Component {
                 menu: (provided, state) => ({
                     ...provided,
                     //width: state.selectProps.width,
-                    borderBottom: '1px dotted pink',
                     color: state.selectProps.menuColor,
                     padding: 10,
     
@@ -67,7 +66,7 @@ class Home extends Component {
                     ...provided,
                     cursor: 'pointer',
                     background: '#fff',
-                    borderColor: '#9e9e9e',
+                    borderColor: 'red',
                     minHeight: height,
                     height: height,
                     boxShadow: state.isFocused ? null : null,
