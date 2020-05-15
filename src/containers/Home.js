@@ -116,6 +116,7 @@ class Home extends Component {
                                         onChange={this.handleChange}
                                         onInputChange={this.handleInputChange}
                                         options={colourOptions}
+                                        maxMenuHeight={70}
                                     />
                                 </Col>
                                 <Col>
