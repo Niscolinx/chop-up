@@ -64,6 +64,8 @@ class Home extends Component {
             control: (styles) => ({
                 ...styles,
                 cursor: 'pointer',
+                minHeight: '50px',
+                height: '50px'
             }),
 
 
