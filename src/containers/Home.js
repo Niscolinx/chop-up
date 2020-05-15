@@ -64,7 +64,6 @@ class Home extends Component {
             control: (styles) => ({
                 ...styles,
                 cursor: 'pointer',
-                borderColor: 'red',
                 borderWidth: 0,
                 minHeight: 'fit-content',
                 height: 'fit-content'
@@ -80,11 +79,11 @@ class Home extends Component {
             
             indicatorsContainer: (provided, state) => ({
                 ...provided,
-                height: '50px'
+                height: '20px'
             }),
             input: (provided, state) => ({
                 ...provided,
-                height: '50px'
+                height: '70px'
             }),
 
 
