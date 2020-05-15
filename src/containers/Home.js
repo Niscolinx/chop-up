@@ -116,11 +116,8 @@ class Home extends Component {
                                         onChange={this.handleChange}
                                         onInputChange={this.handleInputChange}
                                         options={colourOptions}
-                                        className="single-select"
-                                        classNamePrefix="react-select"
-                                        menuPlacement="auto"
-                                        maxMenuHeight={30}
-                                    />
+                                        className="single-selectt"
+                                      
                                 </Col>
                                 <Col>
                                     <CreatableSelect
