@@ -117,6 +117,7 @@ class Home extends Component {
                                         onInputChange={this.handleInputChange}
                                         options={colourOptions}
                                         className="single-selectt"
+                                        />
                                       
                                 </Col>
                                 <Col>
