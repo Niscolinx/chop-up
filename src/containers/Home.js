@@ -148,7 +148,6 @@ class Home extends Component {
                                     <CreatableSelect
                                         styles={customStyles()}
                                         placeholder={areaPlaceholder}
-
                                         isMulti
                                         isClearable
                                         onChange={this.handleChange}
