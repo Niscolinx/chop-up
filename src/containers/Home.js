@@ -64,25 +64,26 @@ class Home extends Component {
             control: (styles) => ({
                 ...styles,
                 cursor: 'pointer',
-                minHeight: '50px',
-                height: '50px'
+                borderWidth: 0,
+                minHeight: 'fit-content',
+                height: 'fit-content'
+
             }),
-            valueContainer: (provided, state) => ({
+            container: (provided, state) => ({
                 ...provided,
-                height: '30px',
-                padding: '0 6px'
+                padding: 0,
+                height: 'fit-content',
+                zIndex: 4
             }),
 
-            input: (provided, state) => ({
-                ...provided,
-                margin: '0px',
-            }),
-            indicatorSeparator: state => ({
-                display: 'none',
-            }),
+            
             indicatorsContainer: (provided, state) => ({
                 ...provided,
-                height: '30px',
+                height: '29px'
+            }),
+            input: (provided, state) => ({
+                ...provided,
+                height: '21px'
             }),
 
 
