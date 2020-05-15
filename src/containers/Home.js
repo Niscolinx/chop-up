@@ -68,23 +68,7 @@ class Home extends Component {
                 height: '40px'
 
             }),
-            // container: (provided, state) => ({
-            //     ...provided,
-            //     padding: 0,
-            //     height: 'fit-content',
-            //     zIndex: 4
-            // }),
-
-            
-            // indicatorsContainer: (provided, state) => ({
-            //     ...provided,
-            //     height: '70px'
-            // }),
-            // input: (provided, state) => ({
-            //     ...provided,
-            //     height: '70px'
-            // }),
-
+          
 
             singleValue: (provided, state) => {
                 const opacity = state.isDisabled ? 0.5 : 1;
