@@ -135,7 +135,7 @@ class Home extends Component {
 
                                 <Col>
                                     <CreatableSelect
-                                        styles={customStyles}
+                                        styles={customStyles()}
                                         placeholder={placeholder}
                                         isClearable
                                         onChange={this.handleChange}
