@@ -67,6 +67,23 @@ class Home extends Component {
                 minHeight: '50px',
                 height: '50px'
             }),
+            valueContainer: (provided, state) => ({
+                ...provided,
+                height: '30px',
+                padding: '0 6px'
+            }),
+
+            input: (provided, state) => ({
+                ...provided,
+                margin: '0px',
+            }),
+            indicatorSeparator: state => ({
+                display: 'none',
+            }),
+            indicatorsContainer: (provided, state) => ({
+                ...provided,
+                height: '30px',
+            }),
 
 
             singleValue: (provided, state) => {
