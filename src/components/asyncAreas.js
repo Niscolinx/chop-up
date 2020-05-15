@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 class BurgerIngredient extends Component {
+
     render() {
+        let okigwe = []
 
         let ingredient = null;
 
