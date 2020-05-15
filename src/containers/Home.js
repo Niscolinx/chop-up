@@ -46,7 +46,7 @@ class Home extends Component {
             return <option value={lower} key={item + i} className='delivering_form--locations_item'>{upper}</option>
 
         })
-        const customStyles = (height= 50) => {
+        const customStyles = (height= '3rem') => {
             return{
 
                 menu: (provided, state) => ({
