@@ -48,55 +48,55 @@ class Home extends Component {
         })
         const customStyles = (height='5rem') => {
             return{
-                
-            }
-            menu: (provided, state) => ({
-                ...provided,
-                //width: state.selectProps.width,
-                borderBottom: '1px dotted pink',
-                color: state.selectProps.menuColor,
-                padding: 10,
 
-            }),
-
-            option: (styles, state) => ({
-                ...styles,
-                cursor: 'pointer',
-                padding: '1rem'
-            }),
-            control: (provided, state) => ({
-                ...provided,
-                cursor: 'pointer',
-                background: '#fff',
-                borderColor: '#9e9e9e',
-                minHeight: '50px',
-                height: '50px',
-                boxShadow: state.isFocused ? null : null,
-            }),
-            valueContainer: (provided, state) => ({
-                ...provided,
-                height: '50px',
-                padding: '0 6px'
-            }),
-
-            input: (provided, state) => ({
-                ...provided,
-                margin: '0px',
-            }),
-            indicatorSeparator: state => ({
-                display: 'none',
-            }),
-            indicatorsContainer: (provided, state) => ({
-                ...provided,
-                height: '50px',
-            }),
-          
-
-            singleValue: (provided, state) => {
-                const opacity = state.isDisabled ? 0.5 : 1;
-                const transition = 'opacity 300ms';
-
-                return { ...provided, opacity, transition };
+                menu: (provided, state) => ({
+                    ...provided,
+                    //width: state.selectProps.width,
+                    borderBottom: '1px dotted pink',
+                    color: state.selectProps.menuColor,
+                    padding: 10,
+    
+                }),
+    
+                option: (styles, state) => ({
+                    ...styles,
+                    cursor: 'pointer',
+                    padding: '1rem'
+                }),
+                control: (provided, state) => ({
+                    ...provided,
+                    cursor: 'pointer',
+                    background: '#fff',
+                    borderColor: '#9e9e9e',
+                    minHeight: '50px',
+                    height: '50px',
+                    boxShadow: state.isFocused ? null : null,
+                }),
+                valueContainer: (provided, state) => ({
+                    ...provided,
+                    height: '50px',
+                    padding: '0 6px'
+                }),
+    
+                input: (provided, state) => ({
+                    ...provided,
+                    margin: '0px',
+                }),
+                indicatorSeparator: state => ({
+                    display: 'none',
+                }),
+                indicatorsContainer: (provided, state) => ({
+                    ...provided,
+                    height: '50px',
+                }),
+              
+    
+                singleValue: (provided, state) => {
+                    const opacity = state.isDisabled ? 0.5 : 1;
+                    const transition = 'opacity 300ms';
+    
+                    return { ...provided, opacity, transition };
+                }
             }
         }
 
