@@ -409,7 +409,7 @@ class Home extends Component {
 
                                 <ul className="list-unstyled">
                                     <li>
-                                        <a href="#!" className='footer_link'>Very long link 1</a>
+                                        <a href="#!" className='footer_link'>Chinwe</a>
                                     </li>
                                     <li>
                                         <a href="#!" className='footer_link'>Very long link 1</a>

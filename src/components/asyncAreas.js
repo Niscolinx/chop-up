@@ -5,8 +5,11 @@ class BurgerIngredient extends Component {
 
     render() {
         let okigwe = ['Ike road', 'Umuchima', 'Owerri road', 'Ogbonna St']
+
         let Umuahia = ['umuahia1', 'umauhia2', 'umuahia3']
-        
+
+        let Absu = ['Upgate', 'Rc','Student affairs', 'Lecture East/West']
+
 
         let ingredient = null;
 
