@@ -61,22 +61,22 @@ export const clearedSelectedCity = () => {
 
 export const addAreas = (areas) => {
     const Absu = [
-        { value: 'Absu', label: 'Absu', rating: 'safe' },
-        { value: 'chocolate', label: 'Chocolate', rating: 'good' },
-        { value: 'strawberry', label: 'Strawberry', rating: 'wild' },
-        { value: 'salted-caramel', label: 'Salted Caramel', rating: 'crazy' },
+        { value: 'Absu', label: 'Absu'},
+        { value: 'chocolate', label: 'Chocolate'},
+        { value: 'strawberry', label: 'Strawberry'},
+        { value: 'salted-caramel', label: 'Salted Caramel' },
     ];
     const Okigwe = [
-        { value: 'Okigwe', label: 'Okigwe', rating: 'safe' },
-        { value: 'chocolate', label: 'Chocolate', rating: 'good' },
-        { value: 'strawberry', label: 'Strawberry', rating: 'wild' },
-        { value: 'salted-caramel', label: 'Salted Caramel', rating: 'crazy' },
+        { value: 'Okigwe', label: 'Okigwe'},
+        { value: 'chocolate', label: 'Chocolate'},
+        { value: 'strawberry', label: 'Strawberry'},
+        { value: 'salted-caramel', label: 'Salted Caramel' },
     ];
     const Umuahia = [
-        { value: 'Umuahia', label: 'Umuahia', rating: 'safe' },
-        { value: 'chocolate', label: 'Chocolate', rating: 'good' },
-        { value: 'strawberry', label: 'Strawberry', rating: 'wild' },
-        { value: 'salted-caramel', label: 'Salted Caramel', rating: 'crazy' },
+        { value: 'Umuahia', label: 'Umuahia'},
+        { value: 'chocolate', label: 'Chocolate'},
+        { value: 'strawberry', label: 'Strawberry'},
+        { value: 'salted-caramel', label: 'Salted Caramel' },
     ];
 
     let currentCity;
