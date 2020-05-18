@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import * as actions from '../store/actions/burgerIndex'
 
 
-export const Absu = [
+ const Absu = [
     { value: 'vanilla', label: 'Vanilla', rating: 'safe' },
     { value: 'chocolate', label: 'Chocolate', rating: 'good' },
     { value: 'strawberry', label: 'Strawberry', rating: 'wild' },
@@ -19,13 +19,13 @@ const Umuahia = ['umuahia1', 'umauhia2', 'umuahia3']
 
 
 
+let currentCity = null;
 
 export class selectedCity extends Component{
 
     render(){
     
 
-        let currentCity = null;
 
         switch (this.props.city) {
        
@@ -45,18 +45,12 @@ export class selectedCity extends Component{
         }
         console.log('The current city from props',this.prosp.city)
         console.log('The current city',currentCity)
-        return (
-            <div>
-
-                currentCity
-
-            </div>
-            );
+        return currentCity
     }
 
 }
 
-
+export const current = currentCity
 
 const mapStateToProps = state => {
     return {
