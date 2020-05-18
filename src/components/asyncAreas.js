@@ -16,11 +16,7 @@ const OKIGWE = ['Ike road', 'Umuchima', 'Owerri road', 'Ogbonna St']
 const UMUAHIA = ['umuahia1', 'umauhia2', 'umuahia3']
 
 
-class BurgerIngredient extends Component {
-
-
-    render() {
-
+const BurgerIngredient = () => {
 
         let selectedCity = null;
 
@@ -42,7 +38,7 @@ class BurgerIngredient extends Component {
         }
         return selectedCity;
     }
-}
+
 
 BurgerIngredient.propTypes = {
     type: PropTypes.string.isRequired,
