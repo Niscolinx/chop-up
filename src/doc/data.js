@@ -102,6 +102,6 @@ export const groupedOptions = [
     },
     {
         label: 'Flavours',
-        options: flavourOptions,
+        options: colourOptions,
     },
 ];
