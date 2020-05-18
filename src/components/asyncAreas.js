@@ -37,6 +37,7 @@ const selectedCity = () => {
                 currentCity = null
                 break;
         }
+        console.log('The current city',currentCity)
         return currentCity;
     }
 
