@@ -52,7 +52,8 @@ class Home extends Component {
             console.log('cleared city')
             this.props.onClearedSelectedCity()
         }
-        selectedCity()
+        let city = new selectedCity()
+        console.log(city)
     };
     
     render() {
