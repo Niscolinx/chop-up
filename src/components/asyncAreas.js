@@ -23,7 +23,7 @@ const BurgerIngredient = () => {
         switch (this.props.city) {
        
             case ('Absu'):
-                selectedCity = <div className='Meat'></div
+                selectedCity = <div className='Meat'></div>
                 break;
             case ('Okigwe'):
                 selectedCity = <div className='Cheese'></div>
