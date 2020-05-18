@@ -39,3 +39,8 @@ export const setIngredients = () => {
             })
     }
 }
+
+
+export const selectedCity = () => {
+    
+}
