@@ -29,6 +29,7 @@ class Home extends Component {
         console.log(`action: ${actionMeta.action}`);
         console.groupEnd();
 
+        
         console.log('the colour options', colourOptions)
         console.log('the city options', selectedCity)
        // console.log('the city option', current)
