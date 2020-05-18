@@ -6,7 +6,7 @@ const initialState = {
     ingredients: null,
     totalPrice: 4,
     error: false,
-    selectedCity: null
+    selectedCity: null,
 }
 
 const INGREDIENT_PRICES = {
