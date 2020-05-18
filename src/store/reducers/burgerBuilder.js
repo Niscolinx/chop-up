@@ -7,7 +7,6 @@ const initialState = {
     totalPrice: 4,
     error: false,
     selectedCity: null,
-    areas: []
 }
 
 const INGREDIENT_PRICES = {
@@ -46,7 +45,7 @@ const clearedSelectedCity = (state, action) => {
 const addedAreas = (state, action) => {
     return update(state, {
         ...action,
-        areas: [action.payload]
+        areas: action.payload
     })
 }
 
