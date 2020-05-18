@@ -15,9 +15,7 @@ const Okigwe = ['Ike road', 'Umuchima', 'Owerri road', 'Ogbonna St']
 
 const Umuahia = ['umuahia1', 'umauhia2', 'umuahia3']
 
-const handleAbsu = () => {
-    Absu.map()
-}
+
 
 const BurgerIngredient = () => {
 
