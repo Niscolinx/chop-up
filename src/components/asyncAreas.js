@@ -9,12 +9,12 @@ export const flavourOptions = [
     { value: 'salted-caramel', label: 'Salted Caramel', rating: 'crazy' },
 ];
 
+const ABSU = ['Upgate', 'Rc','Student affairs', 'Lecture East/West']
 
-const okigwe = ['Ike road', 'Umuchima', 'Owerri road', 'Ogbonna St']
+const OKIGWE = ['Ike road', 'Umuchima', 'Owerri road', 'Ogbonna St']
 
-const Umuahia = ['umuahia1', 'umauhia2', 'umuahia3']
+const UMUAHIA = ['umuahia1', 'umauhia2', 'umuahia3']
 
-const Absu = ['Upgate', 'Rc','Student affairs', 'Lecture East/West']
 
 class BurgerIngredient extends Component {
 
@@ -22,28 +22,25 @@ class BurgerIngredient extends Component {
     render() {
 
 
-        let ingredient = null;
+        let selectedCity = null;
 
-        switch (this.props.type) {
+        switch (this.props.city) {
        
-            case ('meat'):
-                ingredient = <div className='Meat'></div>
+            case ('Absu'):
+                selectedCity = <div className='Meat'></div
                 break;
-            case ('cheese'):
-                ingredient = <div className='Cheese'></div>
+            case ('Okigwe'):
+                selectedCity = <div className='Cheese'></div>
                 break;
-            case ('salad'):
-                ingredient = <div className='Salad'></div>
-                break;
-            case ('bacon'):
-                ingredient = <div className='Bacon'></div>
+            case ('Umuahia'):
+                selectedCity = <div className='Salad'></div>
                 break;
 
             default:
-                ingredient = null
+                selectedCity = null
                 break;
         }
-        return ingredient;
+        return selectedCity;
     }
 }
 
@@ -54,11 +51,7 @@ BurgerIngredient.propTypes = {
 
 const mapStateToProps = state => {
     return {
-        ingredients: state.burger.ingredients,
-        totalPrice: state.burger.totalPrice,
-        error: state.burger.error,
-        auth: state.auth.tokenId,
-        authErr: state.auth.error
+        city: state.burger.selectedCity
     }
 }
 const mapDispatchToProps = dispatch => {
