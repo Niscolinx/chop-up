@@ -20,11 +20,13 @@ const Umuahia = ['umuahia1', 'umauhia2', 'umuahia3']
 
 
 
-export const selectedCity = () => {
+export const selectedCity = (props) => {
 
     let currentCity;
 
-    switch (this.props.city) {
+    console.log(props.city)
+
+    switch (props.city) {
 
         case ('Absu'):
             currentCity = Absu
@@ -42,7 +44,7 @@ export const selectedCity = () => {
     }
     console.log('The current city from props', this.prosp.city)
     console.log('The current city', currentCity)
-    return this.props.onSelectedAreas(currentCity)
+    return props.onSelectedAreas(currentCity)
 
 
 }
