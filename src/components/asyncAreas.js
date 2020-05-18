@@ -1,4 +1,4 @@
-import React  from 'react';
+import React, {Component}  from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux'
 
@@ -17,7 +17,10 @@ const Umuahia = ['umuahia1', 'umauhia2', 'umuahia3']
 
 
 
-const selectedCity = () => {
+class selectedCity extends Component{
+
+    render(){
+    
 
         let currentCity = null;
 
@@ -42,7 +45,7 @@ const selectedCity = () => {
         return currentCity;
     }
 
-
+}
 selectedCity.propTypes = {
     type: PropTypes.string.isRequired,
 }
