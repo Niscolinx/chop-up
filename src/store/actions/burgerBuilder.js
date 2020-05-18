@@ -49,3 +49,11 @@ export const selectedCity = (cityName) => {
         cityName
     }
 }
+
+export const clearedSelectedCity = () => {
+    console.log('the city was removed')
+
+    return{
+        type: actionTypes.CLEARED_SELECTED_CITY
+    }
+}

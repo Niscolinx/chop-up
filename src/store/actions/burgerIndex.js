@@ -2,7 +2,8 @@ export {
     removeIngredient,
     addIngredient,
     setIngredients,
-    selectedCity
+    selectedCity,
+    clearedSelectedCity
 } from './burgerBuilder'
 
 export {

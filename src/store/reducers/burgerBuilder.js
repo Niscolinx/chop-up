@@ -6,7 +6,7 @@ const initialState = {
     ingredients: null,
     totalPrice: 4,
     error: false,
-    selectedCity: ''
+    selectedCity: null
 }
 
 const INGREDIENT_PRICES = {
@@ -32,8 +32,13 @@ const selectedCity = (state, action) => {
         ...action,
         selectedCity: action.cityName
     })
+}
 
-    
+const clearedSelectedCity = (state, action) => {
+    return update(state {
+        ...action,
+        selectedCity: null
+    })
 }
 
 
