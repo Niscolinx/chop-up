@@ -1,5 +1,6 @@
 import * as actionTypes from './actionTypes'
 import axios from '../../axios'
+import { areas } from '../../components/Layout/DeliveringForm/Locations'
 
 export const addIngredient = (name) => {
     return {
@@ -55,5 +56,13 @@ export const clearedSelectedCity = () => {
 
     return{
         type: actionTypes.CLEARED_SELECTED_CITY
+    }
+}
+
+export const addedAreas = (areas) => {
+
+    return{
+        type: actionTypes.ADDED_AREAS,
+        areas
     }
 }
