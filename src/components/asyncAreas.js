@@ -17,26 +17,31 @@ const Umuahia = ['umuahia1', 'umauhia2', 'umuahia3']
 
 
 
-const BurgerIngredient = () => {
+const selectedCity = () => {
 
-        let selectedCity = null;
+        let currentCity = null;
 
         switch (this.props.city) {
        
-            case ('Absu'): return handleAbsu()
-            case ('Okigwe'): return handleOkigwe()
-            case ('Umuahia'): return handleUmuahia()
-            
-
+            case ('Absu'):
+                currentCity = Absu
+                break;
+            case ('Okigwe'):
+                currentCity = Okigwe
+                break;
+            case ('Umuahia'):
+                currentCity = Umuahia
+                break;
+           
             default:
-                selectedCity = null
+                currentCity = null
                 break;
         }
-        return selectedCity;
+        return currentCity;
     }
 
 
-BurgerIngredient.propTypes = {
+selectedCity.propTypes = {
     type: PropTypes.string.isRequired,
 }
 
@@ -53,4 +58,4 @@ const mapDispatchToProps = dispatch => {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(BurgerIngredient);
+export default connect(mapStateToProps, mapDispatchToProps)(selectedCity);
