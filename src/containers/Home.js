@@ -26,6 +26,10 @@ class Home extends Component {
     handleChange = (newValue: any, actionMeta: any) => {
         console.group('Value Changed');
         console.log(newValue);
+
+        this.setState({
+            city: newValue
+        })
         console.log(`action: ${actionMeta.action}`);
         console.log(`action: ${actionMeta.action}`);
         console.groupEnd();
@@ -40,7 +44,7 @@ class Home extends Component {
         };
 
 
-
+        console.log('This is the current state', this.state.city)
 
         const selectCity = locations.cities.map((item, i) => {
             let lower = item.toLowerCase()
