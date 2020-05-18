@@ -7,6 +7,7 @@ const initialState = {
     totalPrice: 4,
     error: false,
     selectedCity: null,
+    areas: []
 }
 
 const INGREDIENT_PRICES = {
