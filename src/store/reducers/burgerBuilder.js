@@ -15,6 +15,17 @@ const INGREDIENT_PRICES = {
     cheese: 2.3,
     meat: 1
 };
+const addIngredient = (state, action) => {
+    return update(state, {
+        ...action,
+        ...state,
+        ingredients: {
+            ...state.ingredients,
+            [action.ingredientName]: state.ingredients[action.ingredientName] + 1
+        },
+        totalPrice: state.totalPrice + INGREDIENT_PRICES[action.ingredientName],
+    })
+}
 
 const reducer = (state = initialState, action) => {
     switch (action.type) {
