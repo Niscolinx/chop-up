@@ -61,22 +61,23 @@ export const clearedSelectedCity = () => {
 
 export const addAreas = (areas) => {
     const Absu = [
-        { value: 'Absu', label: 'Absu'},
-        { value: 'chocolate', label: 'Chocolate'},
-        { value: 'strawberry', label: 'Strawberry'},
-        { value: 'salted-caramel', label: 'Salted Caramel' },
+        { value: 'Absu'}
+        { value: 'Absu'}
+        { value: 'Absu'}
+        { value: 'Absu'}
     ];
     const Okigwe = [
         { label: 'Okigwe'},
-        { value: 'chocolate', label: 'Chocolate'},
-        { value: 'strawberry', label: 'Strawberry'},
-        { value: 'salted-caramel', label: 'Salted Caramel' },
+        { label: 'Okigwe'},
+        { label: 'Okigwe'},
+        { label: 'Okigwe'},
+    
     ];
     const Umuahia = [
-        { value: 'Umuahia', label: 'Umuahia'},
-        { value: 'chocolate', label: 'Chocolate'},
-        { value: 'strawberry', label: 'Strawberry'},
-        { value: 'salted-caramel', label: 'Salted Caramel' },
+        { value: 'Umuahia'}
+        { value: 'Umuahia'}
+        { value: 'Umuahia'}
+        { value: 'Umuahia'}
     ];
 
     let currentCity;
