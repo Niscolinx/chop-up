@@ -52,7 +52,7 @@ class Home extends Component {
             console.log('cleared city')
             this.props.onClearedSelectedCity()
         }
-    
+
     };
 
     render() {
@@ -177,7 +177,7 @@ class Home extends Component {
                                         isClearable
                                         onChange={this.handleChange}
                                         onInputChange={this.handleInputChange}
-                                    // options={selectedCity}
+                                        options={this.props.areas}
                                     />
                                 </Col>
 
