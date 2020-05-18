@@ -61,22 +61,22 @@ export const clearedSelectedCity = () => {
 
 export const addAreas = (areas) => {
     const Absu = [
-        { value: 'Absu'}
-        { value: 'Absu'}
-        { value: 'Absu'}
+        { value: 'Absu'},
+        { value: 'Absu'},
+        { value: 'Absu'},
         { value: 'Absu'}
     ];
     const Okigwe = [
         { label: 'Okigwe'},
         { label: 'Okigwe'},
         { label: 'Okigwe'},
-        { label: 'Okigwe'},
+        { label: 'Okigwe'}
     
     ];
     const Umuahia = [
-        { value: 'Umuahia'}
-        { value: 'Umuahia'}
-        { value: 'Umuahia'}
+        { value: 'Umuahia'},
+        { value: 'Umuahia'},
+        { value: 'Umuahia'},
         { value: 'Umuahia'}
     ];
 
