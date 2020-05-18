@@ -485,10 +485,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
     return {
         onAddIngredient: (ingName) => dispatch(actions.addIngredient(ingName)),
-        onRemoveIngredient: (ingName) => dispatch(actions.removeIngredient(ingName)),
-        onInitIngredients: () => dispatch(actions.setIngredients()),
-        onOrderRedirect: () => dispatch(actions.orderRedirect()),
-        onClearErr: () => dispatch(actions.clearError())
+        
     }
 }
 
