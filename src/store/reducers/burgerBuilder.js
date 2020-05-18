@@ -27,6 +27,13 @@ const addIngredient = (state, action) => {
     })
 }
 
+const selectedCity = (state, action) => {
+    return update(state, {
+        ...action,
+        selectedCity: action.cityName
+    })
+}
+
 
 const reducer = (state = initialState, action) => {
     switch (action.type) {
