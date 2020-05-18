@@ -23,7 +23,7 @@ class Home extends Component {
         console.groupEnd();
     };
 
-    handleChange = (newValue, actionMeta) => {
+    handleChange = (newValue: any, actionMeta: any) => {
         console.group('Value Changed');
         console.log(newValue);
         console.log(`action: ${actionMeta.action}`);
