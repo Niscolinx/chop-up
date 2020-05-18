@@ -493,7 +493,6 @@ const mapDispatchToProps = dispatch => {
     return {
         onSelectedCity: (cityName) => dispatch(actions.selectedCity(cityName)),
         onClearedSelectedCity: () => dispatch(actions.clearedSelectedCity())
-
     }
 }
 

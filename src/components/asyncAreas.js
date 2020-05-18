@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux'
 
 export const flavourOptions = [
     { value: 'vanilla', label: 'Vanilla', rating: 'safe' },
@@ -47,4 +48,21 @@ BurgerIngredient.propTypes = {
     type: PropTypes.string.isRequired,
 }
 
-export default BurgerIngredient;
+
+const mapStateToProps = state => {
+    return {
+        ingredients: state.burger.ingredients,
+        totalPrice: state.burger.totalPrice,
+        error: state.burger.error,
+        auth: state.auth.tokenId,
+        authErr: state.auth.error
+    }
+}
+const mapDispatchToProps = dispatch => {
+    return {
+        onSelectedCity: (cityName) => dispatch(actions.selectedCity(cityName)),
+        onClearedSelectedCity: () => dispatch(actions.clearedSelectedCity())
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(BurgerIngredient);
