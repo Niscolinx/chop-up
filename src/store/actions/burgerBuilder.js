@@ -67,7 +67,7 @@ export const addAreas = (areas) => {
         { value: 'salted-caramel', label: 'Salted Caramel' },
     ];
     const Okigwe = [
-        { value: 'Okigwe', label: 'Okigwe'},
+        { label: 'Okigwe'},
         { value: 'chocolate', label: 'Chocolate'},
         { value: 'strawberry', label: 'Strawberry'},
         { value: 'salted-caramel', label: 'Salted Caramel' },
