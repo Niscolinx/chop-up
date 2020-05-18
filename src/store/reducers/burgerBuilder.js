@@ -32,6 +32,8 @@ const selectedCity = (state, action) => {
         ...action,
         selectedCity: action.cityName
     })
+
+    
 }
 
 
