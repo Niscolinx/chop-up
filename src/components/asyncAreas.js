@@ -1,7 +1,14 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+export const flavourOptions = [
+    { value: 'vanilla', label: 'Vanilla', rating: 'safe' },
+    { value: 'chocolate', label: 'Chocolate', rating: 'good' },
+    { value: 'strawberry', label: 'Strawberry', rating: 'wild' },
+    { value: 'salted-caramel', label: 'Salted Caramel', rating: 'crazy' },
+];
 class BurgerIngredient extends Component {
+
 
     render() {
         let okigwe = ['Ike road', 'Umuchima', 'Owerri road', 'Ogbonna St']
