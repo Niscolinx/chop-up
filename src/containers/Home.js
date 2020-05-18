@@ -44,7 +44,7 @@ class Home extends Component {
         };
 
 
-        console.log('This is the current state', this.state.city)
+        console.log('This is the current state', this.state.city.value)
 
         const selectCity = locations.cities.map((item, i) => {
             let lower = item.toLowerCase()
