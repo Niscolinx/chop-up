@@ -2,14 +2,14 @@ import React  from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux'
 
-export const flavourOptions = [
+ const Absu = [
     { value: 'vanilla', label: 'Vanilla', rating: 'safe' },
     { value: 'chocolate', label: 'Chocolate', rating: 'good' },
     { value: 'strawberry', label: 'Strawberry', rating: 'wild' },
     { value: 'salted-caramel', label: 'Salted Caramel', rating: 'crazy' },
 ];
 
-const Absu = ['Upgate', 'Rc','Student affairs', 'Lecture East/West']
+const Absus = ['Upgate', 'Rc','Student affairs', 'Lecture East/West']
 
 const Okigwe = ['Ike road', 'Umuchima', 'Owerri road', 'Ogbonna St']
 

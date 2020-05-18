@@ -27,6 +27,9 @@ class Home extends Component {
         console.log(inputValue);
         console.log(`action: ${actionMeta.action}`);
         console.groupEnd();
+
+        console.log('the colour options', colourOptions)
+        console.log('the city options', selectedCity)
     };
     
     handleChange = (newValue: any, actionMeta: any) => {
