@@ -36,11 +36,8 @@ class Home extends Component {
         console.log(`action: ${actionMeta.action}`);
         console.groupEnd();
         
-        this.setState({
-            city: newValue
-        })
-        
-        if(this.state.city){
+        console.log('The value',newValue.value)
+        if(newValue.value){
             console.log('loaded city')
             this.props.onSelectedCity(this.state.city.value)
     
