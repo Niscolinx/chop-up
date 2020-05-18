@@ -19,11 +19,11 @@ const Umuahia = ['umuahia1', 'umauhia2', 'umuahia3']
 
 
 
-let currentCity = null;
 
 export class selectedCity extends Component{
-
+    
     render(){
+        let currentCity = null;
     
 
 
@@ -45,12 +45,12 @@ export class selectedCity extends Component{
         }
         console.log('The current city from props',this.prosp.city)
         console.log('The current city',currentCity)
-        return currentCity
+        return this.props.onSelectedAreas(currentCity)
     }
 
 }
 
-export const current = currentCity
+
 
 const mapStateToProps = state => {
     return {
@@ -60,7 +60,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        onSelectedArea: (ingName) => dispatch(actions.addIngredient(ingName)),
+        onSelectedAreas: (areaName) => dispatch(actions.addAreas(areaName)),
 
     }
 }
