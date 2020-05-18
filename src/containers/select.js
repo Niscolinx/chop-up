@@ -7,6 +7,8 @@ const options = [
     { value: 'vanilla', label: 'Vanilla' }
 ]
 
+
+console.log(options)
 const MyComponent = () => (
     <Select 
     options={options}
