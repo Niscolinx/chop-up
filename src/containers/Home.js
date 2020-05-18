@@ -468,4 +468,24 @@ class Home extends Component {
 }
 
 
-export default Home
+const mapStateToProps = state => {
+    return {
+        ingredients: state.burger.ingredients,
+        totalPrice: state.burger.totalPrice,
+        error: state.burger.error,
+        auth: state.auth.tokenId,
+        authErr: state.auth.error
+    }
+}
+const mapDispatchToProps = dispatch => {
+    return {
+        onAddIngredient: (ingName) => dispatch(actions.addIngredient(ingName)),
+        onRemoveIngredient: (ingName) => dispatch(actions.removeIngredient(ingName)),
+        onInitIngredients: () => dispatch(actions.setIngredients()),
+        onOrderRedirect: () => dispatch(actions.orderRedirect()),
+        onClearErr: () => dispatch(actions.clearError())
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(withErrorHandler(Home, axios));
+
