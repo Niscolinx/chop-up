@@ -1,6 +1,5 @@
 import * as actionTypes from '../actions/actionTypes'
 import update from '../utility'
-import { act } from 'react-test-renderer';
 
 
 const initialState = {

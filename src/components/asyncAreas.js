@@ -8,15 +8,18 @@ export const flavourOptions = [
     { value: 'strawberry', label: 'Strawberry', rating: 'wild' },
     { value: 'salted-caramel', label: 'Salted Caramel', rating: 'crazy' },
 ];
+
+
+const okigwe = ['Ike road', 'Umuchima', 'Owerri road', 'Ogbonna St']
+
+const Umuahia = ['umuahia1', 'umauhia2', 'umuahia3']
+
+const Absu = ['Upgate', 'Rc','Student affairs', 'Lecture East/West']
+
 class BurgerIngredient extends Component {
 
 
     render() {
-        let okigwe = ['Ike road', 'Umuchima', 'Owerri road', 'Ogbonna St']
-
-        let Umuahia = ['umuahia1', 'umauhia2', 'umuahia3']
-
-        let Absu = ['Upgate', 'Rc','Student affairs', 'Lecture East/West']
 
 
         let ingredient = null;
