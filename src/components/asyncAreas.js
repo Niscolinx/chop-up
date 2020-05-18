@@ -2,6 +2,9 @@ import React, {Component}  from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux'
 
+import * as actions from '../store/actions/burgerIndex'
+
+
  const Absu = [
     { value: 'vanilla', label: 'Vanilla', rating: 'safe' },
     { value: 'chocolate', label: 'Chocolate', rating: 'good' },
@@ -43,7 +46,10 @@ class selectedCity extends Component{
         console.log('The current city',currentCity)
         console.log('The current city from props',this.prosp.city)
         return (
-            currentCity
+            <div>
+                currentCity
+
+            </div>
             );
     }
 
