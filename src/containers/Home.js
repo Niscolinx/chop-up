@@ -13,7 +13,6 @@ import axios from "../axios"
 import CreatableSelect from 'react-select/creatable';
 import AsyncSelect from 'react-select/async';
 import { colourOptions } from '../doc/data';
-import { selectedCity } from '../components/asyncAreas'
 
 
 
@@ -53,9 +52,7 @@ class Home extends Component {
             console.log('cleared city')
             this.props.onClearedSelectedCity()
         }
-        let city = new selectedCity()
-
-        console.log(city)
+    
     };
 
     render() {
@@ -492,11 +489,7 @@ class Home extends Component {
 
 const mapStateToProps = state => {
     return {
-        ingredients: state.burger.ingredients,
-        totalPrice: state.burger.totalPrice,
-        error: state.burger.error,
-        auth: state.auth.tokenId,
-        authErr: state.auth.error
+        areas: state.burger.areas
     }
 }
 const mapDispatchToProps = dispatch => {
