@@ -23,28 +23,37 @@ class Home extends Component {
     }
 
     handleInputChange = (inputValue: any, actionMeta: any) => {
-        console.group('Input Changed');
-        console.log(inputValue);
-        console.log(`action: ${actionMeta.action}`);
-        console.groupEnd();
+         console.group('Input Changed');
+        console.log('the input value is ',inputValue);
 
-        console.log('the colour options', colourOptions)
+        if(this.state.city !== null){
+            this.props.onSelectedCity(this.state.city)
+            this.props.onSelectedAreas(this.state.city)
+
+        }
+        // console.log(`action: ${actionMeta.action}`);
+        // console.groupEnd();
+
         //console.log('the city options', selectedCity)
         // console.log('the city option', current)
     };
 
     handleChange = (newValue: any, actionMeta: any) => {
         console.group('Value Changed');
-        console.log(newValue);
+        console.log('The values to compare', newValue);
 
-        console.log('the meta data', actionMeta);
-        console.log(`action: ${actionMeta.action}`);
-        console.groupEnd();
+        // console.log('the meta data', actionMeta);
+        // console.log(`action: ${actionMeta.action}`);
+        // console.groupEnd();
+
 
         if (newValue !== null) {
             console.log('loaded city')
-            this.props.onSelectedCity(newValue.value)
-            this.props.onSelectedAreas(newValue.value)
+
+            this.setState({
+                city: newValue.value
+            })
+           
             
         }
         else {
