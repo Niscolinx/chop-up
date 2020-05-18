@@ -9,11 +9,17 @@ export const flavourOptions = [
     { value: 'salted-caramel', label: 'Salted Caramel', rating: 'crazy' },
 ];
 
-const ABSU = ['Upgate', 'Rc','Student affairs', 'Lecture East/West']
+const Absu = ['Upgate', 'Rc','Student affairs', 'Lecture East/West']
 
-const OKIGWE = ['Ike road', 'Umuchima', 'Owerri road', 'Ogbonna St']
+const Okigwe = ['Ike road', 'Umuchima', 'Owerri road', 'Ogbonna St']
 
-const UMUAHIA = ['umuahia1', 'umauhia2', 'umuahia3']
+const Umuahia = ['umuahia1', 'umauhia2', 'umuahia3']
+
+
+if(this.props.selectedCity !== null){
+
+    const handleCity = 
+}
 
 
 const BurgerIngredient = () => {
