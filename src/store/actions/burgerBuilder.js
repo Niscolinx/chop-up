@@ -59,7 +59,7 @@ export const clearedSelectedCity = () => {
     }
 }
 
-export const addedAreas = (areas) => {
+export const addAreas = (areas) => {
 
     return{
         type: actionTypes.ADDED_AREAS,
