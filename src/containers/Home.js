@@ -18,7 +18,7 @@ import { colourOptions, flavourOptions } from '../doc/data';
 class Home extends Component {
 
     state = {
-        city: ''
+        city: null
     }
 
     handleInputChange = (inputValue: any, actionMeta: any) => {
@@ -27,21 +27,26 @@ class Home extends Component {
         console.log(`action: ${actionMeta.action}`);
         console.groupEnd();
     };
-
+    
     handleChange = (newValue: any, actionMeta: any) => {
         console.group('Value Changed');
         console.log(newValue);
-
-        console.log(actionMeta);
+        
+        console.log('the meta data',actionMeta);
         console.log(`action: ${actionMeta.action}`);
         console.groupEnd();
-
+        
         this.setState({
             city: newValue
         })
-        this.props.onSelectedCity(this.state.city)
+        
+        if(this.state.city){
+            console.log('loaded city')
+            this.props.onSelectedCity(this.state.city.value)
+    
+        }
     };
-
+    
     render() {
         const divStyle = {
             backgroundImage: 'url(' + imgUrl + ')',
@@ -51,7 +56,7 @@ class Home extends Component {
         };
 
 
-        console.log('This is the current state', this.state.city.value)
+        console.log('This is the current state', this.state.city)
 
         const selectCity = locations.cities.map((item, i) => {
             let lower = item.toLowerCase()
