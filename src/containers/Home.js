@@ -4,13 +4,14 @@ import { connect } from 'react-redux'
 import { Container, Row, Col, Button, Card, CardGroup } from 'react-bootstrap'
 import Form from 'react-bootstrap/Form'
 import imgUrl from '../assets/images/bg_home.jpg'
+
+import * as actions from '../store/actions/burgerIndex'
 import * as locations from '../components/Layout/DeliveringForm/Locations'
 import withErrorHandler from "../components/hoc/withErrorHandler"
 
 
 import CreatableSelect from 'react-select/creatable';
 import AsyncSelect from 'react-select/async';
-
 import { colourOptions, flavourOptions } from '../doc/data';
 
 
