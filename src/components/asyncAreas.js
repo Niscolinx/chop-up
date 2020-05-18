@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import * as actions from '../store/actions/burgerIndex'
 
 
- const Absu = [
+export const Absu = [
     { value: 'vanilla', label: 'Vanilla', rating: 'safe' },
     { value: 'chocolate', label: 'Chocolate', rating: 'good' },
     { value: 'strawberry', label: 'Strawberry', rating: 'wild' },
@@ -16,6 +16,7 @@ const Absus = ['Upgate', 'Rc','Student affairs', 'Lecture East/West']
 const Okigwe = ['Ike road', 'Umuchima', 'Owerri road', 'Ogbonna St']
 
 const Umuahia = ['umuahia1', 'umauhia2', 'umuahia3']
+
 
 
 

@@ -13,9 +13,8 @@ import axios from "../axios"
 import CreatableSelect from 'react-select/creatable';
 import AsyncSelect from 'react-select/async';
 import { colourOptions } from '../doc/data';
-import selectedCity from '../components/asyncAreas'
+import {selectedCity, Absu}from '../components/asyncAreas'
 
-import options from './select'
 
 
 class Home extends Component {
@@ -32,7 +31,7 @@ class Home extends Component {
 
         console.log('the colour options', colourOptions)
         console.log('the city options', selectedCity)
-        console.log('the city option', options)
+        console.log('the city option', Absu)
     };
     
     handleChange = (newValue: any, actionMeta: any) => {
