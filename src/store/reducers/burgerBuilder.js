@@ -46,7 +46,7 @@ const clearedSelectedCity = (state, action) => {
 const addedAreas = (state, action) => {
     return update(state, {
         ...action,
-        areas: action.payload
+        areas: [action.payload]
     })
 }
 
