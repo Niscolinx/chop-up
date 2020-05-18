@@ -10,7 +10,6 @@ import axios from "../axios"
 import Spinner from "../components/Layout/spinner"
 import OrderSummary from "../components/Modal/OrderSummary"
 import * as actions from '../store/actions/burgerIndex'
-import fire from '../firebase/firebase'
 
 
 export class BurgerBuilder extends Component {
