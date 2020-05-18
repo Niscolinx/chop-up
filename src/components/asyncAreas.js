@@ -15,12 +15,9 @@ const Okigwe = ['Ike road', 'Umuchima', 'Owerri road', 'Ogbonna St']
 
 const Umuahia = ['umuahia1', 'umauhia2', 'umuahia3']
 
-
-if(this.props.selectedCity !== null){
-
-    const handleCity = 
+const handleAbsu = () => {
+    Absu.map()
 }
-
 
 const BurgerIngredient = () => {
 
@@ -28,15 +25,10 @@ const BurgerIngredient = () => {
 
         switch (this.props.city) {
        
-            case ('Absu'):
-                selectedCity = <div className='Meat'></div>
-                break;
-            case ('Okigwe'):
-                selectedCity = <div className='Cheese'></div>
-                break;
-            case ('Umuahia'):
-                selectedCity = <div className='Salad'></div>
-                break;
+            case ('Absu'): return handleAbsu()
+            case ('Okigwe'): return handleOkigwe()
+            case ('Umuahia'): return handleUmuahia()
+            
 
             default:
                 selectedCity = null
@@ -53,7 +45,7 @@ BurgerIngredient.propTypes = {
 
 const mapStateToProps = state => {
     return {
-        city: state.burger.selectedCity
+        city: state.burger.selectedCity !== null
     }
 }
 const mapDispatchToProps = dispatch => {

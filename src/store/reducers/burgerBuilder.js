@@ -15,6 +15,8 @@ const INGREDIENT_PRICES = {
     cheese: 2.3,
     meat: 1
 };
+
+
 const addIngredient = (state, action) => {
     return update(state, {
         ...action,
