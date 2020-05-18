@@ -37,10 +37,14 @@ class Home extends Component {
         console.groupEnd();
         
         console.log('The value',newValue)
-        if(newValue.value){
+        if(newValue !== null){
             console.log('loaded city')
             this.props.onSelectedCity(newValue.value)
     
+        }
+        else{
+            console.log('cleared city')
+            this.props.onClearedSelectedCity()
         }
     };
     
