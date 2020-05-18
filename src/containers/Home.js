@@ -8,7 +8,7 @@ import imgUrl from '../assets/images/bg_home.jpg'
 import * as actions from '../store/actions/burgerIndex'
 import * as locations from '../components/Layout/DeliveringForm/Locations'
 import withErrorHandler from "../components/hoc/withErrorHandler"
-
+import axios from "../axios"
 
 import CreatableSelect from 'react-select/creatable';
 import AsyncSelect from 'react-select/async';
@@ -489,5 +489,5 @@ const mapDispatchToProps = dispatch => {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(withErrorHandler(Home));
+export default connect(mapStateToProps, mapDispatchToProps)(withErrorHandler(Home, axios));
 
