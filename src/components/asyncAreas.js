@@ -53,7 +53,7 @@ export const selectedCity = (props) => {
 
 const mapStateToProps = state => {
     return {
-        city: state.burger.selectedCity !== null
+        city: state.burger.selectedCity
     }
 }
 
