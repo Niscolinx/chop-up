@@ -60,9 +60,45 @@ export const clearedSelectedCity = () => {
 }
 
 export const addAreas = (areas) => {
+    const Absu = [
+        { value: 'vanilla', label: 'Vanilla', rating: 'safe' },
+        { value: 'chocolate', label: 'Chocolate', rating: 'good' },
+        { value: 'strawberry', label: 'Strawberry', rating: 'wild' },
+        { value: 'salted-caramel', label: 'Salted Caramel', rating: 'crazy' },
+    ];
+    const Okigwe = [
+        { value: 'Okigwe', label: 'Vanilla', rating: 'safe' },
+        { value: 'chocolate', label: 'Chocolate', rating: 'good' },
+        { value: 'strawberry', label: 'Strawberry', rating: 'wild' },
+        { value: 'salted-caramel', label: 'Salted Caramel', rating: 'crazy' },
+    ];
+    const Umuahia = [
+        { value: 'Umuahia', label: 'Vanilla', rating: 'safe' },
+        { value: 'chocolate', label: 'Chocolate', rating: 'good' },
+        { value: 'strawberry', label: 'Strawberry', rating: 'wild' },
+        { value: 'salted-caramel', label: 'Salted Caramel', rating: 'crazy' },
+    ];
 
+    let currentCity;
+
+    switch (areas) {
+
+        case ('Absu'):
+            currentCity = Absu
+            break;
+        case ('Okigwe'):
+            currentCity = Okigwe
+            break;
+        case ('Umuahia'):
+            currentCity = Umuahia
+            break;
+
+        default:
+            currentCity = null
+            break;
+    }
     return{
         type: actionTypes.ADDED_AREAS,
-        areas
+        payload: currentCity
     }
 }
