@@ -12,7 +12,8 @@ import axios from "../axios"
 
 import CreatableSelect from 'react-select/creatable';
 import AsyncSelect from 'react-select/async';
-import { colourOptions, flavourOptions } from '../doc/data';
+import { colourOptions } from '../doc/data';
+import selectedCity from '../components/asyncAreas'
 
 
 class Home extends Component {
@@ -170,7 +171,7 @@ class Home extends Component {
                                         isClearable
                                         onChange={this.handleChange}
                                         onInputChange={this.handleInputChange}
-                                        options={flavourOptions}
+                                        options={selectedCity}
                                     />
                                 </Col>
 
