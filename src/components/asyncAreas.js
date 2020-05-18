@@ -19,7 +19,7 @@ const Umuahia = ['umuahia1', 'umauhia2', 'umuahia3']
 
 
 
-class selectedCity extends Component{
+export class selectedCity extends Component{
 
     render(){
     
