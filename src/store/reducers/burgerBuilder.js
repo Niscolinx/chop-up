@@ -1,5 +1,6 @@
 import * as actionTypes from '../actions/actionTypes'
 import update from '../utility'
+import { act } from 'react-test-renderer';
 
 
 const initialState = {
@@ -35,7 +36,7 @@ const selectedCity = (state, action) => {
 }
 
 const clearedSelectedCity = (state, action) => {
-    return update(state {
+    return update(state, {
         ...action,
         selectedCity: null
     })
@@ -44,8 +45,12 @@ const clearedSelectedCity = (state, action) => {
 
 const reducer = (state = initialState, action) => {
     switch (action.type) {
+        case actionTypes.SELECTED_CITY: return selectedCity(state, action)
+        case actionTypes.CLEARED_SELECTED_CITY: return clearedSelectedCity(state, action)
+
+        
+        
         case actionTypes.ADD_INGREDIENT: return addIngredient(state, action)
-           
         case actionTypes.REMOVE_INGREDIENT:
             return {
                 ...state,
