@@ -39,7 +39,7 @@ class Home extends Component {
         console.log('The value',newValue.value)
         if(newValue.value){
             console.log('loaded city')
-            this.props.onSelectedCity(this.state.city.value)
+            this.props.onSelectedCity(newValue.value)
     
         }
     };
@@ -53,7 +53,6 @@ class Home extends Component {
         };
 
 
-        console.log('This is the current state', this.state.city)
 
         const selectCity = locations.cities.map((item, i) => {
             let lower = item.toLowerCase()
