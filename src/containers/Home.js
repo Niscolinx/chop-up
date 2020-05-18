@@ -13,7 +13,7 @@ import axios from "../axios"
 import CreatableSelect from 'react-select/creatable';
 import AsyncSelect from 'react-select/async';
 import { colourOptions } from '../doc/data';
-import {selectedCity}from '../components/asyncAreas'
+import { selectedCity } from '../components/asyncAreas'
 
 
 
@@ -30,32 +30,34 @@ class Home extends Component {
         console.groupEnd();
 
         console.log('the colour options', colourOptions)
-        console.log('the city options', selectedCity)
+        //console.log('the city options', selectedCity)
         // console.log('the city option', current)
     };
-    
+
     handleChange = (newValue: any, actionMeta: any) => {
         console.group('Value Changed');
         console.log(newValue);
-        
-        console.log('the meta data',actionMeta);
+
+        console.log('the meta data', actionMeta);
         console.log(`action: ${actionMeta.action}`);
         console.groupEnd();
-        
-        console.log('The value',newValue)
-        if(newValue !== null){
+
+        console.log('The value', newValue)
+        if (newValue !== null) {
             console.log('loaded city')
             this.props.onSelectedCity(newValue.value)
-            
+            this.props.onSelectedAreas(newValue.value)
+
         }
-        else{
+        else {
             console.log('cleared city')
             this.props.onClearedSelectedCity()
         }
         let city = new selectedCity()
+
         console.log(city)
     };
-    
+
     render() {
         const divStyle = {
             backgroundImage: 'url(' + imgUrl + ')',
@@ -72,17 +74,17 @@ class Home extends Component {
             return <option value={lower} key={item + i} className='delivering_form--locations_item'>{upper}</option>
 
         })
-        const customStyles = (height= '3rem') => {
-            return{
+        const customStyles = (height = '3rem') => {
+            return {
 
                 menu: (provided, state) => ({
                     ...provided,
                     //width: state.selectProps.width,
                     color: state.selectProps.menuColor,
                     padding: 10,
-    
+
                 }),
-    
+
                 option: (styles, state) => ({
                     ...styles,
                     cursor: 'pointer',
@@ -102,7 +104,7 @@ class Home extends Component {
                     height: height,
                     padding: '0 6px'
                 }),
-    
+
                 input: (provided, state) => ({
                     ...provided,
                     margin: '0px',
@@ -114,12 +116,12 @@ class Home extends Component {
                     ...provided,
                     height: height,
                 }),
-              
-    
+
+
                 singleValue: (provided, state) => {
                     const opacity = state.isDisabled ? 0.5 : 1;
                     const transition = 'opacity 300ms';
-    
+
                     return { ...provided, opacity, transition };
                 }
             }
@@ -142,7 +144,7 @@ class Home extends Component {
             <div>
 
                 <div style={divStyle}>
-                    <Container fliuid = 'true'className='hero'>
+                    <Container fliuid='true' className='hero'>
                         <div className='delivering mt-5'>
 
                             <Row className="justify-content-md-center">
@@ -167,8 +169,8 @@ class Home extends Component {
                                         onChange={this.handleChange}
                                         onInputChange={this.handleInputChange}
                                         options={colourOptions}
-                                        />
-                                      
+                                    />
+
                                 </Col>
                                 <Col>
                                     <AsyncSelect
@@ -178,7 +180,7 @@ class Home extends Component {
                                         isClearable
                                         onChange={this.handleChange}
                                         onInputChange={this.handleInputChange}
-                                       // options={selectedCity}
+                                    // options={selectedCity}
                                     />
                                 </Col>
 
@@ -268,7 +270,7 @@ class Home extends Component {
                                         <option>Absu</option>
                                         <option>2</option>
                                         <option>3</option>
-                                        
+
                                     </Form.Control>
                                 </Form.Group>
 
@@ -396,7 +398,7 @@ class Home extends Component {
                                     <li>
                                         <a href="#!" className='footer_link'>Okigwe</a>
                                     </li>
-                                   
+
                                 </ul>
 
                             </div>
@@ -475,7 +477,7 @@ class Home extends Component {
                     </div>
 
                     <div className="footer-copyright text-center py-3">© 2020 Copyright:
-                                      Chop Up
+                    Chop Up
                     </div>
 
                 </footer>
@@ -500,7 +502,9 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
     return {
         onSelectedCity: (cityName) => dispatch(actions.selectedCity(cityName)),
-        onClearedSelectedCity: () => dispatch(actions.clearedSelectedCity())
+        onClearedSelectedCity: () => dispatch(actions.clearedSelectedCity()),
+        onSelectedAreas: (areaName) => dispatch(actions.addAreas(areaName)),
+
     }
 }
 

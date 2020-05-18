@@ -18,34 +18,38 @@ const Okigwe = ['Ike road', 'Umuchima', 'Owerri road', 'Ogbonna St']
 const Umuahia = ['umuahia1', 'umauhia2', 'umuahia3']
 
 
+const checkArea = () => {
+    let currentCity = null;
 
+    switch (this.props.city) {
+
+        case ('Absu'):
+            currentCity = Absu
+            break;
+        case ('Okigwe'):
+            currentCity = Okigwe
+            break;
+        case ('Umuahia'):
+            currentCity = Umuahia
+            break;
+
+        default:
+            currentCity = null
+            break;
+    }
+
+    return currentCity
+}
 
 export class selectedCity extends Component{
+
+    
     
     render(){
-        let currentCity = null;
-    
-
-
-        switch (this.props.city) {
        
-            case ('Absu'):
-                currentCity = Absu
-                break;
-            case ('Okigwe'):
-                currentCity = Okigwe
-                break;
-            case ('Umuahia'):
-                currentCity = Umuahia
-                break;
-           
-            default:
-                currentCity = null
-                break;
-        }
         console.log('The current city from props',this.prosp.city)
-        console.log('The current city',currentCity)
-        return this.props.onSelectedAreas(currentCity)
+        console.log('The current city',)
+        return this.props.onSelectedAreas()
     }
 
 }
