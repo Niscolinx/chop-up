@@ -13,7 +13,7 @@ import axios from "../axios"
 import CreatableSelect from 'react-select/creatable';
 import AsyncSelect from 'react-select/async';
 import { colourOptions } from '../doc/data';
-// import {selectedCity, current}from '../components/asyncAreas'
+import {selectedCity}from '../components/asyncAreas'
 
 
 
@@ -30,7 +30,7 @@ class Home extends Component {
         console.groupEnd();
 
         console.log('the colour options', colourOptions)
-       // console.log('the city options', selectedCity)
+        console.log('the city options', selectedCity)
        // console.log('the city option', current)
     };
     
