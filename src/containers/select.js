@@ -8,8 +8,8 @@ const options = [
 ]
 
 
-console.log(options)
 const MyComponent = () => (
+    console.log(options)
     <Select 
     options={options}
     isMulti
