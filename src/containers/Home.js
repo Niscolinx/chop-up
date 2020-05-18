@@ -13,7 +13,7 @@ import { colourOptions, flavourOptions } from '../doc/data';
 class Home extends Component {
 
     state = {
-
+        city: ''
     }
 
     handleInputChange = (inputValue: any, actionMeta: any) => {
