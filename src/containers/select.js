@@ -8,13 +8,7 @@ const options = [
 ]
 
 
-const MyComponent = () => (
-    console.log(options)
-    <Select 
-    options={options}
-    isMulti
-    />
-)
+const MyComponent = options
 
 export default MyComponent
 
