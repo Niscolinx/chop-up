@@ -491,5 +491,5 @@ const mapDispatchToProps = dispatch => {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(withErrorHandler(Home, axios));
+export default connect(mapStateToProps, mapDispatchToProps)(withErrorHandler(Home));
 
