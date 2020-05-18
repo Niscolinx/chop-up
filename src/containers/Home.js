@@ -173,7 +173,7 @@ class Home extends Component {
 
                                 </Col>
                                 <Col>
-                                    <AsyncSelect
+                                    <CreatableSelect
                                         styles={customStyles()}
                                         placeholder={areaPlaceholder}
                                         isMulti
