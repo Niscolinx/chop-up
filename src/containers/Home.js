@@ -32,7 +32,7 @@ class Home extends Component {
         })
         console.log(`action: ${actionMeta.action}`);
         console.log(`action: ${actionMeta.action}`);
-        console.log(`The actionMeta data: ${actionMeta}`);
+        console.log(`The actionMeta data: ${actionMeta.placeholder}`);
         console.groupEnd();
     };
 
