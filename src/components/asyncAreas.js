@@ -51,11 +51,6 @@ const mapStateToProps = state => {
         city: state.burger.selectedCity !== null
     }
 }
-const mapDispatchToProps = dispatch => {
-    return {
-        onSelectedCity: (cityName) => dispatch(actions.selectedCity(cityName)),
-        onClearedSelectedCity: () => dispatch(actions.clearedSelectedCity())
-    }
-}
 
-export default connect(mapStateToProps, mapDispatchToProps)(selectedCity);
+
+export default connect(mapStateToProps)(selectedCity);
