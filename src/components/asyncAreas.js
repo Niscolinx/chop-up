@@ -1,17 +1,17 @@
-import React from 'react';
+import React, {Component}  from 'react';
 import { connect } from 'react-redux'
 
 import * as actions from '../store/actions/burgerIndex'
 
 
-const Absu = [
+ const Absu = [
     { value: 'vanilla', label: 'Vanilla', rating: 'safe' },
     { value: 'chocolate', label: 'Chocolate', rating: 'good' },
     { value: 'strawberry', label: 'Strawberry', rating: 'wild' },
     { value: 'salted-caramel', label: 'Salted Caramel', rating: 'crazy' },
 ];
 
-const Absus = ['Upgate', 'Rc', 'Student affairs', 'Lecture East/West']
+const Absus = ['Upgate', 'Rc','Student affairs', 'Lecture East/West']
 
 const Okigwe = ['Ike road', 'Umuchima', 'Owerri road', 'Ogbonna St']
 
@@ -20,32 +20,33 @@ const Umuahia = ['umuahia1', 'umauhia2', 'umuahia3']
 
 
 
-export const selectedCity = (props) => {
+export class selectedCity extends Component{
+    
+    render(){
+        let currentCity = null;
+    
 
-    let currentCity;
 
-    console.log(props.city)
-
-    switch (props.city) {
-
-        case ('Absu'):
-            currentCity = Absu
-            break;
-        case ('Okigwe'):
-            currentCity = Okigwe
-            break;
-        case ('Umuahia'):
-            currentCity = Umuahia
-            break;
-
-        default:
-            currentCity = null
-            break;
+        switch (this.props.city) {
+       
+            case ('Absu'):
+                currentCity = Absu
+                break;
+            case ('Okigwe'):
+                currentCity = Okigwe
+                break;
+            case ('Umuahia'):
+                currentCity = Umuahia
+                break;
+           
+            default:
+                currentCity = null
+                break;
+        }
+        console.log('The current city from props',this.prosp.city)
+        console.log('The current city',currentCity)
+        return this.props.onSelectedAreas(currentCity)
     }
-    console.log('The current city from props', this.prosp.city)
-    console.log('The current city', currentCity)
-    return props.onSelectedAreas(currentCity)
-
 
 }
 
@@ -53,7 +54,7 @@ export const selectedCity = (props) => {
 
 const mapStateToProps = state => {
     return {
-        city: state.burger.selectedCity
+        city: state.burger.selectedCity !== null
     }
 }
 
