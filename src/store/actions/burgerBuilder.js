@@ -41,7 +41,7 @@ export const setIngredients = () => {
 }
 
 
-export const selectedCity = () => {
+export const selectedCity = (cityName) => {
     return{
         type: actionTypes.SELECTED_CITY
     }
