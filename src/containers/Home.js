@@ -41,21 +41,24 @@ class Home extends Component {
         console.log(`action: ${actionMeta.action}`);
         console.groupEnd();
 
-        console.log('The value', newValue)
         if (newValue !== null) {
             console.log('loaded city')
             this.props.onSelectedCity(newValue.value)
             this.props.onSelectedAreas(newValue.value)
-
+            
         }
         else {
             console.log('cleared city')
             this.props.onClearedSelectedCity()
         }
-
+        
     };
-
+    
     render() {
+        console.log('these are the areas',this.props.areas)
+        console.log('comparing', colourOptions)
+
+
         const divStyle = {
             backgroundImage: 'url(' + imgUrl + ')',
             width: '100%',
