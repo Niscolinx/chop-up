@@ -20,7 +20,7 @@ const Umuahia = ['umuahia1', 'umauhia2', 'umuahia3']
 
 
 
-const selectedCity = () => {
+export const selectedCity = () => {
 
     let currentCity;
 

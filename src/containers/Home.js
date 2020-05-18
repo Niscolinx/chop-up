@@ -29,10 +29,9 @@ class Home extends Component {
         console.log(`action: ${actionMeta.action}`);
         console.groupEnd();
 
-        
         console.log('the colour options', colourOptions)
         console.log('the city options', selectedCity)
-       // console.log('the city option', current)
+        // console.log('the city option', current)
     };
     
     handleChange = (newValue: any, actionMeta: any) => {
@@ -47,12 +46,13 @@ class Home extends Component {
         if(newValue !== null){
             console.log('loaded city')
             this.props.onSelectedCity(newValue.value)
-    
+            
         }
         else{
             console.log('cleared city')
             this.props.onClearedSelectedCity()
         }
+        selectedCity()
     };
     
     render() {
