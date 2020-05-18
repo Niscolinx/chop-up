@@ -42,5 +42,7 @@ export const setIngredients = () => {
 
 
 export const selectedCity = () => {
-    
+    return{
+        type: actionTypes.SELECTED_CITY
+    }
 }
