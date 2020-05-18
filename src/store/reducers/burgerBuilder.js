@@ -27,6 +27,7 @@ const addIngredient = (state, action) => {
     })
 }
 
+
 const reducer = (state = initialState, action) => {
     switch (action.type) {
         case actionTypes.ADD_INGREDIENT: return addIngredient(state, action)
