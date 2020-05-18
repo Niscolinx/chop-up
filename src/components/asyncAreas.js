@@ -1,5 +1,4 @@
 import React, {Component}  from 'react';
-import PropTypes from 'prop-types';
 import { connect } from 'react-redux'
 
 import * as actions from '../store/actions/burgerIndex'
@@ -43,10 +42,11 @@ class selectedCity extends Component{
                 currentCity = null
                 break;
         }
-        console.log('The current city',currentCity)
         console.log('The current city from props',this.prosp.city)
+        console.log('The current city',currentCity)
         return (
             <div>
+
                 currentCity
 
             </div>
@@ -54,9 +54,7 @@ class selectedCity extends Component{
     }
 
 }
-selectedCity.propTypes = {
-    type: PropTypes.string.isRequired,
-}
+
 
 
 const mapStateToProps = state => {
