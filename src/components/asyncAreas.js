@@ -57,5 +57,11 @@ const mapStateToProps = state => {
     }
 }
 
+const mapDispatchToProps = dispatch => {
+    return {
+        onSelectedArea: (ingName) => dispatch(actions.addIngredient(ingName)),
 
-export default connect(mapStateToProps)(selectedCity);
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(selectedCity);
