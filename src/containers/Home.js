@@ -36,7 +36,7 @@ class Home extends Component {
         console.log(`action: ${actionMeta.action}`);
         console.groupEnd();
         
-        console.log('The value',newValue.value)
+        console.log('The value',newValue)
         if(newValue.value){
             console.log('loaded city')
             this.props.onSelectedCity(newValue.value)
