@@ -42,7 +42,9 @@ class selectedCity extends Component{
         }
         console.log('The current city',currentCity)
         console.log('The current city from props',this.prosp.city)
-        return currentCity;
+        return (
+            currentCity
+            );
     }
 
 }
