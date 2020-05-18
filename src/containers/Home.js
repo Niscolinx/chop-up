@@ -32,9 +32,7 @@ class Home extends Component {
         console.group('Value Changed');
         console.log(newValue);
 
-        this.setState({
-            city: newValue
-        })
+        this.props.onSelectedCity(newValue)
         console.log(`action: ${actionMeta.action}`);
         console.log(`action: ${actionMeta.action}`);
         console.groupEnd();
