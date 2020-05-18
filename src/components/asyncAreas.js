@@ -38,6 +38,7 @@ const selectedCity = () => {
                 break;
         }
         console.log('The current city',currentCity)
+        console.log('The current city from props',this.prosp.city)
         return currentCity;
     }
 
