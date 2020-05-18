@@ -484,7 +484,7 @@ const mapStateToProps = state => {
 }
 const mapDispatchToProps = dispatch => {
     return {
-        onAddIngredient: (ingName) => dispatch(actions.addIngredient(ingName)),
+        onSelectedCity: (cityName) => dispatch(actions.selectedCity(cityName)),
         
     }
 }
