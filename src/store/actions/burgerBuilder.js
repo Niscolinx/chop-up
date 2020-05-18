@@ -61,7 +61,7 @@ export const clearedSelectedCity = () => {
 
 export const addAreas = (areas) => {
     const Absu = [
-        { value: 'vanilla', label: 'Vanilla', rating: 'safe' },
+        { value: 'Absu', label: 'Vanilla', rating: 'safe' },
         { value: 'chocolate', label: 'Chocolate', rating: 'good' },
         { value: 'strawberry', label: 'Strawberry', rating: 'wild' },
         { value: 'salted-caramel', label: 'Salted Caramel', rating: 'crazy' },
