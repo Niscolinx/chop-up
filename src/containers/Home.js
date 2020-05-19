@@ -213,15 +213,20 @@ class Home extends Component {
                 //         color: isDisabled ? '#aaa' : 'white'
                 //     }
                 // },
-                control: (provided, state) => ({
-                    ...provided,
-                    cursor: state.isDisabled ? 'not-allowed' : 'pointer',
-                    background: disabledBackground,
-                    borderColor: disabledBackground,
-                    minHeight: height,
-                    height: height,
-                    boxShadow: state.isFocused ? null : null,
-                }),
+                control: (provided, state) => {
+                   const cursor = state.isDisabled ? 'not-allowed' : 'pointer';
+
+                    return{
+                        ...provided,
+                        cursor: cursor,
+                        background: disabledBackground,
+                        borderColor: disabledBackground,
+                        minHeight: height,
+                        height: height,
+                        boxShadow: state.isFocused ? null : null,
+
+                    }
+                },
                 valueContainer: (provided, state) => ({
                     ...provided,
                     height: height,
@@ -306,7 +311,6 @@ class Home extends Component {
                                         onInputChange={this.handleAreaChange}
                                         options={this.props.areas}
                                         isDisabled ={this.state.disabled}
-                                        className = 'red'
                                         //isLoading = 'true'
                                     />
                                 </Col>
