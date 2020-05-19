@@ -4,6 +4,14 @@ export const colourOptions = [
     { value: 'Umuahia', label: 'Umuahia',isFixed: true },
   
 ];
+export const colourOptions = [
+    { value: 'Absu', label: 'Absu',isFixed: true },
+    { value: 'Okigwe', label: 'Okigwe',isFixed: true },
+    { value: 'Umuahia', label: 'Umuahia',isFixed: true },
+    { value: 'Isuochi', label: 'Isuochi',isFixed: true },
+    { value: 'Isukwuato', label: 'Isukwuato',isFixed: true },
+  
+];
 
 
 
