@@ -21,7 +21,8 @@ class Home extends Component {
     state = {
         city: null,
         newArea: [],
-        disabled: true
+        disabled: true,
+        pointer: 'not-allowed'
     }
 
     handleCityChange = (inputValue: any, actionMeta: any) => {
@@ -149,7 +150,7 @@ class Home extends Component {
                 }),
                 control: (provided, state) => ({
                     ...provided,
-                    cursor: 'pointer',
+                    cursor: this.state.pointer,
                     background: '#fff',
                     borderColor: 'white',
                     minHeight: height,
