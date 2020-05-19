@@ -58,6 +58,10 @@ class Home extends Component {
         else {
             console.log('cleared city')
             this.props.onClearedSelectedCity()
+
+            this.setState({
+                city: null
+            })
         }
 
     };
