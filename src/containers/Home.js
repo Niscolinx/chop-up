@@ -76,8 +76,14 @@ class Home extends Component {
 
     
         if (actionMeta.action === 'select-option') {
-            this.setState({
-                newArea:  {...this.state.newArea.concat(actionMeta.option.label)}
+            this.setState(state => {
+
+                const areaList = [...state.newArea, actionMeta.option.label]
+
+                return{
+                    newArea:  areaList
+
+                }
             })
 
             console.log('The State', this.state.newArea)
