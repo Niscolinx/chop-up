@@ -20,7 +20,8 @@ class Home extends Component {
 
     state = {
         city: null,
-        newArea: []
+        newArea: [],
+        disabled: true
     }
 
     handleCityChange = (inputValue: any, actionMeta: any) => {
@@ -51,7 +52,8 @@ class Home extends Component {
             this.props.onSelectedAreas(newValue.value)
 
             this.setState({
-                city: newValue.value
+                city: newValue.value,
+                disabled: false
             })
 
         }
@@ -60,7 +62,8 @@ class Home extends Component {
             this.props.onClearedSelectedCity()
 
             this.setState({
-                city: null
+                city: null, 
+                disabled: true
             })
         }
 
