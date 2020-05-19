@@ -82,8 +82,7 @@ class Home extends Component {
         // console.log(`action: ${actionMeta.action}`);
         // console.groupEnd();
             
-            this.props.onSelectedCity(newValue.value)
-            this.props.onSelectedAreas(this.state.city)
+          //  this.props.onSelectedAreas(this.state.city)
             
         
     };
