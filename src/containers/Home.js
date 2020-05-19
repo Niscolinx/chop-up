@@ -26,10 +26,8 @@ class Home extends Component {
          console.group('Input Changed');
         console.log('the input value is ',inputValue);
 
-        if(this.state.city !== null){
-            this.props.onSelectedAreas(this.state.city)
-            
-        }
+        
+        
         // console.log(`action: ${actionMeta.action}`);
         // console.groupEnd();
         
@@ -54,7 +52,8 @@ class Home extends Component {
                 city: newValue.value
             })
             
-            this.props.onSelectedCity(newValue.value)
+            this.props.onSelectedCity(this.state.city)
+            this.props.onSelectedAreas(this.state.city)
             
         }
         else {
