@@ -215,7 +215,7 @@ class Home extends Component {
                 // },
                 control: (provided, state) => ({
                     ...provided,
-                    cursor: state.isOptionDisabled ? disabledPointer : 'pointer',
+                    cursor: state.isDisabled ? 'not-allowed' : 'pointer',
                     background: disabledBackground,
                     borderColor: disabledBackground,
                     minHeight: height,
