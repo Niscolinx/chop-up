@@ -144,7 +144,7 @@ class Home extends Component {
 
                 option: (styles, state) => ({
                     ...styles,
-                    cursor: 'pointer',
+                    cursor: 'not-allowed',
                     padding: '1rem'
                 }),
                 control: (provided, state) => ({
@@ -240,7 +240,7 @@ class Home extends Component {
                                         onInputChange={this.handleAreaChange}
                                         options={this.props.areas}
                                         isDisabled ={this.state.disabled}
-                                        isLoading = 'true'
+                                        //isLoading = 'true'
                                     />
                                 </Col>
 
