@@ -23,7 +23,6 @@ class Home extends Component {
         disabled: true,
         disabledPointer: 'not-allowed',
         disabledBackground: '#787878',
-        placeholderColor: '#fff'
     }
 
     handleCityChange = (inputValue: any, actionMeta: any) => {
@@ -205,7 +204,7 @@ class Home extends Component {
                     cursor: newState.disabledPointer,
                     padding: '1rem'
                 }),
-                
+
                 control: (provided, state) => {
                    const cursor = state.isDisabled ? 'not-allowed' : 'pointer';
 
@@ -221,10 +220,10 @@ class Home extends Component {
                     }
                 },
 
-                placeholder: (defaultStyles) => {
+                placeholder: (defaultStyles, state) => {
                     return {
                         ...defaultStyles,
-                        color: '#ffffff',
+                        color: state.isDisabled ? '#fff' : '#808080'
                     }
                 },
                 valueContainer: (provided, state) => ({
