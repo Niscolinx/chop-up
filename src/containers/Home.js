@@ -22,7 +22,7 @@ class Home extends Component {
         city: null
     }
 
-    handleInputChange = (inputValue: any, actionMeta: any) => {
+    handleCityChange = (inputValue: any, actionMeta: any) => {
          console.group('Input Changed');
         console.log('the input value is ',inputValue);
 
@@ -37,7 +37,7 @@ class Home extends Component {
         // console.log('the city option', current)
     };
     
-    handleChange = (newValue: any, actionMeta: any) => {
+    cityChange = (newValue: any, actionMeta: any) => {
         console.group('Value Changed');
         console.log('The values to compare', newValue);
         
@@ -63,7 +63,7 @@ class Home extends Component {
         }
         
     };
-    handleInputChange = (inputValue: any, actionMeta: any) => {
+    handleAreaChange = (inputValue: any, actionMeta: any) => {
          console.group('Input Changed');
         console.log('the input value is ',inputValue);
 
@@ -78,7 +78,7 @@ class Home extends Component {
         // console.log('the city option', current)
     };
     
-    handleChange = (newValue: any, actionMeta: any) => {
+    areaChange = (newValue: any, actionMeta: any) => {
         console.group('Value Changed');
         console.log('The values to compare', newValue);
         
