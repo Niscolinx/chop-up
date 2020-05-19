@@ -204,15 +204,24 @@ class Home extends Component {
                     cursor: disabledPointer,
                     padding: '1rem'
                 }),
-                control: (provided, state, isDisabled) => ({
-                    ...provided,
-                    cursor: isDisabled ? disabledPointer : 'pointer',
-                    background: disabledBackground,
-                    borderColor: disabledBackground,
-                    minHeight: height,
-                    height: height,
-                    boxShadow: state.isFocused ? null : null,
-                }),
+
+                control: (styles, { isDisabled }) => {
+                    return {
+                        ...styles,
+                        cursor: isDisabled ? 'not-allowed' : 'default',
+                        // This is an example: backgroundColor: isDisabled ? 'rgba(206, 217, 224, 0.5)' : 'white'
+                        color: isDisabled ? '#aaa' : 'white'
+                    }
+                },
+                // control: (provided, state, isDisabled) => ({
+                //     ...provided,
+                //     cursor: isDisabled ? disabledPointer : 'pointer',
+                //     background: disabledBackground,
+                //     borderColor: disabledBackground,
+                //     minHeight: height,
+                //     height: height,
+                //     boxShadow: state.isFocused ? null : null,
+                // }),
                 valueContainer: (provided, state) => ({
                     ...provided,
                     height: height,
