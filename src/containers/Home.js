@@ -201,12 +201,12 @@ class Home extends Component {
                 
                 option: (styles, state) => ({
                     ...styles,
-                    cursor: 'pointer',
+                    cursor: disabledPointer,
                     padding: '1rem'
                 }),
-                control: (provided, state) => ({
+                control: (provided, state, isDisabled) => ({
                     ...provided,
-                    cursor: 'not-allowed',
+                    cursor: isDisabled ? disabledPointer : 'pointer',
                     background: disabledBackground,
                     borderColor: disabledBackground,
                     minHeight: height,
