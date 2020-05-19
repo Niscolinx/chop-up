@@ -40,6 +40,7 @@ class Home extends Component {
     handleChange = (newValue: any, actionMeta: any) => {
         console.group('Value Changed');
         console.log('The values to compare', newValue);
+        console.log('The values of the newValue', newValue.value);
         
         // console.log('the meta data', actionMeta);
         // console.log(`action: ${actionMeta.action}`);
