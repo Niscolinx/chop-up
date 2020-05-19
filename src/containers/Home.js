@@ -10,8 +10,8 @@ import * as locations from '../components/Layout/DeliveringForm/Locations'
 import withErrorHandler from "../components/hoc/withErrorHandler"
 import axios from "../axios"
 
-import CreatableSelect from 'react-select/creatable';
-import AsyncSelect from 'react-select/async';
+import Select from 'react-select';
+import MakeAnimated from 'react-select/animated';
 import { colourOptions, areasOptions } from '../doc/data';
 
 
@@ -216,7 +216,7 @@ class Home extends Component {
                             <Row>
 
                                 <Col>
-                                    <CreatableSelect
+                                    <Select
                                         styles={customStyles()}
                                         placeholder={cityPlaceholder}
                                         isClearable
@@ -227,7 +227,7 @@ class Home extends Component {
 
                                 </Col>
                                 <Col>
-                                    <CreatableSelect
+                                    <Select
                                         styles={customStyles()}
                                         placeholder={areaPlaceholder}
                                         isMulti
@@ -235,6 +235,7 @@ class Home extends Component {
                                         onChange={this.areaChange}
                                         onInputChange={this.handleAreaChange}
                                         options={this.props.areas}
+                                        is
                                     />
                                 </Col>
 
