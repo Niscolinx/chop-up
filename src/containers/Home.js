@@ -31,8 +31,6 @@ class Home extends Component {
         // console.log(`action: ${actionMeta.action}`);
         // console.groupEnd();
         
-        //console.log('the city options', selectedCity)
-        // console.log('the city option', current)
     };
     
     cityChange = (newValue: any, actionMeta: any) => {
@@ -41,7 +39,7 @@ class Home extends Component {
         
         // console.log('the meta data', actionMeta);
         // console.log(`action: ${actionMeta.action}`);
-        // console.groupEnd();
+        console.groupEnd();
         
         
         if (newValue !== null) {
