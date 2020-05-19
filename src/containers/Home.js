@@ -230,7 +230,7 @@ class Home extends Component {
 
                                 </Col>
                                 <Col>
-                                    <MakeAnimated
+                                    <Select
                                         styles={customStyles()}
                                         placeholder={areaPlaceholder}
                                         isMulti
@@ -238,6 +238,7 @@ class Home extends Component {
                                         onChange={this.areaChange}
                                         onInputChange={this.handleAreaChange}
                                         options={this.props.areas}
+                                        isDisabled = {false}
                                     />
                                 </Col>
 
