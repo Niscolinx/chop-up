@@ -12,7 +12,7 @@ import axios from "../axios"
 
 import CreatableSelect from 'react-select/creatable';
 import AsyncSelect from 'react-select/async';
-import { colourOptions } from '../doc/data';
+import { colourOptions , areasOptions} from '../doc/data';
 
 
 
