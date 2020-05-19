@@ -79,7 +79,6 @@ class Home extends Component {
     
     render() {
         console.log('these are the areas',this.props.areas)
-        console.log('comparing', colourOptions)
 
 
         const divStyle = {
