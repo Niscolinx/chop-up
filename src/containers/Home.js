@@ -193,6 +193,9 @@ class Home extends Component {
         const cityPlaceholder = 'Choose City'
         const areaPlaceholder = 'Select your area'
 
+        const isFalse =() => {
+            return false
+        }
 
         return (
             <div>
@@ -216,7 +219,7 @@ class Home extends Component {
                             <Row>
 
                                 <Col>
-                                    <Select
+                                    <MakeAnimated
                                         styles={customStyles()}
                                         placeholder={cityPlaceholder}
                                         isClearable
@@ -235,7 +238,7 @@ class Home extends Component {
                                         onChange={this.areaChange}
                                         onInputChange={this.handleAreaChange}
                                         options={this.props.areas}
-                                        is
+                                        isDisabled = {this.isFalse}
                                     />
                                 </Col>
 
