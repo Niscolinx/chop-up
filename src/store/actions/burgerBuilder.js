@@ -81,6 +81,7 @@ export const addAreas = (areas) => {
 
     let currentCity;
 
+    console.log(areas)
     switch (areas) {
 
         case ('Absu'):

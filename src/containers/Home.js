@@ -48,12 +48,8 @@ class Home extends Component {
             console.log('loaded city')
             console.log('The values of the newValue', newValue.value);
             
-            this.setState({
-                city: newValue.value
-            })
-            
-            this.props.onSelectedCity(this.state.city)
-            this.props.onSelectedAreas(this.state.city)
+            this.props.onSelectedCity(newValue.value)
+            this.props.onSelectedAreas(newValue.value)
             
         }
         else {
