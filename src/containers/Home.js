@@ -50,6 +50,10 @@ class Home extends Component {
             
             this.props.onSelectedCity(newValue.value)
             this.props.onSelectedAreas(newValue.value)
+
+            this.setState({
+                city: newValue.value
+            })
             
         }
         else {
@@ -63,10 +67,8 @@ class Home extends Component {
         console.log('the input value is ',inputValue);
 
         // console.log(`action: ${actionMeta.action}`);
-        // console.groupEnd();
+        console.groupEnd();
         
-        //console.log('the city options', selectedCity)
-        // console.log('the city option', current)
     };
     
     areaChange = (newValue: any, actionMeta: any) => {
@@ -75,9 +77,8 @@ class Home extends Component {
         
         // console.log('the meta data', actionMeta);
         // console.log(`action: ${actionMeta.action}`);
-        // console.groupEnd();
+         console.groupEnd();
             
-          //  this.props.onSelectedAreas(this.state.city)
             
         
     };
