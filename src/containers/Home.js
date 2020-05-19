@@ -196,7 +196,6 @@ class Home extends Component {
                     //width: state.selectProps.width,
                 // color: state.selectProps.menuColor,
                     padding: 10,
-                    color: 'red'
                     
                 }),
                 
@@ -232,13 +231,11 @@ class Home extends Component {
                     ...provided,
                     height: height,
                     padding: '0 6px',
-                    color: 'red'
                 }),
 
                 input: (provided, state) => ({
                     ...provided,
                     margin: '0px',
-                    color: 'red'
                 }),
                 indicatorSeparator: state => ({
                     display: 'none',
@@ -246,7 +243,6 @@ class Home extends Component {
                 indicatorsContainer: (provided, state) => ({
                     ...provided,
                     height: height,
-                    color: 'red'
                 }),
 
 
