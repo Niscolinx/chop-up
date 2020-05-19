@@ -301,7 +301,7 @@ class Home extends Component {
                                     />
 
                                 </Col>
-                                <Col className = 'disabledPointer'>
+                                <Col className = {this.state.disabled ? 'disabledPointer' : this.state.disabledPointer}>
                                     <Select
                                         styles={areaStyles()}
                                         placeholder={areaPlaceholder}
