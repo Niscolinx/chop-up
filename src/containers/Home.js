@@ -29,8 +29,6 @@ class Home extends Component {
         // console.group('Input Changed');
         // console.log('the input value is ', inputValue);
 
-
-
         console.log(`action: ${actionMeta}`);
         console.groupEnd();
 
@@ -54,7 +52,9 @@ class Home extends Component {
 
             this.setState({
                 city: newValue.value,
-                disabled: false
+                disabled: false,
+                disabledPointer: 'pointer',
+                disabledBackground: '#fff'
             })
 
         }
