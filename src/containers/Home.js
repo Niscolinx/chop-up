@@ -22,7 +22,8 @@ class Home extends Component {
         newArea: [],
         disabled: true,
         disabledPointer: 'not-allowed',
-        disabledBackground: '#787878'
+        disabledBackground: '#787878',
+        placeholderColor: '#fff'
     }
 
     handleCityChange = (inputValue: any, actionMeta: any) => {
@@ -204,15 +205,7 @@ class Home extends Component {
                     cursor: newState.disabledPointer,
                     padding: '1rem'
                 }),
-
-                // control: (styles, { isDisabled }) => {
-                //     return {
-                //         ...styles,
-                //         cursor: isDisabled ? 'not-allowed' : 'default',
-                //         // This is an example: backgroundColor: isDisabled ? 'rgba(206, 217, 224, 0.5)' : 'white'
-                //         color: isDisabled ? '#aaa' : 'white'
-                //     }
-                // },
+                
                 control: (provided, state) => {
                    const cursor = state.isDisabled ? 'not-allowed' : 'pointer';
 
