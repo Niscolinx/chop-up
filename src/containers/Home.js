@@ -67,10 +67,6 @@ class Home extends Component {
          console.group('Input Changed');
         console.log('the input value is ',inputValue);
 
-        if(this.state.city !== null){
-            this.props.onSelectedAreas(this.state.city)
-            
-        }
         // console.log(`action: ${actionMeta.action}`);
         // console.groupEnd();
         
@@ -85,23 +81,10 @@ class Home extends Component {
         // console.log('the meta data', actionMeta);
         // console.log(`action: ${actionMeta.action}`);
         // console.groupEnd();
-        
-        
-        if (newValue !== null) {
-            console.log('loaded city')
-            console.log('The values of the newValue', newValue.value);
-            
-            this.setState({
-                city: newValue.value
-            })
             
             this.props.onSelectedCity(newValue.value)
+            this.props.onSelectedAreas(this.state.city)
             
-        }
-        else {
-            console.log('cleared city')
-            this.props.onClearedSelectedCity()
-        }
         
     };
     
