@@ -77,11 +77,11 @@ class Home extends Component {
     
         if (actionMeta.action === 'select-option') {
             this.setState({
-                newArea: actionMeta.option.label
+                newArea:  {...this.state.newArea.concat(actionMeta.option.label)}
             })
 
+            console.log('The State', this.state.newArea)
         }
-        console.log('The State', this.state.newArea)
 
 
 
