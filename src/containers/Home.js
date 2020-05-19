@@ -217,8 +217,8 @@ class Home extends Component {
                                         styles={customStyles()}
                                         placeholder={cityPlaceholder}
                                         isClearable
-                                        onChange={this.handleChange}
-                                        onInputChange={this.handleInputChange}
+                                        onChange={this.cityChange}
+                                        onInputChange={this.handleCityChange}
                                         options={colourOptions}
                                     />
 
@@ -229,8 +229,8 @@ class Home extends Component {
                                         placeholder={areaPlaceholder}
                                         isMulti
                                         isClearable
-                                        onChange={this.handleChange}
-                                        onInputChange={this.handleInputChange}
+                                        onChange={this.areaChange}
+                                        onInputChange={this.handleAreaChange}
                                         options={this.props.areas}
                                     />
                                 </Col>
