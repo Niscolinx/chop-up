@@ -219,7 +219,7 @@ class Home extends Component {
                             <Row>
 
                                 <Col>
-                                    <MakeAnimated
+                                    <Select
                                         styles={customStyles()}
                                         placeholder={cityPlaceholder}
                                         isClearable
@@ -230,7 +230,7 @@ class Home extends Component {
 
                                 </Col>
                                 <Col>
-                                    <Select
+                                    <MakeAnimated
                                         styles={customStyles()}
                                         placeholder={areaPlaceholder}
                                         isMulti
@@ -238,7 +238,6 @@ class Home extends Component {
                                         onChange={this.areaChange}
                                         onInputChange={this.handleAreaChange}
                                         options={this.props.areas}
-                                        isDisabled = {this.isFalse}
                                     />
                                 </Col>
 
