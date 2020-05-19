@@ -22,7 +22,7 @@ class Home extends Component {
         newArea: [],
         disabled: true,
         diabledPointer: 'not-allowed',
-        disabledBackground: 'red'
+        disabledBackground: '#787878'
     }
 
     handleCityChange = (inputValue: any, actionMeta: any) => {
@@ -205,7 +205,7 @@ class Home extends Component {
                     ...provided,
                     cursor: diabledPointer,
                     background: disabledBackground,
-                    borderColor: 'white',
+                    borderColor: disabledBackground,
                     minHeight: height,
                     height: height,
                     boxShadow: state.isFocused ? null : null,
