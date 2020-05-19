@@ -185,7 +185,7 @@ class Home extends Component {
                 }
             }
         }
-        const areaStyles = (height = '3rem', diabledPointer = this.state.diabledPointer) => {
+        const areaStyles = (height = '3rem', diabledPointer = this.state.diabledPointer, disabledBackground = this.state.disabledBackground) => {
             
             return {
                 
@@ -205,7 +205,7 @@ class Home extends Component {
                 control: (provided, state) => ({
                     ...provided,
                     cursor: diabledPointer,
-                    background: '#fff',
+                    background: disabledBackground,
                     borderColor: 'white',
                     minHeight: height,
                     height: height,
