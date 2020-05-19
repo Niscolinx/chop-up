@@ -11,8 +11,7 @@ import withErrorHandler from "../components/hoc/withErrorHandler"
 import axios from "../axios"
 
 import Select from 'react-select';
-import MakeAnimated from 'react-select/animated';
-import { colourOptions, areasOptions } from '../doc/data';
+import { cityOptions } from '../doc/data';
 
 
 
@@ -281,7 +280,7 @@ class Home extends Component {
                                         isClearable
                                         onChange={this.cityChange}
                                         onInputChange={this.handleCityChange}
-                                        options={colourOptions}
+                                        options={cityOptions}
                                     />
 
                                 </Col>
