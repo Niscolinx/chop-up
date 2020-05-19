@@ -196,9 +196,7 @@ class Home extends Component {
         const cityPlaceholder = 'Choose City'
         const areaPlaceholder = 'Select your area'
 
-        const isFalse =() => {
-            return false
-        }
+     
 
         return (
             <div>
@@ -241,7 +239,8 @@ class Home extends Component {
                                         onChange={this.areaChange}
                                         onInputChange={this.handleAreaChange}
                                         options={this.props.areas}
-                                        isDisabled = 'true'
+                                        isDisabled ={this.state.disabled}
+                                        isLoading = 'true'
                                     />
                                 </Col>
 
