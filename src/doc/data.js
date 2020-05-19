@@ -101,10 +101,10 @@ export const dogOptions = [
 export const groupedOptions = [
     {
         label: 'Colours',
-        options: colourOptions,
+       // options: colourOptions,
     },
     {
         label: 'Flavours',
-        options: colourOptions,
+       // options: colourOptions,
     },
 ];
