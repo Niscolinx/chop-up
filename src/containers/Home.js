@@ -187,7 +187,7 @@ class Home extends Component {
                 }
             }
         }
-        const areaStyles = (height = '3rem', disabledPointer = this.state.disabledPointer, disabledBackground = this.state.disabledBackground) => {
+        const areaStyles = (height = '3rem', newState = this.state) => {
             
             return {
                 
@@ -201,7 +201,7 @@ class Home extends Component {
                 
                 option: (styles, state) => ({
                     ...styles,
-                    cursor: disabledPointer,
+                    cursor: newState.disabledPointer,
                     padding: '1rem'
                 }),
 
@@ -219,12 +219,19 @@ class Home extends Component {
                     return{
                         ...provided,
                         cursor: cursor,
-                        background: disabledBackground,
-                        borderColor: disabledBackground,
+                        background: newState.disabledBackground,
+                        borderColor: newState.disabledBackground,
                         minHeight: height,
                         height: height,
                         boxShadow: state.isFocused ? null : null,
 
+                    }
+                },
+
+                placeholder: (defaultStyles) => {
+                    return {
+                        ...defaultStyles,
+                        color: '#ffffff',
                     }
                 },
                 valueContainer: (provided, state) => ({
