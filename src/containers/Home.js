@@ -78,7 +78,7 @@ class Home extends Component {
         if (actionMeta.action === 'select-option') {
             this.setState(state => {
 
-                const areaList = [...state.newArea, actionMeta.option.label]
+                const areaList = [...state.newArea.concat(actionMeta.option)]
 
                 return{
                     newArea:  areaList
@@ -86,14 +86,28 @@ class Home extends Component {
                 }
             })
 
-            console.log('The State', this.state.newArea)
         }
+        if (actionMeta.action === 'remove-value') {
+            this.setState(state => {
 
+                const areaList = state.newArea.filter(area => {
+                   return area.label !== actionMeta.removedValue.label
+                })
 
+                return{
+                    newArea:  areaList
 
+                }
+            })
+
+        }
+        
+        
+        
     };
-
+    
     render() {
+        console.log('The State', this.state.newArea)
 
         const divStyle = {
             backgroundImage: 'url(' + imgUrl + ')',
