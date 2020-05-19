@@ -87,27 +87,27 @@ class Home extends Component {
             })
 
         }
-        // if (actionMeta.action === 'remove-value') {
-        //     this.setState(state => {
+        if (actionMeta.action === 'remove-value') {
+            this.setState(state => {
 
-        //         const areaList = state.newArea.filter(area => {
-        //            return area.label !== actionMeta.removedValue.label
-        //         })
+                const areaList = state.newArea.filter(area => {
+                   return area.label !== actionMeta.removedValue.label
+                })
 
-        //         return{
-        //             newArea:  areaList
+                return{
+                    newArea:  areaList
 
-        //         }
-        //     })
+                }
+            })
 
-        // }
+        }
         
         
         
     };
     
     render() {
-        console.log('The State', this.state.newArea)
+        console.log('The State', this.state)
 
         const divStyle = {
             backgroundImage: 'url(' + imgUrl + ')',
