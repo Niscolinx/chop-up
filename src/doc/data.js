@@ -1,10 +1,5 @@
-export const colourOptions = [
-    { value: 'Absu', label: 'Absu',isFixed: true },
-    { value: 'Okigwe', label: 'Okigwe',isFixed: true },
-    { value: 'Umuahia', label: 'Umuahia',isFixed: true },
-  
-];
-export const areasOptions = [
+
+export const cityOptions = [
     { value: 'Absu', label: 'Absu',isFixed: true },
     { value: 'Okigwe', label: 'Okigwe',isFixed: true },
     { value: 'Umuahia', label: 'Umuahia',isFixed: true },
