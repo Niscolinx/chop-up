@@ -79,14 +79,19 @@ class Home extends Component {
                 newArea: this.state.newArea.push(actionMeta.option.label)
             })
         }
+        if (actionMeta.action === 'select-option') {
+            this.setState({
+                newArea: [...this.state.newArea.push(actionMeta.option.label)]
+            })
+
+            console.log('The State', this.state.newArea)
+        }
 
 
 
     };
 
     render() {
-        console.log('these are the areas', this.props.areas)
-
 
         const divStyle = {
             backgroundImage: 'url(' + imgUrl + ')',
