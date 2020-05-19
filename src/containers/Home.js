@@ -144,7 +144,7 @@ class Home extends Component {
 
                 option: (styles, state) => ({
                     ...styles,
-                    cursor: 'not-allowed',
+                    cursor: 'pointer',
                     padding: '1rem'
                 }),
                 control: (provided, state) => ({
