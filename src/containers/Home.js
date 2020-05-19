@@ -207,7 +207,7 @@ class Home extends Component {
                 control: (provided, state) => ({
                     ...provided,
                     cursor: disabledPointer,
-                    background: diabledBackground,
+                    background: disabledBackground,
                     borderColor: disabledBackground,
                     minHeight: height,
                     height: height,
