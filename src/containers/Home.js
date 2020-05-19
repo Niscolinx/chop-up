@@ -132,7 +132,60 @@ class Home extends Component {
             return <option value={lower} key={item + i} className='delivering_form--locations_item'>{upper}</option>
 
         })
-        const customStyles = (height = '3rem', diabledPointer = this.state.diabledPointer) => {
+        const cityStyles = (height = '3rem') => {
+            
+            return {
+                
+                menu: (provided, state) => ({
+                    ...provided,
+                    //width: state.selectProps.width,
+                    color: state.selectProps.menuColor,
+                    padding: 10,
+                    
+                }),
+                
+                option: (styles, state) => ({
+                    ...styles,
+                    cursor: 'pointer',
+                    padding: '1rem'
+                }),
+                control: (provided, state) => ({
+                    ...provided,
+                    cursor: 'pointer',
+                    background: '#fff',
+                    borderColor: 'white',
+                    minHeight: height,
+                    height: height,
+                    boxShadow: state.isFocused ? null : null,
+                }),
+                valueContainer: (provided, state) => ({
+                    ...provided,
+                    height: height,
+                    padding: '0 6px'
+                }),
+
+                input: (provided, state) => ({
+                    ...provided,
+                    margin: '0px',
+                }),
+                indicatorSeparator: state => ({
+                    display: 'none',
+                }),
+                indicatorsContainer: (provided, state) => ({
+                    ...provided,
+                    height: height,
+                }),
+
+
+                singleValue: (provided, state) => {
+                    const opacity = state.isDisabled ? 0.5 : 1;
+                    const transition = 'opacity 300ms';
+
+                    return { ...provided, opacity, transition };
+                }
+            }
+        }
+        const areaStyles = (height = '3rem', diabledPointer = this.state.diabledPointer) => {
             
             return {
                 
@@ -223,7 +276,7 @@ class Home extends Component {
 
                                 <Col>
                                     <Select
-                                        styles={customStyles()}
+                                        styles={cityStyles()}
                                         placeholder={cityPlaceholder}
                                         isClearable
                                         onChange={this.cityChange}
@@ -234,7 +287,7 @@ class Home extends Component {
                                 </Col>
                                 <Col>
                                     <Select
-                                        styles={customStyles()}
+                                        styles={areaStyles()}
                                         placeholder={areaPlaceholder}
                                         isMulti
                                         isClearable
