@@ -21,7 +21,7 @@ class Home extends Component {
         city: null,
         newArea: [],
         disabled: true,
-        diabledPointer: 'not-allowed',
+        disabledPointer: 'not-allowed',
         disabledBackground: '#787878'
     }
 
@@ -65,7 +65,7 @@ class Home extends Component {
             this.setState({
                 city: null, 
                 disabled: true,
-                diabledPointer: 'not-allowed',
+                disabledPointer: 'not-allowed',
                 disabledBackground: '#787878'
             })
         }
@@ -117,6 +117,7 @@ class Home extends Component {
     };
     
     render() {
+        console.log('the state is', this.state)
 
         const divStyle = {
             backgroundImage: 'url(' + imgUrl + ')',
@@ -186,7 +187,7 @@ class Home extends Component {
                 }
             }
         }
-        const areaStyles = (height = '3rem', diabledPointer = this.state.diabledPointer, disabledBackground = this.state.disabledBackground) => {
+        const areaStyles = (height = '3rem', disabledPointer = this.state.disabledPointer, disabledBackground = this.state.disabledBackground) => {
             
             return {
                 
