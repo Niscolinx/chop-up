@@ -115,7 +115,6 @@ class Home extends Component {
     };
     
     render() {
-        console.log('The State', this.state)
 
         const divStyle = {
             backgroundImage: 'url(' + imgUrl + ')',
@@ -133,6 +132,7 @@ class Home extends Component {
 
         })
         const customStyles = (height = '3rem') => {
+            console.log('the state is ', this.state)
             return {
 
                 menu: (provided, state) => ({
@@ -150,7 +150,7 @@ class Home extends Component {
                 }),
                 control: (provided, state) => ({
                     ...provided,
-                    cursor: this.state.pointer,
+                    cursor: 'not-allowed',
                     background: '#fff',
                     borderColor: 'white',
                     minHeight: height,
