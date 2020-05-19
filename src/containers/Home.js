@@ -22,7 +22,8 @@ class Home extends Component {
         city: null,
         newArea: [],
         disabled: true,
-        pointer: 'not-allowed'
+        diabledPointer: 'not-allowed',
+        disabledBackground: 'red'
     }
 
     handleCityChange = (inputValue: any, actionMeta: any) => {
@@ -131,18 +132,18 @@ class Home extends Component {
             return <option value={lower} key={item + i} className='delivering_form--locations_item'>{upper}</option>
 
         })
-        const customStyles = (height = '3rem') => {
-            console.log('the state is ', this.state)
+        const customStyles = (height = '3rem', diabledPointer = this.state.diabledPointer) => {
+            
             return {
-
+                
                 menu: (provided, state) => ({
                     ...provided,
                     //width: state.selectProps.width,
                     color: state.selectProps.menuColor,
                     padding: 10,
-
+                    
                 }),
-
+                
                 option: (styles, state) => ({
                     ...styles,
                     cursor: 'pointer',
@@ -150,7 +151,7 @@ class Home extends Component {
                 }),
                 control: (provided, state) => ({
                     ...provided,
-                    cursor: 'not-allowed',
+                    cursor: diabledPointer,
                     background: '#fff',
                     borderColor: 'white',
                     minHeight: height,
