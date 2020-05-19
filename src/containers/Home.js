@@ -28,8 +28,8 @@ class Home extends Component {
 
         
         
-        // console.log(`action: ${actionMeta.action}`);
-        // console.groupEnd();
+        console.log(`action: ${actionMeta}`);
+        console.groupEnd();
         
     };
     
@@ -37,7 +37,7 @@ class Home extends Component {
         console.group('Value Changed');
         console.log('The values to compare', newValue);
         
-        // console.log('the meta data', actionMeta);
+         console.log('the meta data', actionMeta);
         // console.log(`action: ${actionMeta.action}`);
         console.groupEnd();
         
@@ -64,7 +64,7 @@ class Home extends Component {
          console.group('Input Changed');
         console.log('the input value is ',inputValue);
 
-        // console.log(`action: ${actionMeta.action}`);
+        console.log(`action: ${actionMeta}`);
         console.groupEnd();
         
     };
@@ -73,7 +73,7 @@ class Home extends Component {
         console.group('Value Changed');
         console.log('The values to compare', newValue);
         
-        // console.log('the meta data', actionMeta);
+         console.log('the meta data', actionMeta);
         // console.log(`action: ${actionMeta.action}`);
          console.groupEnd();
             
