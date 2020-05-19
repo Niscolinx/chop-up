@@ -40,7 +40,6 @@ class Home extends Component {
     handleChange = (newValue: any, actionMeta: any) => {
         console.group('Value Changed');
         console.log('The values to compare', newValue);
-        console.log('The values of the newValue', newValue.value);
         
         // console.log('the meta data', actionMeta);
         // console.log(`action: ${actionMeta.action}`);
@@ -49,6 +48,48 @@ class Home extends Component {
         
         if (newValue !== null) {
             console.log('loaded city')
+            console.log('The values of the newValue', newValue.value);
+            
+            this.setState({
+                city: newValue.value
+            })
+            
+            this.props.onSelectedCity(newValue.value)
+            
+        }
+        else {
+            console.log('cleared city')
+            this.props.onClearedSelectedCity()
+        }
+        
+    };
+    handleInputChange = (inputValue: any, actionMeta: any) => {
+         console.group('Input Changed');
+        console.log('the input value is ',inputValue);
+
+        if(this.state.city !== null){
+            this.props.onSelectedAreas(this.state.city)
+            
+        }
+        // console.log(`action: ${actionMeta.action}`);
+        // console.groupEnd();
+        
+        //console.log('the city options', selectedCity)
+        // console.log('the city option', current)
+    };
+    
+    handleChange = (newValue: any, actionMeta: any) => {
+        console.group('Value Changed');
+        console.log('The values to compare', newValue);
+        
+        // console.log('the meta data', actionMeta);
+        // console.log(`action: ${actionMeta.action}`);
+        // console.groupEnd();
+        
+        
+        if (newValue !== null) {
+            console.log('loaded city')
+            console.log('The values of the newValue', newValue.value);
             
             this.setState({
                 city: newValue.value
