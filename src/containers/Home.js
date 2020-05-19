@@ -64,7 +64,9 @@ class Home extends Component {
 
             this.setState({
                 city: null, 
-                disabled: true
+                disabled: true,
+                diabledPointer: 'not-allowed',
+                disabledBackground: '#787878'
             })
         }
 
