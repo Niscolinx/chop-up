@@ -4,7 +4,7 @@ export const colourOptions = [
     { value: 'Umuahia', label: 'Umuahia',isFixed: true },
   
 ];
-export const colourOptions = [
+export const areasOptions = [
     { value: 'Absu', label: 'Absu',isFixed: true },
     { value: 'Okigwe', label: 'Okigwe',isFixed: true },
     { value: 'Umuahia', label: 'Umuahia',isFixed: true },
