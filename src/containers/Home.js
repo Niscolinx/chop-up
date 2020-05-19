@@ -189,7 +189,7 @@ class Home extends Component {
                                         isClearable
                                         onChange={this.handleChange}
                                         onInputChange={this.handleInputChange}
-                                        options={colourOptions}
+                                        options={areasOptions}
                                     />
                                 </Col>
 
