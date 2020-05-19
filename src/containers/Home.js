@@ -12,73 +12,80 @@ import axios from "../axios"
 
 import CreatableSelect from 'react-select/creatable';
 import AsyncSelect from 'react-select/async';
-import { colourOptions , areasOptions} from '../doc/data';
+import { colourOptions, areasOptions } from '../doc/data';
 
 
 
 class Home extends Component {
 
     state = {
-        city: null
+        city: null,
+        newArea: []
     }
 
     handleCityChange = (inputValue: any, actionMeta: any) => {
-         console.group('Input Changed');
-        console.log('the input value is ',inputValue);
+        // console.group('Input Changed');
+        // console.log('the input value is ', inputValue);
 
-        
-        
+
+
         console.log(`action: ${actionMeta}`);
         console.groupEnd();
-        
+
     };
-    
+
     cityChange = (newValue: any, actionMeta: any) => {
-        console.group('Value Changed');
-        console.log('The values to compare', newValue);
-        
-         console.log('the meta data', actionMeta);
+        // console.group('Value Changed');
+        // console.log('The values to compare', newValue);
+
+        console.log('the meta data', actionMeta);
         // console.log(`action: ${actionMeta.action}`);
         console.groupEnd();
-        
-        
+
+
         if (newValue !== null) {
             console.log('loaded city')
-            console.log('The values of the newValue', newValue.value);
-            
+            // console.log('The values of the newValue', newValue.value);
+
             this.props.onSelectedCity(newValue.value)
             this.props.onSelectedAreas(newValue.value)
 
             this.setState({
                 city: newValue.value
             })
-            
+
         }
         else {
             console.log('cleared city')
             this.props.onClearedSelectedCity()
         }
-        
+
     };
     handleAreaChange = (inputValue: any, actionMeta: any) => {
-         console.group('Input Changed');
+        console.group('Input Changed');
         console.groupEnd();
-        
+
     };
-    
+
     areaChange = (newValue: any, actionMeta: any) => {
         console.group('Value Changed');
-        
-         console.log('the meta data', actionMeta);
+
+        console.log('the meta data', actionMeta);
         // console.log(`action: ${actionMeta.action}`);
-         console.groupEnd();
-            
-            
-        
+        console.groupEnd();
+
+        if (actionMeta.action === 'select-option') {
+            this.setState({
+                newArea: this.state.newArea.push(actionMeta.option.label)
+            })
+        }
+
+
+
     };
-    
+
     render() {
-        console.log('these are the areas',this.props.areas)
+        console.log('these are the areas', this.props.areas)
 
 
         const divStyle = {
