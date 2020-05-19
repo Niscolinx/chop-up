@@ -27,33 +27,33 @@ class Home extends Component {
         console.log('the input value is ',inputValue);
 
         if(this.state.city !== null){
-            this.props.onSelectedCity(this.state.city)
             this.props.onSelectedAreas(this.state.city)
-
+            
         }
         // console.log(`action: ${actionMeta.action}`);
         // console.groupEnd();
-
+        
         //console.log('the city options', selectedCity)
         // console.log('the city option', current)
     };
-
+    
     handleChange = (newValue: any, actionMeta: any) => {
         console.group('Value Changed');
         console.log('The values to compare', newValue);
-
+        
         // console.log('the meta data', actionMeta);
         // console.log(`action: ${actionMeta.action}`);
         // console.groupEnd();
-
-
+        
+        
         if (newValue !== null) {
             console.log('loaded city')
-
+            
             this.setState({
                 city: newValue.value
             })
-           
+            
+            this.props.onSelectedCity(newValue.value)
             
         }
         else {
@@ -189,7 +189,7 @@ class Home extends Component {
                                         isClearable
                                         onChange={this.handleChange}
                                         onInputChange={this.handleInputChange}
-                                        options={this.props.areas}
+                                        options={colourOptions}
                                     />
                                 </Col>
 
