@@ -189,7 +189,7 @@ class Home extends Component {
                                         isClearable
                                         onChange={this.handleChange}
                                         onInputChange={this.handleInputChange}
-                                        options={areasOptions}
+                                        options={this.props.areas}
                                     />
                                 </Col>
 
