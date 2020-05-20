@@ -86,7 +86,7 @@ class Home extends Component {
 
     };
     handleAreaChange = (inputValue: any, actionMeta: any) => {
-        console.group('Input Changed');
+        console.group('Input Changed', inputValue, actionMeta);
         console.groupEnd();
 
     };
@@ -94,7 +94,7 @@ class Home extends Component {
     areaChange = (newValue: any, actionMeta: any) => {
         console.group('Value Changed');
 
-        console.log('the meta data', actionMeta);
+        console.log('the meta data', actionMeta, newValue);
         // console.log(`action: ${actionMeta.action}`);
         console.groupEnd();
 
@@ -215,11 +215,6 @@ class Home extends Component {
 
                 }),
 
-                setValues: (newValue, actionMeta) => ({
-                    ...this.state.newArea,
-                    [actionMeta.name]: newValue ? newValue.value : ""
-                }),
-
 
                 option: (styles, state) => ({
                     ...styles,
@@ -335,7 +330,7 @@ class Home extends Component {
                                         isDisabled={this.state.disabled}
                                         components={animated}
 
-                                    // value={this.state.newArea}
+                                     value={this.state.newArea}
                                     />
                                 </Col>
 
