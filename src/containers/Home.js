@@ -310,7 +310,6 @@ class Home extends Component {
                                         onChange={this.cityChange}
                                         onInputChange={this.handleCityChange}
                                         options={cityOptions}
-                                        isDisabled = {this.state.disabled}
                                     />
 
                                 </Col>
@@ -330,6 +329,7 @@ class Home extends Component {
                                         styles={areaStyles()}
                                         placeholder={areaPlaceholder}
                                         isClearable
+                                        isMulti
                                         onChange={this.areaChange}
                                         onInputChange={this.handleAreaChange}
                                         options={cityOptions}
