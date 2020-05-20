@@ -63,7 +63,7 @@ class Home extends Component {
         else {
             console.log('cleared city')
             this.props.onClearedSelectedCity()
-          //  this.props.onSelectedAreas(null)
+           this.props.onSelectedCity(null)
 
 
             this.setState({
@@ -316,7 +316,7 @@ class Home extends Component {
                                         onInputChange={this.handleAreaChange}
                                         options={this.props.areas}
                                         isDisabled={this.state.disabled}
-                                        value={this.state.newArea}
+                                        value={this.state.clearAreas}
                                     //isLoading = 'true'
                                     />
                                 </Col>
