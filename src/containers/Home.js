@@ -19,6 +19,7 @@ class Home extends Component {
 
     state = {
         currentCity: null,
+        oldCity: null,
         newArea: [],
         disabled: true,
         disabledPointer: 'not-allowed',
