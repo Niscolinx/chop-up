@@ -310,6 +310,7 @@ class Home extends Component {
                                         onChange={this.cityChange}
                                         onInputChange={this.handleCityChange}
                                         options={cityOptions}
+                                        isDisabled = {this.state.disabled}
                                     />
 
                                 </Col>
@@ -324,7 +325,7 @@ class Home extends Component {
                                         options={this.props.areas}
                                         sDisabled={this.state.disabled}
                                         value={this.state.newArea}
-                                        isLoading='true'
+                                       // isLoading='true'
                                     />
                                 </Col>
 
