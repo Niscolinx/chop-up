@@ -255,13 +255,13 @@ class Home extends Component {
         }
 
 
-        const selectArea = locations.areas.map((item, i) => {
-            let lower = item.toLowerCase()
-            let upper = item.charAt(0).toUpperCase() + item.slice(1)
+        // const selectArea = locations.areas.map((item, i) => {
+        //     let lower = item.toLowerCase()
+        //     let upper = item.charAt(0).toUpperCase() + item.slice(1)
 
-            return <option value={lower} key={item + i} className='delivering_form--locations_item'>{upper}</option>
+        //     return <option value={lower} key={item + i} className='delivering_form--locations_item'>{upper}</option>
 
-        })
+        // })
 
         const cityPlaceholder = 'Choose City'
         const areaPlaceholder = 'Select your area'
