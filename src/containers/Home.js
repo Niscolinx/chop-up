@@ -33,7 +33,9 @@ class Home extends Component {
         return (
             <div>
 
-               <Hero/>
+               <Hero
+                state = {this.state}
+               />
 
                 <div className='simple-steps'>
                     <Container>

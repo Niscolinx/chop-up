@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {Component} from 'react'
 import { Container, Row, Col, Button, Card, CardGroup } from 'react-bootstrap'
 import Form from 'react-bootstrap/Form'
 import imgUrl from '../../assets/images/bg_home.jpg'
@@ -9,7 +9,12 @@ import makeAnimated from 'react-select/animated';
 import { cityOptions } from '../../doc/data';
 
 
- const Hero = (props) => {
+ class Hero extends component {
+
+    render(){
+        
+       
+    
 
     const divStyle = {
         backgroundImage: 'url(' + imgUrl + ')',
@@ -25,88 +30,15 @@ import { cityOptions } from '../../doc/data';
 
 
 
-    const handleCityChange = (inputValue: any, actionMeta: any) => {
-         // console.group('Input Changed');
-         // console.log('the input value has been changed and it is now', inputValue);
-
-         console.log(`action: ${actionMeta}`);
-         console.groupEnd();
-
-     };
-
-    const cityChange = (newValue: any, actionMeta: any) => {
-         //  console.group('Value Changed', newValue);
-         // console.log('The values to compare', newValue);
-
-         console.log('the meta data', actionMeta);
-         // console.log(`action: ${actionMeta.action}`);
-         console.groupEnd();
 
 
-         if (newValue !== null) {
-             console.log('loaded city')
-             // console.log('The values of the newValue', newValue.value);
+    // const selectCity = locations.cities.map((item, i) => {
+    //     let lower = item.toLowerCase()
+    //     let upper = item.charAt(0).toUpperCase() + item.slice(1)
+    //     return <option value={lower} key={item + i} className='delivering_form--locations_item'>{upper}</option>
 
-             this.props.onSelectedCity(newValue.value)
-             this.props.onSelectedAreas(newValue.value)
-
-             let storeOldCity = this.state.currentCity
-
-             if (newValue.value !== this.state.currentCity) {
-                 this.setState({
-                     newArea: []
-                 })
-             }
-
-             this.setState({
-                 currentCity: newValue.value,
-                 oldCity: storeOldCity,
-                 disabled: false,
-                 disabledPointer: 'pointer',
-                 disabledBackground: '#fff',
-             })
-
-
-         }
-         else {
-             console.log('cleared city')
-             this.props.onClearedSelectedCity()
-
-
-             this.setState({
-                 currentCity: null,
-                 disabled: true,
-                 disabledPointer: 'not-allowed',
-                 disabledBackground: '#787878',
-                 newArea: []
-             })
-         }
-
-     };
-    const handleAreaChange = (inputValue: any, actionMeta: any) => {
-         console.group('Input Changed', inputValue, 'the Changed value is', actionMeta);
-         console.groupEnd();
-
-     };
-
-    const areaChange = (newValue: any, actionMeta: any) => {
-         console.group('Value Changed');
-
-         console.log('the meta data', actionMeta, 'the newValue is', newValue);
-         // console.log(`action: ${actionMeta.action}`);
-         console.groupEnd();
-
-         this.setState({
-             newArea: newValue
-         })
-
-       
-
-
-     };
-
-
-    const cityStyles = (height = '3rem') => {
+    // })
+     cityStyles = (height = '3rem') => {
 
         return {
 
@@ -251,8 +183,8 @@ import { cityOptions } from '../../doc/data';
                                 styles={cityStyles()}
                                 placeholder={cityPlaceholder}
                                 isClearable
-                                onChange={cityChange()}
-                                onInputChange={handleCityChange()}
+                                onChange={this.cityChange}
+                                onInputChange={this.handleCityChange}
                                 options={cityOptions}
                                 components={animated}
 
@@ -266,12 +198,12 @@ import { cityOptions } from '../../doc/data';
                                 placeholder={areaPlaceholder}
                                 isClearable
                                 isMulti
-                                onChange={areaChange()}
-                                onInputChange={handleAreaChange()}
-                                options={props.areas}
-                                isDisabled={props.disabled}
+                                onChange={this.areaChange}
+                                onInputChange={this.handleAreaChange}
+                                options={this.props.areas}
+                                isDisabled={this.state.disabled}
                                 components={animated}
-                                value={props.newArea}
+                                value={this.state.newArea}
                             />
                         </Col>
 
@@ -315,6 +247,6 @@ import { cityOptions } from '../../doc/data';
             </Container>
         </div >
     )
-}
+}}
 
-export default Hero
+export default Home
