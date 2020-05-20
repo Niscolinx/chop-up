@@ -14,10 +14,6 @@ import Hero from '../components/Layout/Hero'
 
 class Home extends Component {
 
-    
-
-   
-
 
     render() {
     
