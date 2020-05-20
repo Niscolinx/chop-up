@@ -128,12 +128,12 @@ class Home extends Component {
 
 
 
-        const selectCity = locations.cities.map((item, i) => {
-            let lower = item.toLowerCase()
-            let upper = item.charAt(0).toUpperCase() + item.slice(1)
-            return <option value={lower} key={item + i} className='delivering_form--locations_item'>{upper}</option>
+        // const selectCity = locations.cities.map((item, i) => {
+        //     let lower = item.toLowerCase()
+        //     let upper = item.charAt(0).toUpperCase() + item.slice(1)
+        //     return <option value={lower} key={item + i} className='delivering_form--locations_item'>{upper}</option>
 
-        })
+        // })
         const cityStyles = (height = '3rem') => {
             
             return {
