@@ -36,7 +36,7 @@ class Home extends Component {
     };
 
     cityChange = (newValue: any, actionMeta: any) => {
-       //  console.group('Value Changed', newValue);
+        //  console.group('Value Changed', newValue);
         // console.log('The values to compare', newValue);
 
         console.log('the meta data', actionMeta);
@@ -51,12 +51,19 @@ class Home extends Component {
             this.props.onSelectedCity(newValue.value)
             this.props.onSelectedAreas(newValue.value)
 
+            let storeOldCity;
+            if (this.state.oldCity === null) {
+                storeOldCity = newValue.value
+            }
+
+
             this.setState({
                 currentCity: newValue.value,
                 disabled: false,
                 disabledPointer: 'pointer',
                 disabledBackground: '#fff',
             })
+
 
         }
         else {
