@@ -96,33 +96,6 @@ import { cityOptions } from '../../doc/data';
              newArea: newValue
          })
 
-         // if (actionMeta.action === 'select-option') {
-         //     this.setState(state => {
-
-         //         const areaList = [...state.newArea.concat(actionMeta.option)]
-
-         //         return {
-         //             newArea: areaList
-
-         //         }
-         //     })
-
-         // }
-         // if (actionMeta.action === 'remove-value') {
-         //     this.setState(state => {
-
-         //         const areaList = state.newArea.filter(area => {
-         //             return area.label !== actionMeta.removedValue.label
-         //         })
-
-         //         return {
-         //             newArea: areaList
-
-         //         }
-         //     })
-
-         // }
-
 
      };
 
