@@ -62,18 +62,30 @@ export const clearedSelectedCity = () => {
 export const addAreas = (areas) => {
     const Absu = [
         { value: 'Absu', label: 'Absu'},
-        { value: 'chocolate', label: 'Chocolate'},
+        { value: 'Mbano', label: 'Mbano'},
         { value: 'strawberry', label: 'Strawberry'},
         { value: 'salted-caramel', label: 'Salted Caramel' },
     ];
     const Okigwe = [
         { value: 'Okigwe', label: 'Okigwe'},
         { value: 'chocolate', label: 'Chocolate'},
-        { value: 'strawberry', label: 'Strawberry'},
-        { value: 'salted-caramel', label: 'Salted Caramel' },
+        { value: 'olu', label: 'olu'},
+        { value: 'Pego', label: 'Pego' },
     ];
     const Umuahia = [
         { value: 'Umuahia', label: 'Umuahia'},
+        { value: 'Roundabout', label: 'Roundabout'},
+        { value: 'Old road', label: 'Old road'},
+        { value: 'Limca', label: 'Limca' },
+    ];
+    const Isukwuato = [
+        { value: 'Noya', label: 'Noya'},
+        { value: 'kpuru', label: 'kpuru'},
+        { value: 'Adielu', label: 'Adielu'},
+        { value: 'Seetu', label: 'Seetu' },
+    ];
+    const Isuochi = [
+        { value: 'Isuochi', label: 'Isuochi'},
         { value: 'chocolate', label: 'Chocolate'},
         { value: 'strawberry', label: 'Strawberry'},
         { value: 'salted-caramel', label: 'Salted Caramel' },
@@ -92,6 +104,12 @@ export const addAreas = (areas) => {
             break;
         case ('Umuahia'):
             currentCity = Umuahia
+            break;
+        case ('Isuochi'):
+            currentCity = Isuochi
+            break;
+        case ('Isukwuato'):
+            currentCity = Isukwuato
             break;
 
         default:
