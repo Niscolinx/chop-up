@@ -27,6 +27,9 @@ class Home extends Component {
 
                <Hero
                areas = {this.props.areas}
+               onClearedSelectedCity = {this.props.onClearedSelectedCity}
+               onSelectedAreas = {this.props.onSelectedAreas}
+               onSelectedCity = {this.props.onSelectedCity}
                />
 
                 <div className='simple-steps'>
