@@ -316,16 +316,24 @@ class Home extends Component {
                                 </Col>
                                 <Col className={this.state.disabled ? 'disabledPointer' : this.state.disabledPointer}>
                                     <Select
+                                        // styles={areaStyles()}
+                                        // placeholder={areaPlaceholder}
+                                        // isMulti
+                                        // isClearable
+                                        // onChange={this.areaChange}
+                                        // onInputChange={this.handleAreaChange}
+                                        // options={cityOptions}
+                                        // sDisabled={this.state.disabled}
+                                        // value={this.state.newArea}
+                                       // isLoading='true'
+
                                         styles={areaStyles()}
                                         placeholder={areaPlaceholder}
-                                        isMulti
                                         isClearable
                                         onChange={this.areaChange}
                                         onInputChange={this.handleAreaChange}
-                                        options={this.props.areas}
-                                        sDisabled={this.state.disabled}
-                                        value={this.state.newArea}
-                                       // isLoading='true'
+                                        options={cityOptions}
+                                        isDisabled={this.state.disabled}
                                     />
                                 </Col>
 
