@@ -9,7 +9,7 @@ import makeAnimated from 'react-select/animated';
 import { cityOptions } from '../../doc/data';
 
 
- const Hero = () => {
+ const Hero = (props) => {
 
     const divStyle = {
         backgroundImage: 'url(' + imgUrl + ')',
@@ -251,8 +251,8 @@ import { cityOptions } from '../../doc/data';
                                 styles={cityStyles()}
                                 placeholder={cityPlaceholder}
                                 isClearable
-                                onChange={this.cityChange}
-                                onInputChange={this.handleCityChange}
+                                onChange={cityChange()}
+                                onInputChange={handleCityChange()}
                                 options={cityOptions}
                                 components={animated}
 
@@ -266,12 +266,12 @@ import { cityOptions } from '../../doc/data';
                                 placeholder={areaPlaceholder}
                                 isClearable
                                 isMulti
-                                onChange={this.areaChange}
-                                onInputChange={this.handleAreaChange}
-                                options={this.props.areas}
-                                isDisabled={this.state.disabled}
+                                onChange={areaChange()}
+                                onInputChange={handleAreaChange()}
+                                options={props.areas}
+                                isDisabled={props.disabled}
                                 components={animated}
-                                value={this.state.newArea}
+                                value={props.newArea}
                             />
                         </Col>
 
