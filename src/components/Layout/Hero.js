@@ -100,43 +100,12 @@ import { cityOptions } from '../../doc/data';
              newArea: newValue
          })
 
-         // if (actionMeta.action === 'select-option') {
-         //     this.setState(state => {
-
-         //         const areaList = [...state.newArea.concat(actionMeta.option)]
-
-         //         return {
-         //             newArea: areaList
-
-         //         }
-         //     })
-
-         // }
-         // if (actionMeta.action === 'remove-value') {
-         //     this.setState(state => {
-
-         //         const areaList = state.newArea.filter(area => {
-         //             return area.label !== actionMeta.removedValue.label
-         //         })
-
-         //         return {
-         //             newArea: areaList
-
-         //         }
-         //     })
-
-         // }
+       
 
 
      };
 
 
-    // const selectCity = locations.cities.map((item, i) => {
-    //     let lower = item.toLowerCase()
-    //     let upper = item.charAt(0).toUpperCase() + item.slice(1)
-    //     return <option value={lower} key={item + i} className='delivering_form--locations_item'>{upper}</option>
-
-    // })
     const cityStyles = (height = '3rem') => {
 
         return {
