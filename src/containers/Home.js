@@ -35,7 +35,7 @@ class Home extends Component {
     };
 
     cityChange = (newValue: any, actionMeta: any) => {
-        // console.group('Value Changed');
+         console.group('Value Changed', newValue);
         // console.log('The values to compare', newValue);
 
         console.log('the meta data', actionMeta);
