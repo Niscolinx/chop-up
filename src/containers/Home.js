@@ -53,7 +53,7 @@ class Home extends Component {
 
             let storeOldCity = this.state.currentCity
 
-            if(newValue.value !== this.state.currentCity){
+            if (newValue.value !== this.state.currentCity) {
                 this.setState({
                     newArea: []
                 })
@@ -322,8 +322,8 @@ class Home extends Component {
                                         onChange={this.areaChange}
                                         onInputChange={this.handleAreaChange}
                                         options={this.props.areas}
-//isDisabled={this.state.disabled}
-                                     //   value={this.state.newArea}
+                                        sDisabled={this.state.disabled}
+                                    //   value={this.state.newArea}
                                     //isLoading = 'true'
                                     />
                                 </Col>
