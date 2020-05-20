@@ -51,11 +51,7 @@ class Home extends Component {
             this.props.onSelectedCity(newValue.value)
             this.props.onSelectedAreas(newValue.value)
 
-            let storeOldCity;
-            if (this.state.oldCity === null) {
-                storeOldCity = newValue.value
-            }
-
+            let storeOldCity = 
 
             this.setState({
                 currentCity: newValue.value,
