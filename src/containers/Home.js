@@ -268,7 +268,7 @@ class Home extends Component {
 
 
        let clearAreas = this.props.areas
-       this.props.city === null ? clearAreas = null : clearAreas = this.props.areas
+       this.props.city === null ? clearAreas = '' : clearAreas = this.props.areas
 
 
         return (
