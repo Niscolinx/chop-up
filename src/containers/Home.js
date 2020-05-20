@@ -63,7 +63,7 @@ class Home extends Component {
             this.props.onClearedSelectedCity()
 
             this.setState({
-                city: null, 
+                city: null,
                 disabled: true,
                 disabledPointer: 'not-allowed',
                 disabledBackground: '#787878'
@@ -84,14 +84,14 @@ class Home extends Component {
         // console.log(`action: ${actionMeta.action}`);
         console.groupEnd();
 
-    
+
         if (actionMeta.action === 'select-option') {
             this.setState(state => {
 
                 const areaList = [...state.newArea.concat(actionMeta.option)]
 
-                return{
-                    newArea:  areaList
+                return {
+                    newArea: areaList
 
                 }
             })
@@ -101,21 +101,24 @@ class Home extends Component {
             this.setState(state => {
 
                 const areaList = state.newArea.filter(area => {
-                   return area.label !== actionMeta.removedValue.label
+                    return area.label !== actionMeta.removedValue.label
                 })
 
-                return{
-                    newArea:  areaList
+                return {
+                    newArea: areaList
 
                 }
             })
 
         }
-        
-        
-        
+
+
     };
-    
+
+    clearAreas = () => {
+        if (this.props.city) return this.props.areas
+        else { return null }
+    }
     render() {
         console.log('the state is', this.state)
 
@@ -135,17 +138,17 @@ class Home extends Component {
 
         // })
         const cityStyles = (height = '3rem') => {
-            
+
             return {
-                
+
                 menu: (provided, state) => ({
                     ...provided,
                     //width: state.selectProps.width,
                     color: state.selectProps.menuColor,
                     padding: 10,
-                    
+
                 }),
-                
+
                 option: (styles, state) => ({
                     ...styles,
                     cursor: 'pointer',
@@ -188,27 +191,27 @@ class Home extends Component {
             }
         }
         const areaStyles = (height = '3rem', newState = this.state) => {
-            
+
             return {
-                
+
                 menu: (provided, state) => ({
                     ...provided,
                     //width: state.selectProps.width,
-                // color: state.selectProps.menuColor,
+                    // color: state.selectProps.menuColor,
                     padding: 10,
-                    
+
                 }),
-                
+
                 option: (styles, state) => ({
                     ...styles,
                     cursor: newState.disabledPointer,
                     padding: '1rem'
                 }),
-                
+
                 control: (provided, state) => {
                     const cursor = state.isDisabled ? 'not-allowed' : 'pointer';
-                    
-                    return{
+
+                    return {
                         ...provided,
                         cursor: cursor,
                         background: newState.disabledBackground,
@@ -216,7 +219,7 @@ class Home extends Component {
                         minHeight: height,
                         height: height,
                         boxShadow: state.isFocused ? null : null,
-                        
+
                     }
                 },
 
@@ -231,7 +234,7 @@ class Home extends Component {
                     height: height,
                     padding: '0 6px',
                 }),
-                
+
                 input: (provided, state) => ({
                     ...provided,
                     margin: '0px',
@@ -266,10 +269,7 @@ class Home extends Component {
         const cityPlaceholder = 'Choose City'
         const areaPlaceholder = 'Select your area'
 
-        const clearAreas = () => {
-            if(this.props.city) return this.props.areas
-            else{ return null}
-        }
+
 
         return (
             <div>
@@ -303,7 +303,7 @@ class Home extends Component {
                                     />
 
                                 </Col>
-                                <Col className = {this.state.disabled ? 'disabledPointer' : this.state.disabledPointer}>
+                                <Col className={this.state.disabled ? 'disabledPointer' : this.state.disabledPointer}>
                                     <Select
                                         styles={areaStyles()}
                                         placeholder={areaPlaceholder}
@@ -311,9 +311,9 @@ class Home extends Component {
                                         isClearable
                                         onChange={this.areaChange}
                                         onInputChange={this.handleAreaChange}
-                                        options={this.clearAreas()}
-                                        isDisabled ={this.state.disabled}
-                                        //isLoading = 'true'
+                                        options={this.clearAreas}
+                                        isDisabled={this.state.disabled}
+                                    //isLoading = 'true'
                                     />
                                 </Col>
 
