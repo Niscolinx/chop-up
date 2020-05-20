@@ -332,7 +332,7 @@ class Home extends Component {
                                         isMulti
                                         onChange={this.areaChange}
                                         onInputChange={this.handleAreaChange}
-                                        options={cityOptions}
+                                        options={this.props.areas}
                                         isDisabled={this.state.disabled}
                                     />
                                 </Col>
