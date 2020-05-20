@@ -267,7 +267,9 @@ class Home extends Component {
         const areaPlaceholder = 'Select your area'
 
 
-       const clearAreas = this.props.areas
+       let clearAreas = this.props.areas
+       this.props.city === null ? clearAreas = null : clearAreas = this.props.areas
+
 
         return (
             <div>
