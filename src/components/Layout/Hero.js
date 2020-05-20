@@ -25,6 +25,110 @@ import { cityOptions } from '../../doc/data';
 
 
 
+    const handleCityChange = (inputValue: any, actionMeta: any) => {
+         // console.group('Input Changed');
+         // console.log('the input value has been changed and it is now', inputValue);
+
+         console.log(`action: ${actionMeta}`);
+         console.groupEnd();
+
+     };
+
+     cityChange = (newValue: any, actionMeta: any) => {
+         //  console.group('Value Changed', newValue);
+         // console.log('The values to compare', newValue);
+
+         console.log('the meta data', actionMeta);
+         // console.log(`action: ${actionMeta.action}`);
+         console.groupEnd();
+
+
+         if (newValue !== null) {
+             console.log('loaded city')
+             // console.log('The values of the newValue', newValue.value);
+
+             this.props.onSelectedCity(newValue.value)
+             this.props.onSelectedAreas(newValue.value)
+
+             let storeOldCity = this.state.currentCity
+
+             if (newValue.value !== this.state.currentCity) {
+                 this.setState({
+                     newArea: []
+                 })
+             }
+
+             this.setState({
+                 currentCity: newValue.value,
+                 oldCity: storeOldCity,
+                 disabled: false,
+                 disabledPointer: 'pointer',
+                 disabledBackground: '#fff',
+             })
+
+
+         }
+         else {
+             console.log('cleared city')
+             this.props.onClearedSelectedCity()
+
+
+             this.setState({
+                 currentCity: null,
+                 disabled: true,
+                 disabledPointer: 'not-allowed',
+                 disabledBackground: '#787878',
+                 newArea: []
+             })
+         }
+
+     };
+     handleAreaChange = (inputValue: any, actionMeta: any) => {
+         console.group('Input Changed', inputValue, 'the Changed value is', actionMeta);
+         console.groupEnd();
+
+     };
+
+     areaChange = (newValue: any, actionMeta: any) => {
+         console.group('Value Changed');
+
+         console.log('the meta data', actionMeta, 'the newValue is', newValue);
+         // console.log(`action: ${actionMeta.action}`);
+         console.groupEnd();
+
+         this.setState({
+             newArea: newValue
+         })
+
+         // if (actionMeta.action === 'select-option') {
+         //     this.setState(state => {
+
+         //         const areaList = [...state.newArea.concat(actionMeta.option)]
+
+         //         return {
+         //             newArea: areaList
+
+         //         }
+         //     })
+
+         // }
+         // if (actionMeta.action === 'remove-value') {
+         //     this.setState(state => {
+
+         //         const areaList = state.newArea.filter(area => {
+         //             return area.label !== actionMeta.removedValue.label
+         //         })
+
+         //         return {
+         //             newArea: areaList
+
+         //         }
+         //     })
+
+         // }
+
+
+     };
 
 
     // const selectCity = locations.cities.map((item, i) => {
