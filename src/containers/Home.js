@@ -98,6 +98,9 @@ class Home extends Component {
         // console.log(`action: ${actionMeta.action}`);
         console.groupEnd();
 
+        this.setState({
+            newArea: newValue
+        })
 
         // if (actionMeta.action === 'select-option') {
         //     this.setState(state => {
