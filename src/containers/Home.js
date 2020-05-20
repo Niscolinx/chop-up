@@ -54,9 +54,14 @@ class Home extends Component {
             let storeOldCity = this.state.currentCity
 
             if(this.state.oldCity !== this.state.currentCity){
+                console.log(`${this.state.oldCity} is not equal to ${this.state.currentCity}`)
                 this.setState({
                     newArea: []
                 })
+            }
+            else{
+                console.log(`${this.state.oldCity} is equal to ${this.state.currentCity}`)
+
             }
 
             this.setState({
