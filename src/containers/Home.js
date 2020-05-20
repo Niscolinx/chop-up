@@ -53,6 +53,12 @@ class Home extends Component {
 
             let storeOldCity = this.state.currentCity
 
+            if(this.state.oldCity !== this.state.currentCity){
+                this.setState({
+                    newArea: []
+                })
+            }
+
             this.setState({
                 currentCity: newValue.value,
                 oldCity: storeOldCity,
