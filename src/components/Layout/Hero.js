@@ -12,6 +12,143 @@ export const Hero = () => {
         height: '95vh',
         backgroundSize: 'cover',
     };
+
+    const cityPlaceholder = 'Choose City'
+    const areaPlaceholder = 'Select your area'
+
+    const animated = makeAnimated()
+
+
+
+
+
+    // const selectCity = locations.cities.map((item, i) => {
+    //     let lower = item.toLowerCase()
+    //     let upper = item.charAt(0).toUpperCase() + item.slice(1)
+    //     return <option value={lower} key={item + i} className='delivering_form--locations_item'>{upper}</option>
+
+    // })
+    const cityStyles = (height = '3rem') => {
+
+        return {
+
+            menu: (provided, state) => ({
+                ...provided,
+                //width: state.selectProps.width,
+                color: state.selectProps.menuColor,
+                padding: 10,
+
+            }),
+
+            option: (styles, state) => ({
+                ...styles,
+                cursor: 'pointer',
+                padding: '1rem'
+            }),
+            control: (provided, state) => ({
+                ...provided,
+                cursor: 'pointer',
+                background: '#fff',
+                borderColor: 'white',
+                minHeight: height,
+                height: height,
+                boxShadow: state.isFocused ? null : null,
+            }),
+            valueContainer: (provided, state) => ({
+                ...provided,
+                height: height,
+                padding: '0 6px'
+            }),
+
+            input: (provided, state) => ({
+                ...provided,
+                margin: '0px',
+            }),
+            indicatorSeparator: state => ({
+                display: 'none',
+            }),
+            indicatorsContainer: (provided, state) => ({
+                ...provided,
+                height: height,
+            }),
+
+
+            singleValue: (provided, state) => {
+                const opacity = state.isDisabled ? 0.5 : 1;
+                const transition = 'opacity 300ms';
+
+                return { ...provided, opacity, transition };
+            }
+        }
+    }
+    const areaStyles = (height = '3rem', newState = this.state) => {
+
+        return {
+
+            menu: (provided, state) => ({
+                ...provided,
+                //width: state.selectProps.width,
+                // color: state.selectProps.menuColor,
+                padding: 10,
+
+            }),
+
+
+            option: (styles, state) => ({
+                ...styles,
+                cursor: newState.disabledPointer,
+                padding: '1rem'
+            }),
+
+            control: (provided, state) => {
+                const cursor = state.isDisabled ? 'not-allowed' : 'pointer';
+
+                return {
+                    ...provided,
+                    cursor: cursor,
+                    background: newState.disabledBackground,
+                    borderColor: newState.disabledBackground,
+                    minHeight: height,
+                    height: height,
+                    boxShadow: state.isFocused ? null : null,
+
+                }
+            },
+
+            placeholder: (defaultStyles, state) => {
+                return {
+                    ...defaultStyles,
+                    color: state.isDisabled ? '#9c9a9a' : '#808080'
+                }
+            },
+            valueContainer: (provided, state) => ({
+                ...provided,
+                height: height,
+                padding: '0 6px',
+            }),
+
+            input: (provided, state) => ({
+                ...provided,
+                margin: '0px',
+            }),
+            indicatorSeparator: state => ({
+                display: 'none',
+            }),
+            indicatorsContainer: (provided, state) => ({
+                ...provided,
+                height: height,
+            }),
+
+
+            singleValue: (provided, state) => {
+                const opacity = state.isDisabled ? 0.5 : 1;
+                const transition = 'opacity 300ms';
+
+                return { ...provided, opacity, transition };
+            }
+        }
+    }
+
     return (
         <div style={divStyle} >
             <Container fliuid='true' className='hero'>
