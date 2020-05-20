@@ -211,13 +211,12 @@ class Home extends Component {
                     return{
                         ...provided,
                         cursor: cursor,
-                        background: state.isDisabled ? 'red' : 'yellow',
-                       // background: newState.disabledBackground,
+                        background: newState.disabledBackground,
                         borderColor: newState.disabledBackground,
                         minHeight: height,
                         height: height,
                         boxShadow: state.isFocused ? null : null,
-
+                        
                     }
                 },
 
@@ -231,8 +230,9 @@ class Home extends Component {
                     ...provided,
                     height: height,
                     padding: '0 6px',
+                    cursor: state.isDisabled ? 'no-' : 'yellow'
                 }),
-
+                
                 input: (provided, state) => ({
                     ...provided,
                     margin: '0px',
