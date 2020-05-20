@@ -51,10 +51,11 @@ class Home extends Component {
             this.props.onSelectedCity(newValue.value)
             this.props.onSelectedAreas(newValue.value)
 
-            let storeOldCity = 
+            let storeOldCity = this.state.currentCity
 
             this.setState({
                 currentCity: newValue.value,
+                oldCity: storeOldCity,
                 disabled: false,
                 disabledPointer: 'pointer',
                 disabledBackground: '#fff',
