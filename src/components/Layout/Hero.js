@@ -34,7 +34,7 @@ import { cityOptions } from '../../doc/data';
 
      };
 
-     cityChange = (newValue: any, actionMeta: any) => {
+    const cityChange = (newValue: any, actionMeta: any) => {
          //  console.group('Value Changed', newValue);
          // console.log('The values to compare', newValue);
 
@@ -83,13 +83,13 @@ import { cityOptions } from '../../doc/data';
          }
 
      };
-     handleAreaChange = (inputValue: any, actionMeta: any) => {
+    const handleAreaChange = (inputValue: any, actionMeta: any) => {
          console.group('Input Changed', inputValue, 'the Changed value is', actionMeta);
          console.groupEnd();
 
      };
 
-     areaChange = (newValue: any, actionMeta: any) => {
+    const areaChange = (newValue: any, actionMeta: any) => {
          console.group('Value Changed');
 
          console.log('the meta data', actionMeta, 'the newValue is', newValue);
