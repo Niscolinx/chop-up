@@ -115,10 +115,7 @@ class Home extends Component {
 
     };
 
-    clearAreas = () => {
-        if (this.props.city) return this.props.areas
-        else { return null }
-    }
+
     render() {
         console.log('the state is', this.state)
 
@@ -270,6 +267,7 @@ class Home extends Component {
         const areaPlaceholder = 'Select your area'
 
 
+       const clearAreas = this.props.areas
 
         return (
             <div>
@@ -311,7 +309,7 @@ class Home extends Component {
                                         isClearable
                                         onChange={this.areaChange}
                                         onInputChange={this.handleAreaChange}
-                                        options={this.clearAreas}
+                                        options={clearAreas}
                                         isDisabled={this.state.disabled}
                                     //isLoading = 'true'
                                     />
