@@ -69,7 +69,8 @@ class Home extends Component {
                 disabled: true,
                 disabledPointer: 'not-allowed',
                 disabledBackground: '#787878',
-                clearAreas: ''
+                clearAreas: '',
+                newArea: []
             })
         }
 
