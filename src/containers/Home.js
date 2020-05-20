@@ -313,6 +313,7 @@ class Home extends Component {
                                         onInputChange={this.handleAreaChange}
                                         options={clearAreas}
                                         isDisabled={this.state.disabled}
+                                        value = {clearAreas}
                                     //isLoading = 'true'
                                     />
                                 </Col>
