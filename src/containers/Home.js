@@ -8,7 +8,7 @@ import * as actions from '../store/actions/burgerIndex'
 import withErrorHandler from "../components/hoc/withErrorHandler"
 import axios from "../axios"
 
-
+import Hero from '../components/Layout/Hero'
 
 
 
