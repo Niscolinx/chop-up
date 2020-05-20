@@ -267,9 +267,6 @@ class Home extends Component {
         const areaPlaceholder = 'Select your area'
 
 
-       let clearAreas = this.props.areas
-       this.props.city === null ? clearAreas = '' : clearAreas = this.props.areas
-
 
         return (
             <div>
@@ -311,9 +308,9 @@ class Home extends Component {
                                         isClearable
                                         onChange={this.areaChange}
                                         onInputChange={this.handleAreaChange}
-                                        options={clearAreas}
+                                        options={this.props.areas}
                                         isDisabled={this.state.disabled}
-                                        value = {clearAreas}
+                                        value = {this.state.clearAreas}
                                     //isLoading = 'true'
                                     />
                                 </Col>
