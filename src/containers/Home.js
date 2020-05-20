@@ -3,16 +3,12 @@ import { connect } from 'react-redux'
 
 import { Container, Row, Col, Button, Card, CardGroup } from 'react-bootstrap'
 import Form from 'react-bootstrap/Form'
-import imgUrl from '../assets/images/bg_home.jpg'
 
 import * as actions from '../store/actions/burgerIndex'
 import withErrorHandler from "../components/hoc/withErrorHandler"
 import axios from "../axios"
 
-import Select from 'react-select';
-import makeAnimated from 'react-select/animated';
 
-import { cityOptions } from '../doc/data';
 
 
 
@@ -135,20 +131,7 @@ class Home extends Component {
 
     render() {
         console.log('the state is', this.state)
-
-        
-
-        // const selectArea = locations.areas.map((item, i) => {
-        //     let lower = item.toLowerCase()
-        //     let upper = item.charAt(0).toUpperCase() + item.slice(1)
-
-        //     return <option value={lower} key={item + i} className='delivering_form--locations_item'>{upper}</option>
-
-        // })
-
-        
-
-
+    
 
         return (
             <div>

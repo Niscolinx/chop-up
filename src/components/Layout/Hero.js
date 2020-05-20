@@ -1,7 +1,12 @@
 import React from 'react'
 import { Container, Row, Col, Button, Card, CardGroup } from 'react-bootstrap'
 import Form from 'react-bootstrap/Form'
-import imgUrl from '../assets/images/bg_home.jpg'
+import imgUrl from '../../assets/images/bg_home.jpg'
+
+import Select from 'react-select';
+import makeAnimated from 'react-select/animated';
+
+import { cityOptions } from '../../doc/data';
 
 
 export const Hero = () => {
