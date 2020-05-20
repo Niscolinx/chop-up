@@ -230,7 +230,6 @@ class Home extends Component {
                     ...provided,
                     height: height,
                     padding: '0 6px',
-                    cursor: state.isDisabled ? 'no-' : 'yellow'
                 }),
                 
                 input: (provided, state) => ({
