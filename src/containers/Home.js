@@ -223,7 +223,7 @@ class Home extends Component {
                 placeholder: (defaultStyles, state) => {
                     return {
                         ...defaultStyles,
-                        color: state.isDisabled ? '#fff' : '#808080'
+                        color: state.isDisabled ? '#9c9a9a' : '#808080'
                     }
                 },
                 valueContainer: (provided, state) => ({
