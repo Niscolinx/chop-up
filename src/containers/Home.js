@@ -196,7 +196,6 @@ class Home extends Component {
                     //width: state.selectProps.width,
                 // color: state.selectProps.menuColor,
                     padding: 10,
-                    background: state.isDisabled ? 'red' : 'yellow'
                     
                 }),
                 
@@ -205,14 +204,15 @@ class Home extends Component {
                     cursor: newState.disabledPointer,
                     padding: '1rem'
                 }),
-
+                
                 control: (provided, state) => {
-                   const cursor = state.isDisabled ? 'not-allowed' : 'pointer';
-
+                    const cursor = state.isDisabled ? 'not-allowed' : 'pointer';
+                    
                     return{
                         ...provided,
                         cursor: cursor,
-                        background: newState.disabledBackground,
+                        background: state.isDisabled ? 'red' : 'yellow',
+                       // background: newState.disabledBackground,
                         borderColor: newState.disabledBackground,
                         minHeight: height,
                         height: height,
