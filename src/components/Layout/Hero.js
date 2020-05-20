@@ -9,7 +9,7 @@ import makeAnimated from 'react-select/animated';
 import { cityOptions } from '../../doc/data';
 
 
- class Hero extends component {
+ class Hero extends Component {
 
      state = {
          currentCity: null,
@@ -326,4 +326,4 @@ import { cityOptions } from '../../doc/data';
     )
 }}
 
-export default Home
+export default Hero
