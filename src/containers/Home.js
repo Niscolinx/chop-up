@@ -26,6 +26,7 @@ class Home extends Component {
             <div>
 
                <Hero
+               areas = {this.props.areas}
                />
 
                 <div className='simple-steps'>
