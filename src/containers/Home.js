@@ -212,6 +212,12 @@ class Home extends Component {
 
                 }),
 
+                setValues: (newValue, actionMeta) => ({
+                    ...this.state.newArea,
+                    [actionMeta.name]: newValue ? newValue.value : ""
+                }),
+
+
                 option: (styles, state) => ({
                     ...styles,
                     cursor: newState.disabledPointer,
@@ -324,7 +330,7 @@ class Home extends Component {
                                         onInputChange={this.handleAreaChange}
                                         options={this.props.areas}
                                         isDisabled={this.state.disabled}
-                                       // value={this.state.newArea}
+                                    // value={this.state.newArea}
                                     />
                                 </Col>
 
