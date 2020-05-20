@@ -5,6 +5,13 @@ import imgUrl from '../assets/images/bg_home.jpg'
 
 
 export const Hero = () => {
+
+    const divStyle = {
+        backgroundImage: 'url(' + imgUrl + ')',
+        width: '100%',
+        height: '95vh',
+        backgroundSize: 'cover',
+    };
     return (
         <div style={divStyle} >
             <Container fliuid='true' className='hero'>

@@ -138,12 +138,7 @@ class Home extends Component {
 
         const animated = makeAnimated()
 
-        const divStyle = {
-            backgroundImage: 'url(' + imgUrl + ')',
-            width: '100%',
-            height: '95vh',
-            backgroundSize: 'cover',
-        };
+        
 
 
 
