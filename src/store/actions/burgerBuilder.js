@@ -88,7 +88,7 @@ export const addAreas = (areas) => {
         { value: 'Anyi', label: 'Anyi'},
         { value: 'Daalu', label: 'Daalu'},
         { value: 'Iru', label: 'Iru'},
-        { value: 'salted-caramel', label: 'Salted Caramel' },
+        { value: 'Esaro', label: 'Esaro' },
     ];
 
     let currentCity;
