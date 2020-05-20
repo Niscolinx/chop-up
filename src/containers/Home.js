@@ -55,7 +55,6 @@ class Home extends Component {
                 disabled: false,
                 disabledPointer: 'pointer',
                 disabledBackground: '#fff',
-                clearAreas: this.props.areas
             })
 
         }
@@ -69,7 +68,6 @@ class Home extends Component {
                 disabled: true,
                 disabledPointer: 'not-allowed',
                 disabledBackground: '#787878',
-                clearAreas: '',
                 newArea: []
             })
         }
