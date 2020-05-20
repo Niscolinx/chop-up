@@ -9,7 +9,7 @@ import makeAnimated from 'react-select/animated';
 import { cityOptions } from '../../doc/data';
 
 
-export const Hero = () => {
+ const Hero = () => {
 
     const divStyle = {
         backgroundImage: 'url(' + imgUrl + ')',
@@ -243,3 +243,5 @@ export const Hero = () => {
         </div >
     )
 }
+
+export default Hero
