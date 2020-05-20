@@ -27,7 +27,7 @@ class Home extends Component {
 
     handleCityChange = (inputValue: any, actionMeta: any) => {
         // console.group('Input Changed');
-        // console.log('the input value is ', inputValue);
+         console.log('the input value has been changed and it is now', inputValue);
 
         console.log(`action: ${actionMeta}`);
         console.groupEnd();
