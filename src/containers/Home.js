@@ -308,7 +308,7 @@ class Home extends Component {
                                         isClearable
                                         onChange={this.areaChange}
                                         onInputChange={this.handleAreaChange}
-                                        options={this.state.city === null ? '' : this.props.area}
+                                        options={this.state.city === null ? this.props.area : this.props.area}
                                         isDisabled ={this.state.disabled}
                                         //isLoading = 'true'
                                     />
