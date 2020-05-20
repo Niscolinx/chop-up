@@ -85,9 +85,9 @@ export const addAreas = (areas) => {
         { value: 'Seetu', label: 'Seetu' },
     ];
     const Isuochi = [
-        { value: 'Isuochi', label: 'Isuochi'},
-        { value: 'chocolate', label: 'Chocolate'},
-        { value: 'strawberry', label: 'Strawberry'},
+        { value: 'Anyi', label: 'Anyi'},
+        { value: 'Daalu', label: 'Daalu'},
+        { value: 'Iru', label: 'Iru'},
         { value: 'salted-caramel', label: 'Salted Caramel' },
     ];
 
