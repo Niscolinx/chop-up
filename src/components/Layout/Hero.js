@@ -11,6 +11,16 @@ import { cityOptions } from '../../doc/data';
 
  class Hero extends component {
 
+     state = {
+         currentCity: null,
+         oldCity: null,
+         newArea: [],
+         disabled: true,
+         disabledPointer: 'not-allowed',
+         disabledBackground: '#787878',
+     }
+
+     
      cityStyles = (height = '3rem') => {
  
         return {

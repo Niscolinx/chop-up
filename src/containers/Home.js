@@ -14,27 +14,18 @@ import Hero from '../components/Layout/Hero'
 
 class Home extends Component {
 
-    state = {
-        currentCity: null,
-        oldCity: null,
-        newArea: [],
-        disabled: true,
-        disabledPointer: 'not-allowed',
-        disabledBackground: '#787878',
-    }
+    
 
    
 
 
     render() {
-        console.log('the state is', this.state)
     
 
         return (
             <div>
 
                <Hero
-                state = {this.state}
                />
 
                 <div className='simple-steps'>
