@@ -1,4 +1,7 @@
 import React from 'react'
+import { Container, Row, Col, Button, Card, CardGroup } from 'react-bootstrap'
+import Form from 'react-bootstrap/Form'
+import imgUrl from '../assets/images/bg_home.jpg'
 
 
 export const Hero = () => {
