@@ -86,7 +86,7 @@ class Home extends Component {
 
     };
     handleAreaChange = (inputValue: any, actionMeta: any) => {
-        console.group('Input Changed', inputValue, actionMeta);
+        console.group('Input Changed', inputValue, 'the Changed value is', actionMeta);
         console.groupEnd();
 
     };
@@ -94,7 +94,7 @@ class Home extends Component {
     areaChange = (newValue: any, actionMeta: any) => {
         console.group('Value Changed');
 
-        console.log('the meta data', actionMeta, newValue);
+        console.log('the meta data', actionMeta, 'the newValue is', newValue);
         // console.log(`action: ${actionMeta.action}`);
         console.groupEnd();
 
