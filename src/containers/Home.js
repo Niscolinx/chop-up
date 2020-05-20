@@ -55,7 +55,8 @@ class Home extends Component {
                 city: newValue.value,
                 disabled: false,
                 disabledPointer: 'pointer',
-                disabledBackground: '#fff'
+                disabledBackground: '#fff',
+                clearAreas: this.props.areas
             })
 
         }
@@ -67,7 +68,8 @@ class Home extends Component {
                 city: null,
                 disabled: true,
                 disabledPointer: 'not-allowed',
-                disabledBackground: '#787878'
+                disabledBackground: '#787878',
+                clearAreas: ''
             })
         }
 
@@ -309,7 +311,7 @@ class Home extends Component {
                                         isClearable
                                         onChange={this.areaChange}
                                         onInputChange={this.handleAreaChange}
-                                        options={this.props.areas}
+                                       // options={this.props.areas}
                                         isDisabled={this.state.disabled}
                                         value = {this.state.clearAreas}
                                     //isLoading = 'true'
