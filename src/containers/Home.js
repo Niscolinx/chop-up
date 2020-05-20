@@ -322,9 +322,9 @@ class Home extends Component {
                                         onChange={this.areaChange}
                                         onInputChange={this.handleAreaChange}
                                         options={this.props.areas}
-                                        sDisabled= 'true'
-                                     value={this.state.newArea}
-                                    //isLoading = 'true'
+                                        sDisabled={this.state.disabled}
+                                        value={this.state.newArea}
+                                        isLoading='true'
                                     />
                                 </Col>
 
