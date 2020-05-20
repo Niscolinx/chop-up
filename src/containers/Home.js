@@ -99,32 +99,32 @@ class Home extends Component {
         console.groupEnd();
 
 
-        if (actionMeta.action === 'select-option') {
-            this.setState(state => {
+        // if (actionMeta.action === 'select-option') {
+        //     this.setState(state => {
 
-                const areaList = [...state.newArea.concat(actionMeta.option)]
+        //         const areaList = [...state.newArea.concat(actionMeta.option)]
 
-                return {
-                    newArea: areaList
+        //         return {
+        //             newArea: areaList
 
-                }
-            })
+        //         }
+        //     })
 
-        }
-        if (actionMeta.action === 'remove-value') {
-            this.setState(state => {
+        // }
+        // if (actionMeta.action === 'remove-value') {
+        //     this.setState(state => {
 
-                const areaList = state.newArea.filter(area => {
-                    return area.label !== actionMeta.removedValue.label
-                })
+        //         const areaList = state.newArea.filter(area => {
+        //             return area.label !== actionMeta.removedValue.label
+        //         })
 
-                return {
-                    newArea: areaList
+        //         return {
+        //             newArea: areaList
 
-                }
-            })
+        //         }
+        //     })
 
-        }
+        // }
 
 
     };
