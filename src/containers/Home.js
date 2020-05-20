@@ -23,7 +23,6 @@ class Home extends Component {
         disabled: true,
         disabledPointer: 'not-allowed',
         disabledBackground: '#787878',
-        clearAreas: this.props.areas
     }
 
     handleCityChange = (inputValue: any, actionMeta: any) => {
