@@ -64,7 +64,7 @@ import { cityOptions } from '../../doc/data';
             }
         }
     }
-    const areaStyles = (height = '3rem', newState = this.state) => {
+     areaStyles = (height = '3rem', newState = this.state) => {
  
         return {
  
