@@ -18,7 +18,7 @@ import { cityOptions } from '../doc/data';
 class Home extends Component {
 
     state = {
-        city: null,
+        currentCity: null,
         newArea: [],
         disabled: true,
         disabledPointer: 'not-allowed',
@@ -27,7 +27,7 @@ class Home extends Component {
 
     handleCityChange = (inputValue: any, actionMeta: any) => {
         // console.group('Input Changed');
-         console.log('the input value has been changed and it is now', inputValue);
+        // console.log('the input value has been changed and it is now', inputValue);
 
         console.log(`action: ${actionMeta}`);
         console.groupEnd();
@@ -35,7 +35,7 @@ class Home extends Component {
     };
 
     cityChange = (newValue: any, actionMeta: any) => {
-         console.group('Value Changed', newValue);
+       //  console.group('Value Changed', newValue);
         // console.log('The values to compare', newValue);
 
         console.log('the meta data', actionMeta);
@@ -51,7 +51,7 @@ class Home extends Component {
             this.props.onSelectedAreas(newValue.value)
 
             this.setState({
-                city: newValue.value,
+                currentCity: newValue.value,
                 disabled: false,
                 disabledPointer: 'pointer',
                 disabledBackground: '#fff',
@@ -64,7 +64,7 @@ class Home extends Component {
 
 
             this.setState({
-                city: null,
+                currentCity: null,
                 disabled: true,
                 disabledPointer: 'not-allowed',
                 disabledBackground: '#787878',
