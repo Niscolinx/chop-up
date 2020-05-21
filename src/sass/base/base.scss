@@ -37,7 +37,7 @@ html {
   font-size: 62.5%; // 1rem = 16px therefore 10px/16px = 62.5%, because i wanna use 10px
 
   @include respond(tab-land) {
-    font-size: 75% // 1rem = 9px therefore 9/16 = 56.25%
+    font-size: 90% // 1rem = 9px therefore 9/16 = 56.25%
   }
 
   @include respond(tab-port) {
