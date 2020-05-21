@@ -538,7 +538,13 @@
 
     &_heading {
         color: $primary-color;
-        font-size: .1rem;
+
+        &>h1 {
+            @include respond(phone) {
+                font-size: 2rem;
+                display: flex;
+            }
+        }
 
         &--main {
             font-weight: 700;
