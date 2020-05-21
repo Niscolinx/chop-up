@@ -534,10 +534,13 @@
     padding-top: 3rem;
     max-width: 70%;
     
-
+    
     &_heading {
         color: $primary-color;
-
+        
+        @include respond(phone) {
+            font-size: .7rem
+        }
         &--main {
             font-weight: 700;
             margin-right: 7rem;
