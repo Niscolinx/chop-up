@@ -568,12 +568,12 @@
 
          &-primary {
              line-height: 1.7;
+             font-weight: 700;
 
              backface-visibility: hidden;
 
              &--main {
                  display: block;
-                 letter-spacing: 2rem;
                  font-weight: 400;
                  font-size: 2rem;
 
@@ -589,7 +589,6 @@
 
              &--sub {
                  display: block;
-                 letter-spacing: .7rem;
                  font-size: 2rem;
                  margin-left: -1.5rem;
                  margin-bottom: 5rem;
