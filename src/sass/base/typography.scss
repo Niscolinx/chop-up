@@ -535,10 +535,10 @@
     padding-top: 3rem;
     max-width: 70%;
 
-    @include respond(phone) {
+    // @include respond(phone) {
         
-      max-width: 100%;
-    }
+    //   max-width: 100%;
+    // }
 
 
     &_heading {
@@ -566,7 +566,7 @@
 
         //  }
 
-         .heading-primary {
+         &-heading-primary {
              line-height: 1.7;
              color: #fff;
 
