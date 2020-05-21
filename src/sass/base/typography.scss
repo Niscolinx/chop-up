@@ -541,8 +541,8 @@
 
         &>h1 {
             @include respond(phone) {
-                font-size: 2rem;
-                display: flex;
+                font-size: 1rem;
+                margin: 0;
             }
         }
 
@@ -555,6 +555,11 @@
             font-weight: 700;
             margin-left: 7rem;
         }
+
+         @include respond(phone) {
+             display: flex;
+
+         }
     }
 
     .delivering {
