@@ -37,7 +37,7 @@ html {
   font-size: 62.5%; // 1rem = 16px therefore 10px/16px = 62.5%, because i wanna use 10px
 
   @include respond(big-desktop) {
-    font-size: 112.5% // 1rem = 12px therefore 18/16 = 75%
+    font-size: 130.5% // 1rem = 12px therefore 18/16 = 75%
   }
   @include respond(desktop) {
     font-size: 112.5% // 1rem = 12px therefore 18/16 = 75%
@@ -51,9 +51,6 @@ html {
   }
   
   
-  @include respond(phone) {
-    font-size: 40% // 1rem = 9px therefore 9/16 = 56.25%
-  }
 }
 
 code {
