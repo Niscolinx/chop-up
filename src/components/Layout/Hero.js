@@ -246,6 +246,11 @@ import { cityOptions } from '../../doc/data';
                         <Col md="auto" className='hero_heading'>
                             <h1 className='hero_heading--main'>Everything you need, delivered within minutes</h1>
                             <h1 className='hero_heading--span'>delivered within minutes</h1>
+                            <h1 class="hero_heading-primary">
+                                <span class="hero_heading-primary--main">outdoors</span>
+                                <span class="hero_heading-primary--sub">is where life happens</span>
+                            </h1>
+                            
                         </Col>
                         <div class="header__text-box">
                             <h1 class="heading-primary">
