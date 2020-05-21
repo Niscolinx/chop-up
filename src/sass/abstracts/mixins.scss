@@ -35,7 +35,7 @@
     ;
 
     @if $breakpoint==tab-land {
-        @media (min-width: 70.75em) {
+        @media (max-width: 70.75em) {
             //1200px/16px - 75px
             @content
         }
@@ -44,7 +44,15 @@
     ;
 
     @if $breakpoint==big-desktop {
-        @media (min-width: 112.5em) {
+        @media (max-width: 112.5em) {
+            //1800/16px
+            @content
+        }
+    }
+
+    ;
+    @if $breakpoint==big-desktop {
+        @media (-width: 112.5em) {
             //1800/16px
             @content
         }
