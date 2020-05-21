@@ -535,6 +535,13 @@
     padding-top: 3rem;
     max-width: 70%;
 
+    @include respond(phone) {
+        
+        &_heading{
+            max-width: 100%;
+        }
+    }
+
 
     &_heading {
         color: $primary-color;
