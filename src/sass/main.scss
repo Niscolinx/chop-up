@@ -1,6 +1,8 @@
+@import './abstracts/mixins.scss'
+@import './components/Variables.scss';
+
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
-@import './components/Variables.scss';
 @import './components/App.scss';
 
 @import './components/BurgerIngredients';
