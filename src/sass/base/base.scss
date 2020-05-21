@@ -39,6 +39,9 @@ html {
   @include respond(big-desktop) {
     font-size: 112.5% // 1rem = 12px therefore 18/16 = 75%
   }
+  @include respond(desktop) {
+    font-size: 112.5% // 1rem = 12px therefore 18/16 = 75%
+  }
   @include respond(tab-land) {
     font-size: 90% // 1rem = 9px therefore 9/16 = 56.25%
   }
