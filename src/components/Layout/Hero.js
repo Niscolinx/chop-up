@@ -244,7 +244,7 @@ import { cityOptions } from '../../doc/data';
                     <Row className="justify-content-md-center">
 
                         <Col md="auto" className='hero_heading'>
-                            <h1 className='hero_heading--main'>Everything you need,</h1>
+                            <h1 className='hero_heading--main'>Everything you need, delivered within minutes</h1>
                             <h1 className='hero_heading--span'>delivered within minutes</h1>
                         </Col>
 
