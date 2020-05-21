@@ -35,7 +35,7 @@
     ;
 
     @if $breakpoint==tab-land {
-        @media (max-width: 70.75em) {
+        @media (min-width: 70.75em) {
             //1200px/16px - 75px
             @content
         }
