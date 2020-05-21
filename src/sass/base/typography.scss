@@ -566,15 +566,19 @@
 
         //  }
 
+        &>h1{
+
+            @include respond(phone){
+                display: flex;
+            }
+        }
+
          &-primary {
              line-height: 1.7;
              font-weight: 700;
 
              backface-visibility: hidden;
 
-             @include respond(phone){
-                 display: flex;
-             }
 
              &--main {
                  display: block;
