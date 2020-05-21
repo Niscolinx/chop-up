@@ -572,6 +572,10 @@
 
              backface-visibility: hidden;
 
+             @include respond(phone){
+                 display: flex;
+             }
+
              &--main {
                  display: block;
                  font-size: 2rem;
