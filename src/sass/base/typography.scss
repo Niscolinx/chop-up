@@ -574,8 +574,8 @@
 
              &--main {
                  display: block;
-                 font-weight: 400;
                  font-size: 2rem;
+                 margin-right: 7rem;
 
                  animation-name: moveInLeft;
                  animation-duration: 1.5s;
@@ -590,8 +590,7 @@
              &--sub {
                  display: block;
                  font-size: 2rem;
-                 margin-left: -1.5rem;
-                 margin-bottom: 5rem;
+                 margin-left: 7rem;
 
                  animation-name: moveInRight;
                  animation-duration: 1s;
