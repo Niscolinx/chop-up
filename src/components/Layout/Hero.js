@@ -251,13 +251,6 @@ import { cityOptions } from '../../doc/data';
                             </h1>
                             
                         </Col>
-                        <div class="header__text-box">
-                            <h1 class="heading-primary">
-                                <span class="heading-primary--main">outdoors</span>
-                                <span class="heading-primary--sub">is where life happens</span>
-                            </h1>
-                           
-                        </div>
 
                     </Row>
                     <Row>
