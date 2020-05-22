@@ -587,10 +587,10 @@
          &_heading-s{
              color: $primary-color;
              margin-bottom: 3rem;
+                font-weight: 700;
 
             &-primary{
                 display: block;
-                font-weight: 700;
                 font-size: 1rem;
 
                 animation-name: moveInRight;
@@ -617,7 +617,7 @@
     }
 
     .services {
-        margin-top: 4rem;
+         margin-top: 4rem;
 
 
         &_heading {
