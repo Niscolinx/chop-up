@@ -12,6 +12,7 @@ import Hero from '../components/Layout/Hero'
 import Steps from '../components/Layout/Steps'
 import NewsLetter from '../components/Layout/NewsLetter'
 import Cards from '../components/Layout/Cards'
+import Footer from '../components/Layout/Footer'
 
 
 
