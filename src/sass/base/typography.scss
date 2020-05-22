@@ -634,21 +634,23 @@
     .services {
         margin-top: 4rem;
 
+        &-box{
 
-        &_heading {
-            font-weight: 700;
-            margin-left: 2rem;
-            color: $primary-color;
-            margin-bottom: 1rem;
+                    &_heading {
+                        font-weight: 700;
+                        margin-left: 2rem;
+                        color: $primary-color;
+                        margin-bottom: 1rem;
 
-        }
+                    }
 
-        &_title {
-            font-weight: 700;
-        }
+                    &_title {
+                        font-weight: 700;
+                    }
 
-        &_description {
-            font-weight: 400;
+                    &_description {
+                        font-weight: 400;
+                    }
         }
     }
 }
