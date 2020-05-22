@@ -253,7 +253,7 @@ import { cityOptions } from '../../doc/data';
                         </Col>
                         <Col md="auto" className='hero_heading-s'>
                
-                            <h1 class="hero_heading-primary">
+                            <h1 class="hero_heading-primary-s">
                                 Everything you need delivered within minutes
                             </h1>
                                                 
