@@ -537,16 +537,6 @@
 
     
 
-     @include respond(phone) {
-        &_heading{
-            display: none;
-        }
-
-        &_heading-s{
-            display: block;
-        }
-    }
-
     &_heading-s{
         color: $primary-color;
         display: none;
@@ -605,6 +595,17 @@
                  
              }
          }
+
+    }
+
+     @include respond(phone) {
+        &_heading{
+            display: none;
+        }
+
+        &_heading-s{
+            display: block;
+        }
     }
 
     .delivering {
