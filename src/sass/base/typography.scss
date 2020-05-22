@@ -615,17 +615,17 @@
             color: $primary-color
         }
 
-        &_select{
+        &_select {
 
-           
 
-            @include respond(phone){
+
+            @include respond(phone) {
                 display: flex;
                 flex-direction: column;
 
-                 &-options {
-                     margin-bottom: 1rem;
-                 }
+                &-options {
+                    margin-bottom: 1rem;
+                }
             }
         }
 
@@ -634,23 +634,23 @@
     .services {
         margin-top: 4rem;
 
-        &-box{
+        &-box {
 
-                    &_heading {
-                        font-weight: 700;
-                        margin-left: 2rem;
-                        color: $primary-color;
-                        margin-bottom: 1rem;
+            &_heading {
+                font-weight: 700;
+                margin-left: 2rem;
+                color: $primary-color;
+                margin-bottom: 1rem;
 
-                    }
+            }
 
-                    &_title {
-                        font-weight: 700;
-                    }
+            &_title {
+                font-weight: 700;
+            }
 
-                    &_description {
-                        font-weight: 400;
-                    }
+            &_description {
+                font-weight: 400;
+            }
         }
     }
 }
