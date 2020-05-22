@@ -110,7 +110,7 @@ import { cityOptions } from '../../doc/data';
                     //width: state.selectProps.width,
                     color: state.selectProps.menuColor,
                     padding: 10,
-
+                    fontSize: fontSize
                 }),
 
                 option: (styles, state) => ({
@@ -169,7 +169,7 @@ import { cityOptions } from '../../doc/data';
                 menu: (provided, state) => ({
                     ...provided,
                     padding: 10,
-
+                    
                 }),
 
 
