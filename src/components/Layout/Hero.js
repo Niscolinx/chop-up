@@ -265,7 +265,7 @@ import { cityOptions } from '../../doc/data';
 
                         <h5 className='delivering_title'>Delivering to</h5>
                     </Row>
-                    <Row>
+                    <Row className='delivering_select'>
 
                         <Col>
                             <Select
