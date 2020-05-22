@@ -127,6 +127,13 @@ import { cityOptions } from '../../doc/data';
                     height: height,
                     boxShadow: state.isFocused ? null : null,
                 }),
+
+                placeholder: (defaultStyles, state) => {
+                    return {
+                        ...defaultStyles,
+                        fontSize: '1.3rem'
+                    }
+                },
                 valueContainer: (provided, state) => ({
                     ...provided,
                     height: height,
@@ -191,7 +198,8 @@ import { cityOptions } from '../../doc/data';
                 placeholder: (defaultStyles, state) => {
                     return {
                         ...defaultStyles,
-                        color: state.isDisabled ? '#9c9a9a' : '#808080'
+                        color: state.isDisabled ? '#9c9a9a' : '#808080',
+                        fontSize: '1.3rem'
                     }
                 },
                 valueContainer: (provided, state) => ({
