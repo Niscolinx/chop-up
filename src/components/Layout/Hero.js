@@ -248,6 +248,9 @@ import { cityOptions } from '../../doc/data';
                             <h1 class="hero_heading-primary">
                                 <span class="hero_heading-primary--main">Everything you need,</span> <span class="hero_heading-primary--sub">delivered within minutes</span>
                             </h1>
+                            <h1 class="hero_heading-primary">
+                                <span class="hero_heading-primary--main">Everything you need,</span> <span class="hero_heading-primary--sub">delivered within minutes</span>
+                            </h1>
                       
                             
                             
