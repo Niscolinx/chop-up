@@ -101,7 +101,7 @@ class Hero extends Component {
 
     render() {
 
-        const cityStyles = (height = '3.2rem', fontSize = '1.5rem') => {
+        const cityStyles = (height = '3rem', fontSize = '1.5rem') => {
 
             return {
 
@@ -122,6 +122,7 @@ class Hero extends Component {
                     ...provided,
                     cursor: 'pointer',
                     background: '#fff',
+                    margin: '1rem',
                     borderColor: 'white',
                     fontSize: fontSize,
                     minHeight: height,
@@ -162,7 +163,7 @@ class Hero extends Component {
                 }
             }
         }
-        const areaStyles = (height = '3.2rem', newState = this.state, fontSize = '1.5rem') => {
+        const areaStyles = (height = '3rem', newState = this.state, fontSize = '1.5rem') => {
 
             return {
 
