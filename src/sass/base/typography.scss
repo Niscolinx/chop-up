@@ -10,22 +10,19 @@
     @media (max-width: 1000px) {
         width: 400px;
         height: 400px;
-
     }
 
     @media (max-width: 500px) {
         margin-bottom: 2rem;
-        font-size: .8rem;
+        font-size: 0.8rem;
         width: 250px;
         height: 300px;
     }
 
     @media (max-width: 415px) {
-        font-size: .8rem;
+        font-size: 0.8rem;
     }
 }
-
-
 
 .BuildControl {
     display: flex;
@@ -34,29 +31,27 @@
     margin: auto;
     margin-bottom: 1rem;
 
-
     button {
         display: block;
         margin: 0 5px;
         padding: 5px 20px;
         width: 80;
-        border: 1px solid #8F5E1E;
+        border: 1px solid #8f5e1e;
         outline: none;
         border-radius: 5px;
         cursor: pointer;
     }
 }
 
-
 .BuildControl button:disabled {
-    background-color: #AC9980;
-    border: 1px solid #7E7365;
+    background-color: #ac9980;
+    border: 1px solid #7e7365;
     color: #ccc;
     cursor: default;
 }
 
 .BuildControl button:hover:disabled {
-    background-color: #AC9980;
+    background-color: #ac9980;
     color: #ccc;
     cursor: not-allowed;
 }
@@ -68,24 +63,24 @@
 }
 
 .BuildControl .Less {
-    background-color: #D39952;
+    background-color: #d39952;
     color: white;
 }
 
 .BuildControl .More {
-    background-color: #8F5E1E;
+    background-color: #8f5e1e;
     color: white;
 }
 
 .BuildControl .Less:hover,
 .BuildControl .Less:active {
-    background-color: #DAA972;
+    background-color: #daa972;
     color: white;
 }
 
 .BuildControl .More:hover,
 .BuildControl .More:active {
-    background-color: #99703F;
+    background-color: #99703f;
     color: white;
 }
 
@@ -93,7 +88,7 @@
     width: 80%;
     display: flex;
     flex-flow: column;
-    background: #D39952;
+    background: #d39952;
     align-content: center;
     margin: auto;
     padding: 10px 5px;
@@ -106,22 +101,21 @@
         margin: 10px 0px 2px 380px;
         margin: auto;
 
-
         button {
-            transition: all .5s;
+            transition: all 0.5s;
             box-shadow: 0 5px 10px black;
             border-radius: 5px;
             padding: 10px;
             font-size: 1.2rem;
             text-transform: uppercase;
             margin: auto;
-            background: #99703F;
+            background: #99703f;
             color: #ccc;
             text-shadow: 0 2px 3px black;
             cursor: pointer;
 
             &:hover:not(:disabled) {
-                transform: scale(1.1)
+                transform: scale(1.1);
             }
 
             &:disabled {
@@ -137,18 +131,14 @@
         }
     }
 
-
-
     @media (max-width: 375px) {
         & {
             position: absolute;
             left: 1;
             right: 0;
             width: 100%;
-
         }
     }
-
 }
 
 .Modal {
@@ -186,7 +176,7 @@
 }
 
 .backdrop {
-    background: rgba(0, 0, 0, .4);
+    background: rgba(0, 0, 0, 0.4);
     width: 100%;
     height: 100%;
     z-index: 100;
@@ -208,17 +198,13 @@
     font-weight: bold;
     text-transform: uppercase;
     font-size: 1rem;
-
-
-
 }
 
-
 .Success {
-    color: #5C9210;
+    color: #5c9210;
 
     @media (max-width: 415px) {
-        font-size: .8rem;
+        font-size: 0.8rem;
     }
 }
 
@@ -232,10 +218,9 @@
     color: #944317;
 
     @media (max-width: 415px) {
-        font-size: .8rem;
+        font-size: 0.8rem;
     }
 }
-
 
 .toolbar {
     background: white;
@@ -253,7 +238,6 @@
     z-index: 90;
     box-sizing: border-box;
 }
-
 
 .content {
     // margin: 50px 0;
@@ -278,7 +262,6 @@
         background: transparent;
         margin: 0 auto;
     }
-
 }
 
 .navigationItems {
@@ -290,7 +273,6 @@
     display: flex;
     align-items: center;
     box-sizing: border-box;
-
 }
 
 .navigationItem {
@@ -301,7 +283,6 @@
     display: flex;
     align-items: center;
     font-size: 1rem;
-
 
     a {
         color: white;
@@ -314,7 +295,7 @@
         &.active {
             color: rgb(168, 115, 41);
             background: white;
-            transition: all .5s ease-in;
+            transition: all 0.5s ease-in;
             border-radius: 3px;
             font-weight: 700;
             text-shadow: 1px 1px 1px solid black;
@@ -332,7 +313,6 @@
         flex-flow: column;
         align-items: center;
         box-sizing: border-box;
-
     }
 
     .navigationItem {
@@ -341,7 +321,6 @@
         box-sizing: border-box;
         color: white;
         display: block;
-
 
         a {
             color: rgb(168, 115, 41);
@@ -373,8 +352,7 @@
     box-sizing: border-box;
     padding: 32px 16px;
     z-index: 200;
-    transition: transform .3s ease-out;
-
+    transition: transform 0.3s ease-out;
 
     &.open {
         transform: translateX(0);
@@ -389,9 +367,7 @@
             display: none;
         }
     }
-
 }
-
 
 @media (max-width: 499px) {
     .desktopOnly {
@@ -417,13 +393,11 @@
     }
 }
 
-
 @media (min-width: 500px) {
     .DrawerToggle {
         display: none;
     }
 }
-
 
 .lds-dual-ring {
     display: inline-block;
@@ -435,7 +409,7 @@
 }
 
 .lds-dual-ring:after {
-    content: " ";
+    content: ' ';
     display: block;
     width: 46px;
     height: 46px;
@@ -484,7 +458,6 @@
     font-weight: 700;
     margin: 0 4px;
 
-
     @media (max-width: 720px) {
         width: 90%;
     }
@@ -506,48 +479,38 @@
     border: none;
     outline: none;
     border-radius: 1rem 1rem;
-    box-shadow: 0 .2rem 1rem black;
-    padding: .4rem 1rem;
+    box-shadow: 0 0.2rem 1rem black;
+    padding: 0.4rem 1rem;
     margin-bottom: 4rem;
     background: rgb(189, 58, 58);
     color: white;
 
     &:hover {
-
         color: rgb(189, 58, 58);
         background: white;
-
     }
 
     @media (max-width: 720px) {
-        font-size: .6rem;
+        font-size: 0.6rem;
     }
 }
 
 .disabledPointer {
     cursor: not-allowed;
-
 }
 
 //New Styles
 .hero {
-
     padding-top: 3rem;
     max-width: 70%;
 
-
-
-
     &_heading {
         color: $primary-color;
-
-
 
         &-primary {
             line-height: 1.7;
             font-weight: 700;
             backface-visibility: hidden;
-
 
             &--main {
                 display: block;
@@ -556,7 +519,6 @@
 
                 animation-name: moveInLeft;
                 animation-duration: 1.5s;
-
             }
 
             &--sub {
@@ -570,15 +532,11 @@
                 /* animation-iteration-count: 3; */
                 /*animation-delay: 0.4s;*/
                 animation-timing-function: ease-in;
-
-
             }
         }
-
     }
 
     @include respond(phone) {
-
         max-width: 100%;
 
         &_heading {
@@ -600,25 +558,18 @@
                 /* animation-iteration-count: 3; */
                 /*animation-delay: 0.4s;*/
                 animation-timing-function: ease-in;
-
             }
         }
-
     }
 
     .delivering {
-
-
         &_title {
             font-weight: 700;
             margin-left: 2rem;
-            color: $primary-color
+            color: $primary-color;
         }
 
         &_select {
-
-
-
             @include respond(phone) {
                 display: flex;
                 flex-direction: column;
@@ -628,7 +579,6 @@
                 }
             }
         }
-
     }
 
     .services {
@@ -639,11 +589,8 @@
             margin-left: 2rem;
             color: $primary-color;
             margin-bottom: 1rem;
-
         }
         &-box {
-
-
             &_title {
                 font-weight: 700;
             }
@@ -652,16 +599,15 @@
                 font-weight: 400;
             }
 
-             @include respond(phone) {
+            @include respond(phone) {
                 display: flex;
                 flex-direction: column;
-             }
+            }
         }
     }
 }
 
 .simple-steps {
-
     margin: 3rem 0;
 
     &_header {
@@ -674,7 +620,6 @@
 
         &--title {
             font-weight: 700;
-
         }
     }
 
@@ -688,11 +633,9 @@
 }
 
 .newsletter {
-
     padding: 3rem 0;
     background-color: $primary-color;
     color: $secondary-color;
-
 
     &_heading {
         display: flex;
@@ -710,16 +653,13 @@
     }
 
     &_form {
-
         &-button {
             background-color: white;
             font-weight: 500;
-
         }
     }
 
     &_form {
-
         display: flex;
         justify-content: center;
         align-items: center;
@@ -735,7 +675,6 @@
             border-color: rgb(12, 12, 11);
         }
     }
-
 }
 
 .card {
@@ -751,8 +690,6 @@
         font-size: 1rem;
     }
 }
-
-
 
 .button:hover {
     box-shadow: none;

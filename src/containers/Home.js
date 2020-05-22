@@ -29,7 +29,7 @@ class Home extends Component {
                onSelectedCity = {this.props.onSelectedCity}
                />
 
-
+                <Steps/>
 
                 <div className='newsletter'>
 
