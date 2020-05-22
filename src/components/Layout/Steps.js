@@ -4,7 +4,7 @@ import { Container, Row, Col, Button, Card, CardGroup } from 'react-bootstrap'
 
 const Steps = () => {
 
-    return(
+    return (
         <div className='simple-steps'>
             <Container>
                 <Row className='simple-steps_header'>
