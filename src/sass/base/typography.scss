@@ -541,7 +541,7 @@
     // }
 
     &_heading-s{
-        
+        color: $primary-color
 
         &-primary{
 
@@ -577,7 +577,6 @@
          &-primary {
              line-height: 1.7;
              font-weight: 700;
-            display: inline;
              backface-visibility: hidden;
 
 
@@ -589,11 +588,7 @@
                  animation-name: moveInLeft;
                  animation-duration: 1.5s;
 
-                 @include respond(phone) {
-                     display: inline;
-                     font-size: 1rem;
-                     margin-right: 0;
-                 }
+              
 
              }
 
