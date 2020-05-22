@@ -617,9 +617,15 @@
 
         &_select{
 
+           
+
             @include respond(phone){
                 display: flex;
                 flex-direction: column;
+
+                 &-options {
+                     margin-bottom: 1rem;
+                 }
             }
         }
 
