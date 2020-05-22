@@ -1,4 +1,6 @@
 import React from 'react'
+import { Container, Row, Col, Button, Card, CardGroup } from 'react-bootstrap'
+
 
 const Steps = () => {
 
@@ -30,3 +32,5 @@ const Steps = () => {
 
     )
 }
+
+export default Steps
