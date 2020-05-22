@@ -616,7 +616,10 @@
         }
 
         &_select{
-            
+
+            @include respond(phone){
+                
+            }
         }
 
     }
