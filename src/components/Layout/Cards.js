@@ -8,7 +8,7 @@ const Cards = () => {
             <Container>
                 <CardGroup>
                     <Card>
-                        <Card.Img variant="top" src={require('../assets/images/PoundedYam.jpg')} />
+                        <Card.Img variant="top" src={require('../../assets/images/PoundedYam.jpg')} />
                         <Card.Body>
                             <Card.Title>Smart Bite - Upgate</Card.Title>
                             <Card.Text>
@@ -20,7 +20,7 @@ const Cards = () => {
                         </Card.Footer>
                     </Card>
                     <Card>
-                        <Card.Img variant="top" src={require('../assets/images/PoundedYam.jpg')} />
+                        <Card.Img variant="top" src={require('../../assets/images/PoundedYam.jpg')} />
                         <Card.Body>
                             <Card.Title>Smart Bite - Upgate</Card.Title>
                             <Card.Text>
@@ -32,7 +32,7 @@ const Cards = () => {
                         </Card.Footer>
                     </Card>
                     <Card>
-                        <Card.Img variant="top" src={require('../assets/images/PoundedYam.jpg')} />
+                        <Card.Img variant="top" src={require('../../assets/images/PoundedYam.jpg')} />
                         <Card.Body>
                             <Card.Title>Smart Bite - Upgate</Card.Title>
                             <Card.Text>
@@ -48,7 +48,7 @@ const Cards = () => {
                 </CardGroup>
                 <CardGroup>
                     <Card>
-                        <Card.Img variant="top" src={require('../assets/images/PoundedYam.jpg')} />
+                        <Card.Img variant="top" src={require('../../assets/images/PoundedYam.jpg')} />
                         <Card.Body>
                             <Card.Title>Smart Bite - Upgate</Card.Title>
                             <Card.Text>
@@ -60,7 +60,7 @@ const Cards = () => {
                         </Card.Footer>
                     </Card>
                     <Card>
-                        <Card.Img variant="top" src={require('../assets/images/PoundedYam.jpg')} />
+                        <Card.Img variant="top" src={require('../../assets/images/PoundedYam.jpg')} />
                         <Card.Body>
                             <Card.Title>Smart Bite - Upgate</Card.Title>
                             <Card.Text>
@@ -72,7 +72,7 @@ const Cards = () => {
                         </Card.Footer>
                     </Card>
                     <Card>
-                        <Card.Img variant="top" src={require('../assets/images/PoundedYam.jpg')} />
+                        <Card.Img variant="top" src={require('../../assets/images/PoundedYam.jpg')} />
                         <Card.Body>
                             <Card.Title>Smart Bite - Upgate</Card.Title>
                             <Card.Text>
