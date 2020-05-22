@@ -535,11 +535,7 @@
     padding-top: 3rem;
     max-width: 70%;
 
-    @include respond(tab-port){
-        &_heading-s{
-            display: none;
-        }
-    }
+    
 
      @include respond(phone) {
         &_heading{
@@ -553,6 +549,7 @@
 
     &_heading-s{
         color: $primary-color;
+        display: none;
 
         &-primary{
             display: block;
