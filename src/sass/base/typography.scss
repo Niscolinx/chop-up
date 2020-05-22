@@ -535,43 +535,25 @@
     padding-top: 3rem;
     max-width: 70%;
 
-    // @include respond(phone) {
-        
-    //   max-width: 100%;
-    // }
+     @include respond(phone) {
+                     &_heading{
+                         display: none;
+                     }
+                 }
 
     &_heading-s{
-        color: $primary-color
+        color: $primary-color;
 
         &-primary{
 
         }
     }
 
+   
+
     &_heading {
         color: $primary-color;
-
-        // &>h1 {
-        //     @include respond(phone) {
-        //         font-size: 1rem;
-        //         margin: 0;
-        //     }
-        // }
-
-        // &--main {
-        //     font-weight: 700;
-        //     margin-right: 7rem;
-        // }
-
-        // &--span {
-        //     font-weight: 700;
-        //     margin-left: 7rem;
-        // }
-
-        //  @include respond(phone) {
-        //      display: flex;
-
-        //  }
+        
 
 
          &-primary {
