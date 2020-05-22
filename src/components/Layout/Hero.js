@@ -267,7 +267,7 @@ import { cityOptions } from '../../doc/data';
                     </Row>
                     <Row className='delivering_select'>
 
-                        <Col>
+                        <Col className='delivering_select-options'>
                             <Select
                                 styles={cityStyles()}
                                 placeholder={cityPlaceholder}
@@ -280,7 +280,7 @@ import { cityOptions } from '../../doc/data';
                             />
 
                         </Col>
-                        <Col className={this.state.disabled ? 'disabledPointer' : this.state.disabledPointer}>
+                        <Col className={this.state.disabled ? 'disabledPointer ' : this.state.disabledPointer}>
                             <Select
 
                                 styles={areaStyles()}
