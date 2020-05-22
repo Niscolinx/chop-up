@@ -122,7 +122,6 @@ class Hero extends Component {
                     ...provided,
                     cursor: 'pointer',
                     background: '#fff',
-                    margin: '1rem',
                     borderColor: 'white',
                     fontSize: fontSize,
                     minHeight: height,
