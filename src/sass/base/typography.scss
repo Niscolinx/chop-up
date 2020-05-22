@@ -504,6 +504,10 @@
     padding-top: 3rem;
     max-width: 70%;
 
+    &_heading-s {
+        display: none;
+    }
+
     &_heading {
         color: $primary-color;
 
@@ -543,7 +547,8 @@
             display: none;
         }
 
-        &_heading-primary-s {
+        &_heading-s {
+            display: block;
             text-align: center;
             color: $primary-color;
             margin-bottom: 3rem;

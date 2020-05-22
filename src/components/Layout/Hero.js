@@ -260,9 +260,9 @@ class Hero extends Component {
 
 
                             </Col>
-                            <Col md="auto" className='hero_heading-primary-s'>
+                            <Col md="auto" className='hero_heading-s'>
 
-                                <h1 class="hero_heading-primary-s--main">
+                                <h1 class="hero_heading-s--main">
                                     Everything you need delivered within minutes
                             </h1>
 
