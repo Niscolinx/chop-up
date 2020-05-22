@@ -226,7 +226,7 @@ import { cityOptions } from '../../doc/data';
     const divStyle = {
         backgroundImage: 'url(' + imgUrl + ')',
         width: '100%',
-        height: '95vh',
+        height: '100vh',
         backgroundSize: 'cover',
     };
 
