@@ -101,7 +101,7 @@ import { cityOptions } from '../../doc/data';
 
     render(){
         
-      const cityStyles = (height = '3rem') => {
+      const cityStyles = (height = '3rem', fontSize='1.5rem') => {
 
             return {
 
@@ -161,7 +161,7 @@ import { cityOptions } from '../../doc/data';
                 }
             }
         }
-       const areaStyles = (height = '3rem', newState = this.state) => {
+       const areaStyles = (height = '3rem', newState = this.state, fontSize='1.5rem') => {
 
             return {
 
