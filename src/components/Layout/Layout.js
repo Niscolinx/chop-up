@@ -5,6 +5,7 @@ import * as actions from '../../store/actions/burgerIndex';
 import Aux from '../hoc/HigherOrder';
 import Toolbar from './Toolbar';
 import SideDrawer from './Navigation/SideDrawer';
+import Footer from './Footer'
 
 class Layout extends Component{
     state = {
@@ -38,6 +39,7 @@ class Layout extends Component{
             <main className = 'content'>
                 {this.props.children}
             </main>
+            <Footer/>
             </Aux>
         )
     }
