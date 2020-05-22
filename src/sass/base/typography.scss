@@ -632,17 +632,17 @@
     }
 
     .services {
-        margin-top: 4rem;
+        margin: 4rem 0;
 
+        &_heading {
+            font-weight: 700;
+            margin-left: 2rem;
+            color: $primary-color;
+            margin-bottom: 1rem;
+
+        }
         &-box {
 
-            &_heading {
-                font-weight: 700;
-                margin-left: 2rem;
-                color: $primary-color;
-                margin-bottom: 1rem;
-
-            }
 
             &_title {
                 font-weight: 700;
