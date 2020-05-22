@@ -579,15 +579,17 @@
 
     @include respond(phone) {
 
-         max-width: 100%;
+        max-width: 100%;
+
         &_heading {
             display: none;
         }
 
         &_heading-primary-s {
+            text-align: center;
             color: $primary-color;
             margin-bottom: 3rem;
-            
+
             &--main {
                 font-weight: 700;
                 display: block;
