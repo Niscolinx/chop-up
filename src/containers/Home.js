@@ -11,6 +11,7 @@ import axios from "../axios"
 import Hero from '../components/Layout/Hero'
 import Steps from '../components/Layout/Steps'
 import NewsLetter from '../components/Layout/NewsLetter'
+import Cards from '../components/Layout/Cards'
 
 
 
@@ -34,91 +35,7 @@ class Home extends Component {
 
                 <NewsLetter/>
 
-                <div className='card'>
-                    <Container>
-                        <CardGroup>
-                            <Card>
-                                <Card.Img variant="top" src={require('../assets/images/PoundedYam.jpg')} />
-                                <Card.Body>
-                                    <Card.Title>Smart Bite - Upgate</Card.Title>
-                                    <Card.Text>
-                                        Min Order N0. Delivering fee N200
-                                    </Card.Text>
-                                </Card.Body>
-                                <Card.Footer>
-                                    <small className="text-muted">Last updated 3 mins ago</small>
-                                </Card.Footer>
-                            </Card>
-                            <Card>
-                                <Card.Img variant="top" src={require('../assets/images/PoundedYam.jpg')} />
-                                <Card.Body>
-                                    <Card.Title>Smart Bite - Upgate</Card.Title>
-                                    <Card.Text>
-                                        Min Order N0. Delivering fee N200
-                                    </Card.Text>
-                                </Card.Body>
-                                <Card.Footer>
-                                    <small className="text-muted">Last updated 3 mins ago</small>
-                                </Card.Footer>
-                            </Card>
-                            <Card>
-                                <Card.Img variant="top" src={require('../assets/images/PoundedYam.jpg')} />
-                                <Card.Body>
-                                    <Card.Title>Smart Bite - Upgate</Card.Title>
-                                    <Card.Text>
-                                        Min Order N0. Delivering fee N200
-                                    </Card.Text>
-                                </Card.Body>
-                                <Card.Footer>
-                                    <small className="text-muted">Last updated 3 mins ago</small>
-                                </Card.Footer>
-                            </Card>
-
-
-                        </CardGroup>
-                        <CardGroup>
-                            <Card>
-                                <Card.Img variant="top" src={require('../assets/images/PoundedYam.jpg')} />
-                                <Card.Body>
-                                    <Card.Title>Smart Bite - Upgate</Card.Title>
-                                    <Card.Text>
-                                        Min Order N0. Delivering fee N200
-                                    </Card.Text>
-                                </Card.Body>
-                                <Card.Footer>
-                                    <small className="text-muted">Last updated 3 mins ago</small>
-                                </Card.Footer>
-                            </Card>
-                            <Card>
-                                <Card.Img variant="top" src={require('../assets/images/PoundedYam.jpg')} />
-                                <Card.Body>
-                                    <Card.Title>Smart Bite - Upgate</Card.Title>
-                                    <Card.Text>
-                                        Min Order N0. Delivering fee N200
-                                    </Card.Text>
-                                </Card.Body>
-                                <Card.Footer>
-                                    <small className="text-muted">Last updated 3 mins ago</small>
-                                </Card.Footer>
-                            </Card>
-                            <Card>
-                                <Card.Img variant="top" src={require('../assets/images/PoundedYam.jpg')} />
-                                <Card.Body>
-                                    <Card.Title>Smart Bite - Upgate</Card.Title>
-                                    <Card.Text>
-                                        Min Order N0. Delivering fee N200
-                                    </Card.Text>
-                                </Card.Body>
-                                <Card.Footer>
-                                    <small className="text-muted">Last updated 3 mins ago</small>
-                                </Card.Footer>
-                            </Card>
-
-
-                        </CardGroup>
-                    </Container>
-
-                </div>
+               </Cards/>
 
                 <footer className="page-footer font-small indigo footer">
 
