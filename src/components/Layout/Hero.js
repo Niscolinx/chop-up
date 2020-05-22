@@ -186,6 +186,7 @@ class Hero extends Component {
                     return {
                         ...provided,
                         cursor: cursor,
+                        fontSize: fontSize,
                         background: newState.disabledBackground,
                         borderColor: newState.disabledBackground,
                         minHeight: height,
