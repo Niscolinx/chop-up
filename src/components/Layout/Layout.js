@@ -39,7 +39,10 @@ class Layout extends Component{
             <main className = 'content'>
                 {this.props.children}
             </main>
+            <div className='section-footer'>
+
             <Footer/>
+            </div>
             </Aux>
         )
     }
