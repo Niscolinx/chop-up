@@ -540,6 +540,13 @@
     //   max-width: 100%;
     // }
 
+    &_heading-s{
+        
+
+        &-primary{
+
+        }
+    }
 
     &_heading {
         color: $primary-color;
@@ -566,12 +573,6 @@
 
         //  }
 
-        &>h1{
-
-            @include respond(phone){
-                display: flex;
-            }
-        }
 
          &-primary {
              line-height: 1.7;
