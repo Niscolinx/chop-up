@@ -315,7 +315,7 @@ class Hero extends Component {
 
                             <h5 className='services_heading'>Select Service</h5>
                         </Row>
-                        <Row className='services_b'>
+                        <Row className='services'>
 
                             <Col>
                                 <h5 className='services_title'>Restaurants</h5>
@@ -327,7 +327,7 @@ class Hero extends Component {
                             </Col>
 
                         </Row>
-                        <Row>
+                        <Row className='services'>
 
                             <Col>
                                 <h5 className='services_title'>Pharmacies</h5>
