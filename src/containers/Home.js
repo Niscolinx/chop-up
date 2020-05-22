@@ -19,23 +19,35 @@ class Home extends Component {
 
 
     render() {
-    
+
 
         return (
             <div>
 
-               <Hero
-               areas = {this.props.areas}
-               onClearedSelectedCity = {this.props.onClearedSelectedCity}
-               onSelectedAreas = {this.props.onSelectedAreas}
-               onSelectedCity = {this.props.onSelectedCity}
-               />
+                <div className='section-Hero'>
 
-                <Steps/>
+                    <Hero
+                        areas={this.props.areas}
+                        onClearedSelectedCity={this.props.onClearedSelectedCity}
+                        onSelectedAreas={this.props.onSelectedAreas}
+                        onSelectedCity={this.props.onSelectedCity}
+                    />
+                </div>
 
-                <NewsLetter/>
+                <div className='secton-steps'>
 
-               </Cards/>
+                    <Steps />
+                </div>
+
+                <div className='section-newsletter'>
+
+                    <NewsLetter />
+                </div>
+
+                <div className='section-cards'>
+
+                    <Cards />
+                </div>
 
                 <footer className="page-footer font-small indigo footer">
 
