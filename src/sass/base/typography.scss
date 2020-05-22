@@ -651,6 +651,11 @@
             &_description {
                 font-weight: 400;
             }
+
+             @include respond(phone) {
+                display: flex;
+                flex-direction: column;
+             }
         }
     }
 }
