@@ -116,7 +116,8 @@ import { cityOptions } from '../../doc/data';
                 option: (styles, state) => ({
                     ...styles,
                     cursor: 'pointer',
-                    padding: '1rem'
+                    padding: '1rem',
+                    fontSize: fontSize,
                 }),
                 control: (provided, state) => ({
                     ...provided,
@@ -131,7 +132,7 @@ import { cityOptions } from '../../doc/data';
                 placeholder: (defaultStyles, state) => {
                     return {
                         ...defaultStyles,
-                        fontSize: '1.3rem'
+                        fontSize: fontSize
                     }
                 },
                 valueContainer: (provided, state) => ({
@@ -167,8 +168,6 @@ import { cityOptions } from '../../doc/data';
 
                 menu: (provided, state) => ({
                     ...provided,
-                    //width: state.selectProps.width,
-                    // color: state.selectProps.menuColor,
                     padding: 10,
 
                 }),
@@ -177,7 +176,8 @@ import { cityOptions } from '../../doc/data';
                 option: (styles, state) => ({
                     ...styles,
                     cursor: newState.disabledPointer,
-                    padding: '1rem'
+                    padding: '1rem',
+                    fontSize: fontSize
                 }),
 
                 control: (provided, state) => {
@@ -199,7 +199,7 @@ import { cityOptions } from '../../doc/data';
                     return {
                         ...defaultStyles,
                         color: state.isDisabled ? '#9c9a9a' : '#808080',
-                        fontSize: '1.3rem'
+                        fontSize: fontSize
                     }
                 },
                 valueContainer: (provided, state) => ({
