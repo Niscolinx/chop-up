@@ -10,6 +10,7 @@ import axios from "../axios"
 
 import Hero from '../components/Layout/Hero'
 import Steps from '../components/Layout/Steps'
+import NewsLetter from '../components/Layout/NewsLetter'
 
 
 
