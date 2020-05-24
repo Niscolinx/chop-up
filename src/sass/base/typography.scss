@@ -504,10 +504,6 @@
     padding-top: 3rem;
     max-width: 70%;
 
-    &_collapse{
-        display: none;
-    }
-
     &_heading-s {
         display: none;
     }
@@ -572,6 +568,7 @@
     }
 
     .delivering {
+        display: none;
         &_title {
             font-weight: 700;
             margin-left: 2rem;
