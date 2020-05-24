@@ -20,7 +20,6 @@ class Home extends Component {
 
 
     render() {
-        console.log('The home', this)
 
 
         return (
