@@ -106,7 +106,7 @@ class Hero extends Component {
         if(this.state.currentCity && this.state.newArea){
             console.log('selected options', this)
 
-            console.log(this.properties)
+            console.log(this.props.properties)
            // let res = <Redirect to='/Home'/>
            // return res
         }
