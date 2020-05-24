@@ -107,7 +107,7 @@ class Hero extends Component {
         if(this.state.currentCity && this.state.newArea.length > 0){
 
             console.log(this.props.properties)
-            this.props.properties.history.push('/home')
+          //  this.props.properties.history.push('/home')
            // let res = <Redirect to='/Home'/>
            // return res
         }
