@@ -503,7 +503,8 @@
 .hero {
     padding-top: 3rem;
     max-width: 70%;
-    display: none;
+    
+    margin-top: -5vh;
 
     &_heading-s {
         display: none;
