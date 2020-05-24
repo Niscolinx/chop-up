@@ -101,6 +101,10 @@ class Hero extends Component {
     render() {
 
         console.log('These are the areas selected', this.state.newArea)
+
+        if(this.state.currentCity && this.state.newArea){
+            
+        }
         const cityStyles = (height = '3rem', fontSize = '1rem') => {
 
             return {
