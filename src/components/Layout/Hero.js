@@ -305,7 +305,6 @@ class Hero extends Component {
                                     styles={areaStyles()}
                                     placeholder={areaPlaceholder}
                                     isClearable
-                                    isMulti
                                     onChange={this.areaChange}
                                     onInputChange={this.handleAreaChange}
                                     options={this.props.areas}
