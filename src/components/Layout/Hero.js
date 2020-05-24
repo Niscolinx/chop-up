@@ -100,8 +100,6 @@ class Hero extends Component {
     };
 
 
-  
-
     render() {
 
 
