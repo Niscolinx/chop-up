@@ -503,8 +503,8 @@
 .hero {
     padding-top: 3rem;
     max-width: 70%;
-    
-    &_collapse{
+
+    &_collapse {
         margin-top: -25vh;
     }
 
@@ -572,7 +572,6 @@
     }
 
     .delivering {
-        
         &_title {
             font-weight: 700;
             margin-left: 2rem;
@@ -593,8 +592,9 @@
 
     .services {
         margin-top: 4rem;
+        cursor: pointer;
 
-        @include respond(phone){
+        @include respond(phone) {
             margin-top: -2vh;
         }
 
@@ -645,15 +645,12 @@
         font-weight: 400;
     }
 
-    @include respond(phone){
-        
-        &_box{
-            cursor: pointer;
+    @include respond(phone) {
+        &_box {
             display: flex;
             text-align: center;
             flex-direction: column;
         }
-
     }
 }
 
@@ -681,7 +678,6 @@
         &-button {
             background-color: white;
             font-weight: 500;
-
         }
     }
 
