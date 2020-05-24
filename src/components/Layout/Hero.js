@@ -100,18 +100,7 @@ class Hero extends Component {
     };
 
 
-    componentWillUpdate(){
-
-        console.log('selected options', this)
-        if (this.state.newArea !== '') {
-
-            this.props.properties.history.replace('/Checkout/checkout-data')
-
-            //  this.props.properties.history.push('/home')
-            // let res = <Redirect to='/Home'/>
-            // return res
-        }
-    }
+  
 
     render() {
 
