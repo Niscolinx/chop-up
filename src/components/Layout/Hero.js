@@ -26,8 +26,8 @@ class Hero extends Component {
         // console.group('Input Changed');
         // console.log('the input value has been changed and it is now', inputValue);
 
-        console.log(`action: ${actionMeta}`);
-        console.groupEnd();
+      //  console.log(`action: ${actionMeta}`);
+       // console.groupEnd();
 
     };
 
@@ -35,9 +35,9 @@ class Hero extends Component {
         //  console.group('Value Changed', newValue);
         // console.log('The values to compare', newValue);
 
-        console.log('the meta data', actionMeta);
+       // console.log('the meta data', actionMeta);
         // console.log(`action: ${actionMeta.action}`);
-        console.groupEnd();
+       // console.groupEnd();
 
 
         if (newValue !== null) {
