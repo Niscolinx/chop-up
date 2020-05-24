@@ -12,7 +12,7 @@ const Steps = () => {
                 </Row>
 
                 <Row className='simple-steps_box'>
-
+                    <div>
                     <Col>
                         <h5 className='simple-steps_title'>Set delivering location</h5>
                         <p className='simple-steps_description'>Browse shops that deliver near you</p>
@@ -25,6 +25,9 @@ const Steps = () => {
                         <h5 className='simple-steps_title'>Receive it at your doorstep</h5>
                         <p className='simple-steps_description'>Browse shops that deliver near you</p>
                     </Col>
+
+                    </div>
+
 
                 </Row>
             </Container>

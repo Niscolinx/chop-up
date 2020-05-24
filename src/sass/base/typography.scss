@@ -645,13 +645,13 @@
         font-weight: 400;
     }
 
+    &-box{
+        display: flex;
+        flex-direction: column;
+        background-color: red;
+    }
     @include respond(phone){
 
-        &-box{
-            display: flex;
-            flex-direction: column;
-            background-color: red;
-        }
 
     }
 }
