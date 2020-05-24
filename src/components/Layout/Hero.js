@@ -104,7 +104,7 @@ class Hero extends Component {
 
 
         console.log('selected options', this)
-        if(this.state.currentCity && this.state.newArea !== []){
+        if( this.state.newArea !== []){
 
             this.props.properties.history.replace('/Checkout/checkout-data')
 
