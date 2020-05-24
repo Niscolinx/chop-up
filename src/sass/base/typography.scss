@@ -504,7 +504,9 @@
     padding-top: 3rem;
     max-width: 70%;
     
-    margin-top: -5vh;
+    &_collapse{
+        margin-top: -24vh;
+    }
 
     &_heading-s {
         display: none;
