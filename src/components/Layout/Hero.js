@@ -103,7 +103,7 @@ class Hero extends Component {
     render() {
 
 
-        if(this.state.currentCity  !== null && this.state.newArea !== []){
+        if(this.state.currentCity  !== null && this.state.newArea === []){
             console.log('selected options', this)
 
             console.log(this.props.properties)
