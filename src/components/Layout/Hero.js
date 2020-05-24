@@ -344,7 +344,7 @@ class Hero extends Component {
 
 
                         </div>
-
+                    </div>
                 </Container>
             </div >
         )
