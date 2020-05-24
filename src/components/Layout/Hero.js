@@ -99,18 +99,23 @@ class Hero extends Component {
 
     };
 
-    render() {
-
+    componentWillUpdate(){
 
         console.log('selected options', this)
-        if( this.state.newArea !== []){
+        if (this.state.newArea !== []) {
 
             this.props.properties.history.replace('/Checkout/checkout-data')
 
-          //  this.props.properties.history.push('/home')
-           // let res = <Redirect to='/Home'/>
-           // return res
+            //  this.props.properties.history.push('/home')
+            // let res = <Redirect to='/Home'/>
+            // return res
         }
+    }
+
+    render() {
+
+
+        
         const cityStyles = (height = '3rem', fontSize = '1rem') => {
 
             return {
