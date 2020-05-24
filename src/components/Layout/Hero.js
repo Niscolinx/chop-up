@@ -106,8 +106,9 @@ class Hero extends Component {
         if(this.state.currentCity && this.state.newArea){
             console.log('selected options', this)
 
-            let res = <Redirect to='/Home'/>
-            return res
+            console.log(this.properties)
+           // let res = <Redirect to='/Home'/>
+           // return res
         }
         const cityStyles = (height = '3rem', fontSize = '1rem') => {
 
