@@ -648,6 +648,7 @@
     @include respond(phone){
         
         &_box{
+            cursor: pointer;
             display: flex;
             text-align: center;
             flex-direction: column;
