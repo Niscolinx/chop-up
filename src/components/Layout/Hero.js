@@ -99,6 +99,7 @@ class Hero extends Component {
 
     };
 
+    
     componentWillUpdate(){
 
         console.log('selected options', this)
