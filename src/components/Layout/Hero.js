@@ -103,8 +103,8 @@ class Hero extends Component {
     render() {
 
 
-        if(this.state.currentCity && this.state.newArea.length.length > 0){
-            console.log('selected options', this)
+        console.log('selected options', this)
+        if(this.state.currentCity && this.state.newArea.length > 0){
 
             console.log(this.props.properties)
             this.props.properties.history.push('/home')
