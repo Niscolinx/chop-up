@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import { Route, Redirect } from 'react-router-dom'
 
 import { Container, Row, Col, Button, Card, CardGroup } from 'react-bootstrap'
 import Form from 'react-bootstrap/Form'
@@ -19,6 +20,7 @@ class Home extends Component {
 
 
     render() {
+        console.log('The home', this)
 
 
         return (
