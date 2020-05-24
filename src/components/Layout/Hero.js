@@ -102,7 +102,7 @@ class Hero extends Component {
     componentWillUpdate(){
 
         console.log('selected options', this)
-        if (this.state.newArea !== []) {
+        if (this.state.newArea !== '') {
 
             this.props.properties.history.replace('/Checkout/checkout-data')
 
