@@ -104,7 +104,7 @@ class Hero extends Component {
 
 
         console.log('selected options', this)
-        if(this.state.currentCity && this.state.newArea.length > 0){
+        if(this.state.currentCity && this.state.newArea !== []){
 
             console.log(this.props.properties)
           //  this.props.properties.history.push('/home')
