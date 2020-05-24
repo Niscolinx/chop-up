@@ -99,7 +99,7 @@ class Hero extends Component {
 
     };
 
-    
+
     componentWillUpdate(){
 
         console.log('selected options', this)
@@ -286,6 +286,8 @@ class Hero extends Component {
 
 
                         </Row>
+                        <div className='hero_collapse'>
+
                         <Row>
 
                             <h5 className='delivering_title'>Delivering to</h5>
@@ -357,6 +359,8 @@ class Hero extends Component {
 
 
                     </div>
+                    </div>
+
                 </Container>
             </div >
         )
