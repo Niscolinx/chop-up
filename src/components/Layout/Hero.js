@@ -97,7 +97,6 @@ class Hero extends Component {
             newArea: newValue
         })
 
-
     };
 
     render() {
