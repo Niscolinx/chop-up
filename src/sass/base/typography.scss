@@ -644,6 +644,14 @@
     &_description {
         font-weight: 400;
     }
+
+    @include respond(phone){
+        
+        &-box{
+    
+        }
+
+    }
 }
 
 .newsletter {
