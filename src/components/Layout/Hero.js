@@ -26,8 +26,8 @@ class Hero extends Component {
         // console.group('Input Changed');
         // console.log('the input value has been changed and it is now', inputValue);
 
-      //  console.log(`action: ${actionMeta}`);
-       // console.groupEnd();
+        //  console.log(`action: ${actionMeta}`);
+        // console.groupEnd();
 
     };
 
@@ -35,13 +35,13 @@ class Hero extends Component {
         //  console.group('Value Changed', newValue);
         // console.log('The values to compare', newValue);
 
-       // console.log('the meta data', actionMeta);
+        // console.log('the meta data', actionMeta);
         // console.log(`action: ${actionMeta.action}`);
-       // console.groupEnd();
+        // console.groupEnd();
 
 
         if (newValue !== null) {
-           // console.log('loaded city')
+            // console.log('loaded city')
             // console.log('The values of the newValue', newValue.value);
 
             this.props.onSelectedCity(newValue.value)
@@ -66,7 +66,7 @@ class Hero extends Component {
 
         }
         else {
-           // console.log('cleared city')
+            // console.log('cleared city')
             this.props.onClearedSelectedCity()
 
 
@@ -81,7 +81,7 @@ class Hero extends Component {
 
     };
     handleAreaChange = (inputValue: any, actionMeta: any) => {
-       // console.group('Input Changed', inputValue, 'the Changed value is', actionMeta);
+        // console.group('Input Changed', inputValue, 'the Changed value is', actionMeta);
         //console.groupEnd();
 
     };
@@ -89,7 +89,7 @@ class Hero extends Component {
     areaChange = (newValue: any, actionMeta: any) => {
         //console.group('Value Changed');
 
-       // console.log('the meta data', actionMeta, 'the newValue is', newValue);
+        // console.log('the meta data', actionMeta, 'the newValue is', newValue);
         // console.log(`action: ${actionMeta.action}`);
         //console.groupEnd();
 
@@ -102,8 +102,6 @@ class Hero extends Component {
 
     render() {
 
-
-        
         const cityStyles = (height = '3rem', fontSize = '1rem') => {
 
             return {
@@ -273,7 +271,6 @@ class Hero extends Component {
 
 
                         </Row>
-                        <div className='hero_collapse'>
 
                         <Row>
 
@@ -345,7 +342,6 @@ class Hero extends Component {
                         </Row>
 
 
-                    </div>
                     </div>
 
                 </Container>
