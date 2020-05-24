@@ -249,100 +249,101 @@ class Hero extends Component {
         return (
             <div style={divStyle} >
                 <Container fliuid='true' className='hero'>
-                    <div className='delivering mt-5'>
+                    <div className='hero_collapse'>
+                        <div className='delivering mt-5'>
 
-                        <Row className="justify-content-md-center">
+                            <Row className="justify-content-md-center">
 
-                            <Col md="auto" className='hero_heading'>
+                                <Col md="auto" className='hero_heading'>
 
-                                <h1 class="hero_heading-primary">
-                                    <span class="hero_heading-primary--main">Everything you need,</span> <span class="hero_heading-primary--sub">delivered within minutes</span>
-                                </h1>
+                                    <h1 class="hero_heading-primary">
+                                        <span class="hero_heading-primary--main">Everything you need,</span> <span class="hero_heading-primary--sub">delivered within minutes</span>
+                                    </h1>
 
 
-                            </Col>
-                            <Col md="auto" className='hero_heading-s'>
+                                </Col>
+                                <Col md="auto" className='hero_heading-s'>
 
-                                <h1 class="hero_heading-s--main">
-                                    Everything you need delivered within minutes
+                                    <h1 class="hero_heading-s--main">
+                                        Everything you need delivered within minutes
                             </h1>
 
-                            </Col>
+                                </Col>
 
 
-                        </Row>
+                            </Row>
 
-                        <Row>
+                            <Row>
 
-                            <h5 className='delivering_title'>Delivering to</h5>
-                        </Row>
-                        <Row className='delivering_select'>
+                                <h5 className='delivering_title'>Delivering to</h5>
+                            </Row>
+                            <Row className='delivering_select'>
 
-                            <Col className='delivering_select-options'>
-                                <Select
-                                    styles={cityStyles()}
-                                    placeholder={cityPlaceholder}
-                                    isClearable
-                                    onChange={this.cityChange}
-                                    onInputChange={this.handleCityChange}
-                                    options={cityOptions}
-                                    components={animated}
+                                <Col className='delivering_select-options'>
+                                    <Select
+                                        styles={cityStyles()}
+                                        placeholder={cityPlaceholder}
+                                        isClearable
+                                        onChange={this.cityChange}
+                                        onInputChange={this.handleCityChange}
+                                        options={cityOptions}
+                                        components={animated}
 
-                                />
+                                    />
 
-                            </Col>
-                            <Col className={this.state.disabled ? 'disabledPointer ' : this.state.disabledPointer}>
-                                <Select
+                                </Col>
+                                <Col className={this.state.disabled ? 'disabledPointer ' : this.state.disabledPointer}>
+                                    <Select
 
-                                    styles={areaStyles()}
-                                    placeholder={areaPlaceholder}
-                                    isClearable
-                                    onChange={this.areaChange}
-                                    onInputChange={this.handleAreaChange}
-                                    options={this.props.areas}
-                                    isDisabled={this.state.disabled}
-                                    components={animated}
-                                    value={this.state.newArea}
-                                />
-                            </Col>
-
-
-                        </Row>
-                    </div>
-
-                    <div className='services'>
-
-                        <Row>
-
-                            <h5 className='services_heading'>Select Service</h5>
-                        </Row>
-                        <Row className='services-box'>
-
-                            <Col>
-                                <h5 className='services-box_title'>Restaurants</h5>
-                                <p className='services-box_description'>Food you love, from restaurants near you</p>
-                            </Col>
-                            <Col>
-                                <h5 className='services-box_title'>SuperMarkets</h5>
-                                <p className='services-box_description'>Food you love, from restaurants near you</p>
-                            </Col>
-
-                        </Row>
-                        <Row className='services-box'>
-
-                            <Col>
-                                <h5 className='services-box_title'>Pharmacies</h5>
-                                <p className='services-box_description'>Food you love, from restaurants near you</p>
-                            </Col>
-                            <Col>
-                                <h5 className='services-box_title'>Shopping</h5>
-                                <p className='services-box_description'>Food you love, from restaurants near you</p>
-                            </Col>
-
-                        </Row>
+                                        styles={areaStyles()}
+                                        placeholder={areaPlaceholder}
+                                        isClearable
+                                        onChange={this.areaChange}
+                                        onInputChange={this.handleAreaChange}
+                                        options={this.props.areas}
+                                        isDisabled={this.state.disabled}
+                                        components={animated}
+                                        value={this.state.newArea}
+                                    />
+                                </Col>
 
 
-                    </div>
+                            </Row>
+                        </div>
+
+                        <div className='services'>
+
+                            <Row>
+
+                                <h5 className='services_heading'>Select Service</h5>
+                            </Row>
+                            <Row className='services-box'>
+
+                                <Col>
+                                    <h5 className='services-box_title'>Restaurants</h5>
+                                    <p className='services-box_description'>Food you love, from restaurants near you</p>
+                                </Col>
+                                <Col>
+                                    <h5 className='services-box_title'>SuperMarkets</h5>
+                                    <p className='services-box_description'>Food you love, from restaurants near you</p>
+                                </Col>
+
+                            </Row>
+                            <Row className='services-box'>
+
+                                <Col>
+                                    <h5 className='services-box_title'>Pharmacies</h5>
+                                    <p className='services-box_description'>Food you love, from restaurants near you</p>
+                                </Col>
+                                <Col>
+                                    <h5 className='services-box_title'>Shopping</h5>
+                                    <p className='services-box_description'>Food you love, from restaurants near you</p>
+                                </Col>
+
+                            </Row>
+
+
+                        </div>
 
                 </Container>
             </div >
