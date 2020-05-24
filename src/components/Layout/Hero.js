@@ -41,7 +41,7 @@ class Hero extends Component {
 
 
         if (newValue !== null) {
-            console.log('loaded city')
+           // console.log('loaded city')
             // console.log('The values of the newValue', newValue.value);
 
             this.props.onSelectedCity(newValue.value)
@@ -66,7 +66,7 @@ class Hero extends Component {
 
         }
         else {
-            console.log('cleared city')
+           // console.log('cleared city')
             this.props.onClearedSelectedCity()
 
 
@@ -81,17 +81,17 @@ class Hero extends Component {
 
     };
     handleAreaChange = (inputValue: any, actionMeta: any) => {
-        console.group('Input Changed', inputValue, 'the Changed value is', actionMeta);
-        console.groupEnd();
+       // console.group('Input Changed', inputValue, 'the Changed value is', actionMeta);
+        //console.groupEnd();
 
     };
 
     areaChange = (newValue: any, actionMeta: any) => {
-        console.group('Value Changed');
+        //console.group('Value Changed');
 
-        console.log('the meta data', actionMeta, 'the newValue is', newValue);
+       // console.log('the meta data', actionMeta, 'the newValue is', newValue);
         // console.log(`action: ${actionMeta.action}`);
-        console.groupEnd();
+        //console.groupEnd();
 
         this.setState({
             newArea: newValue
