@@ -11,7 +11,7 @@ const Steps = () => {
                     <h2 className='simple-steps_header--title'>Simple Steps</h2>
                 </Row>
 
-                <Row>
+                <Row className='simple-steps_box'>
 
                     <Col>
                         <h5 className='simple-steps_title'>Set delivering location</h5>
