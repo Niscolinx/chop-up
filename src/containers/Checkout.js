@@ -13,10 +13,10 @@ class Checkout extends Component {
         this.props.history.replace('/Checkout/checkout-data')
     }
     render() {
-        let Summary = <Redirect to='/' />
+       // let Summary = <Redirect to='/' />
 
         if (this.props.ingredients) {
-            const orderRedirect = this.props.purchased ? <Redirect to='/' /> : null
+          //  const orderRedirect = this.props.purchased ? <Redirect to='/' /> : null
             Summary = (
                 <div>
                     {orderRedirect}
