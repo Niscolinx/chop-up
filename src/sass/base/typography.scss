@@ -595,7 +595,7 @@
         cursor: pointer;
 
         @include respond(phone) {
-            margin-top: -1vh;
+          //  margin-top: 1rem;
         }
 
         &_heading {
