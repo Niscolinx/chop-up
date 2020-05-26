@@ -2,8 +2,8 @@ import React from 'react';
 
 const ModalToggle = (props) => (
     <div onClick={props.clicked} className='modalToggle'>
-        <div className='modalToggle_item1'></div>
-        <div className='modalToggle_item2'></div>
+        <span className='modalToggle_item1'></span>
+        <span className='modalToggle_item2'></span>
     </div>
 )
 
