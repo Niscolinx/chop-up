@@ -15,11 +15,11 @@ const SelectOptions = (props) => {
             </Row>
             <Row className='services-box'>
 
-                <Col>
+                <Col className='services-box_item'>
                     <h5 className='services-box_title'>Restaurants</h5>
                     <p className='services-box_description'>Food you love, from restaurants near you</p>
                 </Col>
-                <Col>
+                <Col className='services-box_item'>
                     <h5 className='services-box_title'>SuperMarkets</h5>
                     <p className='services-box_description'>Food you love, from restaurants near you</p>
                 </Col>
@@ -27,11 +27,11 @@ const SelectOptions = (props) => {
             </Row>
             <Row className='services-box'>
 
-                <Col>
+                <Col className='services-box_item'>
                     <h5 className='services-box_title'>Pharmacies</h5>
                     <p className='services-box_description'>Food you love, from restaurants near you</p>
                 </Col>
-                <Col>
+                <Col className='services-box_item'>
                     <h5 className='services-box_title'>Shopping</h5>
                     <p className='services-box_description'>Food you love, from restaurants near you</p>
                 </Col>
