@@ -103,6 +103,10 @@ class Hero extends Component {
 
     render() {
 
+        if(this.state.newArea){
+            console.log('Yahh, its working well')
+        }
+
         const cityStyles = (height = '3rem', fontSize = '1rem') => {
 
             return {
