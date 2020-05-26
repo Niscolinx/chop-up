@@ -1,6 +1,7 @@
 import React from 'react'
 import Aux from '../hoc/HigherOrder'
 import SelectBackdrop from './SelectBackdrop'
+import SideDrawerToggle from '../Layout/Navigation/SideDrawerToggle'
 
 const SelectModal = (props) => {
 
@@ -16,7 +17,7 @@ const SelectModal = (props) => {
                     transform: props.isAreaSelected ? 'translateY(0)' : 'translateY(-100vh)',
                     opacity: props.isAreaSelected ? '1' : '0',
                 }}>
-                    <div>X</div>
+                    <SideDrawerToggle/>
                 {props.children}
             </div>
         </Aux>
