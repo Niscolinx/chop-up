@@ -154,7 +154,7 @@
     left: 15%;
     top: 30%;
     box-sizing: border-box;
-    transition: all 5s ease-out;
+    transition: all .5s ease-out;
 
     li {
         list-style: none;
@@ -195,18 +195,6 @@
     }
 }
 
-@media (min-width: 600px) {
-    .Modals {
-        width: 500px;
-        left: calc(50% - 250px);
-    }
-}
-
-@media (max-width: 414px) {
-    .Modals {
-        font-size: 10px;
-    }
-}
 
 .backdrop {
     background: rgba(0, 0, 0, 0.4);
