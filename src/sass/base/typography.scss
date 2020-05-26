@@ -177,7 +177,8 @@
 .Modals {
     text-align: center;
     height: 100%;
-
+    overflow-y: scroll;
+    scroll-behavior: smooth;
     position: fixed;
     z-index: 500;
     background-color: white;
@@ -185,7 +186,7 @@
     border: 1px solid #ccc;
     border-radius: 10px 30px;
     box-shadow: 0 3px 30px lighten(black, 20%);
-    padding: 16px;
+    padding: 2rem;
     left: 15%;
     top: 30%;
     box-sizing: border-box;
