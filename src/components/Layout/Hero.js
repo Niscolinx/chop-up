@@ -83,7 +83,8 @@ class Hero extends Component {
 
     };
     handleAreaChange = (inputValue: any, actionMeta: any) => {
-        // console.group('Input Changed', inputValue, 'the Changed value is', actionMeta);
+        
+         console.group('Input Changed', inputValue, 'the Changed value is', actionMeta);
         //console.groupEnd();
 
     };
@@ -96,7 +97,8 @@ class Hero extends Component {
         //console.groupEnd();
 
         this.setState({
-            newArea: newValue
+            newArea: newValue,
+            isAreaTouched: true
         })
 
     };
@@ -104,7 +106,8 @@ class Hero extends Component {
 
     render() {
 
-        if(this.state.newArea){
+        console.log('This is the state', this.state)
+        if(this.state.isAreaTouched){
             console.log('Yahh, its working well')
         }
 
