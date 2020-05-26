@@ -535,7 +535,8 @@
         margin-top: -1vh;
 
         @include respond(smaller-phone){
-            
+            margin-top: 2vh;
+            font-size: 10rem;
         }
     }
 
