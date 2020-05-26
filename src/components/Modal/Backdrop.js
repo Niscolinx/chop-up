@@ -1,8 +1,8 @@
 import React from 'react';
 
-console.log('this is the backdrop')
 const backdrop = (props) => (
-    props.show? <div className = 'backdrop' onClick = {props.clicked}></div>: null
+  //  props.show? <div className = 'backdrop' onClick = {props.clicked}></div>: null
+    <h1>hel</h1>
 )
 
 export default backdrop;
