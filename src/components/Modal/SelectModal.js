@@ -1,7 +1,6 @@
 import React from 'react'
 import Aux from '../hoc/HigherOrder'
 import Backdrop from './Backdrop'
-import SelectOptions from './SelectOptions'
 
 const SelectModal = (props) => {
 
@@ -16,7 +15,6 @@ const SelectModal = (props) => {
                     opacity: this.props.orderSummary ? '1' : '0'
                 }}>
                 {this.props.children}
-                <SelectOptions/>
             </div>
         </Aux>
     )
