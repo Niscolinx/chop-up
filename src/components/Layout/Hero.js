@@ -94,7 +94,7 @@ class Hero extends Component {
                 isAreaTouched: true
             })
         }
-        if(actionMeta.action === 'input-blur'){
+        if (actionMeta.action === 'input-blur') {
             this.setState({
                 isAreaTouched: false
             })
@@ -122,10 +122,10 @@ class Hero extends Component {
 
         if (this.state.isAreaTouched) {
             handleAreaSelection = <SelectModal>
-                <SelectOptions/>
-                </SelectModal>
+                <SelectOptions />
+            </SelectModal>
         }
-        else{
+        else {
             handleAreaSelection = null
         }
 
