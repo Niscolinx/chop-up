@@ -402,6 +402,24 @@
     }
 }
 
+.ModalToggle {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    div {
+        width: 90%;
+        height: 3px;
+        background-color: blue;
+    }
+}
+
 .DrawerToggle {
     width: 40px;
     height: 40px;
