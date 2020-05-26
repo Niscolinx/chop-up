@@ -117,6 +117,7 @@ class Hero extends Component {
 
 
     render() {
+        console.log('this is the state', this.state)
 
         let handleAreaSelection = null
 
