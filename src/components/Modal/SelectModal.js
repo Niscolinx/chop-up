@@ -4,7 +4,6 @@ import Backdrop from './Backdrop'
 
 const SelectModal = (props) => {
 
-    console.log('this is the select Modal')
     return(
         <Aux>
             <Backdrop
