@@ -85,7 +85,7 @@ class Hero extends Component {
     handleAreaChange = (inputValue: any, actionMeta: any) => {
         
          console.group('Input Changed', inputValue, 'the Changed value is', actionMeta);
-        //console.groupEnd();
+        console.groupEnd();
 
     };
 
