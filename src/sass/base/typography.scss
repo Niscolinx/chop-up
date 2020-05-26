@@ -154,7 +154,7 @@
     left: 15%;
     top: 30%;
     box-sizing: border-box;
-    transition: all .5s ease-out;
+    transition: all 0.5s ease-out;
 
     li {
         list-style: none;
@@ -176,6 +176,8 @@
 }
 .Modals {
     text-align: center;
+    height: 100%;
+
     position: fixed;
     z-index: 500;
     background-color: white;
@@ -194,7 +196,6 @@
         text-transform: capitalize;
     }
 }
-
 
 .backdrop {
     background: rgba(0, 0, 0, 0.4);
@@ -614,8 +615,6 @@
     .services {
         margin-top: 4rem;
         cursor: pointer;
-        height: 100%;
-      
 
         &_heading {
             font-weight: 700;
