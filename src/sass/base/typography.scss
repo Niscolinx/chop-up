@@ -533,6 +533,10 @@
 
     &_collapse {
         margin-top: -1vh;
+
+        @include respond(smaller-phone){
+            
+        }
     }
 
     &_heading-s {

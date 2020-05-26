@@ -50,7 +50,7 @@
     }
 
     @if $breakpoint==big-desktop {
-        @media (min-width: 112.5em) {
+        @media (min-width: 113.5em) {
             //1800/16px
             @content;
         }
