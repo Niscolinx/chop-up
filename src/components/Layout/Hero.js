@@ -92,6 +92,11 @@ class Hero extends Component {
                 isAreaTouched: true
             })
         }
+        else{
+            this.setState({
+                isAreaTouched: false
+            })
+        }
 
     };
 
@@ -104,7 +109,6 @@ class Hero extends Component {
 
         this.setState({
             newArea: newValue,
-            isAreaTouched: true
         })
 
     };
