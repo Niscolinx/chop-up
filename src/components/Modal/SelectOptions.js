@@ -49,6 +49,18 @@ const SelectOptions = (props) => {
                 </Col>
 
             </Row>
+            <Row className='services-box'>
+
+                <Col>
+                    <h5 className='services-box_title'>Pharmacies</h5>
+                    <p className='services-box_description'>Food you love, from restaurants near you</p>
+                </Col>
+                <Col>
+                    <h5 className='services-box_title'>Shopping</h5>
+                    <p className='services-box_description'>Food you love, from restaurants near you</p>
+                </Col>
+
+            </Row>
 
 
         </Aux>
