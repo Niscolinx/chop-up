@@ -16,6 +16,7 @@ const SelectModal = (props) => {
                     transform: props.isAreaSelected ? 'translateY(0)' : 'translateY(-100vh)',
                     opacity: props.isAreaSelected ? '1' : '0',
                 }}>
+                    <div>X</div>
                 {props.children}
             </div>
         </Aux>
