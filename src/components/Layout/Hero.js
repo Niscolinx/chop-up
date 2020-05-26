@@ -121,10 +121,10 @@ class Hero extends Component {
         let handleAreaSelection = null
 
         if (this.state.isAreaTouched) {
-            handleAreaSelection = <SelectModal isAreaSelected = {this.state.isAreaTouched}
-            >
-                <SelectOptions />
-            </SelectModal>
+            // handleAreaSelection = <SelectModal isAreaSelected = {this.state.isAreaTouched}
+            // >
+            // </SelectModal>
+             handleAreaSelection=    <SelectOptions />
         }
         else {
             handleAreaSelection = null

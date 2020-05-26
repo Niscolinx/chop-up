@@ -7,8 +7,8 @@ const SelectModal = (props) => {
     return(
         <Aux>
             <SelectBackdrop
-                show={props.isAreaSelected}
-                clicked={props.clicked}
+             //   show={props.isAreaSelected}
+              //  clicked={props.clicked}
                >
                </SelectBackdrop>
             <div className='Modal'
