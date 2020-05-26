@@ -176,8 +176,9 @@
 }
 .Modals {
     text-align: center;
-    height: 100%;
+    height: 80%;
     overflow: scroll;
+    scrollbar-arrow-color: green;
     scrollbar-highlight-color: red;
     scrollbar-base-color: blue;
     scroll-behavior: smooth;
@@ -186,13 +187,17 @@
     background-color: white;
     width: 100%;
     border: 1px solid #ccc;
-    border-radius: 10px 30px;
+    border-radius: 30px 30px;
     box-shadow: 0 3px 30px lighten(black, 20%);
     padding: 2rem;
     right: 0;
     top: 25%;
     box-sizing: border-box;
     transition: all 1s ease-out;
+
+    @include respond(phone){
+        
+    }
 
    
 }
