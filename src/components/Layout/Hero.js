@@ -120,6 +120,9 @@ class Hero extends Component {
         if (this.state.isAreaTouched) {
             console.log('Yahh, its working well')
         }
+        else{
+            console.log('It has been closed')
+        }
 
         const cityStyles = (height = '3rem', fontSize = '1rem') => {
 
