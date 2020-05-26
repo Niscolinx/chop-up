@@ -1,5 +1,7 @@
 import React from 'react'
 import Aux from '../hoc/HigherOrder'
+import { Row, Col } from 'react-bootstrap'
+
 
 const SelectOptions = (props) => {
 
