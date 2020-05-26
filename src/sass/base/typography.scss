@@ -178,6 +178,8 @@
     text-align: center;
     height: 100%;
     overflow-y: scroll;
+    scrollbar-highlight-color: red;
+    scrollbar-base-color: blue;
     scroll-behavior: smooth;
     position: fixed;
     z-index: 500;
