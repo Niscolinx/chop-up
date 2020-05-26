@@ -312,8 +312,10 @@ class Hero extends Component {
                             </Row>
                         </div>
 
+                        <div className='services'>
 
                            <SelectOptions/>
+                        </div>
                     </div>
                 </Container>
             </div >
