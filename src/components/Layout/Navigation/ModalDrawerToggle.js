@@ -4,7 +4,6 @@ const ModalToggle = (props) => (
     <div onClick={props.clicked} className='ModalToggle'>
         <div></div>
         <div></div>
-        <div></div>
     </div>
 )
 
