@@ -146,15 +146,15 @@
     position: fixed;
     z-index: 500;
     background-color: white;
-    width: 200rem;
+    width: 700px;
     border: 1px solid #ccc;
     border-radius: 10px 30px;
     box-shadow: 0 3px 30px lighten(black, 20%);
     padding: 16px;
-    left: 1%;
+    left: 0;
     top: 30%;
     box-sizing: border-box;
-    transition: all 5s ease-out;
+    transition: all .5s ease-out;
 
     li {
         list-style: none;
@@ -164,7 +164,7 @@
 
 @media (min-width: 600px) {
     .Modal {
-        width: 500px;
+        width: 100%;
         left: calc(50% - 250px);
     }
 }
