@@ -92,7 +92,7 @@ class Hero extends Component {
                 isAreaTouched: true
             })
         }
-        else{
+        else if(actionMeta.action === 'input-blur'){
             this.setState({
                 isAreaTouched: false
             })
