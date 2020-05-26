@@ -418,14 +418,16 @@
     div {
         width: 90%;
         height: 3px;
-        background-color: blue;
+        background-color: $primary-color;
+    }
 
-        .modalToggle_item1{
-            transform: rotateX(50);
-        }
-        .modalToggle_item2{
-            transform: matrix(2,4);
-        }
+    &_item1 {
+        transform: rotate(50deg);
+        margin-top: 1rem;
+    }
+    &_item2 {
+        transform: rotate(-50deg);
+        margin-top: -1rem;
     }
 }
 
@@ -561,7 +563,7 @@
     &_collapse {
         margin-top: -1vh;
 
-        @include respond(smaller-phone){
+        @include respond(smaller-phone) {
             margin-top: 10vh;
         }
     }
