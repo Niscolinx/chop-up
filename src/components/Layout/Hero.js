@@ -3,6 +3,7 @@ import { Route, Redirect } from 'react-router-dom'
 
 import { Container, Row, Col } from 'react-bootstrap'
 import imgUrl from '../../assets/images/bg_home.jpg'
+import SelectOptions from '../Modal/SelectOptions'
 
 import Select from 'react-select';
 import makeAnimated from 'react-select/animated';
