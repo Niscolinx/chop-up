@@ -12,7 +12,7 @@ class Modal extends Component{
         return(
     <Aux>
     <Backdrop 
-    orderSummary = {this.props.orderSummary}
+    show = {this.props.orderSummary}
     clicked = {this.props.clicked}></Backdrop>
     <div className = 'Modal'
     style = {{
