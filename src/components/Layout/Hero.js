@@ -116,12 +116,13 @@ class Hero extends Component {
 
     render() {
 
-        console.log('This is the state', this.state)
+        let handleAreaSelection = null
+
         if (this.state.isAreaTouched) {
-            console.log('Yahh, its working well')
+            handleAreaSelection = <SelectOptions />
         }
         else{
-            console.log('It has been closed')
+            handleAreaSelection = null
         }
 
         const cityStyles = (height = '3rem', fontSize = '1rem') => {
@@ -335,7 +336,7 @@ class Hero extends Component {
 
                         <div className='services'>
 
-                            <SelectOptions />
+                            {handleAreaSelection}
                         </div>
                     </div>
                 </Container>
