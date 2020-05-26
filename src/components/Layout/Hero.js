@@ -3,7 +3,8 @@ import React, { Component } from 'react'
 
 import { Container, Row, Col } from 'react-bootstrap'
 import imgUrl from '../../assets/images/bg_home.jpg'
-import SelectOptions from '../Modal/SelectOptions'
+import SelectModal from '../Modal/SelectModal'
+
 
 import Select from 'react-select';
 import makeAnimated from 'react-select/animated';
@@ -119,7 +120,7 @@ class Hero extends Component {
         let handleAreaSelection = null
 
         if (this.state.isAreaTouched) {
-            handleAreaSelection = <SelectOptions />
+            handleAreaSelection = <SelectModal />
         }
         else{
             handleAreaSelection = null
