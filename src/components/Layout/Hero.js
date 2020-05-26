@@ -20,6 +20,7 @@ class Hero extends Component {
         disabled: true,
         disabledPointer: 'not-allowed',
         disabledBackground: '#787878',
+        isAreaTouched: false
     }
 
 
