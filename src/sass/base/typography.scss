@@ -194,13 +194,12 @@
     right: 0;
     box-sizing: border-box;
     transition: all 1s ease-out;
-    
-    @include respond(phone){
+    animation-name: moveInBottom;
+    animation-duration: 1.5s;
+
+    @include respond(phone) {
         top: 25%;
-
     }
-
-   
 }
 
 .backdrop {
