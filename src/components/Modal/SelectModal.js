@@ -1,16 +1,16 @@
 import React from 'react'
 import Aux from '../hoc/HigherOrder'
-import Backdrop from './Backdrop'
+import Backdrop from './SelectBackdrop'
 
 const SelectModal = (props) => {
 
     return(
         <Aux>
-            {/* <Backdrop
+            <Backdrop
                 show={props.isAreaSelected}
                 clicked={props.clicked}
                >
-               </Backdrop> */}
+               </Backdrop>
             <div className='Modal'
                 style={{
                     transform: props.isAreaSelected ? 'translateY(-20vh)' : 'translateY(-100vh)',
