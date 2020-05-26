@@ -314,7 +314,7 @@ class Hero extends Component {
 
                         <div className='services'>
 
-                           <SelectOptions/>
+                         {/*<SelectOptions/>*/}
                         </div>
                     </div>
                 </Container>
