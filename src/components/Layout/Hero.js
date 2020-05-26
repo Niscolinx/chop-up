@@ -123,7 +123,7 @@ class Hero extends Component {
         if (this.state.isAreaTouched) {
             handleAreaSelection = <SelectModal>
                 <SelectOptions/>
-                <SelectModal/>
+                </SelectModal>
         }
         else{
             handleAreaSelection = null
