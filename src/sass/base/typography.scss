@@ -182,13 +182,14 @@
     position: fixed;
     z-index: 500;
     background-color: white;
-    width: 70%;
+    width: 100%;
     border: 1px solid #ccc;
     border-radius: 10px 30px;
     box-shadow: 0 3px 30px lighten(black, 20%);
     padding: 2rem;
-    left: 15%;
-    top: 30%;
+    left: 10;
+    right: 10;
+    top: 40%;
     box-sizing: border-box;
     transition: all 5s ease-out;
 
