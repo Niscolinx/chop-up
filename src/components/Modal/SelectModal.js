@@ -13,7 +13,7 @@ const SelectModal = (props) => {
                </SelectBackdrop>
             <div className='Modals'
                 style={{
-                    transform: props.isAreaSelected ? 'translateY(-20vh)' : 'translateY(-100vh)',
+                    transform: props.isAreaSelected ? 'translateY(-10vh)' : 'translateY(-100vh)',
                     opacity: props.isAreaSelected ? '1' : '0',
                 }}>
                 {props.children}
