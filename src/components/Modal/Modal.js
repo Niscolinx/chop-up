@@ -13,8 +13,7 @@ class Modal extends Component{
     <Aux>
     <Backdrop 
     show = {this.props.orderSummary}
-   // clicked = {this.props.clicked}
-   ></Backdrop>
+    clicked = {this.props.clicked}></Backdrop>
     <div className = 'Modal'
     style = {{
         transform: this.props.orderSummary? 'translateY(-20vh)': 'translateY(-100vh)',
