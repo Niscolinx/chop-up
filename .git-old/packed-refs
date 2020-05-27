@@ -1,5 +1,0 @@
-# pack-refs with: peeled fully-peeled sorted 
-a70a7f76b770c084a9d913a07fdeeb82cc7b947c refs/heads/dev
-73fd88fdece5cd1a099dc3acca09185d81c17664 refs/heads/master
-9a9cea79d25c8f33b445a337e187843f9438f769 refs/remotes/origin/dependabot/npm_and_yarn/acorn-5.7.4
-e0ff94b9b0ce8e630ba38e94a282ef3fe7b9df27 refs/remotes/origin/master
