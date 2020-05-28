@@ -285,18 +285,18 @@ const Cart = (props) => {
                     </div>
                 </div>
             </div>
-            <div className="footer_overlay">
-                <footer className="">
-                    <div className="" style={{ backgroundImage: 'url(images/footer.jpg)' }} />
+            <div className="footer1_overlay">
+                <footer className="footer1">
+                    <div className="footer1_background" style={{ backgroundImage: 'url(images/footer1.jpg)' }} />
                     <div className="container">
                         <div className="row">
                             <div className="col">
-                                <div className="footer_content d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
-                                    <div className="footer_logo"><a href="#">Sublime.</a></div>
+                                <div className="footer1_content d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
+                                    <div className="footer1_logo"><a href="#">Sublime.</a></div>
                                     <div className="copyright ml-auto mr-auto">
                                         Copyright © All rights reserved | This template is made with <i className="fa fa-heart-o" aria-hidden="true" /> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
                                     </div>
-                                    <div className="footer_social ml-lg-auto">
+                                    <div className="footer1_social ml-lg-auto">
                                         <ul>
                                             <li><a href="#"><i className="fa fa-pinterest" aria-hidden="true" /></a></li>
                                             <li><a href="#"><i className="fa fa-instagram" aria-hidden="true" /></a></li>

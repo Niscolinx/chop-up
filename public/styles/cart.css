@@ -11,7 +11,7 @@
 4. Menu
 5. Home
 6. Cart Info
-7. Footer
+7. Footer1
 
 
 ******************************/
@@ -1284,17 +1284,17 @@ label
 }
 
 /*********************************
-7. Footer
+7. Footer1
 *********************************/
 
-.footer_overlay
+.footer1_overlay
 {
 	width: 100%;
 	height: 129px;
 	background: transparent;
 	z-index: 1;
 }
-.footer
+.footer1
 {
 	position: fixed;
 	left: 0;
@@ -1302,7 +1302,7 @@ label
 	width: 100%;
 	z-index: 1;
 }
-.footer_background
+.footer1_background
 {
 	position: absolute;
 	top: 0;
@@ -1313,16 +1313,16 @@ label
 	background-size: cover;
 	background-position: center center;
 }
-.footer_content
+.footer1_content
 {
 	width: 100%;
 	height: 129px;
 }
-.footer_logo
+.footer1_logo
 {
 	width: 30%;
 }
-.footer_logo a
+.footer1_logo a
 {
 	font-size: 30px;
 	line-height: 0.75;
@@ -1337,20 +1337,20 @@ label
 	font-weight: 400;
 	color: #1b1b1b;
 }
-.footer_social
+.footer1_social
 {
 	width: 30%;
 	text-align: right;
 }
-.footer_social ul li
+.footer1_social ul li
 {
 	display: inline-block;
 }
-.footer_social ul li:not(:last-child)
+.footer1_social ul li:not(:last-child)
 {
 	margin-right: 26px;
 }
-.footer_social ul li a i
+.footer1_social ul li a i
 {
 	font-size: 17px;
 	color: #1b1b1b;
@@ -1360,7 +1360,7 @@ label
 	-o-transition: all 200ms ease;
 	transition: all 200ms ease;
 }
-.footer_social ul li a i:hover
+.footer1_social ul li a i:hover
 {
 	color: #FFFFFF;
 }
