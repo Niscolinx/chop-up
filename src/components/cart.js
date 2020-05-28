@@ -286,8 +286,8 @@ const Cart = (props) => {
                 </div>
             </div>
             <div className="footer_overlay">
-                <footer className="footer">
-                    <div className="footer_background" style={{ backgroundImage: 'url(images/footer.jpg)' }} />
+                <footer className="">
+                    <div className="" style={{ backgroundImage: 'url(images/footer.jpg)' }} />
                     <div className="container">
                         <div className="row">
                             <div className="col">
