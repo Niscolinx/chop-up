@@ -9,7 +9,7 @@ const Cart = (props) => {
 
 
 
-        <div>
+        <Aux>
             <div classname="super_container">
                 <header classname="header">
                     <div classname="header_container">
@@ -189,129 +189,129 @@ const Cart = (props) => {
                         <div classname="row cart_items_row">
                             <div classname="col">
                                 <div classname="cart_item d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-start">
-                                <div classname="cart_item_image">
-                                    <div><img src="images/cart_1.jpg" alt /></div>
+                                    <div classname="cart_item_image">
+                                        <div><img src="images/cart_1.jpg" alt /></div>
+                                    </div>
+                                    <div classname="cart_item_name_container">
+                                        <div classname="cart_item_name"><a href="#">Smart Phone Deluxe Edition</a></div>
+                                        <div classname="cart_item_edit"><a href="#">Edit Product</a></div>
+                                    </div>
                                 </div>
-                                <div classname="cart_item_name_container">
-                                    <div classname="cart_item_name"><a href="#">Smart Phone Deluxe Edition</a></div>
-                                    <div classname="cart_item_edit"><a href="#">Edit Product</a></div>
-                                </div>
-                            </div>
-                            <div classname="cart_item_price">$790.90</div>
-                            <div classname="cart_item_quantity">
-                                <div classname="product_quantity_container">
-                                    <div classname="product_quantity clearfix">
-                                        <span>Qty</span>
-                                        <input id="quantity_input" type="text" pattern="[0-9]*" defaultValue={1} />
-                                        <div classname="quantity_buttons">
-                                            <div id="quantity_inc_button" classname="quantity_inc quantity_control"><i classname="fa fa-chevron-up" aria-hidden="true" /></div>
-                                            <div id="quantity_dec_button" classname="quantity_dec quantity_control"><i classname="fa fa-chevron-down" aria-hidden="true" /></div>
+                                <div classname="cart_item_price">$790.90</div>
+                                <div classname="cart_item_quantity">
+                                    <div classname="product_quantity_container">
+                                        <div classname="product_quantity clearfix">
+                                            <span>Qty</span>
+                                            <input id="quantity_input" type="text" pattern="[0-9]*" defaultValue={1} />
+                                            <div classname="quantity_buttons">
+                                                <div id="quantity_inc_button" classname="quantity_inc quantity_control"><i classname="fa fa-chevron-up" aria-hidden="true" /></div>
+                                                <div id="quantity_dec_button" classname="quantity_dec quantity_control"><i classname="fa fa-chevron-down" aria-hidden="true" /></div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div classname="cart_item_total">$790.90</div>
-                        </div>
-                    </div>
-                </div>
-                <div classname="row row_cart_buttons">
-                    <div classname="col">
-                        <div classname="cart_buttons d-flex flex-lg-row flex-column align-items-start justify-content-start">
-                            <div classname="button continue_shopping_button"><a href="#">Continue shopping</a></div>
-                            <div classname="cart_buttons_right ml-lg-auto">
-                                <div classname="button clear_cart_button"><a href="#">Clear cart</a></div>
-                                <div classname="button update_cart_button"><a href="#">Update cart</a></div>
+                                <div classname="cart_item_total">$790.90</div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div classname="row row_extra">
-                    <div classname="col-lg-4">
-                        <div classname="delivery">
-                            <div classname="section_title">Shipping method</div>
-                            <div classname="section_subtitle">Select the one you want</div>
-                            <div classname="delivery_options">
-                                <label classname="delivery_option clearfix">Next day delivery
+                    <div classname="row row_cart_buttons">
+                        <div classname="col">
+                            <div classname="cart_buttons d-flex flex-lg-row flex-column align-items-start justify-content-start">
+                                <div classname="button continue_shopping_button"><a href="#">Continue shopping</a></div>
+                                <div classname="cart_buttons_right ml-lg-auto">
+                                    <div classname="button clear_cart_button"><a href="#">Clear cart</a></div>
+                                    <div classname="button update_cart_button"><a href="#">Update cart</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div classname="row row_extra">
+                        <div classname="col-lg-4">
+                            <div classname="delivery">
+                                <div classname="section_title">Shipping method</div>
+                                <div classname="section_subtitle">Select the one you want</div>
+                                <div classname="delivery_options">
+                                    <label classname="delivery_option clearfix">Next day delivery
                 <input type="radio" name="radio" />
-                                    <span classname="checkmark" />
-                                    <span classname="delivery_price">$4.99</span>
-                                </label>
-                                <label classname="delivery_option clearfix">Standard delivery
+                                        <span classname="checkmark" />
+                                        <span classname="delivery_price">$4.99</span>
+                                    </label>
+                                    <label classname="delivery_option clearfix">Standard delivery
                 <input type="radio" name="radio" />
-                                    <span classname="checkmark" />
-                                    <span classname="delivery_price">$1.99</span>
-                                </label>
-                                <label classname="delivery_option clearfix">Personal pickup
+                                        <span classname="checkmark" />
+                                        <span classname="delivery_price">$1.99</span>
+                                    </label>
+                                    <label classname="delivery_option clearfix">Personal pickup
                 <input type="radio" defaultChecked="checked" name="radio" />
-                                    <span classname="checkmark" />
-                                    <span classname="delivery_price">Free</span>
-                                </label>
+                                        <span classname="checkmark" />
+                                        <span classname="delivery_price">Free</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div classname="coupon">
+                                <div classname="section_title">Coupon code</div>
+                                <div classname="section_subtitle">Enter your coupon code</div>
+                                <div classname="coupon_form_container">
+                                    <form action="#" id="coupon_form" classname="coupon_form">
+                                        <input type="text" classname="coupon_input" required="required" />
+                                        <button classname="button coupon_button"><span>Apply</span></button>
+                                    </form>
+                                </div>
                             </div>
                         </div>
-                        <div classname="coupon">
-                            <div classname="section_title">Coupon code</div>
-                            <div classname="section_subtitle">Enter your coupon code</div>
-                            <div classname="coupon_form_container">
-                                <form action="#" id="coupon_form" classname="coupon_form">
-                                    <input type="text" classname="coupon_input" required="required" />
-                                    <button classname="button coupon_button"><span>Apply</span></button>
-                                </form>
+                        <div classname="col-lg-6 offset-lg-2">
+                            <div classname="cart_total">
+                                <div classname="section_title">Cart total</div>
+                                <div classname="section_subtitle">Final info</div>
+                                <div classname="cart_total_container">
+                                    <ul>
+                                        <li classname="d-flex flex-row align-items-center justify-content-start">
+                                            <div classname="cart_total_title">Subtotal</div>
+                                            <div classname="cart_total_value ml-auto">$790.90</div>
+                                        </li>
+                                        <li classname="d-flex flex-row align-items-center justify-content-start">
+                                            <div classname="cart_total_title">Shipping</div>
+                                            <div classname="cart_total_value ml-auto">Free</div>
+                                        </li>
+                                        <li classname="d-flex flex-row align-items-center justify-content-start">
+                                            <div classname="cart_total_title">Total</div>
+                                            <div classname="cart_total_value ml-auto">$790.90</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div classname="button checkout_button"><a href="#">Proceed to checkout</a></div>
                             </div>
-                        </div>
-                    </div>
-                    <div classname="col-lg-6 offset-lg-2">
-                        <div classname="cart_total">
-                            <div classname="section_title">Cart total</div>
-                            <div classname="section_subtitle">Final info</div>
-                            <div classname="cart_total_container">
-                                <ul>
-                                    <li classname="d-flex flex-row align-items-center justify-content-start">
-                                        <div classname="cart_total_title">Subtotal</div>
-                                        <div classname="cart_total_value ml-auto">$790.90</div>
-                                    </li>
-                                    <li classname="d-flex flex-row align-items-center justify-content-start">
-                                        <div classname="cart_total_title">Shipping</div>
-                                        <div classname="cart_total_value ml-auto">Free</div>
-                                    </li>
-                                    <li classname="d-flex flex-row align-items-center justify-content-start">
-                                        <div classname="cart_total_title">Total</div>
-                                        <div classname="cart_total_value ml-auto">$790.90</div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div classname="button checkout_button"><a href="#">Proceed to checkout</a></div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div classname="footer_overlay">
-            <footer classname="footer">
-                <div classname="footer_background" style={{ backgroundImage: 'url(images/footer.jpg)' }} />
-                <div classname="container">
-                    <div classname="row">
-                        <div classname="col">
-                            <div classname="footer_content d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
-                                <div classname="footer_logo"><a href="#">Sublime.</a></div>
-                                <div classname="copyright ml-auto mr-auto">
-                                    Copyright © All rights reserved | This template is made with <i classname="fa fa-heart-o" aria-hidden="true" /> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                                </div>
-                                <div classname="footer_social ml-lg-auto">
-                                    <ul>
-                                        <li><a href="#"><i classname="fa fa-pinterest" aria-hidden="true" /></a></li>
-                                        <li><a href="#"><i classname="fa fa-instagram" aria-hidden="true" /></a></li>
-                                        <li><a href="#"><i classname="fa fa-facebook" aria-hidden="true" /></a></li>
-                                        <li><a href="#"><i classname="fa fa-twitter" aria-hidden="true" /></a></li>
-                                    </ul>
+            <div classname="footer_overlay">
+                <footer classname="footer">
+                    <div classname="footer_background" style={{ backgroundImage: 'url(images/footer.jpg)' }} />
+                    <div classname="container">
+                        <div classname="row">
+                            <div classname="col">
+                                <div classname="footer_content d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
+                                    <div classname="footer_logo"><a href="#">Sublime.</a></div>
+                                    <div classname="copyright ml-auto mr-auto">
+                                        Copyright © All rights reserved | This template is made with <i classname="fa fa-heart-o" aria-hidden="true" /> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                                    </div>
+                                    <div classname="footer_social ml-lg-auto">
+                                        <ul>
+                                            <li><a href="#"><i classname="fa fa-pinterest" aria-hidden="true" /></a></li>
+                                            <li><a href="#"><i classname="fa fa-instagram" aria-hidden="true" /></a></li>
+                                            <li><a href="#"><i classname="fa fa-facebook" aria-hidden="true" /></a></li>
+                                            <li><a href="#"><i classname="fa fa-twitter" aria-hidden="true" /></a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </footer>
-        </div >
+                </footer>
+            </div>
 
-    
+        </Aux>
     )
 }
 
