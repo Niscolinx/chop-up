@@ -26,6 +26,7 @@ class Home extends Component {
         return (
             <div>
 
+                    <Cart/>
                 <div className='section-Hero'>
 
                     <Hero
@@ -49,7 +50,6 @@ class Home extends Component {
                 <div className='section-cards'>
 
                     <Cards />
-                    <Cart/>
                 </div>
 
             </div >
