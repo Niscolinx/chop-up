@@ -10,17 +10,17 @@ const Cart = (props) => {
 
 
         <Aux>
-            <div classname="super_container">
-                <header classname="header">
-                    <div classname="header_container">
-                        <div classname="container">
-                            <div classname="row">
-                                <div classname="col">
-                                    <div classname="header_content d-flex flex-row align-items-center justify-content-start">
-                                        <div classname="logo"><a href="#">Sublime.</a></div>
-                                        <nav classname="main_nav">
+            <div className="super_container">
+                <header className="header">
+                    <div className="header_container">
+                        <div className="container">
+                            <div className="row">
+                                <div className="col">
+                                    <div className="header_content d-flex flex-row align-items-center justify-content-start">
+                                        <div className="logo"><a href="#">Sublime.</a></div>
+                                        <nav className="main_nav">
                                             <ul>
-                                                <li classname="hassubs active">
+                                                <li className="hassubs active">
                                                     <a href="index.html">Home</a>
                                                     <ul>
                                                         <li><a href="categories.html">Categories</a></li>
@@ -30,7 +30,7 @@ const Cart = (props) => {
                                                         <li><a href="contact.html">Contact</a></li>
                                                     </ul>
                                                 </li>
-                                                <li classname="hassubs">
+                                                <li className="hassubs">
                                                     <a href="categories.html">Categories</a>
                                                     <ul>
                                                         <li><a href="categories.html">Category</a></li>
@@ -45,8 +45,8 @@ const Cart = (props) => {
                                                 <li><a href="contact.html">Contact</a></li>
                                             </ul>
                                         </nav>
-                                        <div classname="header_extra ml-auto">
-                                            <div classname="shopping_cart">
+                                        <div className="header_extra ml-auto">
+                                            <div className="shopping_cart">
                                                 <a href="cart.html">
                                                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 489 489" style={{ enableBackground: 'new 0 0 489 489' }} xmlSpace="preserve">
                                                         <g>
@@ -60,8 +60,8 @@ const Cart = (props) => {
                                                     <div>Cart <span>(0)</span></div>
                                                 </a>
                                             </div>
-                                            <div classname="search">
-                                                <div classname="search_icon">
+                                            <div className="search">
+                                                <div className="search_icon">
                                                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 475.084 475.084" style={{ enableBackground: 'new 0 0 475.084 475.084' }} xmlSpace="preserve">
                                                         <g>
                                                             <path d="M464.524,412.846l-97.929-97.925c23.6-34.068,35.406-72.047,35.406-113.917c0-27.218-5.284-53.249-15.852-78.087
@@ -79,88 +79,88 @@ const Cart = (props) => {
                                                     </svg>
                                                 </div>
                                             </div>
-                                            <div classname="hamburger"><i classname="fa fa-bars" aria-hidden="true" /></div>
+                                            <div className="hamburger"><i className="fa fa-bars" aria-hidden="true" /></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div classname="search_panel trans_300">
-                        <div classname="container">
-                            <div classname="row">
-                                <div classname="col">
-                                    <div classname="search_panel_content d-flex flex-row align-items-center justify-content-end">
+                    <div className="search_panel trans_300">
+                        <div className="container">
+                            <div className="row">
+                                <div className="col">
+                                    <div className="search_panel_content d-flex flex-row align-items-center justify-content-end">
                                         <form action="#">
-                                            <input type="text" classname="search_input" placeholder="Search" required="required" />
+                                            <input type="text" className="search_input" placeholder="Search" required="required" />
                                         </form>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div classname="header_social">
+                    <div className="header_social">
                         <ul>
-                            <li><a href="#"><i classname="fa fa-pinterest" aria-hidden="true" /></a></li>
-                            <li><a href="#"><i classname="fa fa-instagram" aria-hidden="true" /></a></li>
-                            <li><a href="#"><i classname="fa fa-facebook" aria-hidden="true" /></a></li>
-                            <li><a href="#"><i classname="fa fa-twitter" aria-hidden="true" /></a></li>
+                            <li><a href="#"><i className="fa fa-pinterest" aria-hidden="true" /></a></li>
+                            <li><a href="#"><i className="fa fa-instagram" aria-hidden="true" /></a></li>
+                            <li><a href="#"><i className="fa fa-facebook" aria-hidden="true" /></a></li>
+                            <li><a href="#"><i className="fa fa-twitter" aria-hidden="true" /></a></li>
                         </ul>
                     </div>
                 </header>
-                <div classname="menu menu_mm trans_300">
-                    <div classname="menu_container menu_mm">
-                        <div classname="page_menu_content">
-                            <div classname="page_menu_search menu_mm">
+                <div className="menu menu_mm trans_300">
+                    <div className="menu_container menu_mm">
+                        <div className="page_menu_content">
+                            <div className="page_menu_search menu_mm">
                                 <form action="#">
-                                    <input type="search" required="required" classname="page_menu_search_input menu_mm" placeholder="Search for products..." />
+                                    <input type="search" required="required" className="page_menu_search_input menu_mm" placeholder="Search for products..." />
                                 </form>
                             </div>
-                            <ul classname="page_menu_nav menu_mm">
-                                <li classname="page_menu_item has-children menu_mm">
-                                    <a href="index.html">Home<i classname="fa fa-angle-down" /></a>
-                                    <ul classname="page_menu_selection menu_mm">
-                                        <li classname="page_menu_item menu_mm"><a href="categories.html">Categories<i classname="fa fa-angle-down" /></a></li>
-                                        <li classname="page_menu_item menu_mm"><a href="product.html">Product<i classname="fa fa-angle-down" /></a></li>
-                                        <li classname="page_menu_item menu_mm"><a href="cart.html">Cart<i classname="fa fa-angle-down" /></a></li>
-                                        <li classname="page_menu_item menu_mm"><a href="checkout.html">Checkout<i classname="fa fa-angle-down" /></a></li>
-                                        <li classname="page_menu_item menu_mm"><a href="contact.html">Contact<i classname="fa fa-angle-down" /></a></li>
+                            <ul className="page_menu_nav menu_mm">
+                                <li className="page_menu_item has-children menu_mm">
+                                    <a href="index.html">Home<i className="fa fa-angle-down" /></a>
+                                    <ul className="page_menu_selection menu_mm">
+                                        <li className="page_menu_item menu_mm"><a href="categories.html">Categories<i className="fa fa-angle-down" /></a></li>
+                                        <li className="page_menu_item menu_mm"><a href="product.html">Product<i className="fa fa-angle-down" /></a></li>
+                                        <li className="page_menu_item menu_mm"><a href="cart.html">Cart<i className="fa fa-angle-down" /></a></li>
+                                        <li className="page_menu_item menu_mm"><a href="checkout.html">Checkout<i className="fa fa-angle-down" /></a></li>
+                                        <li className="page_menu_item menu_mm"><a href="contact.html">Contact<i className="fa fa-angle-down" /></a></li>
                                     </ul>
                                 </li>
-                                <li classname="page_menu_item has-children menu_mm">
-                                    <a href="categories.html">Categories<i classname="fa fa-angle-down" /></a>
-                                    <ul classname="page_menu_selection menu_mm">
-                                        <li classname="page_menu_item menu_mm"><a href="categories.html">Category<i classname="fa fa-angle-down" /></a></li>
-                                        <li classname="page_menu_item menu_mm"><a href="categories.html">Category<i classname="fa fa-angle-down" /></a></li>
-                                        <li classname="page_menu_item menu_mm"><a href="categories.html">Category<i classname="fa fa-angle-down" /></a></li>
-                                        <li classname="page_menu_item menu_mm"><a href="categories.html">Category<i classname="fa fa-angle-down" /></a></li>
+                                <li className="page_menu_item has-children menu_mm">
+                                    <a href="categories.html">Categories<i className="fa fa-angle-down" /></a>
+                                    <ul className="page_menu_selection menu_mm">
+                                        <li className="page_menu_item menu_mm"><a href="categories.html">Category<i className="fa fa-angle-down" /></a></li>
+                                        <li className="page_menu_item menu_mm"><a href="categories.html">Category<i className="fa fa-angle-down" /></a></li>
+                                        <li className="page_menu_item menu_mm"><a href="categories.html">Category<i className="fa fa-angle-down" /></a></li>
+                                        <li className="page_menu_item menu_mm"><a href="categories.html">Category<i className="fa fa-angle-down" /></a></li>
                                     </ul>
                                 </li>
-                                <li classname="page_menu_item menu_mm"><a href="index.html">Accessories<i classname="fa fa-angle-down" /></a></li>
-                                <li classname="page_menu_item menu_mm"><a href="#">Offers<i classname="fa fa-angle-down" /></a></li>
-                                <li classname="page_menu_item menu_mm"><a href="contact.html">Contact<i classname="fa fa-angle-down" /></a></li>
+                                <li className="page_menu_item menu_mm"><a href="index.html">Accessories<i className="fa fa-angle-down" /></a></li>
+                                <li className="page_menu_item menu_mm"><a href="#">Offers<i className="fa fa-angle-down" /></a></li>
+                                <li className="page_menu_item menu_mm"><a href="contact.html">Contact<i className="fa fa-angle-down" /></a></li>
                             </ul>
                         </div>
                     </div>
-                    <div classname="menu_close"><i classname="fa fa-times" aria-hidden="true" /></div>
-                    <div classname="menu_social">
+                    <div className="menu_close"><i className="fa fa-times" aria-hidden="true" /></div>
+                    <div className="menu_social">
                         <ul>
-                            <li><a href="#"><i classname="fa fa-pinterest" aria-hidden="true" /></a></li>
-                            <li><a href="#"><i classname="fa fa-instagram" aria-hidden="true" /></a></li>
-                            <li><a href="#"><i classname="fa fa-facebook" aria-hidden="true" /></a></li>
-                            <li><a href="#"><i classname="fa fa-twitter" aria-hidden="true" /></a></li>
+                            <li><a href="#"><i className="fa fa-pinterest" aria-hidden="true" /></a></li>
+                            <li><a href="#"><i className="fa fa-instagram" aria-hidden="true" /></a></li>
+                            <li><a href="#"><i className="fa fa-facebook" aria-hidden="true" /></a></li>
+                            <li><a href="#"><i className="fa fa-twitter" aria-hidden="true" /></a></li>
                         </ul>
                     </div>
                 </div>
-                <div classname="home">
-                    <div classname="home_container">
-                        <div classname="home_background" style={{ backgroundImage: 'url(images/cart.jpg)' }} />
-                        <div classname="home_content_container">
-                            <div classname="container">
-                                <div classname="row">
-                                    <div classname="col">
-                                        <div classname="home_content">
-                                            <div classname="breadcrumbs">
+                <div className="home">
+                    <div className="home_container">
+                        <div className="home_background" style={{ backgroundImage: 'url(images/cart.jpg)' }} />
+                        <div className="home_content_container">
+                            <div className="container">
+                                <div className="row">
+                                    <div className="col">
+                                        <div className="home_content">
+                                            <div className="breadcrumbs">
                                                 <ul>
                                                     <li><a href="index.html">Home</a></li>
                                                     <li><a href="categories.html">Categories</a></li>
@@ -174,134 +174,134 @@ const Cart = (props) => {
                         </div>
                     </div>
                 </div>
-                <div classname="cart_info">
-                    <div classname="container">
-                        <div classname="row">
-                            <div classname="col">
-                                <div classname="cart_info_columns clearfix">
-                                    <div classname="cart_info_col cart_info_col_product">Product</div>
-                                    <div classname="cart_info_col cart_info_col_price">Price</div>
-                                    <div classname="cart_info_col cart_info_col_quantity">Quantity</div>
-                                    <div classname="cart_info_col cart_info_col_total">Total</div>
+                <div className="cart_info">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col">
+                                <div className="cart_info_columns clearfix">
+                                    <div className="cart_info_col cart_info_col_product">Product</div>
+                                    <div className="cart_info_col cart_info_col_price">Price</div>
+                                    <div className="cart_info_col cart_info_col_quantity">Quantity</div>
+                                    <div className="cart_info_col cart_info_col_total">Total</div>
                                 </div>
                             </div>
                         </div>
-                        <div classname="row cart_items_row">
-                            <div classname="col">
-                                <div classname="cart_item d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-start">
-                                    <div classname="cart_item_image">
+                        <div className="row cart_items_row">
+                            <div className="col">
+                                <div className="cart_item d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-start">
+                                    <div className="cart_item_image">
                                         <div><img src="images/cart_1.jpg" alt /></div>
                                     </div>
-                                    <div classname="cart_item_name_container">
-                                        <div classname="cart_item_name"><a href="#">Smart Phone Deluxe Edition</a></div>
-                                        <div classname="cart_item_edit"><a href="#">Edit Product</a></div>
+                                    <div className="cart_item_name_container">
+                                        <div className="cart_item_name"><a href="#">Smart Phone Deluxe Edition</a></div>
+                                        <div className="cart_item_edit"><a href="#">Edit Product</a></div>
                                     </div>
                                 </div>
-                                <div classname="cart_item_price">$790.90</div>
-                                <div classname="cart_item_quantity">
-                                    <div classname="product_quantity_container">
-                                        <div classname="product_quantity clearfix">
+                                <div className="cart_item_price">$790.90</div>
+                                <div className="cart_item_quantity">
+                                    <div className="product_quantity_container">
+                                        <div className="product_quantity clearfix">
                                             <span>Qty</span>
                                             <input id="quantity_input" type="text" pattern="[0-9]*" defaultValue={1} />
-                                            <div classname="quantity_buttons">
-                                                <div id="quantity_inc_button" classname="quantity_inc quantity_control"><i classname="fa fa-chevron-up" aria-hidden="true" /></div>
-                                                <div id="quantity_dec_button" classname="quantity_dec quantity_control"><i classname="fa fa-chevron-down" aria-hidden="true" /></div>
+                                            <div className="quantity_buttons">
+                                                <div id="quantity_inc_button" className="quantity_inc quantity_control"><i className="fa fa-chevron-up" aria-hidden="true" /></div>
+                                                <div id="quantity_dec_button" className="quantity_dec quantity_control"><i className="fa fa-chevron-down" aria-hidden="true" /></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div classname="cart_item_total">$790.90</div>
+                                <div className="cart_item_total">$790.90</div>
                             </div>
                         </div>
                     </div>
-                    <div classname="row row_cart_buttons">
-                        <div classname="col">
-                            <div classname="cart_buttons d-flex flex-lg-row flex-column align-items-start justify-content-start">
-                                <div classname="button continue_shopping_button"><a href="#">Continue shopping</a></div>
-                                <div classname="cart_buttons_right ml-lg-auto">
-                                    <div classname="button clear_cart_button"><a href="#">Clear cart</a></div>
-                                    <div classname="button update_cart_button"><a href="#">Update cart</a></div>
+                    <div className="row row_cart_buttons">
+                        <div className="col">
+                            <div className="cart_buttons d-flex flex-lg-row flex-column align-items-start justify-content-start">
+                                <div className="button continue_shopping_button"><a href="#">Continue shopping</a></div>
+                                <div className="cart_buttons_right ml-lg-auto">
+                                    <div className="button clear_cart_button"><a href="#">Clear cart</a></div>
+                                    <div className="button update_cart_button"><a href="#">Update cart</a></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div classname="row row_extra">
-                        <div classname="col-lg-4">
-                            <div classname="delivery">
-                                <div classname="section_title">Shipping method</div>
-                                <div classname="section_subtitle">Select the one you want</div>
-                                <div classname="delivery_options">
-                                    <label classname="delivery_option clearfix">Next day delivery
+                    <div className="row row_extra">
+                        <div className="col-lg-4">
+                            <div className="delivery">
+                                <div className="section_title">Shipping method</div>
+                                <div className="section_subtitle">Select the one you want</div>
+                                <div className="delivery_options">
+                                    <label className="delivery_option clearfix">Next day delivery
                 <input type="radio" name="radio" />
-                                        <span classname="checkmark" />
-                                        <span classname="delivery_price">$4.99</span>
+                                        <span className="checkmark" />
+                                        <span className="delivery_price">$4.99</span>
                                     </label>
-                                    <label classname="delivery_option clearfix">Standard delivery
+                                    <label className="delivery_option clearfix">Standard delivery
                 <input type="radio" name="radio" />
-                                        <span classname="checkmark" />
-                                        <span classname="delivery_price">$1.99</span>
+                                        <span className="checkmark" />
+                                        <span className="delivery_price">$1.99</span>
                                     </label>
-                                    <label classname="delivery_option clearfix">Personal pickup
+                                    <label className="delivery_option clearfix">Personal pickup
                 <input type="radio" defaultChecked="checked" name="radio" />
-                                        <span classname="checkmark" />
-                                        <span classname="delivery_price">Free</span>
+                                        <span className="checkmark" />
+                                        <span className="delivery_price">Free</span>
                                     </label>
                                 </div>
                             </div>
-                            <div classname="coupon">
-                                <div classname="section_title">Coupon code</div>
-                                <div classname="section_subtitle">Enter your coupon code</div>
-                                <div classname="coupon_form_container">
-                                    <form action="#" id="coupon_form" classname="coupon_form">
-                                        <input type="text" classname="coupon_input" required="required" />
-                                        <button classname="button coupon_button"><span>Apply</span></button>
+                            <div className="coupon">
+                                <div className="section_title">Coupon code</div>
+                                <div className="section_subtitle">Enter your coupon code</div>
+                                <div className="coupon_form_container">
+                                    <form action="#" id="coupon_form" className="coupon_form">
+                                        <input type="text" className="coupon_input" required="required" />
+                                        <button className="button coupon_button"><span>Apply</span></button>
                                     </form>
                                 </div>
                             </div>
                         </div>
-                        <div classname="col-lg-6 offset-lg-2">
-                            <div classname="cart_total">
-                                <div classname="section_title">Cart total</div>
-                                <div classname="section_subtitle">Final info</div>
-                                <div classname="cart_total_container">
+                        <div className="col-lg-6 offset-lg-2">
+                            <div className="cart_total">
+                                <div className="section_title">Cart total</div>
+                                <div className="section_subtitle">Final info</div>
+                                <div className="cart_total_container">
                                     <ul>
-                                        <li classname="d-flex flex-row align-items-center justify-content-start">
-                                            <div classname="cart_total_title">Subtotal</div>
-                                            <div classname="cart_total_value ml-auto">$790.90</div>
+                                        <li className="d-flex flex-row align-items-center justify-content-start">
+                                            <div className="cart_total_title">Subtotal</div>
+                                            <div className="cart_total_value ml-auto">$790.90</div>
                                         </li>
-                                        <li classname="d-flex flex-row align-items-center justify-content-start">
-                                            <div classname="cart_total_title">Shipping</div>
-                                            <div classname="cart_total_value ml-auto">Free</div>
+                                        <li className="d-flex flex-row align-items-center justify-content-start">
+                                            <div className="cart_total_title">Shipping</div>
+                                            <div className="cart_total_value ml-auto">Free</div>
                                         </li>
-                                        <li classname="d-flex flex-row align-items-center justify-content-start">
-                                            <div classname="cart_total_title">Total</div>
-                                            <div classname="cart_total_value ml-auto">$790.90</div>
+                                        <li className="d-flex flex-row align-items-center justify-content-start">
+                                            <div className="cart_total_title">Total</div>
+                                            <div className="cart_total_value ml-auto">$790.90</div>
                                         </li>
                                     </ul>
                                 </div>
-                                <div classname="button checkout_button"><a href="#">Proceed to checkout</a></div>
+                                <div className="button checkout_button"><a href="#">Proceed to checkout</a></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div classname="footer_overlay">
-                <footer classname="footer">
-                    <div classname="footer_background" style={{ backgroundImage: 'url(images/footer.jpg)' }} />
-                    <div classname="container">
-                        <div classname="row">
-                            <div classname="col">
-                                <div classname="footer_content d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
-                                    <div classname="footer_logo"><a href="#">Sublime.</a></div>
-                                    <div classname="copyright ml-auto mr-auto">
-                                        Copyright © All rights reserved | This template is made with <i classname="fa fa-heart-o" aria-hidden="true" /> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+            <div className="footer_overlay">
+                <footer className="footer">
+                    <div className="footer_background" style={{ backgroundImage: 'url(images/footer.jpg)' }} />
+                    <div className="container">
+                        <div className="row">
+                            <div className="col">
+                                <div className="footer_content d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
+                                    <div className="footer_logo"><a href="#">Sublime.</a></div>
+                                    <div className="copyright ml-auto mr-auto">
+                                        Copyright © All rights reserved | This template is made with <i className="fa fa-heart-o" aria-hidden="true" /> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
                                     </div>
-                                    <div classname="footer_social ml-lg-auto">
+                                    <div className="footer_social ml-lg-auto">
                                         <ul>
-                                            <li><a href="#"><i classname="fa fa-pinterest" aria-hidden="true" /></a></li>
-                                            <li><a href="#"><i classname="fa fa-instagram" aria-hidden="true" /></a></li>
-                                            <li><a href="#"><i classname="fa fa-facebook" aria-hidden="true" /></a></li>
-                                            <li><a href="#"><i classname="fa fa-twitter" aria-hidden="true" /></a></li>
+                                            <li><a href="#"><i className="fa fa-pinterest" aria-hidden="true" /></a></li>
+                                            <li><a href="#"><i className="fa fa-instagram" aria-hidden="true" /></a></li>
+                                            <li><a href="#"><i className="fa fa-facebook" aria-hidden="true" /></a></li>
+                                            <li><a href="#"><i className="fa fa-twitter" aria-hidden="true" /></a></li>
                                         </ul>
                                     </div>
                                 </div>
