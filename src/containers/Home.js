@@ -25,8 +25,6 @@ class Home extends Component {
 
         return (
             <div>
-
-                    <Cart/>
                 <div className='section-Hero'>
 
                     <Hero
