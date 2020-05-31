@@ -409,7 +409,7 @@
     top: 0;
     float: right;
     width: 4%;
-    //height: 5%;
+    height: 7%;
     display: flex;
     flex-flow: column;
     justify-content: space-around;
@@ -670,9 +670,11 @@
 
             &_item{
                 border: 1px solid $secondary-color;
+                box-shadow: 1rem 1.4rem 3rem black;
                 padding: 1rem;
                 margin: 1rem;
                 border-radius: 15%;
+                transition:  all .5s;
 
                 &:hover{
                     border: 2px solid $primary-color;
@@ -681,9 +683,6 @@
 
                 }
                 
-                &:not(.services-box_item:hover){
-                    background-color: red;
-                }
                 
             }
             &_title {
