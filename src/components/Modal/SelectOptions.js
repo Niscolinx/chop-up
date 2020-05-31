@@ -50,8 +50,8 @@ const SelectOptions = (props) => {
             </Row>
             <Row className='services-box'>
 
-                <Col className='services-box_item'>
-                    <h5 className='services-box_title' onClick={optionClicked()}>Restaurants</h5>
+                <Col className='services-box_item' onClick={optionClicked('hel')}>
+                    <h5 className='services-box_title'>Restaurants</h5>
                     <p className='services-box_description'>Food you love, from restaurants near you</p>
                 </Col>
                 <Col className='services-box_item'>
