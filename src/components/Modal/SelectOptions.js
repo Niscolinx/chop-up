@@ -5,7 +5,9 @@ import { Row, Col } from 'react-bootstrap'
 
 const SelectOptions = (props) => {
 
-    const options = 
+    const options = {
+        
+    }
 
     return (
 
