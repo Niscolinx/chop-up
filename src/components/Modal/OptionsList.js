@@ -41,7 +41,7 @@ export const OptionsMap = (props) => {
             return <Col className='services-box_item' onClick={OptionsMap}>
                 <h5 className='services-box_title'>{props.title}</h5>
                 <p className='services-box_description'>{props.description}</p>
-                <p className='services-box_description'>{props.count}</p>
+                <p className='services-box_description'>place</p>
             </Col>
         })
     })
