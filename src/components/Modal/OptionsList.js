@@ -36,8 +36,8 @@ const options = {
 const mapSelections = () => {
     const optionsMap = Object.keys(options).map(singleOption => {
         return [Array(options[singleOption])].map(place => {
-           let word = console.log('the options Map', singleOption, place)
-            return word;
+             console.log('the options Map', singleOption, place)
+            return place;
         })
     })
 
@@ -48,6 +48,6 @@ export const OptionsMap = (props) => {
     return <Col className='services-box_item' onClick={OptionsMap}>
         <h5 className='services-box_title'>{props.title}</h5>
         <p className='services-box_description'>{props.description}</p>
-        <p className='services-box_description'>place</p>
+        <p className='services-box_description'>{this.mapSelections}</p>
     </Col>
 }
