@@ -668,13 +668,15 @@
         }
         &-box {
 
+            padding: 0 4rem;
+
             &_item{
                 border: 1px solid $secondary-color;
                 box-shadow: 0 1.4rem 5rem rgb(58, 58, 54);
                 padding: 1rem;
-                margin: 1rem;
+                margin: 0 3rem;
                 border-radius: 15%;
-                transition:  all .5s;
+                transition:  all .2s;
 
                 &:hover{
                     border: 2px solid $primary-color;
