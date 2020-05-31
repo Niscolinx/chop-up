@@ -433,7 +433,7 @@
     }
     &_item2 {
         transform: rotate(-55deg);
-        margin-top: -0.8rem;
+        margin-top: -1rem;
         transform-origin: center;
     }
 }
@@ -678,7 +678,7 @@
                 transition: all 0.2s;
 
                 @include respond(phone) {
-                   margin: 1rem;
+                    margin: 1rem;
                 }
 
                 &:hover {
