@@ -34,7 +34,7 @@ const options = {
 export const OptionsMap = () => {
 
     const optionsMap = Object.keys(options).map(singleOption => {
-        return options[singleOption].map(place => {
+        return [...options[singleOption]].map(place => {
            let word = console.log('the options Map', singleOption, place)
             return  word
         })
