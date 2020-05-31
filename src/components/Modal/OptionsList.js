@@ -37,7 +37,7 @@ export const OptionsMap = (props) => {
 
     const optionsMap = Object.keys(options).map(singleOption => {
         return [Array(options[singleOption])].map(place => {
-            console.log('the options Map', singleOption, place)
+           // console.log('the options Map', singleOption, place)
             return <Col className='services-box_item' onClick={OptionsMap} key = {place}>
                 <h5 className='services-box_title'>{props.title}</h5>
                 <p className='services-box_description'>{props.description}</p>
