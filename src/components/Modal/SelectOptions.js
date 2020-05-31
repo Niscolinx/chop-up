@@ -40,8 +40,10 @@ const SelectOptions = (props) => {
         alert('clicked')
     }
 
-    const optionsMap = options.map(singleOption => {
-        return 
+    const optionsMap = Object.keys(options).map(singleOption => {
+        return options[singleOption].map(place => {
+            
+        })
     })
 
     return (
