@@ -40,6 +40,10 @@ const SelectOptions = (props) => {
         alert('clicked')
     }
 
+    const optionsMap = options.map(singleOption => {
+        return 
+    })
+
     return (
 
         <Aux>
