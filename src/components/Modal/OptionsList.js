@@ -1,4 +1,4 @@
-
+imp
 
 const options = {
     Restaurants: {
@@ -36,7 +36,11 @@ export const OptionsMap = () => {
     const optionsMap = Object.keys(options).map(singleOption => {
         return [...Array(options[singleOption])].map(place => {
            let word = console.log('the options Map', singleOption, place)
-            return  word
+            return <Col className='services-box_item' onClick={OptionsMap}>
+                <h5 className='services-box_title'>Restaurants</h5>
+                <p className='services-box_description'>Food you love, from restaurants near you</p>
+                <p className='services-box_description'></p>
+            </Col>
         })
     })
 
