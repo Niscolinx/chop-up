@@ -31,11 +31,12 @@ const options = {
     },
 }
 
-export const optionsMap = (props) => {
+export const OptionsMap = () => {
 
     const optionsMap = Object.keys(options).map(singleOption => {
         return options[singleOption].map(place => {
-            return props.name
+           let word = console.log('the options Map', singleOption, place)
+            return  word
         })
     })
 

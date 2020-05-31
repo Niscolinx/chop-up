@@ -1,6 +1,7 @@
 import React from 'react'
 import Aux from '../hoc/HigherOrder'
 import { Row, Col } from 'react-bootstrap'
+import { OptionsMap} from './OptionsList'
 
 
 const SelectOptions = (props) => {
@@ -15,7 +16,7 @@ const SelectOptions = (props) => {
             </Row>
             <Row className='services-box'>
 
-                <Col className='services-box_item' onClick={optionClicked}>
+                <Col className='services-box_item' onClick={OptionsMap}>
                     <h5 className='services-box_title'>Restaurants</h5>
                     <p className='services-box_description'>Food you love, from restaurants near you</p>
                 </Col>
