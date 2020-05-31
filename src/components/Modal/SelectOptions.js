@@ -6,7 +6,13 @@ import { Row, Col } from 'react-bootstrap'
 const SelectOptions = (props) => {
 
     const options = {
-        restaurants: {}
+        restaurants: {
+            Absu: ['AbsuRes1', 'AbsuRes2'],
+            Uturu: ['UturuRes1', 'UturuRes2'],
+            Okigwe: ['OkigweRes1', 'OkigweRes2'],
+            Isuochi: [],
+            Isukwuato: []
+        }
     }
 
     return (
