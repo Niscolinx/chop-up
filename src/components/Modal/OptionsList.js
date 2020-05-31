@@ -35,7 +35,7 @@ export const optionsMap = (props) => {
 
     const optionsMap = Object.keys(options).map(singleOption => {
         return options[singleOption].map(place => {
-    
+            return props.name
         })
     })
 
