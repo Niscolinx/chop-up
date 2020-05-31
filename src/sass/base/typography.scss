@@ -677,6 +677,10 @@
                 border-radius: 15%;
                 transition: all 0.2s;
 
+                @include respond(phone) {
+                   margin: 1rem;
+                }
+
                 &:hover {
                     border: 2px solid $primary-color;
                     box-shadow: 1rem 1.6rem 5rem rgb(46, 46, 45);
@@ -694,6 +698,8 @@
             @include respond(phone) {
                 display: flex;
                 flex-direction: column;
+                padding: 0;
+                width: 100%;
             }
         }
     }
