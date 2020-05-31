@@ -37,7 +37,7 @@ const mapSelections = () => {
     const optionsMap = Object.keys(options).map(singleOption => {
         return [Array(options[singleOption])].map(place => {
              console.log('the options Map', singleOption, place)
-            return place;
+            return [place];
         })
     })
 
