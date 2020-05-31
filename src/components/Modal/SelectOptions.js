@@ -50,7 +50,7 @@ const SelectOptions = (props) => {
             </Row>
             <Row className='services-box'>
 
-                <Col className='services-box_item' onClick={optionClicked('hel')}>
+                <Col className='services-box_item' onClick={optionClicked}>
                     <h5 className='services-box_title'>Restaurants</h5>
                     <p className='services-box_description'>Food you love, from restaurants near you</p>
                 </Col>
