@@ -115,9 +115,7 @@ class Hero extends Component {
 
     };
 
-    optionClicked = () => {
-        alert('clicked')
-    }
+   
 
     render() {
         console.log('this is the state', this.state)
@@ -127,7 +125,7 @@ class Hero extends Component {
         if (this.state.isAreaTouched) {
             handleAreaSelection = <SelectModal isAreaSelected = {this.state.isAreaTouched}
             >
-                <SelectOptions onClick={() => this.optionClicked()}/>
+                <SelectOptions/>
             </SelectModal>
         }
         else {
