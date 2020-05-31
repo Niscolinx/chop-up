@@ -21,18 +21,18 @@ const SelectOptions = (props) => {
             Isukwuato: ['IsukwuatoMarket1', 'IsukwuatoMarket2']
         },
         Pharmacies: {
-            Absu: ['AbsuRes1', 'AbsuRes2'],
-            Uturu: ['UturuRes1', 'UturuRes2'],
-            Okigwe: ['OkigweRes1', 'OkigweRes2'],
-            Isuochi: ['IsuochiRes1', 'IsuochiRes2'],
-            Isukwuato: ['IsukwuatoRes1', 'IsukwuatoRes2']
+            Absu: ['AbsuPharmacy1', 'AbsuPharmacy2'],
+            Uturu: ['UturuPharmacy1', 'UturuPharmacy2'],
+            Okigwe: ['OkigwePharmacy1', 'OkigwePharmacy2'],
+            Isuochi: ['IsuochiPharmacy1', 'IsuochiPharmacy2'],
+            Isukwuato: ['IsukwuatoPharmacy1', 'IsukwuatoPharmacy2']
         },
-        restaurants: {
-            Absu: ['AbsuRes1', 'AbsuRes2'],
-            Uturu: ['UturuRes1', 'UturuRes2'],
-            Okigwe: ['OkigweRes1', 'OkigweRes2'],
-            Isuochi: ['IsuochiRes1', 'IsuochiRes2'],
-            Isukwuato: ['IsukwuatoRes1', 'IsukwuatoRes2']
+        Shopping: {
+            Absu: ['AbsuShopping1', 'AbsuShopping2'],
+            Uturu: ['UturuShopping1', 'UturuShopping2'],
+            Okigwe: ['OkigweShopping1', 'OkigweShopping2'],
+            Isuochi: ['IsuochiShopping1', 'IsuochiShopping2'],
+            Isukwuato: ['IsukwuatoShopping1', 'IsukwuatoShopping2']
         },
     }
 
