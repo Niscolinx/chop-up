@@ -112,12 +112,12 @@ class Hero extends Component {
         this.setState({
             newArea: newValue.value,
         })
-        this.props.onSelectedArea(newValue)
     };
-
-   
-
+    
+    
+    
     render() {
+        this.props.onSelectedArea(this.state.newArea)
         console.log('this is the state', this.state)
 
         let handleAreaSelection = null
