@@ -30,7 +30,7 @@ const SelectOptions = () => {
                     discription='Top Quality medicines near you'
                 />
                 <OptionsMap title='Shopping'
-                    discription='Food you love, from restaurants near you'
+                    discription='Purchase the most stylish, affortabel and quality products near you'
                 />
 
             </Row>
