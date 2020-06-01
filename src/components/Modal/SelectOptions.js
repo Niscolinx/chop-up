@@ -16,20 +16,32 @@ const SelectOptions = (props) => {
             </Row>
             <Row className='services-box'>
 
-                <OptionsMap title='Restaurants'
-                    description='Food you love, near restaurants near you' 
-                    />
-                <OptionsMap title='SuperMarkets'
-                    description='Things you love, from supermarkets near you' 
-                    />
+                <OptionsMap
+                    selectedArea={props.selectedArea}
+                    selectedCity={props.selectedCity}
+                    title='Restaurants'
+                    description='Food you love, near restaurants near you'
+                />
+                <OptionsMap
+                    selectedArea={props.selectedArea}
+                    selectedCity={props.selectedCity}
+                    title='SuperMarkets'
+                    description='Things you love, from supermarkets near you'
+                />
 
             </Row>
             <Row className='services-box'>
 
-                <OptionsMap title='Pharmacies'
+                <OptionsMap
+                    selectedArea={props.selectedArea}
+                    selectedCity={props.selectedCity}
+                    title='Pharmacies'
                     description='Top Quality medicines near you'
                 />
-                <OptionsMap title='Shopping'
+                <OptionsMap
+                    selectedArea={props.selectedArea}
+                    selectedCity={props.selectedCity}
+                    title='Shopping'
                     description='Purchase the most stylish, affortabel and quality products near you'
                 />
 
