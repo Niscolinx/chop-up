@@ -57,6 +57,6 @@ export const OptionsMap = (props) => {
     return <Col className='services-box_item' onClick={OptionsMap}>
         <h5 className='services-box_title'>{title}</h5>
         <p className='services-box_description'>{description}</p>
-        <p className='services-box_description'>Found {result.length} {title} in your area</p>
+        <p className='services-box_description'>`Found ${result.length} ${title} in your area`</p>
     </Col>
 }
