@@ -66,7 +66,7 @@ export const clearError = () => {
 
 export const initAuth = (phoneNumber, password, isLogin) => {
     window.recaptchaVerifier = fire.auth().RecaptchaVerifier('sign-in-button')
-    let appVerifier = window.recaptchaVerifier;
+    let appVerifier = windw.recaptchaVerifier;
 
 
     return dispatch => {
