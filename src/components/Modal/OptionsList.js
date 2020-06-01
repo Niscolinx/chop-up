@@ -38,7 +38,7 @@ const mapSelections = (props) => {
         
             return place;
         })
-    })
+
 
     console.log(optionsMap)
 }
