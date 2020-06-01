@@ -7,7 +7,8 @@ const initialState = {
     totalPrice: 4,
     error: false,
     selectedCity: null,
-    selectedArea: null
+    selectedArea: null,
+    areas: null
 }
 
 const INGREDIENT_PRICES = {

@@ -59,7 +59,9 @@ class Home extends Component {
 
 const mapStateToProps = state => {
     return {
-        areas: state.burger.areas
+        areas: state.burger.areas,
+        selectedArea: state.burger.selectedArea,
+        selectedCity: state.burger.selectedCity
     }
 }
 const mapDispatchToProps = dispatch => {
