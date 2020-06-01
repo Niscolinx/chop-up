@@ -33,10 +33,10 @@ const options = {
     },
 }
 
+let listCategory = []
 const mapSelections = (props) => {
     const optionsMap = Object.keys(options[props]).map(singleOption => {
-        
-            return place;
+           let compileList = listCategory.push(singleOption)
         })
 
 
