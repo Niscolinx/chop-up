@@ -44,15 +44,10 @@ const mapSelections = (title, selectedCity) => {
         return foundValues
     })
 
-    // console.log(optionsMap.reduce((acc, val) => {
-    //     return acc.concat(val)
-    // }, []))
     return optionsMap.reduce((acc, val) => {
         return val
     })
-    // const gottenValues = optionsMap.map(key => {
-    //     if (key) return key
-    // })
+
 }
 export const OptionsMap = (props) => {
     const { selectedCity, title, description } = props
