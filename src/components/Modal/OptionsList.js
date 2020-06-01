@@ -35,7 +35,7 @@ const options = {
 
 const mapSelections = (title, selectedCity) => {
     const optionsMap = Object.keys(options[title]).map(singleOption => {
-        console.log('the inner loop', selectedCity, singleOption)
+       //console.log('the inner loop', selectedCity, singleOption)
         let foundValues;
         if (selectedCity === singleOption) {
             foundValues = options[title][singleOption]
@@ -44,7 +44,13 @@ const mapSelections = (title, selectedCity) => {
         return foundValues
     })
 
-    return optionsMap
+    console.log(optionsMap.reduce((acc, val) => {
+        return acc.concat(val)
+    }, []))
+    return optionsMap.reduce((acc, val) => {
+        console.log('the inner reduce', acc, val)
+        return acc.concat(val)
+    }, [])
     // const gottenValues = optionsMap.map(key => {
     //     if (key) return key
     // })
