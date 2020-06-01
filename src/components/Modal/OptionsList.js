@@ -33,15 +33,14 @@ const options = {
     },
 }
 
-const mapSelections = () => {
-    const optionsMap = Object.keys(options).map(singleOption => {
-        return [Array(options[singleOption])].map(place => {
-             console.log('the options Map', singleOption, place)
-            return [place];
+const mapSelections = (props) => {
+    const optionsMap = Object.keys(options[props]).map(singleOption => {
+        
+            return place;
         })
     })
 
-    return optionsMap
+    console.log(optionsMap)
 }
 export const OptionsMap = (props) => {
 
