@@ -35,29 +35,23 @@ const options = {
 
 const mapSelections = (title, selectedCity) => {
     const optionsMap = Object.keys(options[title]).map(singleOption => {
-        //console.log('the inner loop', selectedCity, singleOption)
-        let foundValues = [];
+        let foundValues;
         if (selectedCity === singleOption) {
-            foundValues.push(options[title][singleOption])
-            console.log('Found Values', foundValues)
+            foundValues = options[title][singleOption]
         }
         return foundValues
     })
 
-    // .reduce((acc, val) => {
-    //     console.log('the inner reduce', val, 'the acc', acc)
-    //     return acc
-    // }, '')
-
-   // console.log('the option map', optionsMap)
-    return optionsMap
+    return optionsMap.find(ele => {
+        return ele
+    })
 
 }
 export const OptionsMap = (props) => {
     const { selectedCity, title, description } = props
     const result = mapSelections(title, selectedCity)
 
-    
+
 
     console.log('the result', result)
     let message = `Found {result.length} ${title} in your area`
