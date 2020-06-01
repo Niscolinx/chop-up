@@ -41,7 +41,6 @@ const mapSelections = (props) => {
         
         })
 
-
     console.log('The list',optionsMap)
 }
 export const OptionsMap = (props) => {
