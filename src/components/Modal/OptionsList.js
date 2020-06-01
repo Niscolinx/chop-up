@@ -39,11 +39,12 @@ const mapSelections = (title, selectedCity) => {
         let foundValues;
        if (selectedCity === singleOption){
           foundValues = options[title][singleOption]
+          
         }
         return foundValues
     })
 
-    console.log('The list', optionsMap)
+    console.log('The list', title,optionsMap)
 }
 export const OptionsMap = (props) => {
     const { selectedCity, title, description } = props
