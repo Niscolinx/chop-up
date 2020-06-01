@@ -17,20 +17,20 @@ const SelectOptions = () => {
             <Row className='services-box'>
 
                 <OptionsMap title='Restaurants'
-                    discription='Food you love, near restaurants near you' 
+                    description='Food you love, near restaurants near you' 
                     />
                 <OptionsMap title='SuperMarkets'
-                    discription='Things you love, from supermarkets near you' 
+                    description='Things you love, from supermarkets near you' 
                     />
 
             </Row>
             <Row className='services-box'>
 
                 <OptionsMap title='Pharmacies'
-                    discription='Top Quality medicines near you'
+                    description='Top Quality medicines near you'
                 />
                 <OptionsMap title='Shopping'
-                    discription='Purchase the most stylish, affortabel and quality products near you'
+                    description='Purchase the most stylish, affortabel and quality products near you'
                 />
 
             </Row>
