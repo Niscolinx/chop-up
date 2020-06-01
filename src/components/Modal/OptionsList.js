@@ -36,11 +36,8 @@ const options = {
 const mapSelections = (title, selectedCity) => {
     console.log('the log', title, selectedCity, options[title])
     const optionsMap = Object.keys(options[title]).map(singleOption => {
-        console.log('inner loop', singleOption)
-        return singleOption.map(key => {
-            console.log('the key', key)
-            return key
-        })
+        console.log('inner loop', singleOption, Object.values())
+       
 
     })
 
