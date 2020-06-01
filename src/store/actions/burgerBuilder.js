@@ -71,18 +71,19 @@ export const addAreas = (areas) => {
         { value: 'Rc', label: 'Rc'},
         { value: 'School Cafe', label: 'School Cafe' },
     ];
+    const Uturu = [
+        { value: 'Ute', label: 'Ute'},
+        { value: 'Iselu', label: 'Iselu'},
+        { value: 'Ebem', label: 'Ebem'},
+        { value: 'Aru', label: 'Aru' },
+    ];
     const Okigwe = [
         { value: 'Okigwe', label: 'Okigwe'},
         { value: 'Owerri road', label: 'Owerri road'},
-        { value: 'olu', label: 'olu'},
+        { value: 'Olu', label: 'Olu'},
         { value: 'Pego', label: 'Pego' },
     ];
-    const Umuahia = [
-        { value: 'Umuahia', label: 'Umuahia'},
-        { value: 'Roundabout', label: 'Roundabout'},
-        { value: 'Old road', label: 'Old road'},
-        { value: 'Limca', label: 'Limca' },
-    ];
+    
     const Isukwuato = [
         { value: 'Noya', label: 'Noya'},
         { value: 'kpuru', label: 'kpuru'},
@@ -103,11 +104,11 @@ export const addAreas = (areas) => {
         case ('Absu'):
             currentCity = Absu
             break;
+        case ('Uturu'):
+            currentCity = Uturu
+            break;
         case ('Okigwe'):
             currentCity = Okigwe
-            break;
-        case ('Umuahia'):
-            currentCity = Umuahia
             break;
         case ('Isuochi'):
             currentCity = Isuochi
