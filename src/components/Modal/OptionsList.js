@@ -36,10 +36,10 @@ const options = {
 const mapSelections = (title, selectedCity) => {
     const optionsMap = Object.keys(options[title]).map(singleOption => {
         //console.log('the inner loop', selectedCity, singleOption)
-        let foundValues;
+        let foundValues = [];
         if (selectedCity === singleOption) {
-            foundValues = options[title][singleOption]
-
+            foundValues.push(options[title][singleOption])
+            console.log('Found Values', foundValues)
         }
         return foundValues
     })
@@ -49,7 +49,7 @@ const mapSelections = (title, selectedCity) => {
     //     return acc
     // }, '')
 
-    console.log('the option map', optionsMap)
+   // console.log('the option map', optionsMap)
     return optionsMap
 
 }
@@ -57,10 +57,7 @@ export const OptionsMap = (props) => {
     const { selectedCity, title, description } = props
     const result = mapSelections(title, selectedCity)
 
-    result.filter(item => {
-        console.log('the item', item)
-        return item !== undefined
-    })
+    
 
     console.log('the result', result)
     let message = `Found {result.length} ${title} in your area`
