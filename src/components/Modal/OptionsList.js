@@ -24,7 +24,7 @@ const options = {
         Isuochi: ['IsuochiPharmacy1', 'IsuochiPharmacy2'],
         Isukwuato: ['IsukwuatoPharmacy1', 'IsukwuatoPharmacy2']
     },
-    Shopping: {
+    Shops: {
         Absu: ['AbsuShopping1', 'AbsuShopping2'],
         Uturu: ['UturuShopping1', 'UturuShopping2'],
         Okigwe: ['OkigweShopping1', 'OkigweShopping2'],
