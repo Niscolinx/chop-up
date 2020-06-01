@@ -1,6 +1,6 @@
 import * as actionTypes from './actionTypes'
 import axios from '../../axios'
-import { areas } from '../../components/Layout/DeliveringForm/Locations'
+//import { areas } from '../../components/Layout/DeliveringForm/Locations'
 
 export const addIngredient = (name) => {
     return {
