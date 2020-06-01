@@ -66,7 +66,7 @@ const mapDispatchToProps = dispatch => {
         onSelectedCity: (cityName) => dispatch(actions.selectedCity(cityName)),
         onClearedSelectedCity: () => dispatch(actions.clearedSelectedCity()),
         onSelectedAreas: (areaName) => dispatch(actions.addAreas(areaName)),
-
+        onSelectedArea: (areaName) => dispatch(actions.selectedArea(areaName))
     }
 }
 
