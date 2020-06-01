@@ -37,10 +37,11 @@ let listCategory = []
 const mapSelections = (props) => {
     const optionsMap = Object.keys(options[props]).map(singleOption => {
            let compileList = listCategory.push(singleOption)
+           return compileList
         })
 
 
-    console.log(optionsMap)
+    console.log('The list',optionsMap)
 }
 export const OptionsMap = (props) => {
 
