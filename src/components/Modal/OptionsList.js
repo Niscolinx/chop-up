@@ -39,17 +39,18 @@ const mapSelections = (title, selectedCity) => {
         let foundValues;
         if (selectedCity === singleOption) {
             foundValues = options[title][singleOption]
-            
+
         }
         return foundValues
     })
-    
-    .reduce((acc, val) => {
-        //console.log('the inner reduce', val, 'the acc', acc)
-        return val
-    })
 
-    console.log('the option map',optionsMap,)
+    // .reduce((acc, val) => {
+    //     console.log('the inner reduce', val, 'the acc', acc)
+    //     return acc
+    // }, '')
+
+    console.log('the option map', optionsMap)
+    return optionsMap
 
 }
 export const OptionsMap = (props) => {
