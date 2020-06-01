@@ -114,18 +114,21 @@ class Hero extends Component {
         })
         this.props.onSelectedArea(newValue.value)
     };
-    
-    
-    
+
+
+
     render() {
         console.log('this is the state', this.state)
 
         let handleAreaSelection = null
 
         if (this.state.isAreaTouched) {
-            handleAreaSelection = <SelectModal isAreaSelected = {this.state.isAreaTouched}
+            handleAreaSelection = <SelectModal isAreaSelected={this.state.isAreaTouched}
             >
-                <SelectOptions />
+                <SelectOptions
+                    selectedArea={this.props.selectedArea}
+                    selectedCity={this.props.selectedCity}
+                />
             </SelectModal>
         }
         else {
