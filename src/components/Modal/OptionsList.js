@@ -33,11 +33,10 @@ const options = {
     },
 }
 
-let listCategory = []
-const mapSelections = (props) => {
-    const optionsMap = Object.keys(options[props.title].props.selectedCity).map(singleOption => {
-        console.log('inner loop', options[props].Absu[singleOption])
-        return options[props].Absu[singleOption]
+const mapSelections = (title, selectedCity) => {
+    const optionsMap = Object.keys(options[title].selectedCity).map(singleOption => {
+        console.log('inner loop', options[title].selectedCity[singleOption])
+        return options[title].selectedCity[singleOption]
 
     })
 
@@ -45,12 +44,12 @@ const mapSelections = (props) => {
 }
 export const OptionsMap = (props) => {
     const {selectedCity, title, description} = props
-    const result = mapSelections(props)
+    const result = mapSelections(title, selectedCity)
     console.log('the result', result)
 
     return <Col className='services-box_item' onClick={OptionsMap}>
-        <h5 className='services-box_title'>title</h5>
-        <p className='services-box_description'>description</p>
+        <h5 className='services-box_title'>{title}</h5>
+        <p className='services-box_description'>{description}</p>
         <p className='services-box_description'></p>
     </Col>
 }
