@@ -36,6 +36,7 @@ const options = {
 let listCategory = []
 const mapSelections = (props) => {
     const optionsMap = Object.keys(options[props].Absu).map(singleOption => {
+        console.log('inner loop', Object.keys(options[props].Absu[singleOption]))
         let compileList = listCategory.push(Object.keys(options[props].Absu[singleOption]))
            return compileList
         })
