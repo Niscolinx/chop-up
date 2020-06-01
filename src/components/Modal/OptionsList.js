@@ -37,14 +37,17 @@ const mapSelections = (title, selectedCity) => {
     const optionsMap = Object.keys(options[title]).map(singleOption => {
         console.log('the inner loop', selectedCity, singleOption)
         let foundValues;
-       if (selectedCity === singleOption){
-          foundValues = options[title][singleOption]
-          
+        if (selectedCity === singleOption) {
+            foundValues = options[title][singleOption]
+
         }
         return foundValues
     })
 
-    console.log('The list', title,optionsMap)
+    return optionsMap
+    // const gottenValues = optionsMap.map(key => {
+    //     if (key) return key
+    // })
 }
 export const OptionsMap = (props) => {
     const { selectedCity, title, description } = props
