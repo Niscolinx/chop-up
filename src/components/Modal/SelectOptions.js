@@ -19,21 +19,19 @@ const SelectOptions = () => {
                 <OptionsMap title='Restaurants'
                     discription='Food you love' 
                     />
-                <OptionsMap title='Restaurants'
-                    discription='Food you love'
-                />
+                <OptionsMap title='SuperMarkets'
+                    discription='Food you love' 
+                    />
 
             </Row>
             <Row className='services-box'>
 
-                <Col className='services-box_item'>
-                    <h5 className='services-box_title'>Pharmacies</h5>
-                    <p className='services-box_description'>Food you love, from restaurants near you</p>
-                </Col>
-                <Col className='services-box_item'>
-                    <h5 className='services-box_title'>Shopping</h5>
-                    <p className='services-box_description'>Food you love, from restaurants near you</p>
-                </Col>
+                <OptionsMap title='Pharmacies'
+                    discription='Food you love'
+                />
+                <OptionsMap title='Shopping'
+                    discription='Food you love, from restaurants near you'
+                />
 
             </Row>
 
