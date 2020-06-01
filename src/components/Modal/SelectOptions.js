@@ -4,7 +4,7 @@ import { Row, Col } from 'react-bootstrap'
 import { OptionsMap } from './OptionsList'
 
 
-const SelectOptions = () => {
+const SelectOptions = (props) => {
 
     return (
 
