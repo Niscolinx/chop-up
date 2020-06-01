@@ -60,6 +60,7 @@ const addedAreas = (state, action) => {
 const reducer = (state = initialState, action) => {
     switch (action.type) {
         case actionTypes.SELECTED_CITY: return selectedCity(state, action)
+        case actionTypes.SELECTED_AREA: return selectedArea(state, action)
         case actionTypes.CLEARED_SELECTED_CITY: return clearedSelectedCity(state, action)
         case actionTypes.ADDED_AREAS: return addedAreas(state, action)
 
