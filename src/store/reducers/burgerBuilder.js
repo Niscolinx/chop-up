@@ -38,9 +38,16 @@ const selectedCity = (state, action) => {
     })
 }
 const selectedArea = (state, action) => {
+    let area;
+    if (action.areaName) {
+        area = action.areaName
+    }
+    else {
+        area = null
+    }
     return update(state, {
         ...action,
-        selectedArea: action.areaName
+        selectedArea: area
     })
 }
 
@@ -65,8 +72,8 @@ const reducer = (state = initialState, action) => {
         case actionTypes.CLEARED_SELECTED_CITY: return clearedSelectedCity(state, action)
         case actionTypes.ADDED_AREAS: return addedAreas(state, action)
 
-        
-        
+
+
         case actionTypes.ADD_INGREDIENT: return addIngredient(state, action)
         case actionTypes.REMOVE_INGREDIENT:
             return {

@@ -11,11 +11,11 @@ class Auth extends Component {
     
     state = {
         control: {
-            email: {
+            phoneNumber: {
                 elementType: 'input',
                 config: {
                     type: 'text',   
-                    placeholder: 'Mail address'
+                    placeholder: 'Phone number'
                 },
                 value: '',
                 validation: {
@@ -81,7 +81,7 @@ class Auth extends Component {
     }
     loginButton = (e) => {
         e.preventDefault()
-        this.props.onInitAuth(this.state.control.email.value, this.state.control.password.value, this.state.isLogin)
+        this.props.onInitAuth(this.state.control.phoneNumber.value, this.state.control.password.value, this.state.isLogin)
     }
 
 
@@ -176,7 +176,7 @@ const mapStateToProps = state => {
 }
 const mapDispatchToProps = dispatch => {
     return {
-        onInitAuth: (email, password, isLogin) => dispatch(actions.initAuth(email, password, isLogin))
+        onInitAuth: (phoneNumber, password, isLogin) => dispatch(actions.initAuth(phoneNumber, password, isLogin))
     }
 }
 

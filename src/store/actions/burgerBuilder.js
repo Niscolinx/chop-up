@@ -51,17 +51,10 @@ export const selectedCity = (cityName) => {
 }
 export const selectedArea = (areaName) => {
 
-    let name = null
-    if(areaName !== null){
-        name = areaName
-    }
-    else{
-        name = null
-    }
 
     return{
         type: actionTypes.SELECTED_AREA,
-        areaName: name.value
+        areaName
     }
 }
 
