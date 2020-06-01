@@ -1,6 +1,6 @@
 import React from 'react'
 import Aux from '../hoc/HigherOrder'
-import { Row, Col } from 'react-bootstrap'
+import { Row } from 'react-bootstrap'
 import { OptionsMap } from './OptionsList'
 
 
