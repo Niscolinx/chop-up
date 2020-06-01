@@ -670,7 +670,7 @@
             padding: 0 4rem;
 
             &_item {
-                border: 1px solid $secondary-color;
+                outline: 1px solid $secondary-color;
                 box-shadow: 0 1.4rem 3.5rem rgb(58, 58, 54);
                 padding: 1rem;
                 margin: 1rem 3rem;
@@ -682,7 +682,7 @@
                 }
 
                 &:hover {
-                    border: 2px solid $primary-color;
+                    outline: 2px solid $primary-color;
                     box-shadow: 1rem 1.6rem 5rem rgb(46, 46, 45);
                     transform: scaleX(1.01);
                 }
