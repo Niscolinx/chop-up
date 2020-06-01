@@ -44,16 +44,19 @@ const mapSelections = (title, selectedCity) => {
         return foundValues
     })
 
-    return optionsMap.reduce((acc, val) => {
+   .reduce((acc, val) => {
+        console.log('the inner reduce', val, 'the acc', acc)
         return val
     })
+
+    return optionsMap
 
 }
 export const OptionsMap = (props) => {
     const { selectedCity, title, description } = props
     const result = mapSelections(title, selectedCity)
     console.log('the result', result)
-    let message = `Found ${result.length} ${title} in your area`
+    let message = `Found {result.length} ${title} in your area`
 
     return <Col className='services-box_item' onClick={OptionsMap}>
         <h5 className='services-box_title'>{title}</h5>
