@@ -48,9 +48,8 @@ const mapSelections = (title, selectedCity) => {
     //     return acc.concat(val)
     // }, []))
     return optionsMap.reduce((acc, val) => {
-        console.log('the inner reduce', 'the acc',acc, 'the val',val)
-        return acc
-    }, [])
+        return val
+    })
     // const gottenValues = optionsMap.map(key => {
     //     if (key) return key
     // })
