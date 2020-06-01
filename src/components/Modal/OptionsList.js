@@ -36,7 +36,8 @@ const options = {
 let listCategory = []
 const mapSelections = (props) => {
     const optionsMap = Object.keys(options[props].Absu).map(singleOption => {
-        return listCategory.push(Object.keys(options[props].Absu[singleOption])
+        let compileList = listCategory.push(Object.keys(options[props].Absu[singleOption]))
+           return compileList
         })
 
 
