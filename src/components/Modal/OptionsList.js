@@ -44,7 +44,7 @@ const mapSelections = (props) => {
     console.log('The list',optionsMap)
 }
 export const OptionsMap = (props) => {
-
+console.log('the category', listCategory)
     return <Col className='services-box_item' onClick={OptionsMap}>
         <h5 className='services-box_title'>{props.title}</h5>
         <p className='services-box_description'>{props.description}</p>
