@@ -19,10 +19,9 @@ const SelectOptions = () => {
                 <OptionsMap title='Restaurants'
                     discription='Food you love' 
                     />
-                <Col className='services-box_item'>
-                    <h5 className='services-box_title'>SuperMarkets</h5>
-                    <p className='services-box_description'>Food you love, from restaurants near you</p>
-                </Col>
+                <OptionsMap title='Restaurants'
+                    discription='Food you love'
+                />
 
             </Row>
             <Row className='services-box'>
