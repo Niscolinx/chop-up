@@ -1,8 +1,8 @@
 
 export const cityOptions = [
     { value: 'Absu', label: 'Absu',isFixed: true },
+    { value: 'Uturu', label: 'Uturu',isFixed: true },
     { value: 'Okigwe', label: 'Okigwe',isFixed: true },
-    { value: 'Umuahia', label: 'Umuahia',isFixed: true },
     { value: 'Isuochi', label: 'Isuochi',isFixed: true },
     { value: 'Isukwuato', label: 'Isukwuato',isFixed: true },
   
