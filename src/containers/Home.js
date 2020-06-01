@@ -32,6 +32,7 @@ class Home extends Component {
                         onClearedSelectedCity={this.props.onClearedSelectedCity}
                         onSelectedAreas={this.props.onSelectedAreas}
                         onSelectedCity={this.props.onSelectedCity}
+                        onSelectedArea={this.props.onSelectedArea}
                     />
                 </div>
 
