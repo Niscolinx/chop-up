@@ -49,6 +49,13 @@ export const selectedCity = (cityName) => {
         cityName
     }
 }
+export const selectedArea = (areaName) => {
+
+    return{
+        type: actionTypes.SELECTED_AREA,
+        areaName
+    }
+}
 
 export const clearedSelectedCity = () => {
 

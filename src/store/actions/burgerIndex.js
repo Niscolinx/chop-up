@@ -3,6 +3,7 @@ export {
     addIngredient,
     setIngredients,
     selectedCity,
+    selectedArea,
     clearedSelectedCity,
     addAreas
 } from './burgerBuilder'
