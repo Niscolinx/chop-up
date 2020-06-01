@@ -47,16 +47,19 @@ const mapSelections = (title, selectedCity) => {
     })
 
 }
+
+
 export const OptionsMap = (props) => {
     const { selectedCity, title, description } = props
     const result = mapSelections(title, selectedCity)
 
-
-
-    console.log('the result', result)
     let message = `Found ${result.length} ${title} in your area`
 
-    return <Col className='services-box_item' onClick={OptionsMap}>
+    const handleClick = () => {
+        console.log('the result is', result)
+    }
+
+    return <Col className='services-box_item' onClick={handleClick}>
         <h5 className='services-box_title'>{title}</h5>
         <p className='services-box_description'>{description}</p>
         <p className='services-box_description'>{message}</p>
