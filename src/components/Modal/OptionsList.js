@@ -29,7 +29,7 @@ const options = {
         Uturu: ['UturuShopping1', 'UturuShopping2'],
         Okigwe: ['OkigweShopping1', 'OkigweShopping2'],
         Isuochi: ['IsuochiShopping1', 'IsuochiShopping2'],
-        Isukwuato: ['IsukwuatoShopping1', 'IsukwuatoShopping2']
+        Isukwuato: ['IsukwuatoShopping1', 'IsukwuatoShopping2', 'IsukwuatoShopping3']
     },
 }
 
