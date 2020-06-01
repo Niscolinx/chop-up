@@ -41,7 +41,7 @@ const SelectOptions = (props) => {
                 <OptionsMap
                     selectedArea={props.selectedArea}
                     selectedCity={props.selectedCity}
-                    title='Shopping'
+                    title='Shops'
                     description='Purchase the most stylish, affortabel and quality products near you'
                 />
 
