@@ -44,7 +44,6 @@ export const setIngredients = () => {
 
 export const selectedCity = (cityName) => {
 
-    console.log('this is the city name', cityName)
     return{
         type: actionTypes.SELECTED_CITY,
         cityName
@@ -93,7 +92,6 @@ export const addAreas = (areas) => {
 
     let currentCity;
 
-    console.log(areas)
     switch (areas) {
 
         case ('Absu'):
