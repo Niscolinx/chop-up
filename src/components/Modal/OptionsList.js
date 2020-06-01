@@ -56,6 +56,12 @@ const mapSelections = (title, selectedCity) => {
 export const OptionsMap = (props) => {
     const { selectedCity, title, description } = props
     const result = mapSelections(title, selectedCity)
+
+    result.filter(item => {
+        console.log('the item', item)
+        return item !== undefined
+    })
+
     console.log('the result', result)
     let message = `Found {result.length} ${title} in your area`
 
