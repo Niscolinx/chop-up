@@ -89,16 +89,16 @@ class Hero extends Component {
         // console.group('Input Changed', inputValue, 'the Changed value is', actionMeta);
         // console.groupEnd();
 
-        // if (actionMeta.action === 'set-value') {
-        //     this.setState({
-        //         isAreaTouched: true
-        //     })
-        // }
-        // if (actionMeta.action === 'input-blur') {
-        //     this.setState({
-        //         isAreaTouched: false
-        //     })
-        // }
+        if (actionMeta.action === 'set-value') {
+            this.setState({
+                isAreaTouched: true
+            })
+        }
+        if (actionMeta.action === 'input-blur') {
+            this.setState({
+                isAreaTouched: false
+            })
+        }
 
     };
 
@@ -110,9 +110,9 @@ class Hero extends Component {
         //console.groupEnd();
 
         this.setState({
-            newArea: newValue.value,
+            newArea: newValue,
         })
-        this.props.onSelectedArea(newValue.value)
+        this.props.onSelectedArea(newValue)
     };
 
 
