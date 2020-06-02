@@ -120,19 +120,13 @@ class Hero extends Component {
     render() {
         console.log('this is the state', this.state)
 
-        let handleAreaSelection = null
+        let handleAreaSelection = 'modalHide'
 
         if (this.state.isAreaTouched) {
-            handleAreaSelection = <SelectModal isAreaSelected={this.state.isAreaTouched}
-            >
-                <SelectOptions
-                    selectedArea={this.props.selectedArea}
-                    selectedCity={this.props.selectedCity}
-                />
-            </SelectModal>
+            handleAreaSelection = 'modalShow'
         }
         else {
-            handleAreaSelection = null
+            handleAreaSelection = 'modalHide'
         }
 
         const cityStyles = (height = '3rem', fontSize = '1rem') => {
@@ -346,7 +340,14 @@ class Hero extends Component {
 
                         <div className='services'>
 
-                            {handleAreaSelection}
+                            <SelectModal isAreaSelected={this.state.isAreaTouched}
+                            >
+                                <SelectOptions className={handleAreaSelection}
+                                    selectedArea={this.props.selectedArea}
+                                    selectedCity={this.props.selectedCity}
+                                />
+                            </SelectModal>
+                            
                         </div>
                     </div>
                 </Container>

@@ -7,11 +7,11 @@ const SelectModal = (props) => {
 
     return(
         <Aux>
-            {/* <SelectBackdrop
+            <SelectBackdrop
                 show={props.isAreaSelected}
                 clicked={props.clicked}
                >
-               </SelectBackdrop> */}
+               </SelectBackdrop>
             <div className='Modals'
                 style={{
                     transform: props.isAreaSelected ? 'translateY(0)' : 'translateY(-100vh)',
