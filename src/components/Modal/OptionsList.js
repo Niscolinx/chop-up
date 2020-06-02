@@ -38,11 +38,11 @@ const mapSelections = (title, selectedCity) => {
         let foundValues;
         if (selectedCity === singleOption) {
             foundValues = options[title][singleOption]
+            console.log('The selected city', title, selectedCity,'the found Values', foundValues)
         }
         return foundValues
     })
 
-    console.log('The selected city', title, selectedCity,'the found Values', foundValues)
     return optionsMap.find(ele => {
         return ele
     })
@@ -51,10 +51,17 @@ const mapSelections = (title, selectedCity) => {
 
 
 export const OptionsMap = (props) => {
-    const { selectedCity, title, description } = props
+    const { selectedCity, selectedArea, title, description } = props
     const result = mapSelections(title, selectedCity)
 
-    let message = `Found ${result.length} ${title} in your area`
+    // pass from the props, the this.state.areaChange or whatever 
+    let message;
+    if(selectedArea){
+    message = `Found ${result.length} ${title} in your area`
+    }
+    else{
+        message = 'Waiting for props'
+    }
 
     const handleClick = () => {
         console.log('the result is', result)
