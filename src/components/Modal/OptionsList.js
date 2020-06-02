@@ -42,6 +42,7 @@ const mapSelections = (title, selectedCity) => {
         return foundValues
     })
 
+    console.log('The selected city', title, selectedCity,'the found Values', foundValues)
     return optionsMap.find(ele => {
         return ele
     })
