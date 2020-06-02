@@ -71,7 +71,7 @@ export const initAuth = (email, password, isLogin) => {
         dispatch(authStart())
 
 
-        let url = fire.auth().signInWithEmail(email, password)
+        let url = fire.auth().signInWithEmailAndPassword(email, password)
         if (!isLogin) {
             url = fire.auth().createUserWithEmailAndPassword(email, password)
         }

@@ -15,7 +15,7 @@ class Auth extends Component {
                 elementType: 'input',
                 config: {
                     type: 'text',   
-                    placeholder: 'Phone number'
+                    placeholder: 'Email'
                 },
                 value: '',
                 validation: {
