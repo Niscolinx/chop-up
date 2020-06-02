@@ -64,18 +64,16 @@ export const clearError = () => {
     }
 }
 
-export const initAuth = (phoneNumber, password, isLogin) => {
-    window.recaptchaVerifier = fire.auth().RecaptchaVerifier('sign-in-button')
-    let appVerifier = window.recaptchaVerifier;
+export const initAuth = (email, password, isLogin) => {
 
 
     return dispatch => {
         dispatch(authStart())
 
 
-        let url = fire.auth().signInWithPhoneNumber(phoneNumber, appVerifier)
+        let url = fire.auth().signInWithEmail(email, password)
         if (!isLogin) {
-            url = fire.auth().createUserWithEmailAndPassword(phoneNumber, password)
+            url = fire.auth().createUserWithEmailAndPassword(email, password)
         }
         url.then(res => {
             window.confirmationResult.confirm(password);
