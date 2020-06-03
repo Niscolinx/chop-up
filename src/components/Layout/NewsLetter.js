@@ -68,7 +68,7 @@ class NewsLetter extends Component {
     }
     loginButton = (e) => {
         e.preventDefault()
-        console.log(this.state.control.email.value, this.state.control.password.value, this.state.isLogin)
+        // console.log(this.state.control.email.value, this.state.control.password.value, this.state.isLogin)
     }
 
     render() {
