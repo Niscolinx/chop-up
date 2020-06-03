@@ -2,15 +2,12 @@ import React from 'react'
 
 const input = (props) => {
     let inputElement = null
-    let validateClass = []
-    if ((!props.validate) && props.isTouched) {
-        validateClass.push('notValid')
-    }
+    
 
     switch (props.inputtype) {
         case 'input':
             inputElement = <input {...props.config}
-                className={validateClass}
+                className={props.validateClass}
                 value={props.value}
                 onChange={props.changed}
                 autoComplete
@@ -18,7 +15,7 @@ const input = (props) => {
             break;
         case 'textarea':
             inputElement = <textarea {...props.config}
-                className={validateClass}
+                className={props.validateClass}
                 value={props.value}
                 onChange={props.changed}
             />

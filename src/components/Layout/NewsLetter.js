@@ -18,7 +18,7 @@ class NewsLetter extends Component {
                 validation: {
                     required: true
                 },
-                valid: false,
+                class: '',
                 isTouched: false
             },
             password: {
@@ -32,7 +32,7 @@ class NewsLetter extends Component {
                     required: true,
                     minLength: 6
                 },
-                valid: false,
+                class: false,
                 isTouched: false
             }
         },
@@ -59,7 +59,7 @@ class NewsLetter extends Component {
             {elementTypeArr.map(elementType => {
                 return <Input
                     isTouched={elementType.config.isTouched}
-                    validate={elementType.config.valid}
+                    validateClass={elementType.config.class}
                     key={elementType.id}
                     config={elementType.config.config}
                     inputtype={elementType.config.elementType}
