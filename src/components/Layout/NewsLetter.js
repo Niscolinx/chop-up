@@ -20,7 +20,7 @@ const NewsLetter = () => {
                 <Form>
                     <Form.Row className='newsletter_form'>
 
-                        <Form.Group as={Col} controlId="formGridPassword">
+                        <Form.Group as={Col} controlId="formGridPassword" className='newsletter_form-item'>
                             <Form.Control as="select">
                                 <option>Absu</option>
                                 <option>2</option>
@@ -28,15 +28,19 @@ const NewsLetter = () => {
 
                             </Form.Control>
                         </Form.Group>
+                      
 
-                        <Form.Group as={Col} controlId="formGridEmail">
+                        <Form.Group as={Col} controlId="formGridEmail" className='newsletter_form-item'>
                             <Form.Control type="email" placeholder="Enter email" />
                         </Form.Group>
-                        <Form.Group as={Col} controlId="formGridEmail">
+                            
+                        <Form.Group as={Col} controlId="formGridEmail" className='newsletter_form-item'>
                             <Button type="submit" className='newsletter_form-submitBtn'>
                                 subscribe to Newsletter
                                 </Button>
                         </Form.Group>
+                     
+                        
 
 
                     </Form.Row>
