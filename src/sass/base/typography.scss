@@ -723,13 +723,6 @@
     }
 
     &_form {
-        &-button {
-            background-color: white;
-            font-weight: 500;
-        }
-    }
-
-    &_form {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -778,18 +771,18 @@
     background-color: white;
     width: 100%;
     border: 1px solid #ccc;
-    border-radius: 30px 30px;
+    border-radius: 2rem 2rem 0 0;
     box-shadow: 0 3px 30px lighten(black, 20%);
     padding: 2rem;
-    top: 25%;
+    top: 23%;
     right: 0;
     box-sizing: border-box;
-    transition: all 1s ease-out;
+    transition: all .6s ease-in;
     animation-name: moveInBottom;
-    animation-duration: 1.5s;
+    animation-duration: .5s;
 
     @include respond(phone) {
-        top: 25%;
+        top: 18%;
     }
 }
 
