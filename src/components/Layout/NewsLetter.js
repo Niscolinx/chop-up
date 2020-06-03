@@ -18,7 +18,7 @@ class NewsLetter extends Component {
                 validation: {
                     required: true
                 },
-                class: '',
+                class: 'newsLetter-item',
                 isTouched: false
             },
             password: {
@@ -32,7 +32,7 @@ class NewsLetter extends Component {
                     required: true,
                     minLength: 6
                 },
-                class: false,
+                class: 'newsLetter-item',
                 isTouched: false
             }
         },
