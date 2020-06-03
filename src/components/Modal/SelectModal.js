@@ -14,8 +14,9 @@ const SelectModal = (props) => {
                </SelectBackdrop>
             <div className='Modals'
                 style={{
-                    transform: props.isAreaSelected ? 'translateY(0)' : 'translateY(-100vh)',
+                    transform: props.isAreaSelected ? 'translateY(0)' : 'translateY(40vh)',
                     opacity: props.isAreaSelected ? '1' : '0',
+                    visibility: props.isAreaSelected ? 'visible' : 'invisible'
                 }}>
                     <ModalDrawerToggle/>
                 {props.children}
