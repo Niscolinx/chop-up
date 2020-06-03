@@ -177,9 +177,9 @@
 
 //BUTTON
 .orderbutton {
-    background-color: transparent;
+    background-color: $primary-color;
     border: none;
-    color: black;
+    color: $secondary-color;
     outline: none;
     cursor: pointer;
     font: inherit;

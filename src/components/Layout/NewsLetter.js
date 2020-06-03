@@ -55,7 +55,7 @@ class NewsLetter extends Component {
             })
         }
 
-        let form = <div className='contactForm'>
+        let form = <div className='newsLetterForm'>
             {elementTypeArr.map(elementType => {
                 return <Input
                     isTouched={elementType.config.isTouched}
