@@ -4,30 +4,30 @@ import { Col } from 'react-bootstrap'
 
 const options = {
     Restaurants: {
-        Absu: ['AbsuRes1', 'AbsuRes2'],
-        Uturu: ['UturuRes1', 'UturuRes2'],
+        Absu: ['AbsuRes1', 'AbsuRes2', 'AbsuRes3', 'AbsuRes4'],
+        Uturu: ['UturuRes1', 'UturuRes2', 'UturuRes3', 'UturuRes4'],
         Okigwe: ['OkigweRes1', 'OkigweRes2'],
-        Isuochi: ['IsuochiRes1', 'IsuochiRes2'],
+        Isuochi: ['IsuochiRes1', 'IsuochiRes2', 'IsuochiRes3'],
         Isukwuato: ['IsukwuatoRes1', 'IsukwuatoRes2']
     },
     SuperMarkets: {
         Absu: ['AbsuMarket1', 'AbsuMarket2'],
-        Uturu: ['UturuMarket1', 'UturuMarket2'],
-        Okigwe: ['OkigweMarket1', 'OkigweMarket2'],
+        Uturu: ['UturuMarket1', 'UturuMarket2', 'UturuMarket3', 'UturuMarket4', 'UturuMarket5'],
+        Okigwe: ['OkigweMarket1', 'OkigweMarket2', 'OkigweMarket3', 'OkigweMarket4'],
         Isuochi: ['IsuochiMarket1', 'IsuochiMarket2'],
         Isukwuato: ['IsukwuatoMarket1', 'IsukwuatoMarket2']
     },
     Pharmacies: {
-        Absu: ['AbsuPharmacy1', 'AbsuPharmacy2'],
-        Uturu: ['UturuPharmacy1', 'UturuPharmacy2'],
+        Absu: ['AbsuPharmacy1', 'AbsuPharmacy2', 'AbsuPharmacy3', 'AbsuPharmacy4'],
+        Uturu: ['UturuPharmacy1', 'UturuPharmacy2', 'UturuPharmacy3', 'UturuPharmacy4'],
         Okigwe: ['OkigwePharmacy1', 'OkigwePharmacy2'],
         Isuochi: ['IsuochiPharmacy1', 'IsuochiPharmacy2'],
-        Isukwuato: ['IsukwuatoPharmacy1', 'IsukwuatoPharmacy2']
+        Isukwuato: ['IsukwuatoPharmacy1', 'IsukwuatoPharmacy2', 'IsukwuatoPharmacy3']
     },
     Shops: {
-        Absu: ['AbsuShopping1', 'AbsuShopping2'],
+        Absu: ['AbsuShopping1', 'AbsuShopping2', 'AbsuShopping3'],
         Uturu: ['UturuShopping1', 'UturuShopping2'],
-        Okigwe: ['OkigweShopping1', 'OkigweShopping2'],
+        Okigwe: ['OkigweShopping1', 'OkigweShopping2', 'OkigweShopping3'],
         Isuochi: ['IsuochiShopping1', 'IsuochiShopping2'],
         Isukwuato: ['IsukwuatoShopping1', 'IsukwuatoShopping2', 'IsukwuatoShopping3']
     },
