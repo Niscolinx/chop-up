@@ -16,7 +16,7 @@ const SelectModal = (props) => {
                 style={{
                     transform: props.isAreaSelected ? 'translateY(0)' : 'translateY(40vh)',
                     opacity: props.isAreaSelected ? '1' : '0',
-                    visibility: props.isAreaSelected ? 'visible' : 'invisible'
+                    visibility: props.isAreaSelected ? 'visible' : 'hidden'
                 }}>
                     <ModalDrawerToggle/>
                 {props.children}
