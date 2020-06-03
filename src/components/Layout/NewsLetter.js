@@ -8,21 +8,21 @@ class NewsLetter extends Component {
 
     state = {
         control: {
-            password: {
-                elementType: 'input',
+            cities: {
+                elementType: 'select',
                 config: {
-                    type: 'password',
-                    placeholder: 'password'
+                    options: [
+                        { value: 'Absu', displayValue: 'Absu' },
+                        { value: 'Okigwe', displayValue: 'Okigwe' },
+                        { value: 'Isukwuato', displayValue: 'Isukwuato' },
+                    ]
                 },
-                value: '',
-                validation: {
-                    required: true,
-                    minLength: 6
-                },
-                class: 'newsLetter-item-1',
+                value: 'Please choose your city',
+                validation: {},
+                class: 'newsLetter-cities',
                 isTouched: false
             },
-            
+
             email: {
                 elementType: 'input',
                 config: {
@@ -33,11 +33,38 @@ class NewsLetter extends Component {
                 validation: {
                     required: true
                 },
-                class: 'newsLetter-item',
+                class: 'newsLetter-email',
                 isTouched: false
             }
 
         }
+    }
+
+    checkValidity(value, rules) {
+        let isValid = true
+        if (rules.required) {
+            isValid = value.trim() !== '' && isValid
+        }
+        if (rules.minLength) {
+            isValid = value.length >= rules.minLength && isValid
+        }
+        return isValid
+    }
+    nameHandler = (e, id) => {
+        const updatedOrderForm = {
+            ...this.state.control,
+            [id]: {
+                ...this.state.control[id],
+                value: e.target.value,
+                valid: this.checkValidity(e.target.value, this.state.control[id].validation),
+                isTouched: true,
+
+            },
+        }
+        this.setState({
+            control: updatedOrderForm
+        })
+
     }
     loginButton = (e) => {
         e.preventDefault()
@@ -73,20 +100,20 @@ class NewsLetter extends Component {
         </div>
 
         return (
-            <div className='newsletter'>
+            <div className='newsLetter'>
 
                 <Container>
-                    <div className='newsletter_heading'>
+                    <div className='newsLetter_heading'>
                         <h1>20% Off on your first order</h1>
                         <h1>by subscribing to our newsletter!</h1>
                     </div>
                     <Row >
                         <Col>
-                            <p className="newsletter_description">Don't miss out on your great offers and Receive deals from out top vendors via e-mail</p>
+                            <p className="newsLetter_description">Don't miss out on your great offers and Receive deals from out top vendors via e-mail</p>
                         </Col>
                     </Row>
 
-                    <form onSubmit={this.loginButton}>
+                    <form onSubmit={this.loginButton} className='newsLetter_form'>
                         {form}
                         <Button>submit</Button>
                     </form>

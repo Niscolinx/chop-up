@@ -701,7 +701,7 @@
     }
 }
 
-.newsletter {
+.newsLetter {
     display: flex;
     padding: 3rem 0;
     background-color: $secondary-color;
@@ -724,47 +724,8 @@
 
     &_form {
         display: flex;
-        margin-left: 4rem;
-
-         .newsletter_form-submitBtn {
-                color: $primary-color-1;
-                background-color: $secondary-color-1;
-                display: flex;
-                justify-self: center;
-                align-self: center;
-                justify-content: center;
-                align-content: center;
-                border-color: rgb(12, 12, 11);
-
-                &:hover,
-                &:active {
-                    background-color: $secondary-color-1;
-                    color: $primary-color-1;
-                }
-            }
-
-        &-item {
-            .newsletter_form-submitBtn {
-                color: $primary-color-1;
-                background-color: $secondary-color-1;
-                display: flex;
-                justify-self: center;
-                align-self: center;
-                justify-content: center;
-                align-content: center;
-                border-color: rgb(12, 12, 11);
-
-                &:hover,
-                &:active {
-                    background-color: $secondary-color-1;
-                    color: $primary-color-1;
-                }
-            }
-
-            @include respond(tab-port) {
-                margin-left: 0;
-            }
-        }
+        background: red;
+       
     }
 }
 

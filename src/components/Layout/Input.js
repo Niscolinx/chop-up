@@ -21,7 +21,7 @@ const input = (props) => {
             />
             break;
         case 'select':
-            inputElement = <select value={props.value} onChange={props.changed}>
+            inputElement = <select value={props.value} onChange={props.changed}  className={props.validateClass}>
                 {props.config.options.map(option => (
                     <option value={option.value} key={option.value}>{option.displayValue}</option>
                 ))}
