@@ -8,6 +8,21 @@ class NewsLetter extends Component {
 
     state = {
         control: {
+            password: {
+                elementType: 'input',
+                config: {
+                    type: 'password',
+                    placeholder: 'password'
+                },
+                value: '',
+                validation: {
+                    required: true,
+                    minLength: 6
+                },
+                class: 'newsLetter-item-1',
+                isTouched: false
+            },
+            
             email: {
                 elementType: 'input',
                 config: {
@@ -20,22 +35,9 @@ class NewsLetter extends Component {
                 },
                 class: 'newsLetter-item',
                 isTouched: false
-            },
-            password: {
-                elementType: 'input',
-                config: {
-                    type: 'password',
-                    placeholder: 'password'
-                },
-                value: '',
-                validation: {
-                    required: true,
-                    minLength: 6
-                },
-                class: 'newsLetter-item',
-                isTouched: false
             }
-        },
+
+        }
     }
     loginButton = (e) => {
         e.preventDefault()

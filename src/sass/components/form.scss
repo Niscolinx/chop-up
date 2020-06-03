@@ -49,8 +49,15 @@
 .newsLetterForm{
     display: flex;
     padding: 1rem .5rem;
-    width: 50%;
-    margin: 0 auto;
+    justify-content: space-evenly;
+    margin: 3rem;
+
+    
+    .newsLetter-item{
+        background-color: red;
+        margin: 2rem;
+    }
+
 
     input,
     select {
@@ -60,6 +67,7 @@
         outline: none;
         margin-bottom: 5px;
         border: 1px solid #ccc;
+        margin: 3rem;
       //  box-shadow: 6px 1px 10px 5px #ccc;
 
         &:focus {
