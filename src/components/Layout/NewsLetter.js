@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
-import { Container, Row, Col, Button } from 'react-bootstrap'
-import Form from 'react-bootstrap/Form'
+import { Container, Row, Col } from 'react-bootstrap'
+//import Form from 'react-bootstrap/Form'
+import Input from './Input'
+import Button from '../Modal/Button'
 
 class NewsLetter extends Component {
 
@@ -35,13 +37,39 @@ class NewsLetter extends Component {
             }
         },
     }
+    loginButton = (e) => {
+        e.preventDefault()
+        console.log(this.state.control.email.value, this.state.control.password.value, this.state.isLogin)
+    }
 
     render() {
 
-        const formBtn = (e) => {
-            e.preventDefault()
 
+
+
+        let elementTypeArr = []
+        for (let key in this.state.control) {
+            elementTypeArr.push({
+                id: key,
+                config: this.state.control[key]
+            })
         }
+
+        let form = <div className='contactForm'>
+            {elementTypeArr.map(elementType => {
+                return <Input
+                    isTouched={elementType.config.isTouched}
+                    validate={elementType.config.valid}
+                    key={elementType.id}
+                    config={elementType.config.config}
+                    inputtype={elementType.config.elementType}
+                    value={elementType.config.value}
+                    changed={(e) => this.nameHandler(e, elementType.id)}
+                />
+
+            })}
+        </div>
+
         return (
             <div className='newsletter'>
 
@@ -56,10 +84,15 @@ class NewsLetter extends Component {
                         </Col>
                     </Row>
 
-                    <Form>
+                    <form onSubmit={this.loginButton}>
+                        {form}
+                        <Button>submit</Button>
+                    </form>
+
+                    {/* <Form>
 
 
-                        <Form.Row className='newsletter_form'>
+                         <Form.Row className='newsletter_form'>
 
                             <Form.Group as={Col} controlId="formGridPassword" className='newsletter_form-item'>
                                 <Form.Control as="select">
@@ -92,7 +125,7 @@ class NewsLetter extends Component {
                         <Form.Group controlId="formBasicCheckbox" className='newsletter_description'>
                             <Form.Check type="checkbox" label="I have read and accepted the terms and conditions and privacy policy" />
                         </Form.Group>
-                    </Form>
+                    </Form> */}
                 </Container>
             </div>
         )
