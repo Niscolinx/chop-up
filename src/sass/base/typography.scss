@@ -733,7 +733,12 @@
         align-content: center;
         
         &-input{
-            cursor: pointer;
+            
+            input,
+            select{
+                cursor: pointer;
+
+            }
         }
 
         &-submitBtn{

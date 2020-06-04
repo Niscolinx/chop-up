@@ -41,7 +41,7 @@ const NewsLetter = () => {
 
                     </Form.Row>
                     <Form.Group controlId="formBasicCheckbox" className='newsletter_description'>
-                        <Form.Check type="checkbox" label="I have read and accepted the terms and conditions and privacy policy" />
+                        <Form.Check type="checkbox" label="I have read and accepted the terms and conditions and privacy policy" className='newsletter_form-input'/>
                     </Form.Group>
                 </Form>
             </Container>
