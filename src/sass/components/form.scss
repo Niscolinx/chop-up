@@ -4,12 +4,12 @@
 
 .contactForm {
     padding: 1rem .5rem;
-  //  width: 50%;
-   // margin: 0 auto;
+    width: 50%;
+    margin: 0 auto;
 
     input,
     select {
-       // width: 100%;
+        width: 100%;
         padding: 1rem .8rem;
         font-size: 1rem;
         outline: none;
@@ -24,7 +24,7 @@
     }
 
     select {
-       // width: 105%;
+        width: 105%;
     }
 }
 
@@ -46,41 +46,3 @@
     text-align: center;
 }
 
-.newsLetterForm{
-   // display: flex;
-    padding: 1rem .5rem;
-   // justify-content: space-evenly;
-   // margin: 3rem;
-
-    
-    .newsLetter-cities{
-        background-color: red;
-        margin: 2rem;
-    }
-    .newsLetter-email{
-        background-color: green;
-        margin: 2.5rem;
-    }
-
-
-    // input,
-    // select {
-    //     width: 100%;
-    //     padding: 1rem .8rem;
-    //     font-size: 1rem;
-    //     outline: none;
-    //     margin-bottom: 5px;
-    //     border: 1px solid #ccc;
-    //     margin: 3rem;
-    //   //  box-shadow: 6px 1px 10px 5px #ccc;
-
-    //     &:focus {
-    //    //     background: #ccc;
-    //         outline: none;
-    //     }
-    // }
-
-    // select {
-    //     width: 105%;
-    // }
-}

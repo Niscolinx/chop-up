@@ -1,7 +1,7 @@
 import React from 'react';
 
 const button = (props) => (
-    <button
+    <button className = {['orderbutton', props.btnType].join(' ')}
     onClick = {props.clicked}>
         {props.children}
     </button>
