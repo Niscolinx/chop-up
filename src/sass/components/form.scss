@@ -47,10 +47,10 @@
 }
 
 .newsLetterForm{
-    display: flex;
+   // display: flex;
     padding: 1rem .5rem;
-    justify-content: space-evenly;
-    margin: 3rem;
+   // justify-content: space-evenly;
+   // margin: 3rem;
 
     
     .newsLetter-cities{
@@ -63,24 +63,24 @@
     }
 
 
-    input,
-    select {
-        width: 100%;
-        padding: 1rem .8rem;
-        font-size: 1rem;
-        outline: none;
-        margin-bottom: 5px;
-        border: 1px solid #ccc;
-        margin: 3rem;
-      //  box-shadow: 6px 1px 10px 5px #ccc;
+    // input,
+    // select {
+    //     width: 100%;
+    //     padding: 1rem .8rem;
+    //     font-size: 1rem;
+    //     outline: none;
+    //     margin-bottom: 5px;
+    //     border: 1px solid #ccc;
+    //     margin: 3rem;
+    //   //  box-shadow: 6px 1px 10px 5px #ccc;
 
-        &:focus {
-       //     background: #ccc;
-            outline: none;
-        }
-    }
+    //     &:focus {
+    //    //     background: #ccc;
+    //         outline: none;
+    //     }
+    // }
 
-    select {
-        width: 105%;
-    }
+    // select {
+    //     width: 105%;
+    // }
 }

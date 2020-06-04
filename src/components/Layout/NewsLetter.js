@@ -115,7 +115,7 @@ class NewsLetter extends Component {
                         </Col>
                     </Row>
 
-                    <form onSubmit={this.loginButton} className='newsLetter_form'>
+                    <form onSubmit={this.loginButton} className='newsLetter-form'>
                         {form}
                     </form>
 
