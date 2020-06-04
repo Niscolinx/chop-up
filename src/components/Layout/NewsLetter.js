@@ -95,8 +95,10 @@ class NewsLetter extends Component {
                     value={elementType.config.value}
                     changed={(e) => this.nameHandler(e, elementType.id)}
                 />
-
+                
             })}
+            <Button>submit</Button>
+
         </div>
 
         return (
@@ -115,7 +117,6 @@ class NewsLetter extends Component {
 
                     <form onSubmit={this.loginButton} className='newsLetter_form'>
                         {form}
-                        <Button>submit</Button>
                     </form>
 
                     {/* <Form>
