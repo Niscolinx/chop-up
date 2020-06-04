@@ -731,7 +731,10 @@
         display: flex;
         justify-content: center;
         align-content: center;
-        cursor: pointer;
+        
+        &-input{
+            cursor: pointer;
+        }
 
         &-submitBtn{
             background: $primary-color;
