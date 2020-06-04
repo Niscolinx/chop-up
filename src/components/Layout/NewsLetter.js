@@ -8,8 +8,8 @@ const NewsLetter = () => {
 
             <Container>
                 <div className='newsletter_heading'>
-                    <h1>20% Off on your first order</h1>
-                    <h1>by subscribing to our newsletter!</h1>
+                    <h3>20% Off on your first order</h3>
+                    <h5>by subscribing to our newsletter!</h5>
                 </div>
                 <Row >
                     <Col>
@@ -21,7 +21,7 @@ const NewsLetter = () => {
                     <Form.Row className='newsletter_form'>
 
                         <Form.Group as={Col} controlId="formGridPassword">
-                            <Form.Control as="select">
+                            <Form.Control as="select" className='newsletter_form-input'>
                                 <option>Absu</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -30,7 +30,7 @@ const NewsLetter = () => {
                         </Form.Group>
 
                         <Form.Group as={Col} controlId="formGridEmail">
-                            <Form.Control type="email" placeholder="Enter email" />
+                            <Form.Control type="email" placeholder="Enter email" className='newsletter_form-input' />
                         </Form.Group>
                         <Form.Group as={Col} controlId="formGridEmail">
                             <Button type="submit" className='newsletter_form-submitBtn'>

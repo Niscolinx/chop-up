@@ -709,10 +709,15 @@
 
     &_heading {
         display: flex;
+        margin-bottom: 1rem;
         justify-content: center;
         align-items: center;
         align-content: center;
         flex-direction: column;
+
+        @include respond(phone){
+            //font-size: 2rem;
+        }
     }
 
     &_description {
@@ -726,7 +731,32 @@
         display: flex;
         justify-content: center;
         align-content: center;
+        cursor: pointer;
+
+        &-submitBtn{
+            background: $primary-color;
+            color: $secondary-color;
+            border: none;
+            
+             &:hover{
+                    background: $secondary-color;
+                    color: $primary-color
+                }
+        }
+
+        @include respond(phone){
+            flex-direction: column;
+
+            &-submitBtn{
+                display: block;
+                margin: 1rem auto;
+                
+
+               
+            }
+        }
     }
+
 }
 
 .card {
