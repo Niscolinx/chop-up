@@ -715,7 +715,7 @@
         align-content: center;
         flex-direction: column;
 
-        @include respond(phone){
+        @include respond(phone) {
             //font-size: 2rem;
         }
     }
@@ -731,40 +731,52 @@
         display: flex;
         justify-content: center;
         align-content: center;
-        
-        &-input{
-            
-            input,
-            select{
-                cursor: pointer;
 
+        &-input {
+            cursor: pointer;
+
+            input,
+            select {
+                cursor: pointer;
             }
         }
 
-        &-submitBtn{
+        .newsletter_form-submitBtn {
+             background: $primary-color;
+            color: $secondary-color;
+            border: none;
+
+            &:hover,
+            &:visited,
+            &:focus {
+                background: $secondary-color;
+                color: $primary-color;
+            }
+
+        }
+        &-submitBtn {
             background: $primary-color;
             color: $secondary-color;
             border: none;
-            
-             &:hover{
-                    background: $secondary-color;
-                    color: $primary-color
-                }
+
+            &:hover,
+            &:active,
+            &:visited,
+            &:focus {
+                background: $secondary-color;
+                color: $primary-color;
+            }
         }
 
-        @include respond(phone){
+        @include respond(phone) {
             flex-direction: column;
 
-            &-submitBtn{
+            &-submitBtn {
                 display: block;
                 margin: 1rem auto;
-                
-
-               
             }
         }
     }
-
 }
 
 .card {
