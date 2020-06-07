@@ -758,9 +758,9 @@
             background: $primary-color;
             color: $secondary-color;
             border: none;
+            border: none;
 
             &:hover,
-            &:active,
             &:visited,
             &:focus {
                 background: $secondary-color;
