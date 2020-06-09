@@ -367,14 +367,17 @@
 
 .modalToggle {
     position: absolute;
-    right: 0;
-    top: 0;
-    float: right;
-
+    right: 1rem;
+    top: 1rem;
+    font-size: 2rem;
+    display: inline-block;
     cursor: pointer;
     color: $primary-color;
-    border-radius: 50%;
 
+
+    &:hover{
+        color: $secondary-color
+    }
 }
 
 .DrawerToggle {
