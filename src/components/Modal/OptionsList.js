@@ -1,6 +1,9 @@
 import React from 'react'
 import { Col } from 'react-bootstrap'
-import svg from '../../assets/svg/001-pharmacy.svg'
+import pharmacy from '../../assets/svg/001-pharmacy.svg'
+import shoppingCart from '../../assets/svg/002-shopping-cart.svg'
+import shoppingBag from '../../assets/svg/003-shopping-bag.svg'
+import healthyEating from '../../assets/svg/004-healthy-eating.svg'
 
 
 
