@@ -652,10 +652,6 @@
     .iconStyle {
         width: 4rem;
         margin-bottom: 1rem;
-
-        @include respond(phone){
-            width: 3rem;
-        }
     }
 
     &_box-item {
@@ -682,9 +678,7 @@
         }
     }
 
-    &_title {
-        font-weight: 700;
-    }
+  
 
     &_description {
         font-weight: 400;
