@@ -72,6 +72,29 @@ export const OptionsMap = (props) => {
         console.log('the result is', result)
     }
   
+    let svg;
+    switch (title) {
+
+        case ('Restaurant'):
+            svg = healthyEating
+            break;
+        case ('Shops'):
+            svg = shoppingCart
+            break;
+        case ('Okigwe'):
+            currentCity = Okigwe
+            break;
+        case ('Isuochi'):
+            currentCity = Isuochi
+            break;
+        case ('Isukwuato'):
+            currentCity = Isukwuato
+            break;
+
+        default:
+            currentCity = null
+            break;
+    }
 
     return <Col className='services-box_item' onClick={handleClick}>
         {/* <i class="fa fa-shopping-basket" aria-hidden="true"></i>
