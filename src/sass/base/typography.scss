@@ -385,20 +385,20 @@
 
     span {
         width: 40%;
-        height: 3px;
+        height: 50%;
         background-color: $secondary-color;
     }
 
-    &_item1 {
-        transform: rotate(50deg);
-        margin-top: 1rem;
-        transform-origin: center;
-    }
-    &_item2 {
-        transform: rotate(-55deg);
-        margin-top: -0.4rem;
-        transform-origin: center;
-    }
+    // &_item1 {
+    //     transform: rotate(50deg);
+    //     margin-top: 1rem;
+    //     transform-origin: center;
+    // }
+    // &_item2 {
+    //     transform: rotate(-55deg);
+    //     margin-top: -0.4rem;
+    //     transform-origin: center;
+    // }
 }
 
 .DrawerToggle {
