@@ -650,6 +650,14 @@
 .simple-steps {
     margin: 3rem 0;
 
+
+    &_box-item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
     &_header {
         display: flex;
         justify-content: center;
