@@ -367,16 +367,15 @@
 
 .modalToggle {
     position: absolute;
-    right: .7rem;
-    top: .7rem;
+    right: 0.7rem;
+    top: 0.7rem;
     font-size: 2rem;
     display: inline-block;
     cursor: pointer;
     color: $primary-color;
 
-
-    &:hover{
-        color: $secondary-color
+    &:hover {
+        color: $secondary-color;
     }
 }
 
@@ -650,12 +649,24 @@
 .simple-steps {
     margin: 3rem 0;
 
+    .iconStyle {
+        width: 4rem;
+        margin-bottom: 1rem;
 
-    &_box-item{
+        @include respond(phone){
+            width: 3rem;
+        }
+    }
+
+    &_box-item {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
+
+        @include respond(phone){
+            margin-bottom: 3rem;
+        }
     }
 
     &_header {
@@ -729,7 +740,7 @@
         }
 
         .newsletter_form-submitBtn {
-             background: $primary-color;
+            background: $primary-color;
             color: $secondary-color;
             border: none;
 
@@ -739,7 +750,6 @@
                 background: $secondary-color;
                 color: $primary-color;
             }
-
         }
         &-submitBtn {
             background: $primary-color;

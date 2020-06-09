@@ -7,10 +7,6 @@ import delivery from '../../assets/svg/003-food-delivery.svg'
 
 const Steps = () => {
 
-    const iconStyle = {
-        width: '3rem',
-        marginBottom: '1rem'
-    }
 
     return (
         <div className='simple-steps'>
@@ -22,17 +18,17 @@ const Steps = () => {
                 <Row className='simple-steps_box'>
 
                     <Col className='simple-steps_box-item'>
-                        <img src={location} alt='' style={iconStyle} />
+                        <img src={location} alt='' className='iconStyle' />
                         <h5 className='simple-steps_title'>Set delivering location</h5>
                         <p className='simple-steps_description'>Browse shops that deliver near you</p>
                     </Col>
                     <Col className='simple-steps_box-item'>
-                        <img src={product} alt='' style={iconStyle} />
+                        <img src={product} alt='' className='iconStyle' />
                         <h5 className='simple-steps_title'>Choose the product</h5>
                         <p className='simple-steps_description'>Browse shops that deliver near you</p>
                     </Col>
                     <Col className='simple-steps_box-item'>
-                        <img src={delivery} alt='' style={iconStyle} />
+                        <img src={delivery} alt='' className='iconStyle' />
                         <h5 className='simple-steps_title'>Receive it at your doorstep</h5>
                         <p className='simple-steps_description'>Browse shops that deliver near you</p>
                     </Col>
