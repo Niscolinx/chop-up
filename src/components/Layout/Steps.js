@@ -17,14 +17,17 @@ const Steps = () => {
                 <Row className='simple-steps_box'>
 
                     <Col>
+                        <img src={location} alt='' style={{ width: '4rem', marginBottom: '1rem' }} />
                         <h5 className='simple-steps_title'>Set delivering location</h5>
                         <p className='simple-steps_description'>Browse shops that deliver near you</p>
                     </Col>
                     <Col>
+                        <img src={product} alt='' style={{ width: '4rem', marginBottom: '1rem' }} />
                         <h5 className='simple-steps_title'>Choose the product</h5>
                         <p className='simple-steps_description'>Browse shops that deliver near you</p>
                     </Col>
                     <Col>
+                        <img src={delivery} alt='' style={{ width: '4rem', marginBottom: '1rem' }} />
                         <h5 className='simple-steps_title'>Receive it at your doorstep</h5>
                         <p className='simple-steps_description'>Browse shops that deliver near you</p>
                     </Col>
