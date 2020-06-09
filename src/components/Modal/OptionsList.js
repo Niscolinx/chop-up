@@ -63,7 +63,7 @@ export const OptionsMap = (props) => {
     
     let message;
     if (selectedArea) {
-        const res = <p>Found<span style={{ fontWeight: 700, padding: '0 1rem'}}>{result.length}</span>in your area</p>
+        const res = <p>Found<span style={{ fontWeight: 700, padding: '0 .5rem'}}>{result.length}</span>in your area</p>
         message = res
     }
     else {
