@@ -63,8 +63,8 @@ export const OptionsMap = (props) => {
     
     let message;
     if (selectedArea) {
-        const res = <p style={{fontWeight: 700}}>{result.length}</p>
-        message = `Found ${res} ${title} in your area`
+        const res = <p>Found<span style={{ fontWeight: 700, padding: '0 1rem'}}>{result.length}</span>in your area</p>
+        message = res
     }
     else {
         message = 'Waiting for props'
