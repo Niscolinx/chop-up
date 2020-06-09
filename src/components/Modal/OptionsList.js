@@ -1,5 +1,7 @@
 import React from 'react'
 import { Col } from 'react-bootstrap'
+import svg from '../../../assets/svg/001-pharmacy.svg'
+
 
 
 const options = {
@@ -70,7 +72,7 @@ export const OptionsMap = (props) => {
     return <Col className='services-box_item' onClick={handleClick}>
         {/* <i class="fa fa-shopping-basket" aria-hidden="true"></i>
         <i class="fa fa-cutlery" aria-hidden="true"></i> */}
-        <img src="./svg/001-pharmacy.svg" alt =''/>
+        <img src={'url(' + svg + ')'} alt =''/>
 
         <h5 className='services-box_title'>{title}</h5>
         <p className='services-box_description'>{description}</p>
