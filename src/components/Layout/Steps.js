@@ -1,5 +1,8 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
+import location from '../../assets/svg/001-location.svg'
+import product from '../../assets/svg/002-inventory.svg'
+import delivery from '../../assets/svg/003-food-delivery.svg'
 
 
 const Steps = () => {
