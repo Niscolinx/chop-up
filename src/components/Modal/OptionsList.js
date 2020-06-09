@@ -54,7 +54,7 @@ export const OptionsMap = (props) => {
     const { selectedCity, selectedArea, title, description } = props
     const result = mapSelections(title, selectedCity)
 
-    // pass from the props, the this.state.areaChange or whatever 
+    // Wait for the props before padding the result.length otherwise an error will be thrown
     let message;
     if(selectedArea){
     message = `Found ${result.length} ${title} in your area`
@@ -68,6 +68,8 @@ export const OptionsMap = (props) => {
     }
 
     return <Col className='services-box_item' onClick={handleClick}>
+        <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+
         <h5 className='services-box_title'>{title}</h5>
         <p className='services-box_description'>{description}</p>
         <p className='services-box_description'>{message}</p>
