@@ -46,7 +46,6 @@ const mapSelections = (title, selectedCity) => {
     return optionsMap.find(ele => {
         return ele
     })
-
 }
 
 
