@@ -43,7 +43,7 @@ const mapSelections = (title, selectedCity) => {
         let foundValues;
         if (selectedCity === singleOption) {
             foundValues = options[title][singleOption]
-            console.log('The selected city', title, selectedCity,'the found Values', foundValues)
+            console.log('The selected city', title, selectedCity, 'the found Values', foundValues)
         }
         return foundValues
     })
@@ -58,48 +58,47 @@ export const OptionsMap = (props) => {
     const { selectedCity, selectedArea, title, description } = props
     const result = mapSelections(title, selectedCity)
 
+    
     // Wait for the props before padding the result.length otherwise an error will be thrown
-
+    
     let message;
-    if(selectedArea){
-    message = `Found ${result.length} ${title} in your area`
+    if (selectedArea) {
+        const res = <p style={{fontWeight: 700}}>{result.length}</p>
+        message = `Found ${res} ${title} in your area`
     }
-    else{
+    else {
         message = 'Waiting for props'
     }
 
     const handleClick = () => {
         console.log('the result is', result)
     }
-  
+
     let svg;
     switch (title) {
 
-        case ('Restaurant'):
+        case ('Restaurants'):
             svg = healthyEating
             break;
         case ('Shops'):
             svg = shoppingCart
             break;
-        case ('Okigwe'):
-            currentCity = Okigwe
+        case ('SuperMarkets'):
+            svg = shoppingBag
             break;
-        case ('Isuochi'):
-            currentCity = Isuochi
-            break;
-        case ('Isukwuato'):
-            currentCity = Isukwuato
+        case ('Pharmacies'):
+            svg = pharmacy
             break;
 
         default:
-            currentCity = null
+            svg = null
             break;
     }
 
     return <Col className='services-box_item' onClick={handleClick}>
         {/* <i class="fa fa-shopping-basket" aria-hidden="true"></i>
         <i class="fa fa-cutlery" aria-hidden="true"></i> */}
-        <img src = {svg} alt ='' style={{width: '2.5rem', marginBottom: '1rem'}}/>
+        <img src={svg} alt='' style={{ width: '2.5rem', marginBottom: '1rem' }} />
 
         <h5 className='services-box_title'>{title}</h5>
         <p className='services-box_description'>{description}</p>
