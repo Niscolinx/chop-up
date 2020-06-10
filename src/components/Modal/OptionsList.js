@@ -74,7 +74,8 @@ export const OptionsMap = (props) => {
 
     const handleClick = () => {
         console.log('the result is', props)
-       return <Redirect to='/'/>
+        //return props.history.push('/Auth/register')
+        return <Redirect to='/Auth/register'/>
     }
 
     let svg;

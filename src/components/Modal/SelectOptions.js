@@ -6,7 +6,6 @@ import { OptionsMap } from './OptionsList'
 
 const SelectOptions = (props) => {
 
-    console.log('From the select option',props.history)
 
     return (
 
@@ -19,12 +18,14 @@ const SelectOptions = (props) => {
             <Row className='services-box'>
 
                 <OptionsMap
+                    history={props.history}
                     selectedArea={props.selectedArea}
                     selectedCity={props.selectedCity}
                     title='Restaurants'
                     description='Food you love, near restaurants near you'
                 />
                 <OptionsMap
+                    history={props.history}
                     selectedArea={props.selectedArea}
                     selectedCity={props.selectedCity}
                     title='SuperMarkets'
@@ -35,12 +36,14 @@ const SelectOptions = (props) => {
             <Row className='services-box'>
 
                 <OptionsMap
+                    history={props.history}
                     selectedArea={props.selectedArea}
                     selectedCity={props.selectedCity}
                     title='Pharmacies'
                     description='Top Quality medicines near you'
                 />
                 <OptionsMap
+                    history={props.history}
                     selectedArea={props.selectedArea}
                     selectedCity={props.selectedCity}
                     title='Shops'
