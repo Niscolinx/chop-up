@@ -27,6 +27,7 @@ class Hero extends Component {
 
 
     handleCityChange = (inputValue: any, actionMeta: any) => {
+
         // console.group('Input Changed');
         // console.log('the input value has been changed and it is now', inputValue);
 
@@ -118,7 +119,6 @@ class Hero extends Component {
 
 
     render() {
-        console.log('From the hero', this.props)
         console.log('this is the state', this.state)
 
         let handleAreaSelection = 'modalHide'
@@ -344,11 +344,12 @@ class Hero extends Component {
                             <SelectModal isAreaSelected={this.state.isAreaTouched}
                             >
                                 <SelectOptions className={handleAreaSelection}
+                                    history= {this.props.history}
                                     selectedArea={this.props.selectedArea}
                                     selectedCity={this.props.selectedCity}
                                 />
                             </SelectModal>
-                            
+
                         </div>
                     </div>
                 </Container>

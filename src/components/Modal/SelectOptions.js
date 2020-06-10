@@ -6,6 +6,8 @@ import { OptionsMap } from './OptionsList'
 
 const SelectOptions = (props) => {
 
+    console.log('From the select option',props.history)
+
     return (
 
         <Aux>
