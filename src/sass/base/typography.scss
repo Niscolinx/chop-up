@@ -230,7 +230,7 @@
 }
 
 .content {
-    // margin: 50px 0;
+    margin-top: 4rem;
 }
 
 .logo {
@@ -505,7 +505,7 @@
 
 //New Styles
 .hero {
-    padding-top: 3rem;
+    padding-top: 2rem;
     max-width: 70%;
 
     &_collapse {
@@ -530,16 +530,20 @@
 
             &--main {
                 display: block;
-                font-size: 2rem;
+                font-size: 2.5rem;
                 margin-right: 7rem;
 
                 animation-name: moveInLeft;
                 animation-duration: 1.5s;
+
+                @include respond(tab-port){
+                    font-size: 2rem;
+                }
             }
 
             &--sub {
                 display: block;
-                font-size: 2rem;
+                font-size: 2.5rem;
                 margin-left: 7rem;
                 margin-bottom: 3rem;
 
@@ -548,6 +552,11 @@
                 /* animation-iteration-count: 3; */
                 /*animation-delay: 0.4s;*/
                 animation-timing-function: ease-in;
+
+                
+                @include respond(tab-port){
+                    font-size: 2rem;
+                }
             }
         }
     }
@@ -568,7 +577,7 @@
             &--main {
                 font-weight: 700;
                 display: block;
-                font-size: 1.5rem;
+                font-size: 2rem;
 
                 animation-name: moveInRight;
                 animation-duration: 1s;
