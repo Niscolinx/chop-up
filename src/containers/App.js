@@ -9,6 +9,7 @@ import Aux from "../components/hoc/HigherOrder"
 import Home from './Home'
 import BurgerBuilder from './BurgerBuilder'
 import { Route, Switch } from 'react-router-dom'
+import Vendors from './Vendors'
 
 
 
@@ -40,6 +41,7 @@ class App extends Component {
     let AuthGuard = (
       <Switch>
         <Route path='/' exact component={Home} />
+        <Route path='/Vendors' component={Vendors}/>
         <Route path='/Auth/login' component={asyncAuth} />
         <Route path='/Auth/register' component={asyncAuth} />
         <Redirect to='/'/>
