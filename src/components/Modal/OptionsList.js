@@ -4,6 +4,8 @@ import pharmacy from '../../assets/svg/001-pharmacy.svg'
 import shoppingCart from '../../assets/svg/002-shopping-cart.svg'
 import shoppingBag from '../../assets/svg/003-shopping-bag.svg'
 import healthyEating from '../../assets/svg/004-healthy-eating.svg'
+import Vendors from '../../containers/Vendors'
+import {Redirect} from 'react-router-dom'
 
 
 

@@ -1,9 +1,5 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { Route, Redirect } from 'react-router-dom'
-
-import { Container, Row, Col, Button, Card, CardGroup } from 'react-bootstrap'
-import Form from 'react-bootstrap/Form'
 
 import * as actions from '../store/actions/burgerIndex'
 import withErrorHandler from "../components/hoc/withErrorHandler"
