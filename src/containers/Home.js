@@ -18,12 +18,13 @@ class Home extends Component {
 
     render() {
 
-
+        console.log('From the home', this.props)
         return (
             <div>
                 <div className='section-Hero'>
 
                     <Hero
+                        prop = {this.props.children}
                         areas={this.props.areas}
                         selectedArea={this.props.selectedArea}
                         selectedCity={this.props.selectedCity}

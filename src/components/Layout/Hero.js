@@ -118,6 +118,7 @@ class Hero extends Component {
 
 
     render() {
+        console.log('From the hero', this.props)
         console.log('this is the state', this.state)
 
         let handleAreaSelection = 'modalHide'

@@ -5,7 +5,7 @@ import shoppingCart from '../../assets/svg/002-shopping-cart.svg'
 import shoppingBag from '../../assets/svg/003-shopping-bag.svg'
 import healthyEating from '../../assets/svg/004-healthy-eating.svg'
 import Vendors from '../../containers/Vendors'
-import {Redirect} from 'react-router-dom'
+import { Redirect } from 'react-router-dom'
 
 
 
@@ -60,12 +60,12 @@ export const OptionsMap = (props) => {
     const { selectedCity, selectedArea, title, description } = props
     const result = mapSelections(title, selectedCity)
 
-    
+
     // Wait for the props before padding the result.length otherwise an error will be thrown
-    
+
     let message;
     if (selectedArea) {
-        const res = <p>Found<span style={{ fontWeight: 700, padding: '0 .5rem'}}>{result.length}</span>in your area</p>
+        const res = <p>Found<span style={{ fontWeight: 700, padding: '0 .5rem' }}>{result.length}</span>in your area</p>
         message = res
     }
     else {
@@ -73,7 +73,8 @@ export const OptionsMap = (props) => {
     }
 
     const handleClick = () => {
-        console.log('the result is', result)
+        console.log('the result is', props)
+       return <Redirect to='/'/>
     }
 
     let svg;
@@ -98,8 +99,7 @@ export const OptionsMap = (props) => {
     }
 
     return <Col className='services-box_item' onClick={handleClick}>
-        {/* <i class="fa fa-shopping-basket" aria-hidden="true"></i>
-        <i class="fa fa-cutlery" aria-hidden="true"></i> */}
+      
         <img src={svg} alt='' style={{ width: '2.5rem', marginBottom: '1rem' }} />
 
         <h5 className='services-box_title'>{title}</h5>
