@@ -1,8 +1,15 @@
-import React from 'react'
+import React, {useEffect, useRef} from 'react'
 import { Container, Row, Col, Button, Card, CardGroup } from 'react-bootstrap'
 
 
 const Cards = () => {
+
+    const theRef = useRef()
+
+    useEffect({
+        theRef.current = 'hello'
+    })
+
     return(
         <div className='card'>
             <Container>
