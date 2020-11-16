@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
 import Button from '../components/Modal/Button'
 import Input from '../components/Layout/Input'
@@ -154,12 +155,12 @@ class Auth extends Component {
                 <form onSubmit={this.loginButton}>
                     {form}
                     <Button
-                        btnType={this.buttonProps()}>submit
+                        btnType={this.buttonProps()}>Submit
                     </Button>
                 </form>
                 <div className='loginForm__buttonAuth'>
 
-                <Button clicked={this.toggleLogin} btnType='btn'> switch to {this.state.isLogin ? 'SignUp' : 'Login'}</Button>
+                <Button clicked={this.toggleLogin} btnType='btn'> SWITCH TO {this.state.isLogin ? 'SIGNUP' : 'LOGIN'}</Button>
                 <div style={{ textAlign: 'center' }}>
                     {spinner}
                 </div>
@@ -169,6 +170,14 @@ class Auth extends Component {
     }
 
 }
+
+
+Auth.propTypes = {
+    auth: PropTypes.bool,
+    totalPrice: PropTypes.number,
+    onInitAuth: PropTypes.func
+}
+
 const mapStateToProps = state => {
     return {
         loading: state.auth.loading,

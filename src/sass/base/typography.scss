@@ -396,7 +396,7 @@
     div {
         width: 90%;
         height: 3px;
-        background-color: white;
+        background-color: black;
     }
 }
 
@@ -842,8 +842,9 @@
     display: none;
 }
 
-.btn{
+.btn {
     border-radius: 5px;
-    color: $primary-color-dark;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
+    background: $secondary-color;
+    color: $primary-color;
 }
