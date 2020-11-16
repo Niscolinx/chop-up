@@ -40,7 +40,7 @@ class Auth extends Component {
             }
         },
         
-        isLogin: true,
+        is: true,
     }
 
 
@@ -86,7 +86,7 @@ class Auth extends Component {
 
 
     buttonProps = () => {
-        let buttonProps = 'disAbled loginButton'
+        let buttonProps = 'btn disAbled'
         let disabledArr = []
         let buttonKeys = { ...this.state.control }
         for (let ifValid in buttonKeys) {
@@ -94,7 +94,7 @@ class Auth extends Component {
                 disabledArr.push(ifValid)
             }
             if (disabledArr.length === 2) {
-                buttonProps = 'Success loginButton'
+                buttonProps = 'btn Success'
             }
         }
         return buttonProps
@@ -157,9 +157,12 @@ class Auth extends Component {
                         btnType={this.buttonProps()}>submit
                     </Button>
                 </form>
-                <Button clicked={this.toggleLogin}> switch to {this.state.isLogin ? 'SignUp' : 'Login'}</Button>
+                <div className='loginForm__buttonAuth'>
+
+                <Button clicked={this.toggleLogin} btnType='btn'> switch to {this.state.isLogin ? 'SignUp' : 'Login'}</Button>
                 <div style={{ textAlign: 'center' }}>
                     {spinner}
+                </div>
                 </div>
             </div>
         )
