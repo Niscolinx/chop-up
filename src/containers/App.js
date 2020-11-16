@@ -23,7 +23,7 @@ const asyncBurgerBuilder = asyncComponent(() => {
 const asyncCheckout = asyncComponent(() => {
   return import('../containers/Checkout')
 })
-const asyncAuth = asyncComponent(() => {
+const asyncAut = asyncComponent(() => {
   return import('../containers/Auth')
 })
 
@@ -42,16 +42,16 @@ class App extends Component {
       <Switch>
         <Route path='/' exact component={Home} />
         <Route path='/Vendors' component={Vendors}/>
-        <Route path='/Auth/login' component={asyncAuth} />
-        <Route path='/Auth/register' component={asyncAuth} />
+        <Route path='/Auth/login' component={asyncAut} />
+        <Route path='/Auth/register' component={asyncAut} />
         <Redirect to='/'/>
       </Switch>
     )
     if (this.props.auth) {
       AuthGuard = (
         <Switch>
-          <Route path='/Auth/login' component={asyncAuth} />
-          <Route path='/Auth/register' component={asyncAuth} />
+          <Route path='/Auth/login' component={asyncAut} />
+          <Route path='/Auth/register' component={asyncAut} />
           <Route path='/' exact component={BurgerBuilder} />
           <Route path='/Checkout' component={asyncCheckout} />
           <Route path='/Orders' component={asyncOrders} />
