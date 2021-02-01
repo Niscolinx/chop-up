@@ -26,7 +26,7 @@ class Hero extends Component {
     }
 
 
-    handleCityChange = (inputValue: any, actionMeta: any) => {
+   handleCityChange = (inputValue: any, actionMeta: any) => {
 
         // console.group('Input Changed');
         // console.log('the input value has been changed and it is now', inputValue);
@@ -38,7 +38,7 @@ class Hero extends Component {
 
     cityChange = (newValue: any, actionMeta: any) => {
         //  console.group('Value Changed', newValue);
-        // console.log('The values to compare', newValue);
+        //  console.log('The values to compare', newValue);
 
         // console.log('the meta data', actionMeta);
         // console.log(`action: ${actionMeta.action}`);
@@ -71,7 +71,6 @@ class Hero extends Component {
 
         }
         else {
-            // console.log('cleared city')
             this.props.onClearedSelectedCity()
 
 
