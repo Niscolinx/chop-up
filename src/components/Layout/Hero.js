@@ -26,7 +26,7 @@ class Hero extends Component {
     }
 
 
-   handleCityChange = (inputValue: any, actionMeta: any) => {
+   handleCityChange = () => {
 
         // console.group('Input Changed');
         // console.log('the input value has been changed and it is now', inputValue);
@@ -86,8 +86,7 @@ class Hero extends Component {
     };
     handleAreaChange = (inputValue: any, actionMeta: any) => {
 
-        // console.group('Input Changed', inputValue, 'the Changed value is', actionMeta);
-        // console.groupEnd();
+     
 
         if (actionMeta.action === 'set-value') {
             this.setState({
