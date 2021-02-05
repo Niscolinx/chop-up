@@ -26,7 +26,7 @@ class Hero extends Component {
     }
 
 
-   handleCityChange = () => {
+   handleCityChange = (props) => {
 
         // console.group('Input Changed');
         // console.log('the input value has been changed and it is now', inputValue);
